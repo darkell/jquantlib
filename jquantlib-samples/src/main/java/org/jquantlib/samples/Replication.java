@@ -24,6 +24,7 @@
 
 package org.jquantlib.samples;
 
+import org.apache.commons.lang3.time.StopWatch;
 import org.jquantlib.QL;
 import org.jquantlib.Settings;
 import org.jquantlib.daycounters.Actual365Fixed;
@@ -37,7 +38,6 @@ import org.jquantlib.instruments.PlainVanillaPayoff;
 import org.jquantlib.quotes.Handle;
 import org.jquantlib.quotes.Quote;
 import org.jquantlib.quotes.SimpleQuote;
-import org.jquantlib.samples.util.StopClock;
 import org.jquantlib.termstructures.YieldTermStructure;
 import org.jquantlib.termstructures.volatilities.BlackConstantVol;
 import org.jquantlib.termstructures.yieldcurves.FlatForward;
@@ -62,8 +62,7 @@ public class Replication implements Runnable {
         final String fmt = "%-45s %-15s %-15s\n";
 
         try{
-            final StopClock clock = new StopClock();
-            clock.startClock();
+            final StopWatch clock = StopWatch.createStarted();
 
             final Date today = new Date(29, Month.May, 2006);
             new Settings().setEvaluationDate(today);

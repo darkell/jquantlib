@@ -1,11 +1,10 @@
 package org.jquantlib.samples;
 
-import org.jquantlib.QL;
+import org.apache.commons.lang3.time.StopWatch;
 import org.jquantlib.daycounters.Actual365Fixed;
 import org.jquantlib.quotes.Quote;
 import org.jquantlib.quotes.RelinkableHandle;
 import org.jquantlib.quotes.SimpleQuote;
-import org.jquantlib.samples.util.StopClock;
 import org.jquantlib.termstructures.Compounding;
 import org.jquantlib.termstructures.YieldTermStructure;
 import org.jquantlib.termstructures.yieldcurves.FlatForward;
@@ -44,8 +43,7 @@ public class YieldCurveTermStructures implements Runnable {
 
         System.out.println("::::: " + this.getClass().getSimpleName() + " :::::");
 
-        final StopClock clock = new StopClock();
-        clock.startClock();
+        final StopWatch clock = StopWatch.createStarted();
 
         System.out.println("//==========================================FlatForward termstructure===================");
         final SimpleQuote interestRateQuote = new SimpleQuote(0.3);
@@ -120,9 +118,8 @@ public class YieldCurveTermStructures implements Runnable {
 
 
 
-        clock.stopClock();
-        clock.log();
-
+        clock.stop();
+        System.out.println(clock);
     }
 
 }

@@ -22,24 +22,18 @@
 
 package org.jquantlib.samples;
 
-import org.jquantlib.QL;
+import org.apache.commons.lang3.time.StopWatch;
 import org.jquantlib.daycounters.Actual365Fixed;
 import org.jquantlib.math.matrixutilities.Array;
 import org.jquantlib.math.matrixutilities.Matrix;
 import org.jquantlib.quotes.Quote;
 import org.jquantlib.quotes.RelinkableHandle;
 import org.jquantlib.quotes.SimpleQuote;
-import org.jquantlib.samples.util.StopClock;
 import org.jquantlib.termstructures.BlackVarianceTermStructure;
 import org.jquantlib.termstructures.BlackVolTermStructure;
 import org.jquantlib.termstructures.BlackVolatilityTermStructure;
 import org.jquantlib.termstructures.LocalVolTermStructure;
-import org.jquantlib.termstructures.volatilities.BlackConstantVol;
-import org.jquantlib.termstructures.volatilities.BlackVarianceCurve;
-import org.jquantlib.termstructures.volatilities.BlackVarianceSurface;
-import org.jquantlib.termstructures.volatilities.ImpliedVolTermStructure;
-import org.jquantlib.termstructures.volatilities.LocalConstantVol;
-import org.jquantlib.termstructures.volatilities.LocalVolCurve;
+import org.jquantlib.termstructures.volatilities.*;
 import org.jquantlib.termstructures.volatilities.BlackVarianceSurface.Extrapolation;
 import org.jquantlib.time.Date;
 import org.jquantlib.time.calendars.UnitedStates;
@@ -67,11 +61,7 @@ public class VolatilityTermStructures implements Runnable {
     }
 
     public void run() {
-
-        System.out.println("::::: " + this.getClass().getSimpleName() + " :::::");
-
-        final StopClock clock = new StopClock();
-        clock.startClock();
+        final StopWatch clock = StopWatch.createStarted();
 
         final Date today  = Date.todaysDate();
         final Date date10 = today.clone().addAssign(10);
@@ -416,8 +406,8 @@ public class VolatilityTermStructures implements Runnable {
         //TODO
         // System.out.println("//================================LocalVolSurface========================================");
 
-        clock.stopClock();
-        clock.log();
+        clock.stop();
+        System.out.println(clock);
     }
 
 }

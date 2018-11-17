@@ -22,7 +22,7 @@
 
 package org.jquantlib.samples;
 
-import org.jquantlib.QL;
+import org.apache.commons.lang3.time.StopWatch;
 import org.jquantlib.Settings;
 import org.jquantlib.cashflow.Callability;
 import org.jquantlib.cashflow.FixedDividend;
@@ -37,32 +37,18 @@ import org.jquantlib.instruments.DividendSchedule;
 import org.jquantlib.instruments.Option;
 import org.jquantlib.instruments.bonds.ConvertibleFixedCouponBond;
 import org.jquantlib.instruments.bonds.SoftCallability;
-import org.jquantlib.methods.lattices.AdditiveEQPBinomialTree;
-import org.jquantlib.methods.lattices.CoxRossRubinstein;
-import org.jquantlib.methods.lattices.JarrowRudd;
-import org.jquantlib.methods.lattices.Joshi4;
-import org.jquantlib.methods.lattices.LeisenReimer;
-import org.jquantlib.methods.lattices.Tian;
-import org.jquantlib.methods.lattices.Trigeorgis;
+import org.jquantlib.methods.lattices.*;
 import org.jquantlib.pricingengines.BinomialConvertibleEngine;
 import org.jquantlib.pricingengines.PricingEngine;
 import org.jquantlib.processes.BlackScholesMertonProcess;
 import org.jquantlib.quotes.Handle;
 import org.jquantlib.quotes.Quote;
 import org.jquantlib.quotes.SimpleQuote;
-import org.jquantlib.samples.util.StopClock;
 import org.jquantlib.termstructures.BlackVolTermStructure;
 import org.jquantlib.termstructures.YieldTermStructure;
 import org.jquantlib.termstructures.volatilities.BlackConstantVol;
 import org.jquantlib.termstructures.yieldcurves.FlatForward;
-import org.jquantlib.time.BusinessDayConvention;
-import org.jquantlib.time.Calendar;
-import org.jquantlib.time.Date;
-import org.jquantlib.time.DateGeneration;
-import org.jquantlib.time.Frequency;
-import org.jquantlib.time.Period;
-import org.jquantlib.time.Schedule;
-import org.jquantlib.time.TimeUnit;
+import org.jquantlib.time.*;
 import org.jquantlib.time.calendars.Target;
 
 /**
@@ -83,9 +69,7 @@ public class ConvertibleBonds implements Runnable {
 
         System.out.println("::::: " + this.getClass().getSimpleName() + " :::::");
 
-        final StopClock clock = new StopClock();
-        clock.startClock();
-        System.out.println("Started calculation at: " + clock.getElapsedTime());
+        final StopWatch clock = StopWatch.createStarted();
 
         // actually never used.....
         final Option.Type type = Option.Type.Put;
@@ -276,8 +260,8 @@ public class ConvertibleBonds implements Runnable {
         System.out.printf(fmt, method, europeanBond.NPV(), americanBond.NPV() );
 
 
-        clock.stopClock();
-        clock.log();
+        clock.stop();
+        System.out.println(clock);
     }
 
 }

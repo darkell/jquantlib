@@ -22,6 +22,7 @@
 
 package org.jquantlib.samples;
 
+import org.apache.commons.lang3.time.StopWatch;
 import org.jquantlib.QL;
 import org.jquantlib.daycounters.Actual365Fixed;
 import org.jquantlib.math.distributions.NormalDistribution;
@@ -33,7 +34,6 @@ import org.jquantlib.processes.StochasticProcess1D;
 import org.jquantlib.quotes.Quote;
 import org.jquantlib.quotes.RelinkableHandle;
 import org.jquantlib.quotes.SimpleQuote;
-import org.jquantlib.samples.util.StopClock;
 import org.jquantlib.termstructures.BlackVarianceTermStructure;
 import org.jquantlib.termstructures.BlackVolTermStructure;
 import org.jquantlib.termstructures.Compounding;
@@ -64,8 +64,7 @@ public class Processes implements Runnable {
 
         System.out.println("::::: " + this.getClass().getSimpleName() + " :::::");
 
-        final StopClock clock = new StopClock();
-        clock.startClock();
+        final StopWatch clock = StopWatch.createStarted();
 
         final Date today  = Date.todaysDate();
         final Date date10 = today.clone().addAssign(10);
@@ -161,8 +160,8 @@ public class Processes implements Runnable {
         final Matrix covariance = process.covariance(process.time(date18.clone()),  new Array(1).fill(5.6), 0.01);
         System.out.println("Covariance = "+covariance.get(0, 0));
 
-        clock.stopClock();
-        clock.log();
+        clock.stop();
+        System.out.println(clock);
     }
 
 }

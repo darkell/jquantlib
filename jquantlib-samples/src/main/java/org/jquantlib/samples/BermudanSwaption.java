@@ -22,14 +22,14 @@
 
 package org.jquantlib.samples;
 
-import static org.jquantlib.time.Month.February;
-
+import org.apache.commons.lang3.time.StopWatch;
 import org.jquantlib.QL;
 import org.jquantlib.Settings;
-import org.jquantlib.samples.util.StopClock;
 import org.jquantlib.time.Calendar;
 import org.jquantlib.time.Date;
 import org.jquantlib.time.Weekday;
+
+import static org.jquantlib.time.Month.February;
 
 /**
  * This example prices a few bermudan swaptions using different short-rate models calibrated to market swaptions.
@@ -52,8 +52,7 @@ public class BermudanSwaption implements Runnable {
 
         System.out.println("::::: " + this.getClass().getSimpleName() + " :::::");
 
-        final StopClock clock = new StopClock();
-        clock.startClock();
+        final StopWatch clock = StopWatch.createStarted();
 
         final Date todaysDate = new Date(15, February, 2002);
 
@@ -74,8 +73,8 @@ public class BermudanSwaption implements Runnable {
 
         // TODO: code review :: please verify against QL/C++ code
 
-        clock.stopClock();
-        clock.log();
+        clock.stop();
+        System.out.println(clock);
     }
 
 }

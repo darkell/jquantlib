@@ -40,7 +40,7 @@
 package org.jquantlib.samples;
 
 
-import org.jquantlib.QL;
+import org.apache.commons.lang3.time.StopWatch;
 import org.jquantlib.Settings;
 import org.jquantlib.daycounters.Actual365Fixed;
 import org.jquantlib.daycounters.DayCounter;
@@ -48,24 +48,10 @@ import org.jquantlib.exercise.AmericanExercise;
 import org.jquantlib.exercise.BermudanExercise;
 import org.jquantlib.exercise.EuropeanExercise;
 import org.jquantlib.exercise.Exercise;
-import org.jquantlib.instruments.EuropeanOption;
-import org.jquantlib.instruments.Option;
-import org.jquantlib.instruments.Payoff;
-import org.jquantlib.instruments.PlainVanillaPayoff;
-import org.jquantlib.instruments.VanillaOption;
-import org.jquantlib.methods.lattices.AdditiveEQPBinomialTree;
-import org.jquantlib.methods.lattices.CoxRossRubinstein;
-import org.jquantlib.methods.lattices.JarrowRudd;
-import org.jquantlib.methods.lattices.Joshi4;
-import org.jquantlib.methods.lattices.LeisenReimer;
-import org.jquantlib.methods.lattices.Tian;
-import org.jquantlib.methods.lattices.Trigeorgis;
+import org.jquantlib.instruments.*;
+import org.jquantlib.methods.lattices.*;
 import org.jquantlib.pricingengines.AnalyticEuropeanEngine;
-import org.jquantlib.pricingengines.vanilla.BaroneAdesiWhaleyApproximationEngine;
-import org.jquantlib.pricingengines.vanilla.BinomialVanillaEngine;
-import org.jquantlib.pricingengines.vanilla.BjerksundStenslandApproximationEngine;
-import org.jquantlib.pricingengines.vanilla.IntegralEngine;
-import org.jquantlib.pricingengines.vanilla.JuQuadraticApproximationEngine;
+import org.jquantlib.pricingengines.vanilla.*;
 import org.jquantlib.pricingengines.vanilla.finitedifferences.FDAmericanEngine;
 import org.jquantlib.pricingengines.vanilla.finitedifferences.FDBermudanEngine;
 import org.jquantlib.pricingengines.vanilla.finitedifferences.FDEuropeanEngine;
@@ -73,16 +59,11 @@ import org.jquantlib.processes.BlackScholesMertonProcess;
 import org.jquantlib.quotes.Handle;
 import org.jquantlib.quotes.Quote;
 import org.jquantlib.quotes.SimpleQuote;
-import org.jquantlib.samples.util.StopClock;
 import org.jquantlib.termstructures.BlackVolTermStructure;
 import org.jquantlib.termstructures.YieldTermStructure;
 import org.jquantlib.termstructures.volatilities.BlackConstantVol;
 import org.jquantlib.termstructures.yieldcurves.FlatForward;
-import org.jquantlib.time.Calendar;
-import org.jquantlib.time.Date;
-import org.jquantlib.time.Month;
-import org.jquantlib.time.Period;
-import org.jquantlib.time.TimeUnit;
+import org.jquantlib.time.*;
 import org.jquantlib.time.calendars.Target;
 
 /**
@@ -103,8 +84,7 @@ public class EquityOptions implements Runnable {
 
         System.out.println("::::: " + this.getClass().getSimpleName() + " :::::");
 
-        final StopClock clock = new StopClock();
-        clock.startClock();
+        final StopWatch clock = StopWatch.createStarted();
 
         // set up dates
         final Calendar calendar = new Target();
@@ -322,9 +302,8 @@ public class EquityOptions implements Runnable {
         // .           withSeed(mcSeed);
         //        System.out.printf(fmt, method, europeanOption.NPV(), Double.NaN, Double.NaN);
 
-        clock.stopClock();
-        clock.log();
-
+        clock.stop();
+        System.out.println(clock);
     }
 
 }

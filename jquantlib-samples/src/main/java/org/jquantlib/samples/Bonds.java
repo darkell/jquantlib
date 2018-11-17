@@ -1,17 +1,11 @@
 package org.jquantlib.samples;
-import java.util.ArrayList;
-import java.util.List;
 
-import org.jquantlib.QL;
+import org.apache.commons.lang3.time.StopWatch;
 import org.jquantlib.Settings;
 import org.jquantlib.cashflow.BlackIborCouponPricer;
 import org.jquantlib.cashflow.IborCouponPricer;
 import org.jquantlib.cashflow.PricerSetter;
-import org.jquantlib.daycounters.Actual360;
-import org.jquantlib.daycounters.Actual365Fixed;
-import org.jquantlib.daycounters.ActualActual;
-import org.jquantlib.daycounters.DayCounter;
-import org.jquantlib.daycounters.Thirty360;
+import org.jquantlib.daycounters.*;
 import org.jquantlib.daycounters.Thirty360.Convention;
 import org.jquantlib.indexes.Euribor6M;
 import org.jquantlib.indexes.IborIndex;
@@ -27,29 +21,20 @@ import org.jquantlib.quotes.Handle;
 import org.jquantlib.quotes.Quote;
 import org.jquantlib.quotes.RelinkableHandle;
 import org.jquantlib.quotes.SimpleQuote;
-import org.jquantlib.samples.util.StopClock;
 import org.jquantlib.termstructures.Compounding;
 import org.jquantlib.termstructures.IterativeBootstrap;
 import org.jquantlib.termstructures.RateHelper;
 import org.jquantlib.termstructures.YieldTermStructure;
 import org.jquantlib.termstructures.volatilities.optionlet.ConstantOptionletVolatility;
 import org.jquantlib.termstructures.volatilities.optionlet.OptionletVolatilityStructure;
-import org.jquantlib.termstructures.yieldcurves.DepositRateHelper;
-import org.jquantlib.termstructures.yieldcurves.Discount;
-import org.jquantlib.termstructures.yieldcurves.FixedRateBondHelper;
-import org.jquantlib.termstructures.yieldcurves.PiecewiseYieldCurve;
-import org.jquantlib.termstructures.yieldcurves.SwapRateHelper;
-import org.jquantlib.time.BusinessDayConvention;
-import org.jquantlib.time.Calendar;
-import org.jquantlib.time.Date;
-import org.jquantlib.time.DateGeneration;
-import org.jquantlib.time.Frequency;
-import org.jquantlib.time.Month;
-import org.jquantlib.time.Period;
-import org.jquantlib.time.Schedule;
-import org.jquantlib.time.TimeUnit;
+import org.jquantlib.termstructures.yieldcurves.*;
+import org.jquantlib.time.*;
 import org.jquantlib.time.calendars.Target;
 import org.jquantlib.time.calendars.UnitedStates;
+
+import java.util.ArrayList;
+import java.util.List;
+
 /**
  * 
  * @author Zahid Hussain
@@ -65,9 +50,7 @@ public class Bonds { //implements Runnable {
 
         System.out.println("::::: " + this.getClass().getSimpleName() + " :::::");
 
-        final StopClock clock = new StopClock();
-        clock.startClock();
-        System.out.println("Started calculation at: " + clock.getElapsedTime());
+        final StopWatch clock = StopWatch.createStarted();
         /*********************
          *** MARKET DATA ***
          *********************/
@@ -604,8 +587,8 @@ public class Bonds { //implements Runnable {
          /* "Yield to Price"
          	"Price to Yield" 
          */
-        clock.stopClock();
-        clock.log();
+        clock.stop();
+        System.out.println(clock);
     }
 
 }

@@ -22,13 +22,8 @@
 
 package org.jquantlib.samples;
 
-import org.jquantlib.QL;
-import org.jquantlib.samples.util.StopClock;
-import org.jquantlib.time.Date;
-import org.jquantlib.time.Month;
-import org.jquantlib.time.Period;
-import org.jquantlib.time.TimeUnit;
-import org.jquantlib.time.Weekday;
+import org.apache.commons.lang3.time.StopWatch;
+import org.jquantlib.time.*;
 
 /**
  *
@@ -48,8 +43,7 @@ public class Dates implements Runnable {
 
         System.out.println("::::: " + this.getClass().getSimpleName() + " :::::");
 
-        final StopClock clock = new StopClock();
-        clock.startClock();
+        final StopWatch clock = StopWatch.createStarted();
 
         //Let's take todays date to explore the date interface
         final Date today = Date.todaysDate();
@@ -135,9 +129,8 @@ public class Dates implements Runnable {
         today.subAssign(1);
         System.out.println("Today's date dateToday has been updated to = "+today);
 
-        clock.stopClock();
-        clock.log();
-
+        clock.stop();
+        System.out.println(clock);
     }
 
 }

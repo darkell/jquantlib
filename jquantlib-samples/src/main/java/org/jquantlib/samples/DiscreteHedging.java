@@ -52,10 +52,10 @@
 
 package org.jquantlib.samples;
 
+import org.apache.commons.lang3.time.StopWatch;
 import org.jquantlib.QL;
 import org.jquantlib.instruments.Option;
 import org.jquantlib.samples.util.ReplicationError;
-import org.jquantlib.samples.util.StopClock;
 
 
 // FIXME :: This class needs code review ::
@@ -75,8 +75,7 @@ public class DiscreteHedging implements Runnable {
 
 		try {
 
-		    final StopClock clock = new StopClock();
-            clock.startClock();
+		    final StopWatch clock = StopWatch.createStarted();
 
 			/* @Time */			final Number maturity = new Double(1.0 / 12.0); // 1 month
 			/* @Real */	 	final Number strike = new Double(100);
@@ -96,8 +95,8 @@ public class DiscreteHedging implements Runnable {
 			hedgesNum = 84;
 			rp.compute(hedgesNum, scenarios);
 
-			clock.stopClock();
-			clock.log();
+			clock.stop();
+			System.out.println(clock);
 		}
 
 		catch(final Exception ex){

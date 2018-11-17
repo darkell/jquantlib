@@ -20,20 +20,15 @@ When applicable, the original copyright notice follows this notice.
  */
 package org.jquantlib.samples;
 
+import org.apache.commons.lang3.time.StopWatch;
+import org.jquantlib.time.*;
+import org.jquantlib.time.calendars.JointCalendar;
+import org.jquantlib.time.calendars.JointCalendar.JointCalendarRule;
+import org.jquantlib.time.calendars.UnitedStates;
+import org.jquantlib.time.calendars.UnitedStates.Market;
+
 import java.util.ArrayList;
 import java.util.List;
-
-import org.jquantlib.QL;
-import org.jquantlib.samples.util.StopClock;
-import org.jquantlib.time.BusinessDayConvention;
-import org.jquantlib.time.Calendar;
-import org.jquantlib.time.Date;
-import org.jquantlib.time.Period;
-import org.jquantlib.time.TimeUnit;
-import org.jquantlib.time.calendars.JointCalendar;
-import org.jquantlib.time.calendars.UnitedStates;
-import org.jquantlib.time.calendars.JointCalendar.JointCalendarRule;
-import org.jquantlib.time.calendars.UnitedStates.Market;
 
 /**
  * This class explores the functionalities provided by Calendar interface.
@@ -52,8 +47,7 @@ public class Calendars implements Runnable {
 
         System.out.println("::::: " + this.getClass().getSimpleName() + " :::::");
 
-        final StopClock clock = new StopClock();
-        clock.startClock();
+        final StopWatch clock = StopWatch.createStarted();
 
         // <=========================Basic Calendar functions==============================>
         //Let's take UnitedStates New-York-Stock-Exchange calendar
@@ -210,7 +204,7 @@ public class Calendars implements Runnable {
             System.out.println("Lists listOfHoliDays and holidayListObtainedUsingCalAPI of joint calendar are same");
         }
 
-        clock.stopClock();
-        clock.log();
+        clock.stop();
+        System.out.println(clock);
     }
 }
