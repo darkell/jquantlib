@@ -51,7 +51,7 @@ public class TaiwanCalendarTest {
 	private final List<Date> expectedHol = null;
 
 	public TaiwanCalendarTest() {
-		QL.info("::::: "+this.getClass().getSimpleName()+" :::::");
+		System.out.println("::::: "+this.getClass().getSimpleName()+" :::::");
 		this.exchange = new Taiwan(Taiwan.Market.TSEC);
 	}
 
@@ -61,7 +61,7 @@ public class TaiwanCalendarTest {
     public void testTaiwanTSEHolidaysYear2002()
     {
        	final int year = 2002;
-        QL.info("Testing " + exchange.name() + " holidays list for the year " + year + "...");
+        System.out.println("Testing " + exchange.name() + " holidays list for the year " + year + "...");
         
         final List<Date> expectedHol = new ArrayList<Date>();
 
@@ -86,7 +86,7 @@ public class TaiwanCalendarTest {
     public void testTaiwanTSEHolidaysYear2003()
     {
        	final int year = 2003;
-    	QL.info("Testing " + Taiwan.Market.TSEC + " holidays list for the year " + year + "...");
+    	System.out.println("Testing " + Taiwan.Market.TSEC + " holidays list for the year " + year + "...");
         
         final List<Date> expectedHol = new ArrayList<Date>();
 
@@ -112,7 +112,7 @@ public class TaiwanCalendarTest {
     public void testTaiwanTSEHolidaysYear2004()
     {
        	final int year = 2004;
-    	QL.info("Testing " + Taiwan.Market.TSEC + " holidays list for the year " + year + "...");
+    	System.out.println("Testing " + Taiwan.Market.TSEC + " holidays list for the year " + year + "...");
         
         final List<Date> expectedHol = new ArrayList<Date>();
 
@@ -134,7 +134,7 @@ public class TaiwanCalendarTest {
     public void testTaiwanTSEHolidaysYear2005()
     {
        	final int year = 2005;
-    	QL.info("Testing " + Taiwan.Market.TSEC + " holidays list for the year " + year + "...");
+    	System.out.println("Testing " + Taiwan.Market.TSEC + " holidays list for the year " + year + "...");
         
         final List<Date> expectedHol = new ArrayList<Date>();
 
@@ -159,7 +159,7 @@ public class TaiwanCalendarTest {
     public void testTaiwanTSEHolidaysYear2006()
     {
        	final int year = 2006;
-    	QL.info("Testing " + Taiwan.Market.TSEC + " holidays list for the year " + year + "...");
+    	System.out.println("Testing " + Taiwan.Market.TSEC + " holidays list for the year " + year + "...");
         
         final List<Date> expectedHol = new ArrayList<Date>();
 
@@ -185,7 +185,7 @@ public class TaiwanCalendarTest {
     public void testTaiwanTSEHolidaysYear2007()
     {
        	final int year = 2007;
-    	QL.info("Testing " + Taiwan.Market.TSEC + " holidays list for the year " + year + "...");
+    	System.out.println("Testing " + Taiwan.Market.TSEC + " holidays list for the year " + year + "...");
         
         final List<Date> expectedHol = new ArrayList<Date>();
 
@@ -215,7 +215,7 @@ public class TaiwanCalendarTest {
     public void testTaiwanTSEHolidaysYear2008()
     {
        	final int year = 2008;
-    	QL.info("Testing " + Taiwan.Market.TSEC + " holidays list for the year " + year + "...");
+    	System.out.println("Testing " + Taiwan.Market.TSEC + " holidays list for the year " + year + "...");
         
         final List<Date> expectedHol = new ArrayList<Date>();
 
@@ -241,7 +241,7 @@ public class TaiwanCalendarTest {
     public void testTaiwanTSEHolidaysYear2009()
     {
        	final int year = 2009;
-    	QL.info("Testing " + Taiwan.Market.TSEC + " holidays list for the year " + year + "...");
+    	System.out.println("Testing " + Taiwan.Market.TSEC + " holidays list for the year " + year + "...");
         
         final List<Date> expectedHol = new ArrayList<Date>();
 
@@ -258,7 +258,7 @@ public class TaiwanCalendarTest {
     public void testTaiwanTSEHolidaysYear2010()
     {
        	final int year = 2010;
-    	QL.info("Testing " + Taiwan.Market.TSEC + " holidays list for the year " + year + "...");
+    	System.out.println("Testing " + Taiwan.Market.TSEC + " holidays list for the year " + year + "...");
         
         final List<Date> expectedHol = new ArrayList<Date>();
 
@@ -274,7 +274,7 @@ public class TaiwanCalendarTest {
     public void testTaiwanTSEHolidaysYear2011()
     {
        	final int year = 2011;
-    	QL.info("Testing " + Taiwan.Market.TSEC + " holidays list for the year " + year + "...");
+    	System.out.println("Testing " + Taiwan.Market.TSEC + " holidays list for the year " + year + "...");
         
         final List<Date> expectedHol = new ArrayList<Date>();
 
@@ -291,7 +291,7 @@ public class TaiwanCalendarTest {
     public void testTaiwanTSEHolidaysYear2012()
     {
        	final int year = 2012;
-    	QL.info("Testing " + Taiwan.Market.TSEC + " holidays list for the year " + year + "...");
+    	System.out.println("Testing " + Taiwan.Market.TSEC + " holidays list for the year " + year + "...");
         
         final List<Date> expectedHol = new ArrayList<Date>();
 

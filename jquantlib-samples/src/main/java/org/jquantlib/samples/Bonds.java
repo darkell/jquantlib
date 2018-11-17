@@ -63,11 +63,11 @@ public class Bonds { //implements Runnable {
 
     public void run() {
 
-        QL.info("::::: " + this.getClass().getSimpleName() + " :::::");
+        System.out.println("::::: " + this.getClass().getSimpleName() + " :::::");
 
         final StopClock clock = new StopClock();
         clock.startClock();
-        QL.info("Started calculation at: " + clock.getElapsedTime());
+        System.out.println("Started calculation at: " + clock.getElapsedTime());
         /*********************
          *** MARKET DATA ***
          *********************/
@@ -85,8 +85,8 @@ public class Bonds { //implements Runnable {
         final Date todaysDate = calendar.advance(settlementDate, -fixingDays, TimeUnit.Days);
         new Settings().setEvaluationDate(todaysDate);
 
-        QL.info("Evaluation date: " + todaysDate.weekday() + ", " + todaysDate);
-        QL.info("Settlement date: " + settlementDate.weekday() + ", " + settlementDate);
+        System.out.println("Evaluation date: " + todaysDate.weekday() + ", " + todaysDate);
+        System.out.println("Settlement date: " + settlementDate.weekday() + ", " + settlementDate);
 
         // Building of the bonds discounting yield curve
 
@@ -543,7 +543,7 @@ public class Bonds { //implements Runnable {
          * BOND PRICING *
          ****************/
         
-        QL.info("Results:");
+        System.out.println("Results:");
         
          System.out.println("                 "
         		 + "  " +  "ZC"

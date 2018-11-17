@@ -55,7 +55,7 @@ public class IndonesiaCalendarTest {
     private Calendar c = null;
 
     public IndonesiaCalendarTest() {
-        QL.info("::::: " + this.getClass().getSimpleName() + " :::::");
+        System.out.println("::::: " + this.getClass().getSimpleName() + " :::::");
     }
 
     @Before
@@ -67,7 +67,7 @@ public class IndonesiaCalendarTest {
     @Test
     public void testIndonesiaYear2009() {
         final int year = 2009;
-        QL.info("Testing Indonesia's holiday list for the year " + year + "...");
+        System.out.println("Testing Indonesia's holiday list for the year " + year + "...");
         final List<Date> expectedHol = new Vector<Date>();
         // New Year
         expectedHol.add(new Date(1, January, year));
@@ -105,7 +105,7 @@ public class IndonesiaCalendarTest {
     @Test
     public void testIndonesiaYear2008() {
         final int year = 2008;
-        QL.info("Testing Indonesia's holiday list for the year " + year + "...");
+        System.out.println("Testing Indonesia's holiday list for the year " + year + "...");
         final List<Date> expectedHol = new Vector<Date>();
         // New Year
         expectedHol.add(new Date(1, January, year));
@@ -153,7 +153,7 @@ public class IndonesiaCalendarTest {
     @Test
     public void testIndonesiaYear2007() {
         final int year = 2007;
-        QL.info("Testing Indonesia's holiday list for the year " + year + "...");
+        System.out.println("Testing Indonesia's holiday list for the year " + year + "...");
         final List<Date> expectedHol = new Vector<Date>();
         // New Year
         expectedHol.add(new Date(1, January, year));
@@ -220,7 +220,7 @@ public class IndonesiaCalendarTest {
     @Test
     public void testIndonesiaYear2006() {
         final int year = 2006;
-        QL.info("Testing Indonesia's holiday list for the year " + year + "...");
+        System.out.println("Testing Indonesia's holiday list for the year " + year + "...");
         final List<Date> expectedHol = new Vector<Date>();
         // New Year -- weekend in yr 2006
         // expectedHol.add(new Date(1,JANUARY,year));
@@ -271,7 +271,7 @@ public class IndonesiaCalendarTest {
     @Test
     public void testIndonesiaYear2005() {
         final int year = 2005;
-        QL.info("Testing Indonesia's holiday list for the year " + year + "...");
+        System.out.println("Testing Indonesia's holiday list for the year " + year + "...");
         final List<Date> expectedHol = new Vector<Date>();
         // New Year -- weekend in yr 2005
         // expectedHol.add(new Date(1,JANUARY,year));

@@ -122,14 +122,14 @@ public class BondTest {
     }
 
     public BondTest() {
-		QL.info("::::: " + this.getClass().getSimpleName() + " :::::");
+		System.out.println("::::: " + this.getClass().getSimpleName() + " :::::");
 	}
 
 
 	@Ignore @Test
 	//FIXME: http://bugs.jquantlib.org/view.php?id=472
 	public void testYield() {
-		QL.info("Testing consistency of bond price/yield calculation....");
+		System.out.println("Testing consistency of bond price/yield calculation....");
 
         final Calendar calendar = new org.jquantlib.time.calendars.Target();
         final Date today = calendar.adjust(Date.todaysDate());
@@ -212,7 +212,7 @@ public class BondTest {
 
 	@Test
 	public void testTheoretical() {
-		QL.info("Testing theoretical bond price/yield calculation...");
+		System.out.println("Testing theoretical bond price/yield calculation...");
 
         final Calendar calendar = new org.jquantlib.time.calendars.Target();
         final Date today = calendar.adjust(Date.todaysDate());
@@ -301,7 +301,7 @@ public class BondTest {
 	@Test
 	public void testCached() {
 
-		QL.info("Testing bond price/yield calculation against cached values...");
+		System.out.println("Testing bond price/yield calculation against cached values...");
 
         //final Calendar calendar = new Target();
         // final Date today = calendar.adjust(Date.todaysDate());
@@ -503,7 +503,7 @@ public class BondTest {
 	@Test
 	public void testCachedZero() {
 
-	    QL.info("Testing zero-coupon bond prices against cached values...");
+	    System.out.println("Testing zero-coupon bond prices against cached values...");
 
         final Calendar calendar = new Target();
         final Date today = calendar.adjust(Date.todaysDate());
@@ -584,7 +584,7 @@ public class BondTest {
 	@Test
 	public void testCachedFixed() {
 
-	    QL.info("Testing fixed-coupon bond prices against cached values...");
+	    System.out.println("Testing fixed-coupon bond prices against cached values...");
 
         final Calendar calendar = new Target();
         final Date today = calendar.adjust(Date.todaysDate());
@@ -680,7 +680,7 @@ public class BondTest {
 	@Test
 	public void testCachedFloating() {
 
-	    QL.info("Testing floating-rate bond prices against cached values...");
+	    System.out.println("Testing floating-rate bond prices against cached values...");
 
 	    final CommonVars vars = new CommonVars();
 
@@ -789,7 +789,7 @@ public class BondTest {
 	@Test
 	public void testBrazilianCached() {
 
-	    QL.info("Testing Brazilian public bond prices against cached values...");
+	    System.out.println("Testing Brazilian public bond prices against cached values...");
 
         final Calendar calendar = new Target();
         // final Date today = calendar.adjust(Date.todaysDate());

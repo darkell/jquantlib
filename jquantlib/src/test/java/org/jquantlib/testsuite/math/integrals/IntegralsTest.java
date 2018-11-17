@@ -57,31 +57,31 @@ public class IntegralsTest {
 
     @Test
     public void testSegment() {
-        QL.info("Testing segment integration...");
+        System.out.println("Testing segment integration...");
         testSeveral(new SegmentIntegral(10000));
     }
 
     @Test
     public void testTrapezoid() {
-        QL.info("Testing trapezoid integration...");
+        System.out.println("Testing trapezoid integration...");
         testSeveral(new TrapezoidIntegral<TrapezoidIntegral.Default>(TrapezoidIntegral.Default.class, tolerance, 10000));
     }
 
     @Test
     public void testMidPointTrapezoid() {
-        QL.info("Testing mid-point trapezoid integration...");
+        System.out.println("Testing mid-point trapezoid integration...");
         testSeveral(new TrapezoidIntegral<TrapezoidIntegral.MidPoint>(TrapezoidIntegral.MidPoint.class, tolerance, 10000));
     }
 
     @Test
     public void testSimpson() {
-        QL.info("Testing Simpson integration...");
+        System.out.println("Testing Simpson integration...");
         testSeveral(new SimpsonIntegral(tolerance, 10000));
     }
 
     @Test
     public void testGaussKronrodAdaptive() {
-        QL.info("Testing adaptive Gauss-Kronrod integration...");
+        System.out.println("Testing adaptive Gauss-Kronrod integration...");
         final int maxEvaluations = 1000;
         testSeveral(new GaussKronrodAdaptive(tolerance, maxEvaluations));
     }
@@ -90,14 +90,14 @@ public class IntegralsTest {
 //TODO: http://bugs.jquantlib.org/view.php?id=453
 //    @Test
 //    public void testGaussLobatto() {
-//        QL.info("Testing adaptive Gauss-Lobatto integration...");
+//        System.out.println("Testing adaptive Gauss-Lobatto integration...");
 //        final int maxEvaluations = 1000;
 //        testSeveral(new GaussLobattoIntegral(maxEvaluations, tolerance));
 //    }
 
     @Test
     public void testGaussKronrodNonAdaptive() {
-        QL.info("Testing non-adaptive Gauss-Kronrod integration...");
+        System.out.println("Testing non-adaptive Gauss-Kronrod integration...");
         final double precision = tolerance;
         final int maxEvaluations = 100;
         final double relativeAccuracy = tolerance;

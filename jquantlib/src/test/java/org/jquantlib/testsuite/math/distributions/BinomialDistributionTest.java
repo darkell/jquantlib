@@ -35,7 +35,7 @@ import org.junit.Test;
 public class BinomialDistributionTest {
 
     public BinomialDistributionTest() {
-        QL.info("::::: "+this.getClass().getSimpleName()+" :::::");
+        System.out.println("::::: "+this.getClass().getSimpleName()+" :::::");
     }
 
     @Test

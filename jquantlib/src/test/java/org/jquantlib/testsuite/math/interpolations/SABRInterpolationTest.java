@@ -48,8 +48,7 @@ public class SABRInterpolationTest {
     @Ignore
     @Test
     public void testSABRInterpolationTest() {
-        QL.info("::::: " + this.getClass().getSimpleName() + " :::::");
-        QL.info("Testing SABR interpolation...");
+        System.out.println("Testing SABR interpolation...");
 
         // Test SABR function against input volatilities
         final double tolerance = 2.0e-13;

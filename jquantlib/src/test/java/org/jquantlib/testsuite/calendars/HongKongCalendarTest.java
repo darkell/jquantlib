@@ -48,7 +48,7 @@ import org.junit.Test;
 public class HongKongCalendarTest {
 
     public HongKongCalendarTest() {
-		QL.info("::::: "+this.getClass().getSimpleName()+" :::::");
+		System.out.println("::::: "+this.getClass().getSimpleName()+" :::::");
 	}
 
     // 2009 -- taken from Exchange website http://www.hkex.com.hk
@@ -68,7 +68,7 @@ public class HongKongCalendarTest {
 
 	@Test public void testHongKongYear2009() {
         final int year = 2009;
-        QL.info("Testing Hong Kong's holiday list for the year " + year + "...");
+        System.out.println("Testing Hong Kong's holiday list for the year " + year + "...");
 
         final Calendar c = new HongKong(HongKong.Market.HKEx);
         
@@ -113,7 +113,7 @@ public class HongKongCalendarTest {
 
 	@Test public void testHongKongYear2008() {
       	final int year = 2008;
-        QL.info("Testing Hong Kong's holiday list for the year " + year + "...");
+        System.out.println("Testing Hong Kong's holiday list for the year " + year + "...");
 
         final Calendar c = new HongKong(HongKong.Market.HKEx);
         
@@ -159,7 +159,7 @@ public class HongKongCalendarTest {
 
 	@Test public void testHongKongYear2007() {
         final int year = 2007;
-        QL.info("Testing Hong Kong's holiday list for the year " + year + "...");
+        System.out.println("Testing Hong Kong's holiday list for the year " + year + "...");
 
         final Calendar c = new HongKong(HongKong.Market.HKEx);
         
@@ -207,7 +207,7 @@ public class HongKongCalendarTest {
 
 	@Test public void testHongKongYear2006() {
         final int year = 2006;
-        QL.info("Testing Hong Kong's holiday list for the year " + year + "...");
+        System.out.println("Testing Hong Kong's holiday list for the year " + year + "...");
 
         final Calendar c = new HongKong(HongKong.Market.HKEx);
         
@@ -260,7 +260,7 @@ public class HongKongCalendarTest {
 
     @Test public void testHongKongYear2005() {
         final int year = 2005;
-        QL.info("Testing Hong Kong's holiday list for the year " + year + "...");
+        System.out.println("Testing Hong Kong's holiday list for the year " + year + "...");
 
         final Calendar c = new HongKong(HongKong.Market.HKEx);
         
@@ -318,7 +318,7 @@ public class HongKongCalendarTest {
 
     @Test public void testHongKongYear2004() {
         final int year = 2004;
-        QL.info("Testing Hong Kong's holiday list for the year " + year + "...");
+        System.out.println("Testing Hong Kong's holiday list for the year " + year + "...");
 
         final Calendar c = new HongKong(HongKong.Market.HKEx);
         

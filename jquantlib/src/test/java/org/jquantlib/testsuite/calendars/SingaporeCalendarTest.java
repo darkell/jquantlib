@@ -52,7 +52,7 @@ import org.junit.Test;
 public class SingaporeCalendarTest {
 
 	public SingaporeCalendarTest() {
-		QL.info("::::: "+this.getClass().getSimpleName()+" :::::");
+		System.out.println("::::: "+this.getClass().getSimpleName()+" :::::");
 	}
 
 	// 2004
@@ -60,7 +60,7 @@ public class SingaporeCalendarTest {
 	@Test
 	public void testSingaporeYear2004() {
       	final int year = 2004;
-      	QL.info("Testing Singapore's holiday list for the year " + year + "...");
+      	System.out.println("Testing Singapore's holiday list for the year " + year + "...");
 
         
       	final Calendar c = new Singapore(Singapore.Market.SGX);
@@ -108,7 +108,7 @@ public class SingaporeCalendarTest {
 	@Test
 	public void testSingaporeYear2005() {
       	final int year = 2005;
-      	QL.info("Testing Singapore's holiday list for the year " + year + "...");
+      	System.out.println("Testing Singapore's holiday list for the year " + year + "...");
 
         
       	final Calendar c = new Singapore(Singapore.Market.SGX);
@@ -153,7 +153,7 @@ public class SingaporeCalendarTest {
 	@Test
 	public void testSingaporeYear2006() {
       	final int year = 2006;
-      	QL.info("Testing Singapore's holiday list for the year " + year + "...");
+      	System.out.println("Testing Singapore's holiday list for the year " + year + "...");
 
         
       	final Calendar c = new Singapore(Singapore.Market.SGX);
@@ -214,7 +214,7 @@ public class SingaporeCalendarTest {
 	@Test
 	public void testSingaporeYear2007() {
       	final int year = 2007;
-      	QL.info("Testing Singapore's holiday list for the year " + year + "...");
+      	System.out.println("Testing Singapore's holiday list for the year " + year + "...");
 
         
       	final Calendar c = new Singapore(Singapore.Market.SGX);
@@ -278,7 +278,7 @@ public class SingaporeCalendarTest {
 	@Test
 	public void testSingaporeYear2008() {
       	final int year = 2008;
-      	QL.info("Testing Singapore's holiday list for the year " + year + "...");
+      	System.out.println("Testing Singapore's holiday list for the year " + year + "...");
 
         
       	final Calendar c = new Singapore(Singapore.Market.SGX);
@@ -340,7 +340,7 @@ public class SingaporeCalendarTest {
 	@Test
 	public void testSingaporeYear2009() {
       	final int year = 2009;
-      	QL.info("Testing Singapore's holiday list for the year " + year + "...");
+      	System.out.println("Testing Singapore's holiday list for the year " + year + "...");
 
         
       	final Calendar c = new Singapore(Singapore.Market.SGX);
@@ -387,7 +387,7 @@ public class SingaporeCalendarTest {
 //	@Test
 //	public void testSingaporeYear2010() {
 //      	final int year = 2010;
-//      	QL.info("Testing Singapore's holiday list for the year " + year + "...");
+//      	System.out.println("Testing Singapore's holiday list for the year " + year + "...");
 //
 //        
 //      	final Calendar c = Singapore.getCalendar(Singapore.Market.SGX);
@@ -409,7 +409,7 @@ public class SingaporeCalendarTest {
 //	@Test
 //	public void testSingaporeYear2011() {
 //      	final int year = 2011;
-//      	QL.info("Testing Singapore's holiday list for the year " + year + "...");
+//      	System.out.println("Testing Singapore's holiday list for the year " + year + "...");
 //
 //        
 //      	final Calendar c = Singapore.getCalendar(Singapore.Market.SGX);
@@ -428,7 +428,7 @@ public class SingaporeCalendarTest {
 //	@Test
 //	public void testSingaporeYear2012() {
 //      	final int year = 2012;
-//      	QL.info("Testing Singapore's holiday list for the year " + year + "...");
+//      	System.out.println("Testing Singapore's holiday list for the year " + year + "...");
 //
 //        
 //      	final Calendar c = Singapore.getCalendar(Singapore.Market.SGX);

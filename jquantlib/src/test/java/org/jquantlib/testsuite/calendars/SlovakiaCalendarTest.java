@@ -50,7 +50,7 @@ import org.junit.Test;
 public class SlovakiaCalendarTest {
 
 	public SlovakiaCalendarTest() {
-		QL.info("::::: "+this.getClass().getSimpleName()+" :::::");
+		System.out.println("::::: "+this.getClass().getSimpleName()+" :::::");
 	}
 
 
@@ -58,7 +58,7 @@ public class SlovakiaCalendarTest {
 	@Test
 	public void testSlovakiaYear2004() {
       	final int year = 2004;
-      	QL.info("Testing Solvakia's holiday list for the year " + year + "...");
+      	System.out.println("Testing Solvakia's holiday list for the year " + year + "...");
 
         
       	final Calendar c = new Slovakia(Slovakia.Market.BSSE);
@@ -124,7 +124,7 @@ public class SlovakiaCalendarTest {
 	@Test
 	public void testSlovakiaYear2005() {
       	final int year = 2005;
-      	QL.info("Testing Solvakia's holiday list for the year " + year + "...");
+      	System.out.println("Testing Solvakia's holiday list for the year " + year + "...");
 
         
       	final Calendar c = new Slovakia(Slovakia.Market.BSSE);
@@ -165,7 +165,7 @@ public class SlovakiaCalendarTest {
 	public void testSlovakiaYear2006() {
 
 		final int year = 2006;
-      	QL.info("Testing Solvakia's holiday list for the year " + year + "...");
+      	System.out.println("Testing Solvakia's holiday list for the year " + year + "...");
 
         
       	final Calendar c = new Slovakia(Slovakia.Market.BSSE);
@@ -232,7 +232,7 @@ public class SlovakiaCalendarTest {
 	public void testSlovakiaYear2007() {
 
 		final int year = 2007;
-      	QL.info("Testing Solvakia's holiday list for the year " + year + "...");
+      	System.out.println("Testing Solvakia's holiday list for the year " + year + "...");
 
         
       	final Calendar c = new Slovakia(Slovakia.Market.BSSE);
@@ -298,7 +298,7 @@ public class SlovakiaCalendarTest {
 	public void testSlovakiaYear2008() {
 
 		final int year = 2008;
-      	QL.info("Testing Solvakia's holiday list for the year " + year + "...");
+      	System.out.println("Testing Solvakia's holiday list for the year " + year + "...");
 
         
       	final Calendar c = new Slovakia(Slovakia.Market.BSSE);
@@ -338,7 +338,7 @@ public class SlovakiaCalendarTest {
 	public void testSlovakiaYear2009() {
 
 		final int year = 2009;
-      	QL.info("Testing Solvakia's holiday list for the year " + year + "...");
+      	System.out.println("Testing Solvakia's holiday list for the year " + year + "...");
 
         
       	final Calendar c = new Slovakia(Slovakia.Market.BSSE);
@@ -376,7 +376,7 @@ public class SlovakiaCalendarTest {
 	public void testSlovakiaYear2010() {
 
 		final int year = 2010;
-      	QL.info("Testing Solvakia's holiday list for the year " + year + "...");
+      	System.out.println("Testing Solvakia's holiday list for the year " + year + "...");
 
         
       	final Calendar c = new Slovakia(Slovakia.Market.BSSE);
@@ -414,7 +414,7 @@ public class SlovakiaCalendarTest {
 	public void testSlovakiaYear2011() {
 
 		final int year = 2011;
-      	QL.info("Testing Solvakia's holiday list for the year " + year + "...");
+      	System.out.println("Testing Solvakia's holiday list for the year " + year + "...");
 
         
       	final Calendar c = new Slovakia(Slovakia.Market.BSSE);
@@ -453,7 +453,7 @@ public class SlovakiaCalendarTest {
 	public void testSlovakiaYear2012() {
 
 		final int year = 2012;
-      	QL.info("Testing Solvakia's holiday list for the year " + year + "...");
+      	System.out.println("Testing Solvakia's holiday list for the year " + year + "...");
 
         
       	final Calendar c = new Slovakia(Slovakia.Market.BSSE);

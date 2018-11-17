@@ -54,6 +54,8 @@ import org.jquantlib.time.DateGeneration;
 import org.jquantlib.time.Frequency;
 import org.jquantlib.time.Period;
 import org.jquantlib.time.Schedule;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 
 /**
@@ -66,6 +68,8 @@ import org.jquantlib.time.Schedule;
  */
 //TEST: calculations are tested by checking results against cached values.
 public class FloatingRateBond extends Bond {
+	private static final Logger LOG = LoggerFactory.getLogger(FloatingRateBond.class);
+
 	public FloatingRateBond(
 	        final int settlementDays,
 			final double faceAmount,
@@ -155,10 +159,10 @@ public class FloatingRateBond extends Bond {
 			case ThirdWednesday:
 			case Twentieth:
 			case TwentiethIMM:
-				QL.error("stub date (" + stubDate + ") not allowed with " +
+				LOG.error("stub date (" + stubDate + ") not allowed with " +
 					rule + " DateGeneration::Rule");
 			default:
-			QL.error("unknown DateGeneration::Rule (" + rule + ")");
+				LOG.error("unknown DateGeneration::Rule (" + rule + ")");
 		}
 
 		Schedule schedule = new Schedule(startDate, maturityDate_, new Period(couponFrequency),

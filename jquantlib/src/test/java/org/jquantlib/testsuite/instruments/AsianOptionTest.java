@@ -82,14 +82,14 @@ import org.junit.Test;
 public class AsianOptionTest {
 
     public AsianOptionTest() {
-        QL.info("::::: " + this.getClass().getSimpleName() + " :::::");
+        System.out.println("::::: " + this.getClass().getSimpleName() + " :::::");
     }
 
 
     @Test
     public void testAnalyticDiscreteGeometricAverage() {
 
-        QL.info("Testing analytic discrete geometric average-price Asians...");
+        System.out.println("Testing analytic discrete geometric average-price Asians...");
 
         // data from "Implementing Derivatives Model",
         // Clewlow, Strickland, p.118-123
@@ -98,7 +98,7 @@ public class AsianOptionTest {
 
         final DayCounter dc = new Actual360();
 
-        QL.info("Today: " + today);
+        System.out.println("Today: " + today);
 
         final SimpleQuote spot = new SimpleQuote(100.0);
         final SimpleQuote qRate = new SimpleQuote(0.03);
@@ -124,9 +124,9 @@ public class AsianOptionTest {
         final Date exerciseDate = today.clone().addAssign(360);
         final Exercise exercise = new EuropeanExercise(exerciseDate);
 
-        QL.info("Exercise: " + exerciseDate);
-        QL.info("Df: " + rTS.discount(exerciseDate));
-        QL.info("DivDf: " + qTS.discount(exerciseDate));
+        System.out.println("Exercise: " + exerciseDate);
+        System.out.println("Df: " + rTS.discount(exerciseDate));
+        System.out.println("DivDf: " + qTS.discount(exerciseDate));
 
         final List<Date> fixingDates = new ArrayList<Date>(futureFixings);
         final int dt = (int) (360.0 / (futureFixings) + 0.5);
@@ -136,9 +136,9 @@ public class AsianOptionTest {
             fixingDates.add(prevDate.clone().addAssign(dt));
         }
 
-        QL.info("Average Dates:\n");
+        System.out.println("Average Dates:\n");
         for (final Date d : fixingDates) {
-            QL.info(d.toString());
+            System.out.println(d.toString());
         }
 
         final DiscreteAveragingAsianOption option = new DiscreteAveragingAsianOption(
@@ -159,7 +159,7 @@ public class AsianOptionTest {
     @Test
     public void testAnalyticDiscreteGeometricAveragePriceGreeks() {
 
-        QL.info("Testing discrete-averaging geometric Asian greeks...");
+        System.out.println("Testing discrete-averaging geometric Asian greeks...");
 
         final Map<String, Double> tolerance = new HashMap<String, Double>();
         tolerance.put("delta", 1.0e-5);
@@ -315,13 +315,13 @@ public class AsianOptionTest {
 
     @Test
     public void testAnalyticContinuousGeometricAveragePrice() {
-        QL.info("Testing analytic continuous geometric average-price Asians...");
+        System.out.println("Testing analytic continuous geometric average-price Asians...");
         final DayCounter dc = new Actual360();
         // data from "Option Pricing Formulas", Haug, pag.96-97
 
         final Date today = new Settings().evaluationDate();
 
-        QL.info("Today: " + today);
+        System.out.println("Today: " + today);
 
         final SimpleQuote           spot  = new SimpleQuote(80.0);
         final SimpleQuote           qRate = new SimpleQuote(-0.03);
@@ -386,7 +386,7 @@ public class AsianOptionTest {
 
     @Test
     public void testAnalyticContinuousGeometricAveragePriceGreeks() {
-        QL.info("Testing analytic continuous geometric average-price Asian greeks...");
+        System.out.println("Testing analytic continuous geometric average-price Asian greeks...");
 
         final Map<String, /* @Real */Double> tolerance = new HashMap<String, Double>();
         tolerance.put("delta", 1.0e-5);

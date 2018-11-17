@@ -39,7 +39,7 @@ import org.jquantlib.time.Date;
 public class OldPricer {
 
     public OldPricer() {
-        QL.info("::::: "+this.getClass().getSimpleName()+" :::::");
+        System.out.println("::::: "+this.getClass().getSimpleName()+" :::::");
     }
 
     private static class BatchData {
@@ -75,7 +75,7 @@ public class OldPricer {
 
     /* @Test public*/ void testMcSingleFactorPricers() {
 
-        QL.info("Testing old-style Monte Carlo single-factor pricers...");
+        System.out.println("Testing old-style Monte Carlo single-factor pricers...");
 
         final DayCounter dc = new Actual360();
         final long seed = 3456789;

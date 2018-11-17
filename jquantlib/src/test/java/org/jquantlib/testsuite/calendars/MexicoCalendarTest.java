@@ -36,7 +36,7 @@ public class MexicoCalendarTest {
 //    @Test
 //    public void testMexicoSettlementYear2004() {
 //        final int year = 2004;
-//        QL.info("Testing Mexican Settlement holiday list for the year " + year + "...");
+//        System.out.println("Testing Mexican Settlement holiday list for the year " + year + "...");
 //
 //        expectedHol.add(new Date( 1, JANUARY, year));
 //        expectedHol.add(new Date( 2, FEBRUARY, year));
@@ -55,7 +55,7 @@ public class MexicoCalendarTest {
 //    @Test
 //    public void testMexicoSettlementYear2005() {
 //        final int year = 2005;
-//        QL.info("Testing Mexican Settlement holiday list for the year " + year + "...");
+//        System.out.println("Testing Mexican Settlement holiday list for the year " + year + "...");
 //
 //        expectedHol.add(new Date( 7, FEBRUARY, year));
 //        expectedHol.add(new Date(21, MARCH, year));
@@ -76,7 +76,7 @@ public class MexicoCalendarTest {
 //    @Test
 //    public void testMexicoSettlementYear2006() {
 //        final int year = 2006;
-//        QL.info("Testing Mexican Settlement holiday list for the year " + year + "...");
+//        System.out.println("Testing Mexican Settlement holiday list for the year " + year + "...");
 //
 //        expectedHol.add(new Date( 6, FEBRUARY, year));
 //        expectedHol.add(new Date(21, MARCH, year));
@@ -97,7 +97,7 @@ public class MexicoCalendarTest {
 //    @Test
 //    public void testMexicoSettlementYear2007() {
 //        final int year = 2007;
-//        QL.info("Testing Mexican Settlement holiday list for the year " + year + "...");
+//        System.out.println("Testing Mexican Settlement holiday list for the year " + year + "...");
 //
 //        expectedHol.add(new Date( 1, JANUARY, year));
 //        expectedHol.add(new Date( 5, FEBRUARY, year));
@@ -120,7 +120,7 @@ public class MexicoCalendarTest {
 //    @Test
 //    public void testMexicoSettlementYear2008() {
 //        final int year = 2008;
-//        QL.info("Testing Mexican Settlement holiday list for the year " + year + "...");
+//        System.out.println("Testing Mexican Settlement holiday list for the year " + year + "...");
 //
 //        expectedHol.add(new Date( 1, JANUARY, year));
 //        expectedHol.add(new Date( 4, FEBRUARY, year));
@@ -141,7 +141,7 @@ public class MexicoCalendarTest {
 //    @Test
 //    public void testMexicoSettlementYear2009() {
 //        final int year = 2009;
-//        QL.info("Testing Mexican Settlement holiday list for the year " + year + "...");
+//        System.out.println("Testing Mexican Settlement holiday list for the year " + year + "...");
 //
 //        expectedHol.add(new Date( 1, JANUARY, year));
 //        expectedHol.add(new Date( 2, FEBRUARY, year));
@@ -162,7 +162,7 @@ public class MexicoCalendarTest {
 //    @Test
 //    public void testMexicoSettlementYear2010() {
 //        final int year = 2010;
-//        QL.info("Testing Mexican Settlement holiday list for the year " + year + "...");
+//        System.out.println("Testing Mexican Settlement holiday list for the year " + year + "...");
 //
 //        expectedHol.add(new Date( 1, JANUARY, year));
 //        expectedHol.add(new Date( 1, FEBRUARY, year));
@@ -181,7 +181,7 @@ public class MexicoCalendarTest {
 //    @Test
 //    public void testMexicoSettlementYear2011() {
 //        final int year = 2011;
-//        QL.info("Testing Mexican Settlement holiday list for the year " + year + "...");
+//        System.out.println("Testing Mexican Settlement holiday list for the year " + year + "...");
 //
 //        expectedHol.add(new Date( 7, FEBRUARY, year));
 //        expectedHol.add(new Date(21, MARCH, year));
@@ -201,7 +201,7 @@ public class MexicoCalendarTest {
 //    @Test
 //    public void testMexicoSettlementYear2012() {
 //        final int year = 2012;
-//        QL.info("Testing Mexican Settlement holiday list for the year " + year + "...");
+//        System.out.println("Testing Mexican Settlement holiday list for the year " + year + "...");
 //
 //        expectedHol.add(new Date( 6, FEBRUARY, year));
 //        expectedHol.add(new Date(21, MARCH, year));
@@ -223,7 +223,7 @@ public class MexicoCalendarTest {
     @Test
     public void testMexicoBVMYear2004() {
         final int year = 2004;
-        QL.info("Testing Mexican BVM holiday list for the year " + year + "...");
+        System.out.println("Testing Mexican BVM holiday list for the year " + year + "...");
 
 		expectedHol.add(new Date( 1, January, year));
         expectedHol.add(new Date( 5, February, year));//Zahid:Changed from 2 to 5
@@ -242,7 +242,7 @@ public class MexicoCalendarTest {
     @Test
     public void testMexicoBVMYear2005() {
         final int year = 2005;
-        QL.info("Testing Mexican BVM holiday list for the year " + year + "...");
+        System.out.println("Testing Mexican BVM holiday list for the year " + year + "...");
 
 //        expectedHol.add(new Date( 5, FEBRUARY, year)); //Changed from 7 to 5, it Sat
         expectedHol.add(new Date(21, March, year));
@@ -263,7 +263,7 @@ public class MexicoCalendarTest {
     @Test
     public void testMexicoBVMYear2006() {
         final int year = 2006;
-        QL.info("Testing Mexican BVM holiday list for the year " + year + "...");
+        System.out.println("Testing Mexican BVM holiday list for the year " + year + "...");
 
 //        expectedHol.add(new Date( 5, FEBRUARY, year));//Zahid: Changed from 6 to 5, it is Sun
         expectedHol.add(new Date(21, March, year));
@@ -300,7 +300,7 @@ public class MexicoCalendarTest {
     @Test
     public void testMexicoBVMYear2007() {
         final int year = 2007;
-        QL.info("Testing Mexican BVM holiday list for the year " + year + "...");
+        System.out.println("Testing Mexican BVM holiday list for the year " + year + "...");
 
         expectedHol.add(new Date( 1, January, year));
         expectedHol.add(new Date( 5, February, year));
@@ -323,7 +323,7 @@ public class MexicoCalendarTest {
     @Test
     public void testMexicoBVMYear2008() {
         final int year = 2008;
-        QL.info("Testing Mexican BVM holiday list for the year " + year + "...");
+        System.out.println("Testing Mexican BVM holiday list for the year " + year + "...");
 
         expectedHol.add(new Date( 1, January, year));
         expectedHol.add(new Date( 5, February, year));// Changed from 4 to 5
@@ -343,7 +343,7 @@ public class MexicoCalendarTest {
     @Test
     public void testMexicoBVMYear2009() {
         final int year = 2009;
-        QL.info("Testing Mexican BVM holiday list for the year " + year + "...");
+        System.out.println("Testing Mexican BVM holiday list for the year " + year + "...");
 
         expectedHol.add(new Date( 1, January, year));
         expectedHol.add(new Date( 5, February, year)); //Zahid Changed from 2 to 5
@@ -364,7 +364,7 @@ public class MexicoCalendarTest {
     @Test
     public void testMexicoBVMYear2010() {
         final int year = 2010;
-        QL.info("Testing Mexican BVM holiday list for the year " + year + "...");
+        System.out.println("Testing Mexican BVM holiday list for the year " + year + "...");
 
         expectedHol.add(new Date( 1, January, year));
         expectedHol.add(new Date( 5, February, year)); //Changed from 1 to 5
@@ -383,7 +383,7 @@ public class MexicoCalendarTest {
     @Test
     public void testMexicoBVMYear2011() {
         final int year = 2011;
-        QL.info("Testing Mexican BVM holiday list for the year " + year + "...");
+        System.out.println("Testing Mexican BVM holiday list for the year " + year + "...");
 
 //        expectedHol.add(new Date( 5, FEBRUARY, year)); //Changed from 7 to 5, it is Saturday
         expectedHol.add(new Date(21, March, year));
@@ -403,7 +403,7 @@ public class MexicoCalendarTest {
     @Test
     public void testMexicoBVMYear2012() {
         final int year = 2012;
-        QL.info("Testing Mexican BVM holiday list for the year " + year + "...");
+        System.out.println("Testing Mexican BVM holiday list for the year " + year + "...");
 
 //        expectedHol.add(new Date( 5, FEBRUARY, year));//Changed from 6 to 5, it is Sunday
         expectedHol.add(new Date(21, March, year));

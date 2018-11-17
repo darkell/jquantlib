@@ -101,7 +101,7 @@ public class EquityOptions implements Runnable {
     @Override
     public void run() {
 
-        QL.info("::::: " + this.getClass().getSimpleName() + " :::::");
+        System.out.println("::::: " + this.getClass().getSimpleName() + " :::::");
 
         final StopClock clock = new StopClock();
         clock.startClock();

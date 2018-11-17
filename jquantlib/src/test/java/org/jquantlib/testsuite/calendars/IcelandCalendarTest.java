@@ -27,7 +27,7 @@ public class IcelandCalendarTest {
     private final Calendar exchange;
 
 	public IcelandCalendarTest() {
-		QL.info("::::: "+this.getClass().getSimpleName()+" :::::");
+		System.out.println("::::: "+this.getClass().getSimpleName()+" :::::");
 	    //TODO: this.settlement = Iceland.getCalendar(Iceland.Market.Settlement);
 	    this.exchange   = new Iceland(Iceland.Market.ICEX);
 	}
@@ -36,7 +36,7 @@ public class IcelandCalendarTest {
     @Test
     public void testIcelandYear2004() {
         final int year = 2004;
-    	QL.info("Testing " + Iceland.Market.ICEX + " holidays list for the year " + year + "...");
+    	System.out.println("Testing " + Iceland.Market.ICEX + " holidays list for the year " + year + "...");
         
     	final List<Date> expectedHol = new ArrayList<Date>();
 
@@ -58,7 +58,7 @@ public class IcelandCalendarTest {
     @Test
     public void testIcelandYear2005() {
         final int year = 2005;
-    	QL.info("Testing " + Iceland.Market.ICEX + " holidays list for the year " + year + "...");
+    	System.out.println("Testing " + Iceland.Market.ICEX + " holidays list for the year " + year + "...");
         
     	final List<Date> expectedHol = new ArrayList<Date>();
 
@@ -81,7 +81,7 @@ public class IcelandCalendarTest {
     @Test
     public void testIcelandYear2006() {
         final int year = 2006;
-    	QL.info("Testing " + Iceland.Market.ICEX + " holidays list for the year " + year + "...");
+    	System.out.println("Testing " + Iceland.Market.ICEX + " holidays list for the year " + year + "...");
         
     	final List<Date> expectedHol = new ArrayList<Date>();
 
@@ -105,7 +105,7 @@ public class IcelandCalendarTest {
     @Test
     public void testIcelandYear2007() {
         final int year = 2007;
-    	QL.info("Testing " + Iceland.Market.ICEX + " holidays list for the year " + year + "...");
+    	System.out.println("Testing " + Iceland.Market.ICEX + " holidays list for the year " + year + "...");
         
     	final List<Date> expectedHol = new ArrayList<Date>();
 
@@ -130,7 +130,7 @@ public class IcelandCalendarTest {
     @Test
     public void testIcelandYear2008() {
         final int year = 2008;
-    	QL.info("Testing " + Iceland.Market.ICEX + " holidays list for the year " + year + "...");
+    	System.out.println("Testing " + Iceland.Market.ICEX + " holidays list for the year " + year + "...");
         
     	final List<Date> expectedHol = new ArrayList<Date>();
 
@@ -154,7 +154,7 @@ public class IcelandCalendarTest {
     @Test
     public void testIcelandYear2009() {
         final int year = 2009;
-    	QL.info("Testing " + Iceland.Market.ICEX + " holidays list for the year " + year + "...");
+    	System.out.println("Testing " + Iceland.Market.ICEX + " holidays list for the year " + year + "...");
         
     	final List<Date> expectedHol = new ArrayList<Date>();
 
@@ -178,7 +178,7 @@ public class IcelandCalendarTest {
     @Test
     public void testIcelandYear2010() {
         final int year = 2010;
-    	QL.info("Testing " + Iceland.Market.ICEX + " holidays list for the year " + year + "...");
+    	System.out.println("Testing " + Iceland.Market.ICEX + " holidays list for the year " + year + "...");
         
     	final List<Date> expectedHol = new ArrayList<Date>();
 
@@ -200,7 +200,7 @@ public class IcelandCalendarTest {
     @Test
     public void testIcelandYear2011() {
         final int year = 2011;
-    	QL.info("Testing " + Iceland.Market.ICEX + " holidays list for the year " + year + "...");
+    	System.out.println("Testing " + Iceland.Market.ICEX + " holidays list for the year " + year + "...");
         
     	final List<Date> expectedHol = new ArrayList<Date>();
 
@@ -222,7 +222,7 @@ public class IcelandCalendarTest {
     @Test
     public void testIcelandYear2012() {
         final int year = 2012;
-    	QL.info("Testing " + Iceland.Market.ICEX + " holidays list for the year " + year + "...");
+    	System.out.println("Testing " + Iceland.Market.ICEX + " holidays list for the year " + year + "...");
         
     	final List<Date> expectedHol = new ArrayList<Date>();
 

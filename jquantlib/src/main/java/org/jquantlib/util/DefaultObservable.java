@@ -27,6 +27,8 @@ import java.util.List;
 import java.util.concurrent.CopyOnWriteArrayList;
 
 import org.jquantlib.QL;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 
 // --------------------------------------------------------
@@ -54,6 +56,7 @@ import org.jquantlib.QL;
  * @author Srinivas Hasti
  */
 public class DefaultObservable implements Observable {
+    private static final Logger LOG = LoggerFactory.getLogger(DefaultObservable.class);
 
     final private static String OBSERVABLE_IS_NULL = "observable is null";
     final private static String CANNOT_NOTIFY_OBSERVERS = "could not notify one or more observers";
@@ -126,7 +129,9 @@ public class DefaultObservable implements Observable {
                 exception = e;
             }
         }
-        if (exception!=null) QL.error(DefaultObservable.CANNOT_NOTIFY_OBSERVERS, exception);
+        if (exception != null) {
+            LOG.error(DefaultObservable.CANNOT_NOTIFY_OBSERVERS, exception);
+        }
     }
 
     //

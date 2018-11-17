@@ -25,6 +25,8 @@ import java.util.Set;
 import org.jquantlib.QL;
 import org.jquantlib.lang.exceptions.LibraryException;
 import org.jquantlib.math.matrixutilities.internal.Address;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 /**
  * This class provides efficient basement for matrix operations by mapping matrices onto
@@ -37,6 +39,7 @@ import org.jquantlib.math.matrixutilities.internal.Address;
  * @author Richard Gomes
  */
 public abstract class Cells<T extends Address> implements Cloneable {
+    private static Logger LOG = LoggerFactory.getLogger(Cells.class);
 
     //
     // private final static fields :: error messages
@@ -181,7 +184,7 @@ public abstract class Cells<T extends Address> implements Cloneable {
         if (required.contains(Address.Flags.FORTRAN) != addr.isFortran()) {
             final String name = (variable==null) ? "variable" : (this.getClass().getSimpleName() + " " + variable);
             final String message = String.format(FORTRAN_ADDRESSING_EXPECTED, name);
-            QL.error(String.format(FORTRAN_ADDRESSING_EXPECTED, name));
+            LOG.error(String.format(FORTRAN_ADDRESSING_EXPECTED, name));
         }
     }
 

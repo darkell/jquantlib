@@ -55,19 +55,12 @@ import org.junit.Test;
  **/
 public class InterpolationTest {
 
-	public InterpolationTest() {
-		QL.info("::::: "+this.getClass().getSimpleName()+" :::::");
-	}
-
-
     @Test
     public void testAsFunctor() {
 
         final class NotThrown extends RuntimeException {
             // nothing
         }
-
-        QL.info("Testing use of interpolations as functors...");
 
         final Array x = new Array(new double[] { 0.0, 1.0, 2.0, 3.0, 4.0 });
         final Array y = new Array(new double[] { 5.0, 4.0, 3.0, 2.0, 1.0 });
@@ -110,9 +103,6 @@ public class InterpolationTest {
 
     @Test
     public void testBackwardFlat() {
-
-        QL.info("Testing backward-flat interpolation...");
-
         final Array x = new Array(new double[] { 0.0, 1.0, 2.0, 3.0, 4.0 });
         final Array y = new Array(new double[] { 5.0, 4.0, 3.0, 2.0, 1.0 });
 
@@ -213,9 +203,6 @@ public class InterpolationTest {
 
     @Test
     public void testSplineOnGenericValues() {
-
-        QL.info("Testing spline interpolation on generic values...");
-
         final Array generic_x = new Array(new double[]{ 0.0, 1.0, 3.0, 4.0 });
         final Array generic_y = new Array(new double[]{ 0.0, 0.0, 2.0, 2.0 });
         final Array generic_natural_y2 = new Array(new double[]{ 0.0, 1.5, -1.5, 0.0 });
@@ -287,9 +274,6 @@ public class InterpolationTest {
 
     @Test
     public void testSimmetricEndConditions() {
-
-        QL.info("Testing symmetry of spline interpolation end-conditions...");
-
         final int n = 9;
 
         final Array x = xRange(-1.8, 1.8, n);
@@ -323,9 +307,6 @@ public class InterpolationTest {
 
     @Test
     public void testForwardFlat() {
-
-        QL.info("Testing forward-flat interpolation...");
-
         final Array x = new Array(new double[] { 0.0, 1.0, 2.0, 3.0, 4.0 });
         final Array y = new Array(new double[] { 5.0, 4.0, 3.0, 2.0, 1.0 });
 
@@ -423,8 +404,6 @@ public class InterpolationTest {
     @Ignore
     @Test
     public void testMultiSpline() {
-        QL.info("Testing N-dimensional cubic spline...");
-
         final int dim[] = new int[] {6, 5, 5, 6, 4};
         final double offsets[] = new double[] {1.005, 14.0, 33.005, 35.025, 19.025};
         final double args[] = new double[] {
@@ -572,9 +551,6 @@ public class InterpolationTest {
 
     @Test
     public void testDerivativeEndConditions() {
-
-        QL.info("Testing derivative end-conditions for spline interpolation...");
-
         final int n = 4;
         final Array x = xRange(-2.0, 2.0, n);
         final Array y = parabolic(x);
@@ -681,9 +657,6 @@ public class InterpolationTest {
 
     @Test
 	public void testSplineErrorOnGaussianValues(){
-	    //System.setProperty("EXPERIMENTAL", "true");
-		QL.info("Testing spline approximation on Gaussian data sets...");
-
 	    final int points[]                 = {      5,      9,     17,     33 };
 
 	    // complete spline data from the original 1983 Hyman paper
@@ -746,9 +719,6 @@ public class InterpolationTest {
 
 	@Test
 	public void testSplineOnRPN15AValues(){
-
-		QL.info("Testing Clamped spline interpolation on RPN15A data set...");
-
 		final Array RPN15A_x = new Array(new double[] { 7.99, 8.09, 8.19, 8.7, 9.2, 10.0, 12.0, 15.0, 20.0 });
 		final Array RPN15A_y = new Array(new double[] { 0.0, 2.76429e-5, 4.37498e-5, 0.169183, 0.469428, 0.943740, 0.998636, 0.999919, 0.999994 });
 
@@ -881,9 +851,6 @@ public class InterpolationTest {
 
 	@Test
 	public void testSplineOnGaussianValues(){
-
-	    QL.info("Testing spline interpolation on a Gaussian data set...");
-
         double interpolated, interpolated2;
         final int n = 5;
 
@@ -939,7 +906,7 @@ public class InterpolationTest {
         }
 
 
-        QL.info("Testing spline interpolation on a Gaussian data set...");
+        System.out.println("Testing spline interpolation on a Gaussian data set...");
 
         for (double start = -1.9, j=0; j<2; start+=0.2, j++) {
             x = xRange(start, start+3.6, n);
@@ -1041,7 +1008,7 @@ public class InterpolationTest {
     @Test
     public void testSabrInterpolation(){
 
-        QL.info("Testing Sabr interpolation...");
+        System.out.println("Testing Sabr interpolation...");
 
         // Test SABR function against input volatilities
         final double tolerance = 2.0e-13;

@@ -34,7 +34,7 @@ import org.junit.Test;
 public class NonCentralChiSquaredDistributionTest {
 
 	public NonCentralChiSquaredDistributionTest() {
-		QL.info("::::: "+this.getClass().getSimpleName()+" :::::");
+		System.out.println("::::: "+this.getClass().getSimpleName()+" :::::");
 	}
 
 	@Test

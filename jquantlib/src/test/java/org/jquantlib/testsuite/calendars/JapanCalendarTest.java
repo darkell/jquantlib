@@ -47,7 +47,7 @@ public class JapanCalendarTest {
     private final Calendar settlement;
 
     public JapanCalendarTest() {
-		QL.info("::::: "+this.getClass().getSimpleName()+" :::::");
+		System.out.println("::::: "+this.getClass().getSimpleName()+" :::::");
 	    this.settlement = new Japan();
 	}
 
@@ -77,7 +77,7 @@ public class JapanCalendarTest {
 
     @Test public void testJapanYear2012() {
         final int year = 2012;
-        QL.info("Testing Japan's holiday list for the year " + year + "...");
+        System.out.println("Testing Japan's holiday list for the year " + year + "...");
         
     	final List<Date> expectedHol = new ArrayList<Date>();
 
@@ -131,7 +131,7 @@ public class JapanCalendarTest {
 
     @Test public void testJapanYear2011() {
         final int year = 2011;
-        QL.info("Testing Japan's holiday list for the year " + year + "...");
+        System.out.println("Testing Japan's holiday list for the year " + year + "...");
         
     	final List<Date> expectedHol = new ArrayList<Date>();
 
@@ -183,7 +183,7 @@ public class JapanCalendarTest {
 
     @Test public void testJapanYear2010() {
         final int year = 2010;
-        QL.info("Testing Japan's holiday list for the year " + year + "...");
+        System.out.println("Testing Japan's holiday list for the year " + year + "...");
         
     	final List<Date> expectedHol = new ArrayList<Date>();
 
@@ -235,7 +235,7 @@ public class JapanCalendarTest {
 
 	@Test public void testJapanYear2009() {
         final int year = 2009;
-        QL.info("Testing Japan's holiday list for the year " + year + "...");
+        System.out.println("Testing Japan's holiday list for the year " + year + "...");
         
     	final List<Date> expectedHol = new ArrayList<Date>();
 
@@ -289,7 +289,7 @@ public class JapanCalendarTest {
 
 	@Test public void testJapanYear2008() {
         final int year = 2008;
-        QL.info("Testing Japan's holiday list for the year " + year + "...");
+        System.out.println("Testing Japan's holiday list for the year " + year + "...");
         
     	final List<Date> expectedHol = new ArrayList<Date>();
 
@@ -341,7 +341,7 @@ public class JapanCalendarTest {
 
 	@Test public void testJapanYear2007() {
         final int year = 2007;
-        QL.info("Testing Japan's holiday list for the year " + year + "...");
+        System.out.println("Testing Japan's holiday list for the year " + year + "...");
         
     	final List<Date> expectedHol = new ArrayList<Date>();
 
@@ -392,7 +392,7 @@ public class JapanCalendarTest {
 
 	@Test public void testJapanYear2006() {
         final int year = 2006;
-        QL.info("Testing Japan's holiday list for the year " + year + "...");
+        System.out.println("Testing Japan's holiday list for the year " + year + "...");
         
     	final List<Date> expectedHol = new ArrayList<Date>();
 
@@ -443,7 +443,7 @@ public class JapanCalendarTest {
 
     @Test public void testJapanYear2005() {
         final int year = 2005;
-        QL.info("Testing Japan's holiday list for the year " + year + "...");
+        System.out.println("Testing Japan's holiday list for the year " + year + "...");
         
     	final List<Date> expectedHol = new ArrayList<Date>();
 
@@ -494,7 +494,7 @@ public class JapanCalendarTest {
 
     @Test public void testJapanYear2004() {
         final int year = 2004;
-        QL.info("Testing Japan's holiday list for the year " + year + "...");
+        System.out.println("Testing Japan's holiday list for the year " + year + "...");
         
     	final List<Date> expectedHol = new ArrayList<Date>();
 

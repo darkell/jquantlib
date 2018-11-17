@@ -67,27 +67,27 @@ public class StatisticsTest {
     
 
     public StatisticsTest() {
-        QL.info("Testing volatility model construction...");
+        System.out.println("Testing volatility model construction...");
         this.data    = new Array(new double[] { 3.0, 4.0, 5.0, 2.0, 3.0, 4.0, 5.0, 6.0, 4.0, 7.0 });
         this.weights = new Array(new double[] { 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0 });
     }
 
     @Test
     public void testStatistics() {
-        QL.info("Testing statistics ...");
+        System.out.println("Testing statistics ...");
         check(new RiskStatistics(), "Statistics");
     }
 
     @Test
     public void testIncrementalStatistics() {
-        QL.info("Testing incremental statistics ...");
+        System.out.println("Testing incremental statistics ...");
         check(new IncrementalStatistics(), "IncrementalStatistics");
     }
 
     
     @Test
     public void testSequenceStatistics() {
-        QL.info("Testing sequence statistics ...");
+        System.out.println("Testing sequence statistics ...");
         checkSequence(new RiskStatistics(), "Statistics", 5);
         checkSequence(new IncrementalStatistics(), "IncrementalStatistics", 5);
     }
@@ -95,7 +95,7 @@ public class StatisticsTest {
     
     @Test
     public void testConvergenceStatistics() {
-        QL.info("Testing convergence statistics ...");
+        System.out.println("Testing convergence statistics ...");
         checkConvergence(new RiskStatistics(), "Statistics");
         checkConvergence(new IncrementalStatistics(), "IncrementalStatistics");
     }

@@ -63,12 +63,12 @@ public class DatesTest {
         "N8", "Q8", "U8", "V8", "X8", "Z8", "F9", "G9", "H9", "J9", "K9", "M9", "N9", "Q9", "U9", "V9", "X9", "Z9" };
 
     public DatesTest() {
-        QL.info("::::: "+this.getClass().getSimpleName()+" :::::");
+        System.out.println("::::: "+this.getClass().getSimpleName()+" :::::");
     }
 
     @Test
     public void immDates() {
-        QL.info("Testing imm dates. It may take several minutes when Cobertura reports are generated!!!");
+        System.out.println("Testing imm dates. It may take several minutes when Cobertura reports are generated!!!");
 
         final Date minDate = Date.minDate();
         final Date maxDate = Date.maxDate();
@@ -127,7 +127,7 @@ public class DatesTest {
     @Test
     public void consistencyCheck() {
 
-        QL.info("Testing dates...");
+        System.out.println("Testing dates...");
 
         final Date minD = Date.minDate();
         final Date maxD = Date.maxDate();
@@ -202,7 +202,7 @@ public class DatesTest {
 
     @Test
     public void isoDates() {
-        QL.info("Testing ISO dates...");
+        System.out.println("Testing ISO dates...");
         final String input_date = "2006-01-15";
         final Date d = DateParser.parseISO(input_date);
         if ((d.dayOfMonth() != 15) || (d.month() != Month.January) || (d.year() != 2006)) {
@@ -216,7 +216,7 @@ public class DatesTest {
 
     @Test
     public void testConvertionToJavaDate() {
-        QL.info("Testing convertion to Java Date...");
+        System.out.println("Testing convertion to Java Date...");
 
         boolean success = true;
         
@@ -239,7 +239,7 @@ public class DatesTest {
             success &= test; 
             
             if (!test) {
-                QL.info(String.format("JQL Date = %s   :::   ISODate = %s", jqlDate.toString(), isoDate.toString()));
+                System.out.println(String.format("JQL Date = %s   :::   ISODate = %s", jqlDate.toString(), isoDate.toString()));
             }
 
             if (year==2199 && month==12 && day==31) break;
@@ -251,7 +251,7 @@ public class DatesTest {
 
     @Test
     public void testConvertionFromJavaDate() {
-        QL.info("Testing convertion from Java Date...");
+        System.out.println("Testing convertion from Java Date...");
 
         // obtain 01-JAN-1901 first from JQL Date and then convert to Java Date
         Date jqlDate = new Date(1, 1, 1901);
@@ -277,7 +277,7 @@ public class DatesTest {
             success &= test; 
 
             if (!test) {
-                QL.info(String.format("JQL Date = %s   :::   ISODate = %s", jqlDate.toString(), javaDate.toString()));
+                System.out.println(String.format("JQL Date = %s   :::   ISODate = %s", jqlDate.toString(), javaDate.toString()));
             }
 
             if (jyear==2199 && jmonth==Calendar.DECEMBER && jday==31) break;
@@ -319,7 +319,7 @@ public class DatesTest {
     @Test
     public void testNotificationSubAssign() {
 
-        QL.info("Testing observability of dates using operation Date#subAssign()");
+        System.out.println("Testing observability of dates using operation Date#subAssign()");
 
         final Date me = Date.todaysDate();
         final Flag f = new Flag();
@@ -333,7 +333,7 @@ public class DatesTest {
     @Test
     public void testNotificationSub() {
 
-        QL.info("Testing observability of dates using operation Date#sub()");
+        System.out.println("Testing observability of dates using operation Date#sub()");
 
         final Date me = Date.todaysDate();
         final Flag f = new Flag();
@@ -347,7 +347,7 @@ public class DatesTest {
     @Test
     public void testNotificationHandle() {
 
-        QL.info("Testing notification of date handles...");
+        System.out.println("Testing notification of date handles...");
 
         final Date me1 = Date.todaysDate();
         final RelinkableHandle<Date> h = new RelinkableHandle<Date>(me1);
@@ -372,7 +372,7 @@ public class DatesTest {
     @Test
     public void testNotificationHandleSubAssign() {
 
-        QL.info("Testing notification of date handles using operation Date#subAssign().");
+        System.out.println("Testing notification of date handles using operation Date#subAssign().");
 
         final Date me1 = Date.todaysDate();
         final RelinkableHandle<Date> h = new RelinkableHandle<Date>(me1);
@@ -389,7 +389,7 @@ public class DatesTest {
     @Test
     public void testNotificationHandleSub() {
 
-        QL.info("Testing ntification of date handles using operation Date#sub().");
+        System.out.println("Testing ntification of date handles using operation Date#sub().");
 
         final Date me1 = Date.todaysDate();
         final RelinkableHandle<Date> h = new RelinkableHandle<Date>(me1);
@@ -406,7 +406,7 @@ public class DatesTest {
     @Test
     public void testEqualsandHashCode() {
 
-        QL.info("Testing equals and hashcode");
+        System.out.println("Testing equals and hashcode");
 
         final Date today = Date.todaysDate();
         final Date tomorrow1 = Date.todaysDate().add(1);

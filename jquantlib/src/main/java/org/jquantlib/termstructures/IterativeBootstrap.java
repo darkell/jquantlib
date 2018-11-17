@@ -35,6 +35,8 @@ import org.jquantlib.termstructures.yieldcurves.PiecewiseCurve;
 import org.jquantlib.termstructures.yieldcurves.PiecewiseYieldCurve;
 import org.jquantlib.termstructures.yieldcurves.Traits;
 import org.jquantlib.time.Date;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 /**
  * Universal piecewise-term-structure boostrapper.
@@ -47,6 +49,7 @@ import org.jquantlib.time.Date;
 
 
 public class IterativeBootstrap<Curve extends PiecewiseYieldCurve> implements Bootstrap<Curve> {
+    private static Logger LOG = LoggerFactory.getLogger(IterativeBootstrap.class);
 
     //
     // private fields
@@ -244,7 +247,7 @@ public class IterativeBootstrap<Curve extends PiecewiseYieldCurve> implements Bo
                     data[i] = r;
                 } catch (final Exception e) {
                     validCurve = false;
-                    QL.error ("could not bootstrap");
+                    LOG.error("could not bootstrap");
                 }
             }
 

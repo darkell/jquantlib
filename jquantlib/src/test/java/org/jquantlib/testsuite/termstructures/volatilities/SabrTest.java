@@ -35,7 +35,7 @@ import org.junit.Test;
 public class SabrTest {
 
 	public SabrTest() {
-		QL.info("::::: "+this.getClass().getSimpleName()+" :::::");
+		System.out.println("::::: "+this.getClass().getSimpleName()+" :::::");
 	}
 
 	@Test

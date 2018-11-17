@@ -74,7 +74,7 @@ import org.junit.Test;
 public class DayCountersTest {
 
     public DayCountersTest() {
-        QL.info("::::: "+this.getClass().getSimpleName()+" :::::");
+        System.out.println("::::: "+this.getClass().getSimpleName()+" :::::");
     }
 
     private static class SingleCase {
@@ -134,7 +134,7 @@ public class DayCountersTest {
     @Test
     public void testActualActual() {
 
-        QL.info("Testing actual/actual day counters...");
+        System.out.println("Testing actual/actual day counters...");
 
         final SingleCase testCases[] = new SingleCase[] {
                 // first example
@@ -224,7 +224,7 @@ public class DayCountersTest {
             final Date rd1 = testCases[i].refStart;
             final Date rd2 = testCases[i].refEnd;
 
-            QL.info(testCases[i].toString());
+            System.out.println(testCases[i].toString());
 
             /*@Time*/ final double  calculated = dayCounter.yearFraction(d1, d2, rd1, rd2);
 
@@ -247,7 +247,7 @@ public class DayCountersTest {
     @Test
     public void testSimple() {
 
-        QL.info("Testing simple day counter...");
+        System.out.println("Testing simple day counter...");
 
         final Period p[] = new Period[] { new Period(3, TimeUnit.Months), new Period(6, TimeUnit.Months), new Period(1, TimeUnit.Years) };
         /*@Time*/ final double expected[] = { 0.25, 0.5, 1.0 };
@@ -274,7 +274,7 @@ public class DayCountersTest {
     @Test
     public void testOne() {
 
-        QL.info("Testing 1/1 day counter...");
+        System.out.println("Testing 1/1 day counter...");
 
         final Period p[] = new Period[]{ new Period(3, TimeUnit.Months), new Period(6, TimeUnit.Months), new Period(1, TimeUnit.Years) };
         /*@Time*/ final double expected[] = new double[] { 1.0, 1.0, 1.0 };
@@ -303,7 +303,7 @@ public class DayCountersTest {
     @Test
     public void testBusiness252() {
 
-        QL.info("Testing business/252 day counter...");
+        System.out.println("Testing business/252 day counter...");
 
         final Date testDates[] = {
                 new Date(1,Month.February,2002),
@@ -352,7 +352,7 @@ public class DayCountersTest {
     @Test
     public void testEqualityHashCode() {
 
-        QL.info("Testing Equality and HashCode ...");
+        System.out.println("Testing Equality and HashCode ...");
         final DayCounter business252Brazil = new Business252(new Brazil(Brazil.Market.SETTLEMENT));
         final DayCounter business252Brazil1 = new Business252(new Brazil(Brazil.Market.SETTLEMENT));
 

@@ -83,13 +83,13 @@ public class ExtendedTrees {
     };
 
     public ExtendedTrees() {
-        QL.info("::::: " + this.getClass().getSimpleName() + " :::::");
+        System.out.println("::::: " + this.getClass().getSimpleName() + " :::::");
     }
 
     @Test
     public void testJRBinomialEngines() {
 
-        QL.info("Testing time-dependent JR binomial European engines against analytic results...");
+        System.out.println("Testing time-dependent JR binomial European engines against analytic results...");
 
         final EngineType engine = EngineType.JR;
         /* @Size */final int steps = 251;
@@ -105,7 +105,7 @@ public class ExtendedTrees {
     @Test
     public void testCRRBinomialEngines() {
 
-        QL.info("Testing time-dependent CRR binomial European engines against analytic results...");
+        System.out.println("Testing time-dependent CRR binomial European engines against analytic results...");
 
         final EngineType engine = EngineType.CRR;
         /* @Size */final int steps = 501;
@@ -121,7 +121,7 @@ public class ExtendedTrees {
     @Test
     public void testEQPBinomialEngines() {
 
-        QL.info("Testing time-dependent EQP binomial European engines against analytic results...");
+        System.out.println("Testing time-dependent EQP binomial European engines against analytic results...");
 
         final EngineType engine = EngineType.EQP;
         /* @Size */final int steps = 501;
@@ -137,7 +137,7 @@ public class ExtendedTrees {
     @Test
     public void testTGEOBinomialEngines() {
 
-        QL.info("Testing time-dependent TGEO binomial European engines against analytic results...");
+        System.out.println("Testing time-dependent TGEO binomial European engines against analytic results...");
 
         final EngineType engine = EngineType.TGEO;
         /* @Size */final int steps = 251;
@@ -153,7 +153,7 @@ public class ExtendedTrees {
     @Test
     public void testTIANBinomialEngines() {
 
-        QL.info("Testing time-dependent TIAN binomial European engines against analytic results...");
+        System.out.println("Testing time-dependent TIAN binomial European engines against analytic results...");
 
         final EngineType engine = EngineType.TIAN;
         /* @Size */final int steps = 251;
@@ -169,7 +169,7 @@ public class ExtendedTrees {
     @Test
     public void testLRBinomialEngines() {
 
-        QL.info("Testing time-dependent LR binomial European engines against analytic results...");
+        System.out.println("Testing time-dependent LR binomial European engines against analytic results...");
 
         final EngineType engine = EngineType.LR;
         /* @Size */final int steps = 251;
@@ -185,7 +185,7 @@ public class ExtendedTrees {
     @Test
     public void testJOSHIBinomialEngines() {
 
-        QL.info("Testing time-dependent Joshi binomial European engines against analytic results...");
+        System.out.println("Testing time-dependent Joshi binomial European engines against analytic results...");
 
         final EngineType engine = EngineType.JOSHI;
         /* @Size */final int steps = 251;

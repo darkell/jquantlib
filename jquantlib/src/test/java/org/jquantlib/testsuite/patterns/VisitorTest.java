@@ -37,7 +37,7 @@ import org.junit.Test;
 public class VisitorTest {
 
 	public VisitorTest() {
-		QL.info("::::: "+this.getClass().getSimpleName()+" :::::");
+		System.out.println("::::: "+this.getClass().getSimpleName()+" :::::");
 	}
 
 	@Test
@@ -153,7 +153,7 @@ public class VisitorTest {
 		private static class NumberVisitor implements Visitor<Number> {
 			@Override
 			public void visit(final Number o) {
-				QL.info("Number :: "+o);
+				System.out.println("Number :: "+o);
 			}
 		}
 	}
@@ -176,7 +176,7 @@ public class VisitorTest {
 			@Override
 			public void visit(final Number o) {
 				final double obj = (Double)o;
-				QL.info("Double :: "+obj);
+				System.out.println("Double :: "+obj);
 			}
 		}
 	}
@@ -198,7 +198,7 @@ public class VisitorTest {
 			@Override
 			public void visit(final Number o) {
 				final Integer obj = (Integer)o;
-				QL.info("Integer :: "+obj);
+				System.out.println("Integer :: "+obj);
 			}
 		}
 	}

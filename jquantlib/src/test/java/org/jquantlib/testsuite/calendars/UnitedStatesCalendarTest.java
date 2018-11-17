@@ -1088,7 +1088,7 @@ public class UnitedStatesCalendarTest {
 //	private final Calendar cSettlement;
 //
 //	public UnitedStatesCalendarTest() {
-//        QL.info("::::: "+this.getClass().getSimpleName()+" :::::");
+//        System.out.println("::::: "+this.getClass().getSimpleName()+" :::::");
 //        this.cNYSE      = new UnitedStates(UnitedStates.Market.NYSE);
 //        this.cGovBond   = new UnitedStates(UnitedStates.Market.GOVERNMENTBOND);
 //        this.cNERC      = new UnitedStates(UnitedStates.Market.NERC);
@@ -1097,7 +1097,7 @@ public class UnitedStatesCalendarTest {
 //
 //	@Test
 //	public void testUSSettlement() {
-//		QL.info("Testing US settlement holiday list...");
+//		System.out.println("Testing US settlement holiday list...");
 //		final CalendarUtil cbt = new CalendarUtil();
 //	    final List<Date> expectedHol = new ArrayList<Date>();
 //	    int year = 2004;
@@ -1139,7 +1139,7 @@ public class UnitedStatesCalendarTest {
 //	@Test
 //	public void testUSGovernmentBondMarket() {
 //
-//	    QL.info("Testing US government bond market holiday list...");
+//	    System.out.println("Testing US government bond market holiday list...");
 //	    final CalendarUtil cbt = new CalendarUtil();
 //	    final int year = 2004;
 //	    final List<Date> expectedHol = new ArrayList<Date>();
@@ -1162,7 +1162,7 @@ public class UnitedStatesCalendarTest {
 //
 //	@Test
 //	public void testUSNewYorkStockExchange() {
-//	    QL.info("Testing New York Stock Exchange holiday list...");
+//	    System.out.println("Testing New York Stock Exchange holiday list...");
 //
 //	    final CalendarUtil cbt = new CalendarUtil();
 //	    final Calendar c = new UnitedStates(UnitedStates.Market.NYSE);
@@ -1256,7 +1256,7 @@ public class UnitedStatesCalendarTest {
 //	@Test
 //	public void testUnitedStatesYear2004() {
 //		final int year = 2004;
-//		QL.info("Testing United States holiday list for the year " + year + " as recognized by markets Frankfurt Stock Exchange, Xetra, Eurex ...");
+//		System.out.println("Testing United States holiday list for the year " + year + " as recognized by markets Frankfurt Stock Exchange, Xetra, Eurex ...");
 //
 //        final List<Date> expectedHol = new ArrayList<Date>();
 //
@@ -1312,7 +1312,7 @@ public class UnitedStatesCalendarTest {
 //	@Test
 //	public void testUnitedStatesYear2005() {
 //		final int year = 2005;
-//		QL.info("Testing United States holiday list for the year " + year + " as recognized by markets Frankfurt Stock Exchange, Xetra, Eurex ...");
+//		System.out.println("Testing United States holiday list for the year " + year + " as recognized by markets Frankfurt Stock Exchange, Xetra, Eurex ...");
 //
 //        final List<Date> expectedHol = new ArrayList<Date>();
 //
@@ -1359,7 +1359,7 @@ public class UnitedStatesCalendarTest {
 //	@Test
 //	public void testUnitedStatesYear2006() {
 //		final int year = 2006;
-//		QL.info("Testing United States holiday list for the year " + year + " as recognized by markets Frankfurt Stock Exchange, Xetra, Eurex ...");
+//		System.out.println("Testing United States holiday list for the year " + year + " as recognized by markets Frankfurt Stock Exchange, Xetra, Eurex ...");
 //
 //        final List<Date> expectedHol = new ArrayList<Date>();
 //
@@ -1406,7 +1406,7 @@ public class UnitedStatesCalendarTest {
 //	@Test
 //	public void testUnitedStatesYear2007() {
 //		final int year = 2007;
-//		QL.info("Testing United States holiday list for the year " + year + " as recognized by markets Frankfurt Stock Exchange, Xetra, Eurex ...");
+//		System.out.println("Testing United States holiday list for the year " + year + " as recognized by markets Frankfurt Stock Exchange, Xetra, Eurex ...");
 //
 //        final List<Date> expectedHol = new ArrayList<Date>();
 //
@@ -1460,7 +1460,7 @@ public class UnitedStatesCalendarTest {
 //	@Test
 //	public void testUnitedStatesYear2008() {
 //		final int year = 2008;
-//		QL.info("Testing United States holiday list for the year " + year + " as recognized by markets Frankfurt Stock Exchange, Xetra, Eurex ...");
+//		System.out.println("Testing United States holiday list for the year " + year + " as recognized by markets Frankfurt Stock Exchange, Xetra, Eurex ...");
 //
 //        final List<Date> expectedHol = new ArrayList<Date>();
 //
@@ -1507,7 +1507,7 @@ public class UnitedStatesCalendarTest {
 //	@Test
 //	public void testUnitedStatesYear2009() {
 //		final int year = 2009;
-//		QL.info("Testing United States holiday list for the year " + year + " as recognized by markets Frankfurt Stock Exchange, Xetra, Eurex ...");
+//		System.out.println("Testing United States holiday list for the year " + year + " as recognized by markets Frankfurt Stock Exchange, Xetra, Eurex ...");
 //
 //        final List<Date> expectedHol = new ArrayList<Date>();
 //
@@ -1553,7 +1553,7 @@ public class UnitedStatesCalendarTest {
 //	@Test
 //	public void testUnitedStatesYear2010() {
 //		final int year = 2010;
-//		QL.info("Testing United States holiday list for the year " + year + " as recognized by markets Frankfurt Stock Exchange, Xetra, Eurex ...");
+//		System.out.println("Testing United States holiday list for the year " + year + " as recognized by markets Frankfurt Stock Exchange, Xetra, Eurex ...");
 //
 //        final List<Date> expectedHol = new ArrayList<Date>();
 //
@@ -1603,7 +1603,7 @@ public class UnitedStatesCalendarTest {
 //	@Test
 //	public void testUnitedStatesYear2011() {
 //		final int year = 2011;
-//		QL.info("Testing United States holiday list for the year " + year + " as recognized by markets Frankfurt Stock Exchange, Xetra, Eurex ...");
+//		System.out.println("Testing United States holiday list for the year " + year + " as recognized by markets Frankfurt Stock Exchange, Xetra, Eurex ...");
 //
 //        final List<Date> expectedHol = new ArrayList<Date>();
 //
@@ -1648,7 +1648,7 @@ public class UnitedStatesCalendarTest {
 //	@Test
 //	public void testUnitedStatesYear2012() {
 //		final int year = 2012;
-//		QL.info("Testing United States holiday list for the year " + year + " as recognized by markets Frankfurt Stock Exchange, Xetra, Eurex ...");
+//		System.out.println("Testing United States holiday list for the year " + year + " as recognized by markets Frankfurt Stock Exchange, Xetra, Eurex ...");
 //
 //        final List<Date> expectedHol = new ArrayList<Date>();
 //

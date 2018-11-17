@@ -89,7 +89,7 @@ public class DividendOptionTest {
     @Test
     public void testEuropeanValues() {
 
-        QL.info("Testing dividend European option values with no dividends...");
+        System.out.println("Testing dividend European option values with no dividends...");
 
         /* @Real */ final double tolerance = 1.0e-5;
 
@@ -167,7 +167,7 @@ public class DividendOptionTest {
     @Test
     public void testEuropeanKnownValue() {
 
-        QL.info("Testing dividend European option values with known value...");
+        System.out.println("Testing dividend European option values with known value...");
 
         /* @Real */ final double tolerance = 1.0e-2;
         /* @Real */ final double expected = 3.67;
@@ -223,7 +223,7 @@ public class DividendOptionTest {
     @Test
     public void testEuropeanStartLimit() {
 
-        QL.info("Testing dividend European option with a dividend on today's date...");
+        System.out.println("Testing dividend European option with a dividend on today's date...");
 
         /* @Real */ final double tolerance = 1.0e-5;
         /* @Real */ final double dividendValue = 10.0;
@@ -295,7 +295,7 @@ public class DividendOptionTest {
     @Test
     public void testEuropeanEndLimit() {
 
-        QL.info("Testing dividend European option values with end limits...");
+        System.out.println("Testing dividend European option values with end limits...");
 
         /* @Real */ final double tolerance = 1.0e-5;
         /* @Real */ final double dividendValue = 10.0;
@@ -368,7 +368,7 @@ public class DividendOptionTest {
     @Test
     public void testEuropeanGreeks() {
 
-        QL.info("Testing dividend European option greeks...");
+        System.out.println("Testing dividend European option greeks...");
 
         final Map<String, /* @Real */ Double> calculated = new HashMap<String, Double>();
         final Map<String, /* @Real */ Double> expected = new HashMap<String, Double>();
@@ -497,7 +497,7 @@ public class DividendOptionTest {
     @Test
     public void testFdEuropeanValues() {
 
-        QL.info("Testing finite-difference dividend European option values...");
+        System.out.println("Testing finite-difference dividend European option values...");
 
         /* @Real */ final double tolerance = 1.0e-2;
         final /* @Size */ int gridPoints = 300;
@@ -578,7 +578,7 @@ public class DividendOptionTest {
     @Test
     public void testFdEuropeanGreeks() {
 
-        QL.info("Testing finite-differences dividend European option greeks...");
+        System.out.println("Testing finite-differences dividend European option greeks...");
         final Date today = Date.todaysDate();
         new Settings().setEvaluationDate(today);
 
@@ -593,7 +593,7 @@ public class DividendOptionTest {
 
     @Test
     public void testFdAmericanGreeks() {
-        QL.info("Testing finite-differences dividend American option greeks...");
+        System.out.println("Testing finite-differences dividend American option greeks...");
         final Date today = Date.todaysDate();
         new Settings().setEvaluationDate(today);
 
@@ -610,7 +610,7 @@ public class DividendOptionTest {
     @Test
     public void testFdEuropeanDegenerate() {
 
-        QL.info("Testing degenerate finite-differences dividend European option...");
+        System.out.println("Testing degenerate finite-differences dividend European option...");
 
         final Date today = new Date(27, Month.February, 2005);
         new Settings().setEvaluationDate(today);
@@ -622,7 +622,7 @@ public class DividendOptionTest {
     @Test
     public void testFdAmericanDegenerate() {
 
-        QL.info("Testing degenerate finite-differences dividend American option...");
+        System.out.println("Testing degenerate finite-differences dividend American option...");
 
         final Date today = new Date(27, Month.February,2005);
         new Settings().setEvaluationDate(today);

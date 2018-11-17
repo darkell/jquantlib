@@ -72,10 +72,6 @@ public class FDDividendOptionTest implements Runnable {
 
     @Test
     public void testEuropeanFDDividendOption() {
-        if (!quiet) {
-            QL.info("::::: " + this.getClass().getSimpleName() + " ::::: European Dividend Option :::::");
-        }
-
         new Settings().setEvaluationDate(today);
 
         final FDEuropeanDividendOptionHelper option = new FDEuropeanDividendOptionHelper(
@@ -96,23 +92,19 @@ public class FDDividendOptionTest implements Runnable {
         final double ivol = option.impliedVolatility(value*1.10);
 
         if (!quiet) {
-            QL.info(String.format("value       = %13.9f", value));
-            QL.info(String.format("delta       = %13.9f", delta));
-            QL.info(String.format("gamma       = %13.9f", gamma));
-            QL.info(String.format("theta       = %13.9f", theta));
-            QL.info(String.format("vega        = %13.9f", vega));
-            QL.info(String.format("rho         = %13.9f", rho));
+            System.out.println(String.format("value       = %13.9f", value));
+            System.out.println(String.format("delta       = %13.9f", delta));
+            System.out.println(String.format("gamma       = %13.9f", gamma));
+            System.out.println(String.format("theta       = %13.9f", theta));
+            System.out.println(String.format("vega        = %13.9f", vega));
+            System.out.println(String.format("rho         = %13.9f", rho));
             //
-            QL.info(String.format("implied vol = %13.9f", ivol));
+            System.out.println(String.format("implied vol = %13.9f", ivol));
         }
     }
 
     @Test
     public void testAmericanFDDividendOption() {
-        if (!quiet) {
-            QL.info("::::: " + this.getClass().getSimpleName() + " ::::: American Dividend Option :::::");
-        }
-
         new Settings().setEvaluationDate(today);
 
         final FDAmericanDividendOptionHelper option = new FDAmericanDividendOptionHelper(
@@ -133,14 +125,14 @@ public class FDDividendOptionTest implements Runnable {
         final double ivol = option.impliedVolatility(value*1.10);
 
         if (!quiet) {
-            QL.info(String.format("value       = %13.9f", value));
-            QL.info(String.format("delta       = %13.9f", delta));
-            QL.info(String.format("gamma       = %13.9f", gamma));
-            QL.info(String.format("theta       = %13.9f", theta));
-            QL.info(String.format("vega        = %13.9f", vega));
-            QL.info(String.format("rho         = %13.9f", rho));
+            System.out.println(String.format("value       = %13.9f", value));
+            System.out.println(String.format("delta       = %13.9f", delta));
+            System.out.println(String.format("gamma       = %13.9f", gamma));
+            System.out.println(String.format("theta       = %13.9f", theta));
+            System.out.println(String.format("vega        = %13.9f", vega));
+            System.out.println(String.format("rho         = %13.9f", rho));
             //
-            QL.info(String.format("implied vol = %13.9f", ivol));
+            System.out.println(String.format("implied vol = %13.9f", ivol));
         }
     }
 

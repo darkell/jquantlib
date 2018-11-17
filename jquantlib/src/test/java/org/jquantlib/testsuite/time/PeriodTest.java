@@ -17,7 +17,7 @@ public class PeriodTest {
 	   @Test
 	    public void testEqualsandHashCode() {
 
-	        QL.info("Testing equals and hashcode");
+	        System.out.println("Testing equals and hashcode");
 	        
 	        final Period oneDay = new Period(1, TimeUnit.Days);
 	        final Period oneYear = new Period(1, TimeUnit.Years);

@@ -36,7 +36,7 @@ import org.junit.Test;
 public class GammaDistributionTest {
 
 	public GammaDistributionTest() {
-		QL.info("::::: "+this.getClass().getSimpleName()+" :::::");
+		System.out.println("::::: "+this.getClass().getSimpleName()+" :::::");
 	}
 
 	//FIXME Compare the test values to QuantLib
@@ -84,7 +84,7 @@ public class GammaDistributionTest {
 			final double expected = testvalue[1];
 			final double x = testvalue[0];
 			final double computed = gammDistribution.op(x);
-			// QL.info(computed); // for testing
+			// System.out.println(computed); // for testing
 			final double tolerance = 1.0e-15;
 			if (Math.abs(expected-computed)>tolerance) {
 				fail("x: " + x + " expected: " + expected + " realised: " + computed);
@@ -98,7 +98,7 @@ public class GammaDistributionTest {
 			final double expected = element[1];
 			final double x = element[0];
 			final double computed = gammDist.op(x);
-			// QL.info(computed); // for testing
+			// System.out.println(computed); // for testing
 			final double tolerance = 1.0e-15;
 			if (Math.abs(expected-computed)>tolerance) {
 				fail("x: " + x + " expected: " + expected + " realised: " + computed);

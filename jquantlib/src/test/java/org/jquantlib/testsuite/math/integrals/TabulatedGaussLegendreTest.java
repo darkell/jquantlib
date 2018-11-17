@@ -40,7 +40,7 @@ import org.junit.Test;
 public class TabulatedGaussLegendreTest {
 
 	public TabulatedGaussLegendreTest() {
-		QL.info("::::: "+this.getClass().getSimpleName()+" :::::");
+		System.out.println("::::: "+this.getClass().getSimpleName()+" :::::");
 	}
 
 	@Test

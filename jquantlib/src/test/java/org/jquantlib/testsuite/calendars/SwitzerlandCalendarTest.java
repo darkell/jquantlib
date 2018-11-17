@@ -52,14 +52,14 @@ import org.junit.Test;
 public class SwitzerlandCalendarTest {
 
 	public SwitzerlandCalendarTest() {
-		QL.info("::::: "+this.getClass().getSimpleName()+" :::::");
+		System.out.println("::::: "+this.getClass().getSimpleName()+" :::::");
 	}
 
 
 	@Test
 	public void testSwitzerlandSWXCalendar() {
 
-		QL.info("\n\n=== Switzerland SWX Calendar ===");
+		System.out.println("\n\n=== Switzerland SWX Calendar ===");
 
 		final Calendar c = new Switzerland();
 
@@ -69,7 +69,7 @@ public class SwitzerlandCalendarTest {
 //	@Test
 //	public void testSwitzerlandSettlementCalendar() {
 //
-//		QL.info("\n\n=== Switzerland Settlement Calendar ===");
+//		System.out.println("\n\n=== Switzerland Settlement Calendar ===");
 //
 //		final Calendar c = new Switzerland();
 //
@@ -108,7 +108,7 @@ public class SwitzerlandCalendarTest {
 	public void testSwitzerland2004(final Calendar c){
 
 		final int year = 2004;
-		QL.info("Testing " + c.name() + " holiday list for the year " + year + "...");
+		System.out.println("Testing " + c.name() + " holiday list for the year " + year + "...");
 
 		final List<Date> expectedHol = new Vector<Date>();
 
@@ -135,7 +135,7 @@ public class SwitzerlandCalendarTest {
 	public void testSwitzerland2005(final Calendar c){
 
 		final int year = 2005;
-		QL.info("Testing " + c.name() + " holiday list for the year " + year + "...");
+		System.out.println("Testing " + c.name() + " holiday list for the year " + year + "...");
 
 		final List<Date> expectedHol = new Vector<Date>();
 
@@ -154,7 +154,7 @@ public class SwitzerlandCalendarTest {
 	public void testSwitzerland2006(final Calendar c ){
 
 		final int year = 2006;
-		QL.info("Testing " + c.name() + " holiday list for the year " + year + "...");
+		System.out.println("Testing " + c.name() + " holiday list for the year " + year + "...");
 
 		final List<Date> expectedHol = new Vector<Date>();
 
@@ -176,7 +176,7 @@ public class SwitzerlandCalendarTest {
 	public void testSwitzerland2007(final Calendar c) {
 
 		final int year = 2007;
-		QL.info("Testing " + c.name() + " holiday list for the year " + year + "...");
+		System.out.println("Testing " + c.name() + " holiday list for the year " + year + "...");
 
 		final List<Date> expectedHol = new Vector<Date>();
 
@@ -205,7 +205,7 @@ public class SwitzerlandCalendarTest {
 	public void testSwitzerland2008(final Calendar c){
 
 		final int year = 2008;
-		QL.info("Testing " + c.name() + " holiday list for the year " + year + "...");
+		System.out.println("Testing " + c.name() + " holiday list for the year " + year + "...");
 
 		final List<Date> expectedHol = new Vector<Date>();
 
@@ -233,7 +233,7 @@ public class SwitzerlandCalendarTest {
 	public void testSwitzerland2009(final Calendar c) {
 
 		final int year = 2009;
-		QL.info("Testing " + c.name() + " holiday list for the year " + year + "...");
+		System.out.println("Testing " + c.name() + " holiday list for the year " + year + "...");
 
 		final List<Date> expectedHol = new Vector<Date>();
 
@@ -262,7 +262,7 @@ public class SwitzerlandCalendarTest {
 	public void testSwitzerland2010(final Calendar c){
 
 		final int year = 2010;
-		QL.info("Testing " + c.name() + " holiday list for the year " + year + "...");
+		System.out.println("Testing " + c.name() + " holiday list for the year " + year + "...");
 
 		final List<Date> expectedHol = new Vector<Date>();
 
@@ -286,7 +286,7 @@ public class SwitzerlandCalendarTest {
 	public void testSwitzerland2011(final Calendar c){
 
 		final int year = 2011;
-		QL.info("Testing " + c.name() + " holiday list for the year " + year + "...");
+		System.out.println("Testing " + c.name() + " holiday list for the year " + year + "...");
 
 		final List<Date> expectedHol = new Vector<Date>();
 
@@ -304,7 +304,7 @@ public class SwitzerlandCalendarTest {
 
 	public void testSwitzerland2012(final Calendar c) {
 		final int year = 2012;
-		QL.info("Testing " + c.name() + " holiday list for the year " + year + "...");
+		System.out.println("Testing " + c.name() + " holiday list for the year " + year + "...");
 
 		final List<Date> expectedHol = new Vector<Date>();
 

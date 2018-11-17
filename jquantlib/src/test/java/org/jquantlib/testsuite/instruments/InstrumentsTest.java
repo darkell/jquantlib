@@ -53,13 +53,13 @@ import org.junit.Test;
 public class InstrumentsTest {
 
     public InstrumentsTest() {
-        QL.info("::::: "+this.getClass().getSimpleName()+" :::::");
+        System.out.println("::::: "+this.getClass().getSimpleName()+" :::::");
     }
 
     @Test
     public void testObservable() {
 
-        QL.info("Testing observability of instruments...");
+        System.out.println("Testing observability of instruments...");
 
 
         final SimpleQuote me1 = new SimpleQuote(0.0);

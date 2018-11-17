@@ -92,13 +92,13 @@ import org.junit.Test;
 public class AmericanOptionTest {
 
     public AmericanOptionTest() {
-        QL.info("::::: " + this.getClass().getSimpleName() + " :::::");
+        System.out.println("::::: " + this.getClass().getSimpleName() + " :::::");
     }
 
     @Test
     public void testBjerksundStenslandValues() {
 
-        QL.info("Testing Bjerksund and Stensland approximation for American options...");
+        System.out.println("Testing Bjerksund and Stensland approximation for American options...");
 
         // type, strike, spot, q, r, t, vol, value, tol
         final AmericanOptionData values[] = {
@@ -159,7 +159,7 @@ public class AmericanOptionTest {
 
     @Test
     public void testBaroneAdesiWhaley() {
-        QL.info("Testing Barone-Adesi and Whaley approximation for American options...");
+        System.out.println("Testing Barone-Adesi and Whaley approximation for American options...");
 
         /**
          * The data below are from "Option pricing formulas", E.G. Haug, McGraw-Hill 1998 pag 24
@@ -328,7 +328,7 @@ public class AmericanOptionTest {
                 new AmericanOptionData(Option.Type.Call, 100.00, 110.00, 0.03, 0.07, 3.0, 0.3, 30.028),
                 new AmericanOptionData(Option.Type.Call, 100.00, 120.00, 0.03, 0.07, 3.0, 0.3, 37.177) };
 
-        QL.info("Testing Ju approximation for American options...");
+        System.out.println("Testing Ju approximation for American options...");
 
         final Date today = new Settings().evaluationDate();
 
@@ -380,7 +380,7 @@ public class AmericanOptionTest {
 
     @Test
     public void testFdValues() {
-        QL.info("Testing finite-difference engine for American options...");
+        System.out.println("Testing finite-difference engine for American options...");
 
         /**
          * The data below are from An Approximate Formula for Pricing American Options Journal of Derivatives Winter 1999 Ju, N.
@@ -503,13 +503,13 @@ public class AmericanOptionTest {
 
     @Test
     public void testFdAmericanGreeks() {
-        QL.info("Testing Greeks (delta, gamma, theta for American options using FDAmericanEngine");
+        System.out.println("Testing Greeks (delta, gamma, theta for American options using FDAmericanEngine");
         testFdGreeks(FDAmericanEngine.class);
     }
 
     @Test
     public void testFdShoutGreeks() {
-        QL.info("Testing Greeks (delta, gamma, theta for American options using FDShoutEngine");
+        System.out.println("Testing Greeks (delta, gamma, theta for American options using FDShoutEngine");
         testFdGreeks(FDShoutEngine.class);
     }
 

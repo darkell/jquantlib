@@ -71,7 +71,7 @@ public class DiscreteHedging implements Runnable {
 
         QL.validateExperimentalMode();
 
-        QL.info("::::: " + this.getClass().getSimpleName() + " :::::");
+        System.out.println("::::: " + this.getClass().getSimpleName() + " :::::");
 
 		try {
 
@@ -102,7 +102,7 @@ public class DiscreteHedging implements Runnable {
 
 		catch(final Exception ex){
 			ex.printStackTrace();
-			//QL.info(ex.getMessage());
+			//System.out.println(ex.getMessage());
 		}
 	}
 

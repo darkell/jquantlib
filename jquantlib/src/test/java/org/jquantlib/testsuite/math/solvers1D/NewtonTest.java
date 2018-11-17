@@ -36,7 +36,7 @@ import org.junit.Test;
 public class NewtonTest {
 
 	public NewtonTest() {
-		QL.info("::::: "+this.getClass().getSimpleName()+" :::::");
+		System.out.println("::::: "+this.getClass().getSimpleName()+" :::::");
 	}
 
 	@Test

@@ -34,7 +34,7 @@ import org.junit.Test;
 public class RegularisedIncompleteBetaTest {
 
 	public RegularisedIncompleteBetaTest() {
-		QL.info("::::: "+this.getClass().getSimpleName()+" :::::");
+		System.out.println("::::: "+this.getClass().getSimpleName()+" :::::");
 	}
 
 	@Test

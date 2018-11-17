@@ -154,7 +154,7 @@ public class PiecewiseYieldCurveTest {
     
     
     public PiecewiseYieldCurveTest() {
-        QL.info("::::: "+this.getClass().getSimpleName()+" :::::");
+        System.out.println("::::: "+this.getClass().getSimpleName()+" :::::");
     }
     
     
@@ -641,7 +641,7 @@ public class PiecewiseYieldCurveTest {
 	@Test
 	public void testLogCubicDiscountConsistency() {
 
-		QL.info("Testing consistency of piecewise-log-cubic discount curve...");
+		System.out.println("Testing consistency of piecewise-log-cubic discount curve...");
 
 	    final CommonVars vars = new CommonVars();
 
@@ -663,7 +663,7 @@ public class PiecewiseYieldCurveTest {
 	@Test
 	public void testLogLinearDiscountConsistency() {
 
-	    QL.info("Testing consistency of piecewise-log-linear discount curve...");
+	    System.out.println("Testing consistency of piecewise-log-linear discount curve...");
 
 	    final CommonVars vars = new CommonVars();
 
@@ -675,7 +675,7 @@ public class PiecewiseYieldCurveTest {
 	@Test
 	public void testLinearDiscountConsistency() {
 
-	    QL.info("Testing consistency of piecewise-linear discount curve...");
+	    System.out.println("Testing consistency of piecewise-linear discount curve...");
 
 	    final CommonVars vars = new CommonVars();
 
@@ -687,7 +687,7 @@ public class PiecewiseYieldCurveTest {
 	@Test
 	public void testLogLinearZeroConsistency() {
 
-	    QL.info("Testing consistency of piecewise-log-linear zero-yield curve...");
+	    System.out.println("Testing consistency of piecewise-log-linear zero-yield curve...");
 
 	    final CommonVars vars = new CommonVars();
 
@@ -699,7 +699,7 @@ public class PiecewiseYieldCurveTest {
 	@Test
 	public void testLinearZeroConsistency() {
 
-	    QL.info("Testing consistency of piecewise-linear zero-yield curve...");
+	    System.out.println("Testing consistency of piecewise-linear zero-yield curve...");
 
 	    final CommonVars vars = new CommonVars();
 
@@ -711,7 +711,7 @@ public class PiecewiseYieldCurveTest {
 	@Test
 	public void testSplineZeroConsistency() {
 
-	    QL.info("Testing consistency of piecewise-cubic zero-yield curve...");
+	    System.out.println("Testing consistency of piecewise-cubic zero-yield curve...");
 
 	    final CommonVars vars = new CommonVars();
 
@@ -733,7 +733,7 @@ public class PiecewiseYieldCurveTest {
 	@Test
 	public void testLinearForwardConsistency() {
 
-	    QL.info("Testing consistency of piecewise-linear forward-rate curve...");
+	    System.out.println("Testing consistency of piecewise-linear forward-rate curve...");
 
 	    final CommonVars vars = new CommonVars();
 
@@ -745,7 +745,7 @@ public class PiecewiseYieldCurveTest {
 	@Test
 	public void testFlatForwardConsistency() {
 
-	    QL.info("Testing consistency of piecewise-flat forward-rate curve...");
+	    System.out.println("Testing consistency of piecewise-flat forward-rate curve...");
 
 	    final CommonVars vars = new CommonVars();
 
@@ -757,7 +757,7 @@ public class PiecewiseYieldCurveTest {
 	@Test
 	public void testSplineForwardConsistency() {
 
-	    QL.info("Testing consistency of piecewise-cubic forward-rate curve...");
+	    System.out.println("Testing consistency of piecewise-cubic forward-rate curve...");
 
 	    final CommonVars vars = new CommonVars();
 
@@ -778,7 +778,7 @@ public class PiecewiseYieldCurveTest {
 //	@Ignore
 //	@Test
 //	public void testConvexMonotoneForwardConsistency() {
-//	    QL.info("Testing consistency of convex monotone forward-rate curve...");
+//	    System.out.println("Testing consistency of convex monotone forward-rate curve...");
 //
 //	    CommonVars vars = new CommonVars();
 //	    
@@ -790,7 +790,7 @@ public class PiecewiseYieldCurveTest {
 //	@Ignore
 //	@Test
 //	public void testLocalBootstrapConsistency() {
-//	    QL.info("Testing consistency of local-bootstrap algorithm...");
+//	    System.out.println("Testing consistency of local-bootstrap algorithm...");
 //
 //	    final CommonVars vars = new CommonVars();
 //	    
@@ -809,7 +809,7 @@ public class PiecewiseYieldCurveTest {
 	@Test
 	public void testObservability() {
 
-	    QL.info("Testing observability of piecewise yield curve...");
+	    System.out.println("Testing observability of piecewise yield curve...");
 
 	    final CommonVars vars = new CommonVars();
 
@@ -845,7 +845,7 @@ public class PiecewiseYieldCurveTest {
 	@Test
 	public void testLiborFixing() {
 
-	    QL.info("Testing use of today's LIBOR fixings in swap curve...");
+	    System.out.println("Testing use of today's LIBOR fixings in swap curve...");
 
 	    final CommonVars vars = new CommonVars();
 
@@ -932,7 +932,7 @@ public class PiecewiseYieldCurveTest {
 	@Ignore
 	@Test
 	public void testJpyLibor() {
-	    QL.info("Testing bootstrap over JPY LIBOR swaps...");
+	    System.out.println("Testing bootstrap over JPY LIBOR swaps...");
 
 	    final CommonVars vars = new CommonVars();
 

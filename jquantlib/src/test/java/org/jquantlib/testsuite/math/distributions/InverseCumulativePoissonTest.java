@@ -36,12 +36,12 @@ import org.junit.Test;
 public class InverseCumulativePoissonTest {
 
     public InverseCumulativePoissonTest() {
-        QL.info("::::: " + this.getClass().getSimpleName() + " :::::");
+        System.out.println("::::: " + this.getClass().getSimpleName() + " :::::");
     }
 
     @Test
     public void testInverseCumulativePoissonDistribution() {
-        QL.info("running InverseCumulativePoissonDistribution test ....");
+        System.out.println("running InverseCumulativePoissonDistribution test ....");
         final InverseCumulativePoisson icp = new InverseCumulativePoisson(1.0);
         final double data[] = { 0.2, 0.5, 0.9, 0.98, 0.99, 0.999, 0.9999, 0.99995,
                 0.99999, 0.999999, 0.9999999, 0.99999999 };
@@ -53,6 +53,6 @@ public class InverseCumulativePoissonTest {
                                                                        + i);
             }
         }
-        QL.info("... test finished.");
+        System.out.println("... test finished.");
     }
 }

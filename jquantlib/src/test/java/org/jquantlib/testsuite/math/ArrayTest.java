@@ -52,7 +52,7 @@ public class ArrayTest {
 
 
     public ArrayTest() {
-        QL.info("::::: " + this.getClass().getSimpleName() + " :::::");
+        System.out.println("::::: " + this.getClass().getSimpleName() + " :::::");
 
         this.jFlags = EnumSet.noneOf(Address.Flags.class);
         this.fFlags = EnumSet.of(Address.Flags.FORTRAN);

@@ -51,14 +51,14 @@ public class BarrierOptionTest {
 
 
     public BarrierOptionTest() {
-        QL.info("::::: "+this.getClass().getSimpleName()+" :::::");
+        System.out.println("::::: "+this.getClass().getSimpleName()+" :::::");
     }
 
 
     @Test
     public void testHaugValues() {
 
-        QL.info("Testing barrier options against Haug's values...");
+        System.out.println("Testing barrier options against Haug's values...");
 
         final NewBarrierOptionData values[] = {
                 //
@@ -203,7 +203,7 @@ public class BarrierOptionTest {
 
     @Test
     public void testBabsiriValues() {
-        QL.info("Testing barrier options against Babsiri's values...");
+        System.out.println("Testing barrier options against Babsiri's values...");
 
         /**
          * Data from
@@ -274,7 +274,7 @@ public class BarrierOptionTest {
     @Test
     public void testBeagleholeValues() {
 
-        QL.info("Testing barrier options against Beaglehole's values...");
+        System.out.println("Testing barrier options against Beaglehole's values...");
 
         /**
          * Data from

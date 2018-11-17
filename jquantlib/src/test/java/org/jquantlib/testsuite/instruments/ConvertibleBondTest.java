@@ -101,7 +101,7 @@ import org.junit.Test;
 public class ConvertibleBondTest {
 
     public ConvertibleBondTest() {
-		QL.info("::::: " + this.getClass().getSimpleName() + " :::::");
+		System.out.println("::::: " + this.getClass().getSimpleName() + " :::::");
 	}
 
 	private class CommonVars {
@@ -171,7 +171,7 @@ public class ConvertibleBondTest {
 		 * should equal that of the underlying plain-vanilla bond.
 		 */
 
-		QL.info("Testing out-of-the-money convertible bonds against vanilla bonds...");
+		System.out.println("Testing out-of-the-money convertible bonds against vanilla bonds...");
 
 		final CommonVars vars = new CommonVars();
 
@@ -348,7 +348,7 @@ public class ConvertibleBondTest {
 		 * a call option.
 		 */
 
-		QL.info("Testing zero-coupon convertible bonds against vanilla option...");
+		System.out.println("Testing zero-coupon convertible bonds against vanilla option...");
 
 		final CommonVars vars = new CommonVars();
 

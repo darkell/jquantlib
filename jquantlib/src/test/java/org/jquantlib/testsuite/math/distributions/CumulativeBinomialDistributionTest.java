@@ -35,7 +35,7 @@ import org.junit.Test;
 public class CumulativeBinomialDistributionTest {
 
     public CumulativeBinomialDistributionTest() {
-        QL.info("::::: "+this.getClass().getSimpleName()+" :::::");
+        System.out.println("::::: "+this.getClass().getSimpleName()+" :::::");
     }
 
     @Test

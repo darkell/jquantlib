@@ -34,13 +34,13 @@ import org.junit.Test;
 public class JumpDiffusionEngineTest {
 
     public JumpDiffusionEngineTest() {
-        QL.info("::::: "+this.getClass().getSimpleName()+" :::::");
+        System.out.println("::::: "+this.getClass().getSimpleName()+" :::::");
     }
 
 
     @Test
     public void testMerton76() {
-        QL.info("Testing Merton 76 jump-diffusion model for European options...");
+        System.out.println("Testing Merton 76 jump-diffusion model for European options...");
 
         // The data below are from
         //"Option pricing formulas", E.G. Haug, McGraw-Hill 1998, pag 9
@@ -289,7 +289,7 @@ public class JumpDiffusionEngineTest {
 
     @Test
     public void testGreeks() {
-        QL.info("Testing jump-diffusion option greeks...");
+        System.out.println("Testing jump-diffusion option greeks...");
 
         final Map<String, Double> calculated = new HashMap<String, Double>();
         final Map<String, Double> expected = new HashMap<String, Double>();

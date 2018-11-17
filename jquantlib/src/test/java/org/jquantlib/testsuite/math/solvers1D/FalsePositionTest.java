@@ -37,7 +37,7 @@ import org.junit.Test;
 public class FalsePositionTest {
 
 	public FalsePositionTest() {
-		QL.info("::::: "+this.getClass().getSimpleName()+" :::::");
+		System.out.println("::::: "+this.getClass().getSimpleName()+" :::::");
 	}
 
 	@Test

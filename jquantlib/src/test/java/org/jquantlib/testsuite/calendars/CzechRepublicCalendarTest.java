@@ -52,7 +52,7 @@ public class CzechRepublicCalendarTest {
     private final Calendar c;
 
     public CzechRepublicCalendarTest() {
-        QL.info("::::: " + this.getClass().getSimpleName() + " :::::");
+        System.out.println("::::: " + this.getClass().getSimpleName() + " :::::");
         c = new CzechRepublic(CzechRepublic.Market.PSE);
     }
 
@@ -60,7 +60,7 @@ public class CzechRepublicCalendarTest {
     @Test
     public void testCzechRepublicPSEHolidaysYear2004() {
         final int year = 2004;
-        QL.info("Testing " + CzechRepublic.Market.PSE + " holidays list for the year " + year + "...");
+        System.out.println("Testing " + CzechRepublic.Market.PSE + " holidays list for the year " + year + "...");
         
     	final List<Date> expectedHol = new ArrayList<Date>();
 
@@ -85,7 +85,7 @@ public class CzechRepublicCalendarTest {
     @Test
     public void testCzechRepublicPSEHolidaysYear2005() {
         final int year = 2005;
-        QL.info("Testing " + CzechRepublic.Market.PSE + " holidays list for the year " + year + "...");
+        System.out.println("Testing " + CzechRepublic.Market.PSE + " holidays list for the year " + year + "...");
         
     	final List<Date> expectedHol = new ArrayList<Date>();
 
@@ -106,7 +106,7 @@ public class CzechRepublicCalendarTest {
     @Test
     public void testCzechRepublicPSEHolidaysYear2006() {
         final int year = 2006;
-        QL.info("Testing " + CzechRepublic.Market.PSE + " holidays list for the year " + year + "...");
+        System.out.println("Testing " + CzechRepublic.Market.PSE + " holidays list for the year " + year + "...");
         
     	final List<Date> expectedHol = new ArrayList<Date>();
 
@@ -129,7 +129,7 @@ public class CzechRepublicCalendarTest {
     @Test
     public void testCzechRepublicPSEHolidaysYear2007() {
         final int year = 2007;
-        QL.info("Testing " + CzechRepublic.Market.PSE + " holidays list for the year " + year + "...");
+        System.out.println("Testing " + CzechRepublic.Market.PSE + " holidays list for the year " + year + "...");
         
     	final List<Date> expectedHol = new ArrayList<Date>();
 
@@ -155,7 +155,7 @@ public class CzechRepublicCalendarTest {
     @Test
     public void testCzechRepublicPSEHolidaysYear2008() {
         final int year = 2008;
-        QL.info("Testing " + CzechRepublic.Market.PSE + " holidays list for the year " + year + "...");
+        System.out.println("Testing " + CzechRepublic.Market.PSE + " holidays list for the year " + year + "...");
         
     	final List<Date> expectedHol = new ArrayList<Date>();
 
@@ -179,7 +179,7 @@ public class CzechRepublicCalendarTest {
     @Test
     public void testCzechRepublicPSEHolidaysYear2009() {
         final int year = 2009;
-        QL.info("Testing " + CzechRepublic.Market.PSE + " holidays list for the year " + year + "...");
+        System.out.println("Testing " + CzechRepublic.Market.PSE + " holidays list for the year " + year + "...");
         
     	final List<Date> expectedHol = new ArrayList<Date>();
 
@@ -203,7 +203,7 @@ public class CzechRepublicCalendarTest {
     @Test
     public void testCzechRepublicPSEHolidaysYear2010() {
         final int year = 2010;
-        QL.info("Testing " + CzechRepublic.Market.PSE + " holidays list for the year " + year + "...");
+        System.out.println("Testing " + CzechRepublic.Market.PSE + " holidays list for the year " + year + "...");
         
     	final List<Date> expectedHol = new ArrayList<Date>();
 
@@ -225,7 +225,7 @@ public class CzechRepublicCalendarTest {
     @Test
     public void testCzechRepublicPSEHolidaysYear2011() {
         final int year = 2011;
-        QL.info("Testing " + CzechRepublic.Market.PSE + " holidays list for the year " + year + "...");
+        System.out.println("Testing " + CzechRepublic.Market.PSE + " holidays list for the year " + year + "...");
         
     	final List<Date> expectedHol = new ArrayList<Date>();
 
@@ -246,7 +246,7 @@ public class CzechRepublicCalendarTest {
     @Test
     public void testCzechRepublicPSEHolidaysYear2012() {
         final int year = 2012;
-        QL.info("Testing " + CzechRepublic.Market.PSE + " holidays list for the year " + year + "...");
+        System.out.println("Testing " + CzechRepublic.Market.PSE + " holidays list for the year " + year + "...");
         
     	final List<Date> expectedHol = new ArrayList<Date>();
 

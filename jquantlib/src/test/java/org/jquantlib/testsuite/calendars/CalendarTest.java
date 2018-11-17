@@ -49,10 +49,6 @@ import org.junit.Test;
  */
 public class CalendarTest {
 
-    public CalendarTest() {
-        QL.info("::::: " + this.getClass().getSimpleName() + " :::::");
-    }
-
     @Test
     public void testAdvance() {
         final NullCalendar nullCalendar = new NullCalendar();
@@ -66,8 +62,6 @@ public class CalendarTest {
 
     @Test
     public void testEndOfMonth() {
-        QL.info("Testing end-of-month calculation...");
-
         final Calendar c = new Target(); // any calendar would be OK
 
         Date eom;

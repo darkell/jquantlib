@@ -47,7 +47,7 @@ public class NorwayCalendarTest {
     private final Calendar exchange;
 
 	public NorwayCalendarTest() {
-		QL.info("::::: "+this.getClass().getSimpleName()+" :::::");
+		System.out.println("::::: "+this.getClass().getSimpleName()+" :::::");
 	    //TODO: this.settlement = Norway.getCalendar(Poland.Market.Settlement);
 	    this.exchange   = new Norway();
 	}
@@ -75,7 +75,7 @@ public class NorwayCalendarTest {
 	@Test
 	public void testNorwayYear2012() {
        	final int year = 2012;
-    	QL.info("Testing " + exchange.name()+ " holidays list for the year " + year + "...");
+    	System.out.println("Testing " + exchange.name()+ " holidays list for the year " + year + "...");
         
     	final List<Date> expectedHol = new ArrayList<Date>();
 
@@ -121,7 +121,7 @@ public class NorwayCalendarTest {
 	@Test
 	public void testNorwayYear2011() {
         final int year = 2011;
-    	QL.info("Testing " + exchange.name() + " holidays list for the year " + year + "...");
+    	System.out.println("Testing " + exchange.name() + " holidays list for the year " + year + "...");
         
     	final List<Date> expectedHol = new ArrayList<Date>();
 
@@ -168,7 +168,7 @@ public class NorwayCalendarTest {
 	@Test
 	public void testNorwayYear2010() {
         final int year = 2010;
-    	QL.info("Testing " + exchange.name() + " holidays list for the year " + year + "...");
+    	System.out.println("Testing " + exchange.name() + " holidays list for the year " + year + "...");
         
     	final List<Date> expectedHol = new ArrayList<Date>();
 
@@ -217,7 +217,7 @@ public class NorwayCalendarTest {
 	@Test
 	public void testNorwayYear2009() {
       	final int year = 2009;
-    	QL.info("Testing " + exchange.name() + " holidays list for the year " + year + "...");
+    	System.out.println("Testing " + exchange.name() + " holidays list for the year " + year + "...");
         
     	final List<Date> expectedHol = new ArrayList<Date>();
 
@@ -265,7 +265,7 @@ public class NorwayCalendarTest {
 	@Test
 	public void testNorwayYear2008() {
       	final int year = 2008;
-    	QL.info("Testing " + exchange.name() + " holidays list for the year " + year + "...");
+    	System.out.println("Testing " + exchange.name() + " holidays list for the year " + year + "...");
         
     	final List<Date> expectedHol = new ArrayList<Date>();
 
@@ -312,7 +312,7 @@ public class NorwayCalendarTest {
 	@Test
 	public void testNorwayYear2007() {
         final int year = 2007;
-    	QL.info("Testing " + exchange.name() + " holidays list for the year " + year + "...");
+    	System.out.println("Testing " + exchange.name() + " holidays list for the year " + year + "...");
         
     	final List<Date> expectedHol = new ArrayList<Date>();
 
@@ -360,7 +360,7 @@ public class NorwayCalendarTest {
 	@Test
 	public void testNorwayYear2006() {
         final int year = 2006;
-    	QL.info("Testing " + exchange.name() + " holidays list for the year " + year + "...");
+    	System.out.println("Testing " + exchange.name() + " holidays list for the year " + year + "...");
         
     	final List<Date> expectedHol = new ArrayList<Date>();
 
@@ -406,7 +406,7 @@ public class NorwayCalendarTest {
     @Test
     public void testNorwayYear2005() {
         final int year = 2005;
-    	QL.info("Testing " + exchange.name() + " holidays list for the year " + year + "...");
+    	System.out.println("Testing " + exchange.name() + " holidays list for the year " + year + "...");
         
     	final List<Date> expectedHol = new ArrayList<Date>();
 
@@ -452,7 +452,7 @@ public class NorwayCalendarTest {
     @Test
     public void testNorwayYear2004() {
         final int year = 2004;
-    	QL.info("Testing " + exchange.name() + " holidays list for the year " + year + "...");
+    	System.out.println("Testing " + exchange.name() + " holidays list for the year " + year + "...");
         
     	final List<Date> expectedHol = new ArrayList<Date>();
 

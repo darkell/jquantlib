@@ -28,7 +28,7 @@ public class GermanyCalendarTest {
 	private final Calendar cSettlement;
 
 	public GermanyCalendarTest() {
-		QL.info("::::: "+this.getClass().getSimpleName()+" :::::");
+		System.out.println("::::: "+this.getClass().getSimpleName()+" :::::");
 		cSettlement	= new Germany(Germany.Market.Settlement);
 		cFrankfurt 	= new Germany(Germany.Market.FrankfurtStockExchange);
 		cXetra 		= new Germany(Germany.Market.Xetra);
@@ -39,7 +39,7 @@ public class GermanyCalendarTest {
 	@Test
 	public void testGermanyYear2004() {
 		final int year = 2004;
-		QL.info("Testing Germany holiday list for the year " + year + " as recognized by markets Frankfurt Stock Exchange, Xetra, Eurex ...");
+		System.out.println("Testing Germany holiday list for the year " + year + " as recognized by markets Frankfurt Stock Exchange, Xetra, Eurex ...");
         
     	final List<Date> expectedHol = new ArrayList<Date>();
 
@@ -68,7 +68,7 @@ public class GermanyCalendarTest {
 		cbt.checkHolidayList(expectedHol, cXetra, year);
 		cbt.checkHolidayList(expectedHol, cEurex, year);
 
-		QL.info("Testing Germany holiday list for the year " + year + " as recognized by Settlement ...");
+		System.out.println("Testing Germany holiday list for the year " + year + " as recognized by Settlement ...");
 		//National Day
 		//expectedHol.add(new Date(3,OCTOBER,year));
 
@@ -85,7 +85,7 @@ public class GermanyCalendarTest {
 	@Test
 	public void testGermanyYear2005() {
 		final int year = 2005;
-		QL.info("Testing Germany holiday list for the year " + year + " as recognized by markets Frankfurt Stock Exchange, Xetra, Eurex ...");
+		System.out.println("Testing Germany holiday list for the year " + year + " as recognized by markets Frankfurt Stock Exchange, Xetra, Eurex ...");
         
     	final List<Date> expectedHol = new ArrayList<Date>();
 
@@ -113,7 +113,7 @@ public class GermanyCalendarTest {
 		cbt.checkHolidayList(expectedHol, cXetra, year);
 		cbt.checkHolidayList(expectedHol, cEurex, year);
 
-		QL.info("Testing Germany holiday list for the year " + year + " as recognized by Settlement ...");
+		System.out.println("Testing Germany holiday list for the year " + year + " as recognized by Settlement ...");
 		//National Day
 		expectedHol.add(new Date(3,October,year));
 
@@ -130,7 +130,7 @@ public class GermanyCalendarTest {
 	@Test
 	public void testGermanyYear2006() {
 		final int year = 2006;
-		QL.info("Testing Germany holiday list for the year " + year + " as recognized by markets Frankfurt Stock Exchange, Xetra, Eurex ...");
+		System.out.println("Testing Germany holiday list for the year " + year + " as recognized by markets Frankfurt Stock Exchange, Xetra, Eurex ...");
         
     	final List<Date> expectedHol = new ArrayList<Date>();
 
@@ -158,7 +158,7 @@ public class GermanyCalendarTest {
 		cbt.checkHolidayList(expectedHol, cXetra, year);
 		cbt.checkHolidayList(expectedHol, cEurex, year);
 
-		QL.info("Testing Germany holiday list for the year " + year + " as recognized by Settlement ...");
+		System.out.println("Testing Germany holiday list for the year " + year + " as recognized by Settlement ...");
 		//National Day
 		expectedHol.add(new Date(3,October,year));
 
@@ -175,7 +175,7 @@ public class GermanyCalendarTest {
 	@Test
 	public void testGermanyYear2007() {
 		final int year = 2007;
-		QL.info("Testing Germany holiday list for the year " + year + " as recognized by markets Frankfurt Stock Exchange, Xetra, Eurex ...");
+		System.out.println("Testing Germany holiday list for the year " + year + " as recognized by markets Frankfurt Stock Exchange, Xetra, Eurex ...");
         
     	final List<Date> expectedHol = new ArrayList<Date>();
 
@@ -203,7 +203,7 @@ public class GermanyCalendarTest {
 		cbt.checkHolidayList(expectedHol, cXetra, year);
 		cbt.checkHolidayList(expectedHol, cEurex, year);
 
-		QL.info("Testing Germany holiday list for the year " + year + " as recognized by Settlement ...");
+		System.out.println("Testing Germany holiday list for the year " + year + " as recognized by Settlement ...");
 		//National Day
 		expectedHol.add(new Date(3,October,year));
 
@@ -222,7 +222,7 @@ public class GermanyCalendarTest {
 	@Test
 	public void testGermanyYear2008() {
 		final int year = 2008;
-		QL.info("Testing Germany holiday list for the year " + year + " as recognized by markets Frankfurt Stock Exchange, Xetra, Eurex ...");
+		System.out.println("Testing Germany holiday list for the year " + year + " as recognized by markets Frankfurt Stock Exchange, Xetra, Eurex ...");
         
     	final List<Date> expectedHol = new ArrayList<Date>();
 
@@ -250,7 +250,7 @@ public class GermanyCalendarTest {
 		cbt.checkHolidayList(expectedHol, cXetra, year);
 		cbt.checkHolidayList(expectedHol, cEurex, year);
 
-		QL.info("Testing Germany holiday list for the year " + year + " as recognized by Settlement ...");
+		System.out.println("Testing Germany holiday list for the year " + year + " as recognized by Settlement ...");
 		//National Day
 		expectedHol.add(new Date(3,October,year));
 
@@ -267,7 +267,7 @@ public class GermanyCalendarTest {
 	@Test
 	public void testGermanyYear2009() {
 		final int year = 2009;
-		QL.info("Testing Germany holiday list for the year " + year + " as recognized by markets Frankfurt Stock Exchange, Xetra, Eurex ...");
+		System.out.println("Testing Germany holiday list for the year " + year + " as recognized by markets Frankfurt Stock Exchange, Xetra, Eurex ...");
         
     	final List<Date> expectedHol = new ArrayList<Date>();
 
@@ -295,7 +295,7 @@ public class GermanyCalendarTest {
 		cbt.checkHolidayList(expectedHol, cXetra, year);
 		cbt.checkHolidayList(expectedHol, cEurex, year);
 
-		QL.info("Testing Germany holiday list for the year " + year + " as recognized by Settlement ...");
+		System.out.println("Testing Germany holiday list for the year " + year + " as recognized by Settlement ...");
 		//National Day
 		//expectedHol.add(new Date(3,OCTOBER,year));
 
@@ -312,7 +312,7 @@ public class GermanyCalendarTest {
 	@Test
 	public void testGermanyYear2010() {
 		final int year = 2010;
-		QL.info("Testing Germany holiday list for the year " + year + " as recognized by markets Frankfurt Stock Exchange, Xetra, Eurex ...");
+		System.out.println("Testing Germany holiday list for the year " + year + " as recognized by markets Frankfurt Stock Exchange, Xetra, Eurex ...");
         
     	final List<Date> expectedHol = new ArrayList<Date>();
 
@@ -340,7 +340,7 @@ public class GermanyCalendarTest {
 		cbt.checkHolidayList(expectedHol, cXetra, year);
 		cbt.checkHolidayList(expectedHol, cEurex, year);
 
-		QL.info("Testing Germany holiday list for the year " + year + " as recognized by Settlement ...");
+		System.out.println("Testing Germany holiday list for the year " + year + " as recognized by Settlement ...");
 		//National Day
 		//expectedHol.add(new Date(3,OCTOBER,year));
 
@@ -357,7 +357,7 @@ public class GermanyCalendarTest {
 	@Test
 	public void testGermanyYear2011() {
 		final int year = 2011;
-		QL.info("Testing Germany holiday list for the year " + year + " as recognized by markets Frankfurt Stock Exchange, Xetra, Eurex ...");
+		System.out.println("Testing Germany holiday list for the year " + year + " as recognized by markets Frankfurt Stock Exchange, Xetra, Eurex ...");
         
     	final List<Date> expectedHol = new ArrayList<Date>();
 
@@ -385,7 +385,7 @@ public class GermanyCalendarTest {
 		cbt.checkHolidayList(expectedHol, cXetra, year);
 		cbt.checkHolidayList(expectedHol, cEurex, year);
 
-		QL.info("Testing Germany holiday list for the year " + year + " as recognized by Settlement ...");
+		System.out.println("Testing Germany holiday list for the year " + year + " as recognized by Settlement ...");
 		//National Day
 		expectedHol.add(new Date(3,October,year));
 
@@ -402,7 +402,7 @@ public class GermanyCalendarTest {
 	@Test
 	public void testGermanyYear2012() {
 		final int year = 2012;
-		QL.info("Testing Germany holiday list for the year " + year + " as recognized by markets Frankfurt Stock Exchange, Xetra, Eurex ...");
+		System.out.println("Testing Germany holiday list for the year " + year + " as recognized by markets Frankfurt Stock Exchange, Xetra, Eurex ...");
         
     	final List<Date> expectedHol = new ArrayList<Date>();
 
@@ -430,7 +430,7 @@ public class GermanyCalendarTest {
 		cbt.checkHolidayList(expectedHol, cXetra, year);
 		cbt.checkHolidayList(expectedHol, cEurex, year);
 
-		QL.info("Testing Germany holiday list for the year " + year + " as recognized by Settlement ...");
+		System.out.println("Testing Germany holiday list for the year " + year + " as recognized by Settlement ...");
 		//National Day
 		expectedHol.add(new Date(3,October,year));
 

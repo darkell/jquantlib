@@ -55,7 +55,7 @@ public class SouthKoreaCalendarTest {
     private List<Date> expectedHol = null;
 
     public SouthKoreaCalendarTest() {
-        QL.info("::::: " + this.getClass().getSimpleName() + " :::::");
+        System.out.println("::::: " + this.getClass().getSimpleName() + " :::::");
     }
 
     @Before
@@ -68,7 +68,7 @@ public class SouthKoreaCalendarTest {
     @Test
     public void testSouthKoreaKRXHolidaysYear2004() {
         final int year = 2004;
-        QL.info("Testing " + SouthKorea.Market.KRX + " holidays list for the year " + year + "...");
+        System.out.println("Testing " + SouthKorea.Market.KRX + " holidays list for the year " + year + "...");
 
         expectedHol.add(new Date(1, January, year));
         expectedHol.add(new Date(21, January, year));
@@ -95,7 +95,7 @@ public class SouthKoreaCalendarTest {
     @Test
     public void testSouthKoreaKRXHolidaysYear2005() {
         final int year = 2005;
-        QL.info("Testing " + SouthKorea.Market.KRX + " holidays list for the year " + year + "...");
+        System.out.println("Testing " + SouthKorea.Market.KRX + " holidays list for the year " + year + "...");
 
         expectedHol.add(new Date(8, February, year));
         expectedHol.add(new Date(9, February, year));
@@ -119,7 +119,7 @@ public class SouthKoreaCalendarTest {
     @Test
     public void testSouthKoreaKRXHolidaysYear2006() {
         final int year = 2006;
-        QL.info("Testing " + SouthKorea.Market.KRX + " holidays list for the year " + year + "...");
+        System.out.println("Testing " + SouthKorea.Market.KRX + " holidays list for the year " + year + "...");
 
         expectedHol.add(new Date(30, January, year));
 //        expectedHol.add(new Date(31, JANUARY, year));
@@ -147,7 +147,7 @@ public class SouthKoreaCalendarTest {
     @Test
     public void testSouthKoreaKRXHolidaysYear2007() {
         final int year = 2007;
-        QL.info("Testing " + SouthKorea.Market.KRX + " holidays list for the year " + year + "...");
+        System.out.println("Testing " + SouthKorea.Market.KRX + " holidays list for the year " + year + "...");
 
         expectedHol.add(new Date(1, January, year));
         expectedHol.add(new Date(19, February, year));
@@ -176,7 +176,7 @@ public class SouthKoreaCalendarTest {
     @Test
     public void testSouthKoreaKRXHolidaysYear2008() {
         final int year = 2008;
-        QL.info("Testing " + SouthKorea.Market.KRX + " holidays list for the year " + year + "...");
+        System.out.println("Testing " + SouthKorea.Market.KRX + " holidays list for the year " + year + "...");
 
         expectedHol.add(new Date(1, January, year));
         expectedHol.add(new Date(6, February, year));
@@ -203,7 +203,7 @@ public class SouthKoreaCalendarTest {
     @Test
     public void testSouthKoreaKRXHolidaysYear2009() {
         final int year = 2009;
-        QL.info("Testing " + SouthKorea.Market.KRX + " holidays list for the year " + year + "...");
+        System.out.println("Testing " + SouthKorea.Market.KRX + " holidays list for the year " + year + "...");
 
         expectedHol.add(new Date(1, January, year));
         expectedHol.add(new Date(26, January, year));
@@ -224,7 +224,7 @@ public class SouthKoreaCalendarTest {
     @Test
     public void testSouthKoreaKRXHolidaysYear2010() {
         final int year = 2010;
-        QL.info("Testing " + SouthKorea.Market.KRX + " holidays list for the year " + year + "...");
+        System.out.println("Testing " + SouthKorea.Market.KRX + " holidays list for the year " + year + "...");
 
         expectedHol.add(new Date(1, January, year));
         expectedHol.add(new Date(15, February, year));
@@ -246,7 +246,7 @@ public class SouthKoreaCalendarTest {
     @Test
     public void testSouthKoreaKRXHolidaysYear2011() {
         final int year = 2011;
-        QL.info("Testing " + SouthKorea.Market.KRX + " holidays list for the year " + year + "...");
+        System.out.println("Testing " + SouthKorea.Market.KRX + " holidays list for the year " + year + "...");
 
         expectedHol.add(new Date(1, March, year));
 //        expectedHol.add(new Date(5, APRIL, year));
@@ -265,7 +265,7 @@ public class SouthKoreaCalendarTest {
     @Test
     public void testSouthKoreaKRXHolidaysYear2012() {
         final int year = 2012;
-        QL.info("Testing " + SouthKorea.Market.KRX + " holidays list for the year " + year + "...");
+        System.out.println("Testing " + SouthKorea.Market.KRX + " holidays list for the year " + year + "...");
 
         expectedHol.add(new Date(1, March, year));
 //        expectedHol.add(new Date(5, APRIL, year));

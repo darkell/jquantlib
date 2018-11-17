@@ -39,7 +39,7 @@ public class RidderTest {
 	//TODO: may we should think about combining all solver test in a single testclass?
 
 	public RidderTest() {
-		QL.info("::::: "+this.getClass().getSimpleName()+" :::::");
+		System.out.println("::::: "+this.getClass().getSimpleName()+" :::::");
 	}
 
 	@Test

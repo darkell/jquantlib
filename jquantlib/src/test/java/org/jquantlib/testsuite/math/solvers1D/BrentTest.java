@@ -35,7 +35,7 @@ import org.junit.Test;
 public class BrentTest {
 
     public BrentTest() {
-        QL.info("::::: " + this.getClass().getSimpleName() + " :::::");
+        System.out.println("::::: " + this.getClass().getSimpleName() + " :::::");
     }
 
     @Test

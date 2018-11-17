@@ -40,7 +40,6 @@ package org.jquantlib.pricingengines.hybrid;
 import java.util.ArrayList;
 import java.util.List;
 
-import org.jquantlib.QL;
 import org.jquantlib.cashflow.Callability;
 import org.jquantlib.cashflow.Dividend;
 import org.jquantlib.daycounters.DayCounter;
@@ -59,6 +58,8 @@ import org.jquantlib.time.Date;
 import org.jquantlib.time.Frequency;
 import org.jquantlib.time.TimeGrid;
 import org.jquantlib.util.Std;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 /**
  * Discretized Convertible
@@ -68,6 +69,7 @@ import org.jquantlib.util.Std;
  */
 @QualityAssurance(quality=Quality.Q3_DOCUMENTATION, version=Version.V097, reviewers="Richard Gomes")
 public class DiscretizedConvertible extends DiscretizedAsset {
+    private static Logger LOG = LoggerFactory.getLogger(DiscretizedConvertible.class);
 
     //
     // protected fields
@@ -229,7 +231,7 @@ public class DiscretizedConvertible extends DiscretizedAsset {
             }
             break;
           default:
-            QL.error("unknown callability type");
+              LOG.error("unknown callability type");
         }
     }
 
@@ -319,7 +321,7 @@ public class DiscretizedConvertible extends DiscretizedAsset {
             }
             break;
           default:
-            QL.error("invalid option type");
+              LOG.error("invalid option type");
         }
 
         for (int i=0; i<callabilityTimes.size(); i++) {

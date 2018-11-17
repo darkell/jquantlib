@@ -81,11 +81,11 @@ public class ConvertibleBonds implements Runnable {
     @Override
     public void run() {
 
-        QL.info("::::: " + this.getClass().getSimpleName() + " :::::");
+        System.out.println("::::: " + this.getClass().getSimpleName() + " :::::");
 
         final StopClock clock = new StopClock();
         clock.startClock();
-        QL.info("Started calculation at: " + clock.getElapsedTime());
+        System.out.println("Started calculation at: " + clock.getElapsedTime());
 
         // actually never used.....
         final Option.Type type = Option.Type.Put;
@@ -105,19 +105,19 @@ public class ConvertibleBonds implements Runnable {
         final Calendar calendar = new Target();
         //adjust today to the next business day...
         final Date today = calendar.adjust(Date.todaysDate());
-        QL.info("Today's date is adjusted by the default business day convention is: " + today.shortDate());
+        System.out.println("Today's date is adjusted by the default business day convention is: " + today.shortDate());
         // set the evaluation date to the adjusted today's date
         new Settings().setEvaluationDate(today);
-        QL.info("Set the global evaluation date to the adjusted today's date: " + today.shortDate());
+        System.out.println("Set the global evaluation date to the adjusted today's date: " + today.shortDate());
 
         //Set up settlement, exercise and issue dates
         final Date settlementDate = calendar.advance(today, settlementDays, TimeUnit.Days);
-        QL.info("SettlementDate is: " + settlementDate.shortDate());
-        QL.info("Check that we haven't messed up with references --> today's date is still: " + today.shortDate());
+        System.out.println("SettlementDate is: " + settlementDate.shortDate());
+        System.out.println("Check that we haven't messed up with references --> today's date is still: " + today.shortDate());
         final Date exerciseDate = calendar.advance(settlementDate, length, TimeUnit.Years);
-        QL.info("Excercise date is: " + exerciseDate.shortDate());
+        System.out.println("Excercise date is: " + exerciseDate.shortDate());
         final Date issueDate = calendar.advance(exerciseDate, -length, TimeUnit.Years);
-        QL.info("Issue date is: " + issueDate.shortDate());
+        System.out.println("Issue date is: " + issueDate.shortDate());
 
         //Fix business day convention and compounding?? frequency
         final BusinessDayConvention convention = BusinessDayConvention.ModifiedFollowing;

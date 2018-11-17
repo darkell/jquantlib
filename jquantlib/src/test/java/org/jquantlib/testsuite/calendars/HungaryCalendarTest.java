@@ -49,7 +49,7 @@ public class HungaryCalendarTest {
     private final Calendar c;
 
     public HungaryCalendarTest() {
-        QL.info("::::: " + this.getClass().getSimpleName() + " :::::");
+        System.out.println("::::: " + this.getClass().getSimpleName() + " :::::");
 		c	= new Hungary();
     }
 
@@ -57,7 +57,7 @@ public class HungaryCalendarTest {
     @Test
     public void testHungaryYear2004() {
         final int year = 2004;
-        QL.info("Testing " + c.name() + " holiday list for the year " + year + "...");
+        System.out.println("Testing " + c.name() + " holiday list for the year " + year + "...");
         
     	final List<Date> expectedHol = new ArrayList<Date>();
 
@@ -78,7 +78,7 @@ public class HungaryCalendarTest {
     public void testHungaryYear2007() {
 
         final int year = 2007;
-        QL.info("Testing " + c.name() + " holiday list for the year " + year + "...");
+        System.out.println("Testing " + c.name() + " holiday list for the year " + year + "...");
         
     	final List<Date> expectedHol = new ArrayList<Date>();
 
@@ -101,7 +101,7 @@ public class HungaryCalendarTest {
     @Test
     public void testHungaryYear2008() {
         final int year = 2008;
-        QL.info("Testing " + c.name() + " holiday list for the year " + year + "...");
+        System.out.println("Testing " + c.name() + " holiday list for the year " + year + "...");
         
     	final List<Date> expectedHol = new ArrayList<Date>();
 
@@ -123,7 +123,7 @@ public class HungaryCalendarTest {
     public void testHungaryYear2009() {
 
         final int year = 2009;
-        QL.info("Testing " + c.name() + " holiday list for the year " + year + "...");
+        System.out.println("Testing " + c.name() + " holiday list for the year " + year + "...");
         
     	final List<Date> expectedHol = new ArrayList<Date>();
 
@@ -145,7 +145,7 @@ public class HungaryCalendarTest {
     public void testHungaryYear2012() {
 
         final int year = 2012;
-        QL.info("Testing " + c.name() + " holiday list for the year " + year + "...");
+        System.out.println("Testing " + c.name() + " holiday list for the year " + year + "...");
         
     	final List<Date> expectedHol = new ArrayList<Date>();
 

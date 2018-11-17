@@ -55,7 +55,7 @@ public class EstimatorsTest {
     private final TimeSeries<Double> ts;
 
     public EstimatorsTest() {
-        QL.info("Testing volatility model construction...");
+        System.out.println("Testing volatility model construction...");
 
         final Date[] dates = new Date[] {
                 new Date(25, Month.March, 2005),

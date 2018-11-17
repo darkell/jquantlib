@@ -73,7 +73,7 @@ public class TermStructuresTest {
 
 
     public TermStructuresTest() {
-        QL.info("::::: "+this.getClass().getSimpleName()+" :::::");
+        System.out.println("::::: "+this.getClass().getSimpleName()+" :::::");
 
         this.calendar = new Target();
         this.settlementDays = 2;
@@ -149,7 +149,7 @@ public class TermStructuresTest {
 
     @Test
     public void testReferenceChange() {
-        QL.info("Testing term structure against evaluation date change...");
+        System.out.println("Testing term structure against evaluation date change...");
 
         final YieldTermStructure localTermStructure = new FlatForward(settlementDays, new NullCalendar(), 0.03, new Actual360());
 
@@ -185,7 +185,7 @@ public class TermStructuresTest {
     @Ignore
     @Test
     public void testImplied() {
-        QL.info("Testing consistency of implied term structure...");
+        System.out.println("Testing consistency of implied term structure...");
         fail("***** TEST FAILED :: waiting for implementation of PiecewiseYieldTermStructure *****");
 
         //	    final double tolerance = 1.0e-10;
@@ -215,7 +215,7 @@ public class TermStructuresTest {
      */
     @Test
     public void testImpliedObs() {
-        QL.info("Testing observability of implied term structure...");
+        System.out.println("Testing observability of implied term structure...");
 
         final Date today = new Settings().evaluationDate();
         final Date newToday = today.add(Period.ONE_YEAR_FORWARD.mul(3));
@@ -279,7 +279,7 @@ public class TermStructuresTest {
     @Ignore
     @Test
     public void testFSpreaded() {
-        QL.info("Testing consistency of forward-spreaded term structure...");
+        System.out.println("Testing consistency of forward-spreaded term structure...");
         fail("***** TEST FAILED :: waiting for translation of ForwardSpreadedTermStructure *****");
 
         //	    final double tolerance = 1.0e-10;
@@ -309,7 +309,7 @@ public class TermStructuresTest {
     @Ignore
     @Test
     public void testFSpreadedObs() {
-        QL.info("Testing observability of forward-spreaded term structure...");
+        System.out.println("Testing observability of forward-spreaded term structure...");
         fail("***** TEST FAILED :: waiting for translation of ForwardSpreadedTermStructure *****");
 
         //	    SimpleQuote me = new SimpleQuote(0.01);
@@ -335,7 +335,7 @@ public class TermStructuresTest {
     @Ignore
     @Test
     public void testZSpreaded() {
-        QL.info("Testing consistency of zero-spreaded term structure...");
+        System.out.println("Testing consistency of zero-spreaded term structure...");
         fail("***** TEST FAILED :: waiting for translation of ZeroSpreadedTermStructure *****");
 
         //	    double tolerance = 1.0e-10;
@@ -363,7 +363,7 @@ public class TermStructuresTest {
     @Ignore
     @Test
     public void testZSpreadedObs() {
-        QL.info("Testing observability of zero-spreaded term structure...");
+        System.out.println("Testing observability of zero-spreaded term structure...");
         fail("***** TEST FAILED :: waiting for translation of ZeroSpreadedTermStructure *****");
 
         //	    SimpleQuote me = new SimpleQuote(0.01);

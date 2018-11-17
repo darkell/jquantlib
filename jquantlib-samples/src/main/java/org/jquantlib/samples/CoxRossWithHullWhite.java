@@ -126,7 +126,7 @@ public class CoxRossWithHullWhite implements Runnable {
 
         QL.validateExperimentalMode();
 
-        QL.info("::::: " + this.getClass().getSimpleName() + " :::::");
+        System.out.println("::::: " + this.getClass().getSimpleName() + " :::::");
 
         final StopClock clock = new StopClock();
         clock.startClock();

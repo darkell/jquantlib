@@ -38,7 +38,7 @@ import org.junit.Test;
 public class SecantTest {
 
 	public SecantTest() {
-		QL.info("::::: "+this.getClass().getSimpleName()+" :::::");
+		System.out.println("::::: "+this.getClass().getSimpleName()+" :::::");
 	}
 
 	@Test

@@ -12,13 +12,13 @@ import org.junit.Test;
 public class TransformedGridTest {
 
     public TransformedGridTest() {
-        QL.info("::::: "+this.getClass().getSimpleName()+" :::::");
+        System.out.println("::::: "+this.getClass().getSimpleName()+" :::::");
     }
 
     @Test
     public void testConstruction() {
 
-        QL.info("Testing transformed grid construction...");
+        System.out.println("Testing transformed grid construction...");
 
         final PlusOne p1 = new PlusOne();
         final Array grid = Grid.BoundedGrid(0, 100, 100);

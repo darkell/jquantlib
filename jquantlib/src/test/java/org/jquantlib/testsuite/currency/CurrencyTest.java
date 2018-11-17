@@ -41,17 +41,17 @@ import org.junit.Test;
 public class CurrencyTest {
 
     public CurrencyTest() {
-        QL.info("::::: "+this.getClass().getSimpleName()+" :::::");
+        System.out.println("::::: "+this.getClass().getSimpleName()+" :::::");
     }
 
 
     @Test
     public void testCurrencies(){
-        QL.info("testing currencies...");
+        System.out.println("testing currencies...");
         //Sample Currency - CHF
         final CHFCurrency chf = new CHFCurrency();
 
-        QL.info("testing correct initialization...");
+        System.out.println("testing correct initialization...");
         assertTrue(chf.name().equalsIgnoreCase("Swiss franc"));
         assertTrue(chf.code().equalsIgnoreCase("CHF"));
         assertEquals(chf.numericCode(),756);
@@ -62,7 +62,7 @@ public class CurrencyTest {
         //Note: the initialization of the triangulated currency is a little bit suspicious...
         assertTrue(chf.triangulationCurrency().getClass() == Currency.class);
         assertTrue(chf.triangulationCurrency().empty());
-        QL.info("testing overloaded operators....(only class based)");
+        System.out.println("testing overloaded operators....(only class based)");
         final EURCurrency euro = new EURCurrency();
         final CHFCurrency chf2 = new CHFCurrency();
         assertFalse(euro.eq(chf));

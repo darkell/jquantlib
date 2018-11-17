@@ -37,7 +37,7 @@ import org.junit.Test;
 public class PoissonNormalTest {
 
     public PoissonNormalTest() {
-        QL.info("::::: "+this.getClass().getSimpleName()+" :::::");
+        System.out.println("::::: "+this.getClass().getSimpleName()+" :::::");
     }
 
     @Test

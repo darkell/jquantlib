@@ -41,8 +41,8 @@ import org.junit.Test;
 public class MoneyTest {
 
     public MoneyTest() {
-        QL.info("::::: "+this.getClass().getSimpleName()+" :::::");
-        QL.info("see testsuite.money.cpp/hpp");
+        System.out.println("::::: "+this.getClass().getSimpleName()+" :::::");
+        System.out.println("see testsuite.money.cpp/hpp");
     }
 
     // FIXME: Remove @Ignore when ExchangeRateManager becomes available (and reviewed!)
@@ -50,7 +50,7 @@ public class MoneyTest {
     @Ignore
     @Test
     public void testBaseCurrency(){
-        QL.info("Testing money arithmetic with conversion to base currency...");
+        System.out.println("Testing money arithmetic with conversion to base currency...");
 
         final Currency EUR = new EURCurrency();
         final Currency GBP = new GBPCurrency();
@@ -78,13 +78,13 @@ public class MoneyTest {
 
         final Money calculated3 = calculated0.add(calculated1).sub(calculated2);
 
-        QL.info("Calculated value: " + calculated3.value());
+        System.out.println("Calculated value: " + calculated3.value());
 
 
         final Rounding round = Money.baseCurrency.rounding();
         /*@Decimal*/final double x = round.operator(m1.value()*3.0/eur_gbp.rate()) + 2.5*m2.value() -
         round.operator(m3.value()/(5.0*eur_usd.rate()));
-        QL.info("Expected value: " + x);
+        System.out.println("Expected value: " + x);
 
         final Money expected = new Money(x, EUR);
 
@@ -94,14 +94,14 @@ public class MoneyTest {
                     + "    expected:   " + expected + "\n"
                     + "    calculated: " + calculated3);
         }
-        QL.info("testBaseCurrency done!");
+        System.out.println("testBaseCurrency done!");
     }
 
 
     @Ignore
     @Test
     public void testNone() {
-        QL.info("Testing money arithmetic without conversions...");
+        System.out.println("Testing money arithmetic without conversions...");
         final Currency EUR = new EURCurrency();
         final Money m1 = Money.multiple( 50000.0, EUR);
         final Money m2 = Money.multiple(100000.0, EUR);
@@ -116,10 +116,10 @@ public class MoneyTest {
 
         final Money calculated3 = calculated0.add(calculated1).sub(calculated2);
 
-        QL.info("Calculated value: " + calculated3.value());
+        System.out.println("Calculated value: " + calculated3.value());
 
         /*Decimal*/final double x =  m1.value()*3.0 + 2.5*m2.value() - m3.value()/5.0;
-        QL.info("Expected value: " + x);
+        System.out.println("Expected value: " + x);
 
         final Money expected = new Money(x, EUR);
 
@@ -128,7 +128,7 @@ public class MoneyTest {
                     + "    expected:   " + expected + "\n"
                     + "    calculated: " + calculated3);
         }
-        QL.info("testNone done!");
+        System.out.println("testNone done!");
     }
 
 }

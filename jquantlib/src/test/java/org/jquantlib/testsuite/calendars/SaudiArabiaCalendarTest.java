@@ -48,7 +48,7 @@ public class SaudiArabiaCalendarTest {
     private final Calendar exchange;
 
     public SaudiArabiaCalendarTest() {
-		QL.info("::::: "+this.getClass().getSimpleName()+" :::::");
+		System.out.println("::::: "+this.getClass().getSimpleName()+" :::::");
         this.exchange = new SaudiArabia(SaudiArabia.Market.Tadawul);
 	}
 
@@ -56,7 +56,7 @@ public class SaudiArabiaCalendarTest {
     @Test
 	public void testSaudiArabiaYear2004() {
       	final int year = 2004;
-      	QL.info("Testing SaudiArabia's holiday list for the year " + year + "...");
+      	System.out.println("Testing SaudiArabia's holiday list for the year " + year + "...");
         
         final List<Date> expectedHol = new ArrayList<Date>();
 
@@ -80,7 +80,7 @@ public class SaudiArabiaCalendarTest {
     @Test
     public void testSaudiArabiaYear2005() {
       	final int year = 2005;
-      	QL.info("Testing SaudiArabia's holiday list for the year " + year + "...");
+      	System.out.println("Testing SaudiArabia's holiday list for the year " + year + "...");
         
         final List<Date> expectedHol = new ArrayList<Date>();
 
@@ -104,7 +104,7 @@ public class SaudiArabiaCalendarTest {
     @Test
     public void testSaudiArabiaYear2006() {
       	final int year = 2006;
-      	QL.info("Testing SaudiArabia's holiday list for the year " + year + "...");
+      	System.out.println("Testing SaudiArabia's holiday list for the year " + year + "...");
         
         final List<Date> expectedHol = new ArrayList<Date>();
 
@@ -120,7 +120,7 @@ public class SaudiArabiaCalendarTest {
     @Test
     public void testSaudiArabiaYear2007() {
       	final int year = 2007;
-      	QL.info("Testing SaudiArabia's holiday list for the year " + year + "...");
+      	System.out.println("Testing SaudiArabia's holiday list for the year " + year + "...");
         
         final List<Date> expectedHol = new ArrayList<Date>();
 
@@ -136,7 +136,7 @@ public class SaudiArabiaCalendarTest {
     @Test
     public void testSaudiArabiaYear2008() {
       	final int year = 2008;
-      	QL.info("Testing SaudiArabia's holiday list for the year " + year + "...");
+      	System.out.println("Testing SaudiArabia's holiday list for the year " + year + "...");
         
         final List<Date> expectedHol = new ArrayList<Date>();
 
@@ -152,7 +152,7 @@ public class SaudiArabiaCalendarTest {
     @Test
     public void testSaudiArabiaYear2009() {
       	final int year = 2009;
-      	QL.info("Testing SaudiArabia's holiday list for the year " + year + "...");
+      	System.out.println("Testing SaudiArabia's holiday list for the year " + year + "...");
         
         final List<Date> expectedHol = new ArrayList<Date>();
 
@@ -168,7 +168,7 @@ public class SaudiArabiaCalendarTest {
     @Test
     public void testSaudiArabiaYear2010() {
       	final int year = 2010;
-      	QL.info("Testing SaudiArabia's holiday list for the year " + year + "...");
+      	System.out.println("Testing SaudiArabia's holiday list for the year " + year + "...");
         
         final List<Date> expectedHol = new ArrayList<Date>();
 
@@ -184,7 +184,7 @@ public class SaudiArabiaCalendarTest {
     @Test
     public void testSaudiArabiaYear2011() {
       	final int year = 2011;
-      	QL.info("Testing SaudiArabia's holiday list for the year " + year + "...");
+      	System.out.println("Testing SaudiArabia's holiday list for the year " + year + "...");
         
         final List<Date> expectedHol = new ArrayList<Date>();
 
@@ -200,7 +200,7 @@ public class SaudiArabiaCalendarTest {
     @Test
     public void testSaudiArabiaYear2012() {
       	final int year = 2012;
-      	QL.info("Testing SaudiArabia's holiday list for the year " + year + "...");
+      	System.out.println("Testing SaudiArabia's holiday list for the year " + year + "...");
         
         final List<Date> expectedHol = new ArrayList<Date>();
 

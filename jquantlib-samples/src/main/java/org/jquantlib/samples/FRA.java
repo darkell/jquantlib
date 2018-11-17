@@ -77,7 +77,7 @@ public class FRA implements Runnable {
 
         QL.validateExperimentalMode();
 
-        QL.info("::::: " + this.getClass().getSimpleName() + " :::::");
+        System.out.println("::::: " + this.getClass().getSimpleName() + " :::::");
 
         /*********************
          ***  MARKET DATA  ***

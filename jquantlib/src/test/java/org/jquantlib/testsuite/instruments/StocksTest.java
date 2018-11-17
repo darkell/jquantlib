@@ -14,12 +14,12 @@ import org.junit.Test;
 public class StocksTest {
 
     public StocksTest() {
-        QL.info("::::: "+this.getClass().getSimpleName()+" :::::");
+        System.out.println("::::: "+this.getClass().getSimpleName()+" :::::");
     }
 
     @Test
     public void testStocks() {
-        QL.info("Testing price valuation of Stocks...");
+        System.out.println("Testing price valuation of Stocks...");
 
         final double iniPrice = 3.56;
         final double newPrice = iniPrice*1.0214; // changed +2.14%

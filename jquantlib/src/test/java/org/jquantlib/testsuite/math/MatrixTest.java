@@ -53,7 +53,7 @@ public class MatrixTest {
 
 
     public MatrixTest() {
-        QL.info("::::: "+this.getClass().getSimpleName()+" :::::");
+        System.out.println("::::: "+this.getClass().getSimpleName()+" :::::");
 
         this.jFlags = EnumSet.noneOf(Address.Flags.class);
         this.fFlags = EnumSet.of(Address.Flags.FORTRAN);
@@ -844,7 +844,7 @@ public class MatrixTest {
               {  0,    0,    -1,    2 },
         }, flags);
 
-        QL.info("Testing LU inverse calculation...");
+        System.out.println("Testing LU inverse calculation...");
 
         final Matrix matrices[] = { M1, M2, I, M5 };
 
@@ -855,7 +855,7 @@ public class MatrixTest {
 
 
     private void inverse(final Matrix m) {
-        QL.info("Testing LU inverse calculation...");
+        System.out.println("Testing LU inverse calculation...");
 
         final double tol = 1.0e-12;
 
@@ -1476,7 +1476,7 @@ public class MatrixTest {
     }
 
     private void testEigenvectors(final Set<Address.Flags> flags) {
-    	QL.info("Testing eigenvalues and eigenvectors calculation...");
+    	System.out.println("Testing eigenvalues and eigenvectors calculation...");
 
         final Matrix M1 = new Matrix(new double[][] {
                 { 1.0,  0.9,  0.7 },
@@ -1579,7 +1579,7 @@ public class MatrixTest {
     //    @Test
     //    public void testSVD() {
     //
-    //        QL.info("Testing singular value decomposition...");
+    //        System.out.println("Testing singular value decomposition...");
     //
     //        final double tol = 1.0e-12;
     //        final Matrix testMatrices[] = { M1, M2, M3, M4 };
@@ -1676,7 +1676,7 @@ public class MatrixTest {
 //        M7.set(0, 1, 0.3); M7.set(0, 2, 0.2); M7.set(2, 1, 1.2);
 
 
-        QL.info("Testing QR decomposition...");
+        System.out.println("Testing QR decomposition...");
 
         final double tolerance = 1.0e-12;
 
@@ -1732,7 +1732,7 @@ public class MatrixTest {
     //    @Test
     //    public void testQRSolve() {
     //
-    //        QL.info("Testing QR solve...");
+    //        System.out.println("Testing QR solve...");
     //
     //        final double tol = 1.0e-12;
     //        final MersenneTwisterUniformRng rng = new MersenneTwisterUniformRng(1234);

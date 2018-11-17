@@ -41,7 +41,7 @@ import org.junit.Test;
 public class QuotesTest {
 
 	public QuotesTest() {
-		QL.info("::::: "+this.getClass().getSimpleName()+" :::::");
+		System.out.println("::::: "+this.getClass().getSimpleName()+" :::::");
 	}
 
 //	private double add10(final double x) { return x+10; }
@@ -55,7 +55,7 @@ public class QuotesTest {
 	@Test
 	public void testObservable() {
 
-	    QL.info("Testing observability of quotes...");
+	    System.out.println("Testing observability of quotes...");
 
 	    final SimpleQuote me = new SimpleQuote(0.0);
 	    final Flag f = new Flag();
@@ -69,7 +69,7 @@ public class QuotesTest {
 	@Test
 	public void testObservableHandle() {
 
-		QL.info("Testing observability of quote handles...");
+		System.out.println("Testing observability of quote handles...");
 
 	    final SimpleQuote me1 = new SimpleQuote(0.0);
 	    final RelinkableHandle<Quote> h = new RelinkableHandle(me1);
@@ -95,7 +95,7 @@ public class QuotesTest {
 //	@Test
 //	public void testDerived() {
 //
-//		QL.info("Testing derived quotes...");
+//		System.out.println("Testing derived quotes...");
 //
 //	    typedef Real (*unary_f)(Real);
 //	    unary_f funcs[3] = { add10, mul10, sub10 };
@@ -116,7 +116,7 @@ public class QuotesTest {
 //	@Test
 //	public void testComposite() {
 //
-//		QL.info("Testing composite quotes...");
+//		System.out.println("Testing composite quotes...");
 //
 //	    typedef Real (*binary_f)(Real,Real);
 //	    binary_f funcs[3] = { add, mul, sub };
@@ -140,7 +140,7 @@ public class QuotesTest {
 //	@Test
 //	public void testForwardValueQuoteAndImpliedStdevQuote(){
 //
-//		QL.info("Testing forward-value and implied-stdev quotes...");
+//		System.out.println("Testing forward-value and implied-stdev quotes...");
 //
 //	    double forwardRate = .05;
 //	    DayCounter dc = new ActualActual();

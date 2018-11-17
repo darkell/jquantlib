@@ -44,7 +44,7 @@ import org.junit.Test;
 public class GaussKonrodPattersonIntegratorTest {
 
 	public GaussKonrodPattersonIntegratorTest() {
-		QL.info("::::: "+this.getClass().getSimpleName()+" :::::");
+		System.out.println("::::: "+this.getClass().getSimpleName()+" :::::");
 	}
 
 	@Test

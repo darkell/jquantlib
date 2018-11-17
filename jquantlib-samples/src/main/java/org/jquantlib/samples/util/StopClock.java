@@ -84,7 +84,7 @@ public class StopClock {
     }
 
     public void log() {
-        QL.info(toString());
+        System.out.println(toString());
     }
 
 }
