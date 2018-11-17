@@ -91,6 +91,7 @@ import org.jquantlib.time.Period;
 import org.jquantlib.time.Schedule;
 import org.jquantlib.time.TimeUnit;
 import org.jquantlib.time.calendars.Target;
+import org.junit.Ignore;
 import org.junit.Test;
 
 /**
@@ -162,6 +163,7 @@ public class ConvertibleBondTest {
 	}
 
 	@Test
+	@Ignore
 	public void testBond() {
 		System.setProperty("EXPERIMENTAL", "true");
 		/*
