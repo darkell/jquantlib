@@ -24,11 +24,11 @@ On a Unix-like console
 ::
 
     # branch from Github with git
-    git clone http://github.com/frgomes/jquantlib
+    git clone https://github.com/darkell/jquantlib.git
 
     # run demo number 9 (EquityOptions)
     cd jquantlib
-    ./sbt clean samples/run     # or simply `sbt clean samples/run` if you have SBT installed
+    mvn verify
 
 For impatient developers
 ========================
@@ -45,14 +45,4 @@ Main modules
 
 -  jquantlib-helpers -- helper classes
 
--  jquantlib-contrib -- 3rd party contributions
-
 -  jquantlib-samples -- sample code
-
-Related software
-----------------
-
--  jquantlib-ooplugin -- OpenOffice Calc plugin (outdated, not
-   maintained)
-
--- Richard Gomes
