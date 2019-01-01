@@ -26,6 +26,8 @@ object Actual365Fixed: DayCounter()
 object SimpleDayCounter: DayCounter()
 object Actual360: DayCounter()
 
+typealias Thirty360 = Thirty360BondBasis
+
 object Thirty360USA: DayCounter()
 object Thirty360BondBasis: DayCounter()
 object Thirty360European: DayCounter()

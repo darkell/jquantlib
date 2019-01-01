@@ -25,13 +25,11 @@ import org.jquantlib.api.service.InterestRateService
 
 class InterestRateServiceImpl : InterestRateService {
 
-  @Strictfp
-  override fun discountFactor(interestRate: InterestRate, t: Double): Double {
-    val factor = compoundFactor(interestRate, t)
+  override fun discountFactor(interestRate: InterestRate, time: Double): Double {
+    val factor = compoundFactor(interestRate, time)
     return 1.0 / factor
   }
 
-  @Strictfp
   override fun compoundFactor(interestRate: InterestRate, time: Double): Double {
     QL.require(time >= 0.0 , "negative time not allowed")
     // QL.require(!Double.isNaN(rate) , "null interest rate")

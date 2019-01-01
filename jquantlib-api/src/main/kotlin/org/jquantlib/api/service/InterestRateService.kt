@@ -20,7 +20,7 @@ import org.jquantlib.api.data.InterestRate
 
 interface InterestRateService {
 
-  fun discountFactor(interestRate: InterestRate, t: Double): Double
+  fun discountFactor(interestRate: InterestRate, time: Double): Double
 
   fun compoundFactor(interestRate: InterestRate, time: Double): Double
 
