@@ -14,7 +14,7 @@
  When applicable, the original copyright notice follows this notice.
  */
 
-package org.jquantlib.calendar
+package org.jquantlib.dayCounter
 
 import org.jquantlib.api.data.*
 import org.jquantlib.api.service.CalendarService
@@ -28,9 +28,7 @@ class DayCounterServiceImpl(
     private val calendarService: CalendarService
 ) : DayCounterService {
 
-  private val actual365Fixed = org.jquantlib.daycounters.Actual365Fixed()
   private val simpleDayCounter = org.jquantlib.daycounters.SimpleDayCounter()
-  private val actual360 = org.jquantlib.daycounters.Actual360()
   private val thirty360USA = org.jquantlib.daycounters.Thirty360(Thirty360.Convention.USA)
   private val thirty360BondBasis = org.jquantlib.daycounters.Thirty360(Thirty360.Convention.BondBasis)
   private val thirty360European = org.jquantlib.daycounters.Thirty360(Thirty360.Convention.European)
@@ -50,9 +48,9 @@ class DayCounterServiceImpl(
       end: LocalDate
   ): Long {
     return when (dayCounter) {
-      Actual365Fixed -> actual365Fixed.dayCount(start.toQl(), end.toQl())
+      Actual365Fixed -> DayCounterInternalActual365Fixed.dayCount(start, end)
       SimpleDayCounter -> simpleDayCounter.dayCount(start.toQl(), end.toQl())
-      Actual360 -> actual360.dayCount(start.toQl(), end.toQl())
+      Actual360 -> DayCounterInternalActual360.dayCount(start, end)
       Thirty360USA -> thirty360USA.dayCount(start.toQl(), end.toQl())
       Thirty360BondBasis -> thirty360BondBasis.dayCount(start.toQl(), end.toQl())
       Thirty360European -> thirty360European.dayCount(start.toQl(), end.toQl())
@@ -77,9 +75,9 @@ class DayCounterServiceImpl(
       refPeriodEnd: LocalDate?
   ): Double {
     return when (dayCounter) {
-      Actual365Fixed -> actual365Fixed.yearFraction(start.toQl(), end.toQl(), refPeriodStart?.toQl(), refPeriodEnd?.toQl())
+      Actual365Fixed -> DayCounterInternalActual365Fixed.yearFraction(start, end, refPeriodStart, refPeriodEnd)
       SimpleDayCounter -> simpleDayCounter.yearFraction(start.toQl(), end.toQl(), refPeriodStart?.toQl(), refPeriodEnd?.toQl())
-      Actual360 -> actual360.yearFraction(start.toQl(), end.toQl(), refPeriodStart?.toQl(), refPeriodEnd?.toQl())
+      Actual360 -> DayCounterInternalActual360.yearFraction(start, end, refPeriodStart, refPeriodEnd)
       Thirty360USA -> thirty360USA.yearFraction(start.toQl(), end.toQl(), refPeriodStart?.toQl(), refPeriodEnd?.toQl())
       Thirty360BondBasis -> thirty360BondBasis.yearFraction(start.toQl(), end.toQl(), refPeriodStart?.toQl(), refPeriodEnd?.toQl())
       Thirty360European -> thirty360European.yearFraction(start.toQl(), end.toQl(), refPeriodStart?.toQl(), refPeriodEnd?.toQl())

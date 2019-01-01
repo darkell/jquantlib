@@ -19,15 +19,12 @@ package org.jquantlib.ir
 import com.fasterxml.jackson.core.type.TypeReference
 import org.jquantlib.api.data.*
 import org.jquantlib.api.jackson.QuantlibObjectMapperFactory
-import org.jquantlib.calendar.CalendarServiceImpl
-import org.jquantlib.calendar.DayCounterServiceImpl
 import org.junit.Assert.assertEquals
 import org.junit.Test
 import org.junit.runner.RunWith
 import org.junit.runners.Parameterized
 import org.junit.runners.Parameterized.Parameters
 import java.io.File
-import java.time.LocalDate
 
 @RunWith(Parameterized::class)
 class InterestRateServiceCompoundFactorTimeTest(

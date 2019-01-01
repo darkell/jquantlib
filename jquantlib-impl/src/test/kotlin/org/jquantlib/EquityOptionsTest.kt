@@ -2,7 +2,7 @@ package org.jquantlib
 
 import org.jquantlib.api.data.*
 import org.jquantlib.calendar.CalendarServiceImpl
-import org.jquantlib.calendar.DayCounterServiceImpl
+import org.jquantlib.dayCounter.DayCounterServiceImpl
 import org.jquantlib.engine.AnalyticEuropeanEngineServiceImpl
 import org.junit.Ignore
 import org.junit.Test

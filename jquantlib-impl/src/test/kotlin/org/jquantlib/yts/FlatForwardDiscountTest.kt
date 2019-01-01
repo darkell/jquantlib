@@ -18,13 +18,10 @@ package org.jquantlib.yts
 
 import com.fasterxml.jackson.core.type.TypeReference
 import org.jquantlib.api.data.*
-import org.jquantlib.api.data.Compounding.*
-import org.jquantlib.api.data.Frequency.*
 import org.jquantlib.api.jackson.QuantlibObjectMapperFactory
 import org.jquantlib.calendar.CalendarServiceImpl
-import org.jquantlib.calendar.DayCounterServiceImpl
+import org.jquantlib.dayCounter.DayCounterServiceImpl
 import org.jquantlib.ir.InterestRateServiceImpl
-import org.jquantlib.utils.Convertors.toQl
 import org.junit.Assert.assertEquals
 import org.junit.Test
 import org.junit.runner.RunWith

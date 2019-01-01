@@ -14,11 +14,12 @@
  When applicable, the original copyright notice follows this notice.
  */
 
-package org.jquantlib.calendar
+package org.jquantlib.dayCounter
 
 import com.fasterxml.jackson.core.type.TypeReference
 import org.jquantlib.api.data.*
 import org.jquantlib.api.jackson.QuantlibObjectMapperFactory
+import org.jquantlib.calendar.CalendarServiceImpl
 import org.junit.Assert.assertEquals
 import org.junit.Test
 import org.junit.runner.RunWith
