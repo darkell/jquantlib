@@ -43,7 +43,7 @@ class QuantlibObjectMapperTest {
         ActualAFB,
         ActualEuro,
         Business252(
-            calendarId = "US"
+            calendar = UnitedStates
         )
     )
 
@@ -55,6 +55,29 @@ class QuantlibObjectMapperTest {
 
     assertEquals(
         dayCounters,
+        deserialized
+    )
+  }
+
+  @Test
+  fun calendarMixIns() {
+    val calendars: List<Calendar> = listOf(
+        Australia,
+        UnitedStatesSettlement,
+        UnitedStatesNyse,
+        UnitedStatesGovernmentBond,
+        UnitedStatesNerc,
+        Target
+    )
+
+    val writer = mapper.writerWithDefaultPrettyPrinter().forType(ListCalendarTypeReference)
+    val reader = mapper.reader().forType(ListCalendarTypeReference)
+
+    val str = writer.writeValueAsString(calendars)
+    val deserialized = reader.readValue<List<Calendar>>(str)
+
+    assertEquals(
+        calendars,
         deserialized
     )
   }

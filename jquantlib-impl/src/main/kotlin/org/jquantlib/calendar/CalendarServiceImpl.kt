@@ -16,12 +16,9 @@
 
 package org.jquantlib.calendar
 
-import org.jquantlib.api.data.BusinessDayConvention
+import org.jquantlib.api.data.*
+import org.jquantlib.api.data.Target
 import org.jquantlib.api.service.CalendarService
-import org.jquantlib.time.Calendar
-import org.jquantlib.time.calendars.Australia
-import org.jquantlib.time.calendars.Target
-import org.jquantlib.time.calendars.UnitedStates
 import java.time.LocalDate
 import java.time.Period
 import org.jquantlib.utils.Convertors.fromQl
@@ -29,42 +26,69 @@ import org.jquantlib.utils.Convertors.toQl
 
 class CalendarServiceImpl : CalendarService {
 
-  private val calendars = mapOf(
-      "AU" to Australia() as Calendar,
-      "US" to UnitedStates(UnitedStates.Market.SETTLEMENT) as Calendar,
-      "US_SETTLEMENT" to UnitedStates(UnitedStates.Market.SETTLEMENT) as Calendar,
-      "US_NYSE" to UnitedStates(UnitedStates.Market.NYSE) as Calendar,
-      "US_GOVERNMENTBOND" to UnitedStates(UnitedStates.Market.GOVERNMENTBOND) as Calendar,
-      "US_NERC" to UnitedStates(UnitedStates.Market.NERC) as Calendar,
-      "TARGET" to Target() as Calendar
-  )
-
-  override fun isBusinessDay(id: String, date: LocalDate): Boolean {
-    return calendars[id]!!.isBusinessDay(date.toQl())
+  private fun calendars(calendar: Calendar) = when (calendar) {
+    is Australia -> org.jquantlib.time.calendars.Australia()
+    UnitedStatesSettlement -> org.jquantlib.time.calendars.UnitedStates(org.jquantlib.time.calendars.UnitedStates.Market.SETTLEMENT)
+    UnitedStatesNyse -> org.jquantlib.time.calendars.UnitedStates(org.jquantlib.time.calendars.UnitedStates.Market.NYSE)
+    UnitedStatesGovernmentBond -> org.jquantlib.time.calendars.UnitedStates(org.jquantlib.time.calendars.UnitedStates.Market.GOVERNMENTBOND)
+    UnitedStatesNerc -> org.jquantlib.time.calendars.UnitedStates(org.jquantlib.time.calendars.UnitedStates.Market.NERC)
+    Target -> org.jquantlib.time.calendars.Target()
   }
 
-  override fun isHoliday(id: String, date: LocalDate): Boolean {
-    return calendars[id]!!.isHoliday(date.toQl())
+  override fun isBusinessDay(
+      calendar: Calendar,
+      date: LocalDate
+  ): Boolean {
+    return calendars(calendar).isBusinessDay(date.toQl())
   }
 
-  override fun isEndOfMonth(id: String, date: LocalDate): Boolean {
-    return calendars[id]!!.isEndOfMonth(date.toQl())
+  override fun isHoliday(
+      calendar: Calendar,
+      date: LocalDate
+  ): Boolean {
+    return calendars(calendar).isHoliday(date.toQl())
   }
 
-  override fun endOfMonth(id: String, date: LocalDate): LocalDate {
-    return calendars[id]!!.endOfMonth(date.toQl()).fromQl()
+  override fun isEndOfMonth(
+      calendar: Calendar,
+      date: LocalDate
+  ): Boolean {
+    return calendars(calendar).isEndOfMonth(date.toQl())
   }
 
-  override fun adjust(id: String, date: LocalDate, c: BusinessDayConvention): LocalDate {
-    return calendars[id]!!.adjust(date.toQl(), c.toQl()).fromQl()
+  override fun endOfMonth(
+      calendar: Calendar,
+      date: LocalDate
+  ): LocalDate {
+    return calendars(calendar).endOfMonth(date.toQl()).fromQl()
   }
 
-  override fun advance(id: String, date: LocalDate, period: Period, c: BusinessDayConvention, endOfMonth: Boolean): LocalDate {
-    return calendars[id]!!.advance(date.toQl(), period.toQl(), c.toQl(), endOfMonth).fromQl()
+  override fun adjust(
+      calendar: Calendar,
+      date: LocalDate,
+      c: BusinessDayConvention
+  ): LocalDate {
+    return calendars(calendar).adjust(date.toQl(), c.toQl()).fromQl()
   }
 
-  override fun businessDaysBetween(id: String, from: LocalDate, to: LocalDate, includeFirst: Boolean, includeLast: Boolean): Long {
-    return calendars[id]!!.businessDaysBetween(from.toQl(), to.toQl(), includeFirst, includeLast).toLong()
+  override fun advance(
+      calendar: Calendar,
+      date: LocalDate,
+      period: Period,
+      c: BusinessDayConvention,
+      endOfMonth: Boolean
+  ): LocalDate {
+    return calendars(calendar).advance(date.toQl(), period.toQl(), c.toQl(), endOfMonth).fromQl()
+  }
+
+  override fun businessDaysBetween(
+      calendar: Calendar,
+      from: LocalDate,
+      to: LocalDate,
+      includeFirst: Boolean,
+      includeLast: Boolean
+  ): Long {
+    return calendars(calendar).businessDaysBetween(from.toQl(), to.toQl(), includeFirst, includeLast).toLong()
   }
 
 }

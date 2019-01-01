@@ -41,5 +41,5 @@ object ActualAFB: DayCounter()
 object ActualEuro: DayCounter()
 
 data class Business252(
-    val calendarId: String
+    val calendar: Calendar
 ): DayCounter()

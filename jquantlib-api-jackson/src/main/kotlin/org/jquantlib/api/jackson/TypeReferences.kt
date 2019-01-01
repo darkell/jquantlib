@@ -17,6 +17,8 @@
 package org.jquantlib.api.jackson
 
 import com.fasterxml.jackson.core.type.TypeReference
+import org.jquantlib.api.data.Calendar
 import org.jquantlib.api.data.DayCounter
 
 object ListDayCounterTypeReference : TypeReference<List<DayCounter>>()
+object ListCalendarTypeReference : TypeReference<List<Calendar>>()

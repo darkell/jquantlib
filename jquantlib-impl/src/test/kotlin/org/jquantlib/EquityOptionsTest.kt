@@ -24,7 +24,7 @@ class EquityOptionsTest {
   @Ignore
   fun blah() {
 
-    val calendarId = "TARGET"
+    val calendar = Target
     val todaysDate = LocalDate.of(1998, 5, 15)
     val settlementDate = LocalDate.of(1998, 5, 17)
 
@@ -72,7 +72,7 @@ class EquityOptionsTest {
     val flatVolTS: BlackVolTermStructure = BlackConstantVol(
         referenceDate = settlementDate,
         volatility = SimpleQuote(volatility),
-        calendarId = calendarId,
+        calendar = calendar,
         dayCounter = dayCounter
     )
 

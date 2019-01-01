@@ -108,8 +108,8 @@ class AnalyticEuropeanEngineServiceImpl(
 //    QL.require(extrapolate || allowsExtrapolation() || d.le(maxDate()) , "date is past max curve"); // TODO: message
   }
 
-  private fun referenceDate(evaluationDate: LocalDate, calendarId: String, settlementDays: Int): LocalDate {
-    return calendarService.advance(calendarId, evaluationDate, Period.ofDays(settlementDays))
+  private fun referenceDate(evaluationDate: LocalDate, calendar: Calendar, settlementDays: Int): LocalDate {
+    return calendarService.advance(calendar, evaluationDate, Period.ofDays(settlementDays))
   }
 
 }

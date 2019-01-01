@@ -65,7 +65,7 @@ class DayCounterServiceImpl(
       Actual365 -> actual365.dayCount(start.toQl(), end.toQl())
       ActualAFB -> actualAFB.dayCount(start.toQl(), end.toQl())
       ActualEuro -> actualEuro.dayCount(start.toQl(), end.toQl())
-      is Business252 -> calendarService.businessDaysBetween(dayCounter.calendarId, start, end)
+      is Business252 -> calendarService.businessDaysBetween(dayCounter.calendar, start, end)
     }
   }
 
@@ -92,7 +92,7 @@ class DayCounterServiceImpl(
       Actual365 -> actual365.yearFraction(start.toQl(), end.toQl(), refPeriodStart?.toQl(), refPeriodEnd?.toQl())
       ActualAFB -> actualAFB.yearFraction(start.toQl(), end.toQl(), refPeriodStart?.toQl(), refPeriodEnd?.toQl())
       ActualEuro -> actualEuro.yearFraction(start.toQl(), end.toQl(), refPeriodStart?.toQl(), refPeriodEnd?.toQl())
-      is Business252 -> calendarService.businessDaysBetween(dayCounter.calendarId, start, end) / 252.0
+      is Business252 -> calendarService.businessDaysBetween(dayCounter.calendar, start, end) / 252.0
     }
   }
 

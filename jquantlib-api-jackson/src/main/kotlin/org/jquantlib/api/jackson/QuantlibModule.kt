@@ -18,6 +18,7 @@ package org.jquantlib.api.jackson
 
 import com.fasterxml.jackson.databind.module.SimpleModule
 import org.jquantlib.api.data.*
+import org.jquantlib.api.data.Target
 
 class QuantlibModule : SimpleModule("Quantlib") {
   init {
@@ -38,6 +39,13 @@ class QuantlibModule : SimpleModule("Quantlib") {
     setMixInAnnotation(ActualAFB::class.java, ActualAFBMixIn::class.java)
     setMixInAnnotation(ActualEuro::class.java, ActualEuroMixIn::class.java)
     setMixInAnnotation(Business252::class.java, Business252MixIn::class.java)
+
+    setMixInAnnotation(Calendar::class.java, CalendarMixIn::class.java)
+    setMixInAnnotation(Australia::class.java, AustraliaMixIn::class.java)
+    setMixInAnnotation(UnitedStatesSettlement::class.java, UnitedStatesSettlementMixIn::class.java)
+    setMixInAnnotation(UnitedStatesNyse::class.java, UnitedStatesNyseMixIn::class.java)
+    setMixInAnnotation(UnitedStatesGovernmentBond::class.java, UnitedStatesGovernmentBondMixIn::class.java)
+    setMixInAnnotation(UnitedStatesNerc::class.java, UnitedStatesNercMixIn::class.java)
+    setMixInAnnotation(Target::class.java, TargetMixIn::class.java)
   }
 }
-

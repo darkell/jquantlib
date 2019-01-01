@@ -20,7 +20,7 @@ import java.time.LocalDate
 
 sealed class TermStructure {
   abstract val dayCounter: DayCounter
-  abstract val calendarId: String
+  abstract val calendar: Calendar
 }
 
 sealed class YieldTermStructure: TermStructure() {
@@ -32,7 +32,7 @@ data class FlatForward(
     override val referenceDate: LocalDate,
     override val dayCounter: DayCounter,
     override val settlementDays: Int = 0,
-    override val calendarId: String = "",
+    override val calendar: Calendar = UnitedStates,
     val forward: Quote,
     val compounding: Compounding = Compounding.Continuous,
     val frequency: Frequency = Frequency.Annual
@@ -51,7 +51,7 @@ sealed class BlackVolatilityTermStructure : BlackVolTermStructure()
 data class BlackConstantVol(
     override val referenceDate: LocalDate,
     override val volatility: Quote,
-    override val calendarId: String = "",
+    override val calendar: Calendar = UnitedStates,
     override val dayCounter: DayCounter,
     override val bdc: BusinessDayConvention = BusinessDayConvention.Following
 ) : BlackVolatilityTermStructure()

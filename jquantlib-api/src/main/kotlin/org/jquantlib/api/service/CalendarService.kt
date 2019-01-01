@@ -18,24 +18,25 @@ package org.jquantlib.api.service
 
 import org.jquantlib.api.data.BusinessDayConvention
 import org.jquantlib.api.data.BusinessDayConvention.Following
+import org.jquantlib.api.data.Calendar
 import java.time.LocalDate
 import java.time.Period
 
 interface CalendarService {
 
   fun isBusinessDay(
-      id: String,
+      calendar: Calendar,
       date: LocalDate): Boolean
 
   fun isHoliday(
-      id: String,
+      calendar: Calendar,
       date: LocalDate
   ): Boolean
 
   //fun isWeekend(Weekday w): Boolean
 
   fun isEndOfMonth(
-      id: String,
+      calendar: Calendar,
       date: LocalDate
   ): Boolean
 
@@ -46,7 +47,7 @@ interface CalendarService {
    * @return last business Date based on passed date
    */
   fun endOfMonth(
-      id: String,
+      calendar: Calendar,
       date: LocalDate
   ): LocalDate
 
@@ -57,7 +58,7 @@ interface CalendarService {
    * @note The input date is not modified
    */
   fun adjust(
-      id: String,
+      calendar: Calendar,
       date: LocalDate,
       c: BusinessDayConvention = Following
   ): LocalDate
@@ -69,7 +70,7 @@ interface CalendarService {
    * @note The input date is not modified.
    */
   fun advance(
-      id: String,
+      calendar: Calendar,
       date: LocalDate,
       period: Period,
       c: BusinessDayConvention = Following,
@@ -77,7 +78,7 @@ interface CalendarService {
   ): LocalDate
 
   fun businessDaysBetween(
-      id: String,
+      calendar: Calendar,
       from: LocalDate,
       to: LocalDate,
       includeFirst: Boolean = true,
