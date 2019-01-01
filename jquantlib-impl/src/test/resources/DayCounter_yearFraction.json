@@ -1,0 +1,130 @@
+[
+  {
+    "dayCounter": {
+      "@type": "Actual365Fixed"
+    },
+    "d1": "1998-05-17",
+    "d2": "1998-06-17",
+    "expected": 0.08493150684931507
+  },
+  {
+    "dayCounter": {
+      "@type": "Actual365Fixed"
+    },
+    "d1": "1998-05-17",
+    "d2": "1998-07-17",
+    "expected": 0.16712328767123288
+  },
+  {
+    "dayCounter": {
+      "@type": "Actual365Fixed"
+    },
+    "d1": "1998-05-17",
+    "d2": "1998-08-17",
+    "expected": 0.25205479452054796
+  },
+  {
+    "dayCounter": {
+      "@type": "Actual365Fixed"
+    },
+    "d1": "1998-05-17",
+    "d2": "1998-09-17",
+    "expected": 0.336986301369863
+  },
+  {
+    "dayCounter": {
+      "@type": "Actual365Fixed"
+    },
+    "d1": "1998-05-17",
+    "d2": "1998-10-17",
+    "expected": 0.4191780821917808
+  },
+  {
+    "dayCounter": {
+      "@type": "Actual365Fixed"
+    },
+    "d1": "1998-05-17",
+    "d2": "1998-11-17",
+    "expected": 0.5041095890410959
+  },
+  {
+    "dayCounter": {
+      "@type": "Actual365Fixed"
+    },
+    "d1": "1998-05-17",
+    "d2": "1998-12-17",
+    "expected": 0.5863013698630137
+  },
+  {
+    "dayCounter": {
+      "@type": "Actual365Fixed"
+    },
+    "d1": "1998-05-17",
+    "d2": "1999-05-17",
+    "expected": 1.0
+  },
+  {
+    "dayCounter": {
+      "@type": "ActualISDA"
+    },
+    "d1": "1998-05-17",
+    "d2": "1998-06-17",
+    "expected": 0.08493150684931505
+  },
+  {
+    "dayCounter": {
+      "@type": "ActualISDA"
+    },
+    "d1": "1998-05-17",
+    "d2": "1998-07-17",
+    "expected": 0.16712328767123286
+  },
+  {
+    "dayCounter": {
+      "@type": "ActualISDA"
+    },
+    "d1": "1998-05-17",
+    "d2": "1998-08-17",
+    "expected": 0.2520547945205479
+  },
+  {
+    "dayCounter": {
+      "@type": "ActualISDA"
+    },
+    "d1": "1998-05-17",
+    "d2": "1998-09-17",
+    "expected": 0.33698630136986296
+  },
+  {
+    "dayCounter": {
+      "@type": "ActualISDA"
+    },
+    "d1": "1998-05-17",
+    "d2": "1998-10-17",
+    "expected": 0.41917808219178077
+  },
+  {
+    "dayCounter": {
+      "@type": "ActualISDA"
+    },
+    "d1": "1998-05-17",
+    "d2": "1998-11-17",
+    "expected": 0.5041095890410958
+  },
+  {
+    "dayCounter": {
+      "@type": "ActualISDA"
+    },
+    "d1": "1998-05-17",
+    "d2": "1998-12-17",
+    "expected": 0.5863013698630136
+  },
+  {
+    "dayCounter": {
+      "@type": "ActualISDA"
+    },
+    "d1": "1998-05-17",
+    "d2": "1999-05-17",
+    "expected": 1.0
+  }
+]

@@ -9,12 +9,9 @@ complete rewrite of QuantLib, offering features Java developers expect
 to find. JQuantLib aims to be fast, correct, strongly typed,
 well-documented, and user-friendly.
 
-JQuantLib does its best efforts to mimic as close as possible the API
-exposed by QuantLib, offering a smooth transition path for developers
-and organizations willing to employ financial applications written in
-Java whilst keeping commitment to high performance and low latency.
-
-More info: http://www.jquantlib.org
+I'm changing JQuantlib to work through services rather than instance
+methods. I'm not sure how well this will actually work but I currently
+find it interesting and will continue to do so until that changes.
 
 Quick guide for the impatient
 =============================
@@ -29,20 +26,3 @@ On a Unix-like console
     # run demo number 9 (EquityOptions)
     cd jquantlib
     mvn verify
-
-For impatient developers
-========================
-
-More info: http://www.jquantlib.org/en/latest/developersguide.html
-
-Modules
-=======
-
-Main modules
-------------
-
--  jquantlib -- main module, which resembles QuantLib/C++
-
--  jquantlib-helpers -- helper classes
-
--  jquantlib-samples -- sample code

@@ -1,0 +1,7746 @@
+[
+  {
+    "settlementDate": "1998-05-17",
+    "dividendYield": 0.01,
+    "dayCounter": {
+      "@type": "Actual365Fixed"
+    },
+    "compounding": "Simple",
+    "frequency": "Daily",
+    "discountDate": "1998-06-17",
+    "expected": 0.9991514056554707
+  },
+  {
+    "settlementDate": "1998-05-17",
+    "dividendYield": 0.01,
+    "dayCounter": {
+      "@type": "Actual365Fixed"
+    },
+    "compounding": "Simple",
+    "frequency": "Annual",
+    "discountDate": "1998-06-17",
+    "expected": 0.9991514056554707
+  },
+  {
+    "settlementDate": "1998-05-17",
+    "dividendYield": 0.01,
+    "dayCounter": {
+      "@type": "Actual365Fixed"
+    },
+    "compounding": "Compounded",
+    "frequency": "Daily",
+    "discountDate": "1998-06-17",
+    "expected": 0.9991510571218268
+  },
+  {
+    "settlementDate": "1998-05-17",
+    "dividendYield": 0.01,
+    "dayCounter": {
+      "@type": "Actual365Fixed"
+    },
+    "compounding": "Compounded",
+    "frequency": "Annual",
+    "discountDate": "1998-06-17",
+    "expected": 0.9991552604005451
+  },
+  {
+    "settlementDate": "1998-05-17",
+    "dividendYield": 0.01,
+    "dayCounter": {
+      "@type": "Actual365Fixed"
+    },
+    "compounding": "Continuous",
+    "frequency": "Daily",
+    "discountDate": "1998-06-17",
+    "expected": 0.9991510454974645
+  },
+  {
+    "settlementDate": "1998-05-17",
+    "dividendYield": 0.01,
+    "dayCounter": {
+      "@type": "Actual365Fixed"
+    },
+    "compounding": "Continuous",
+    "frequency": "Annual",
+    "discountDate": "1998-06-17",
+    "expected": 0.9991510454974645
+  },
+  {
+    "settlementDate": "1998-05-17",
+    "dividendYield": 0.01,
+    "dayCounter": {
+      "@type": "Actual365Fixed"
+    },
+    "compounding": "SimpleThenCompounded",
+    "frequency": "Daily",
+    "discountDate": "1998-06-17",
+    "expected": 0.9991510571218268
+  },
+  {
+    "settlementDate": "1998-05-17",
+    "dividendYield": 0.01,
+    "dayCounter": {
+      "@type": "Actual365Fixed"
+    },
+    "compounding": "SimpleThenCompounded",
+    "frequency": "Annual",
+    "discountDate": "1998-06-17",
+    "expected": 0.9991514056554707
+  },
+  {
+    "settlementDate": "1998-05-17",
+    "dividendYield": 0.01,
+    "dayCounter": {
+      "@type": "Actual365Fixed"
+    },
+    "compounding": "Simple",
+    "frequency": "Daily",
+    "discountDate": "1998-07-17",
+    "expected": 0.9983315554826181
+  },
+  {
+    "settlementDate": "1998-05-17",
+    "dividendYield": 0.01,
+    "dayCounter": {
+      "@type": "Actual365Fixed"
+    },
+    "compounding": "Simple",
+    "frequency": "Annual",
+    "discountDate": "1998-07-17",
+    "expected": 0.9983315554826181
+  },
+  {
+    "settlementDate": "1998-05-17",
+    "dividendYield": 0.01,
+    "dayCounter": {
+      "@type": "Actual365Fixed"
+    },
+    "compounding": "Compounded",
+    "frequency": "Daily",
+    "discountDate": "1998-07-17",
+    "expected": 0.9983301857102654
+  },
+  {
+    "settlementDate": "1998-05-17",
+    "dividendYield": 0.01,
+    "dayCounter": {
+      "@type": "Actual365Fixed"
+    },
+    "compounding": "Compounded",
+    "frequency": "Annual",
+    "discountDate": "1998-07-17",
+    "expected": 0.9983384498997186
+  },
+  {
+    "settlementDate": "1998-05-17",
+    "dividendYield": 0.01,
+    "dayCounter": {
+      "@type": "Actual365Fixed"
+    },
+    "compounding": "Continuous",
+    "frequency": "Daily",
+    "discountDate": "1998-07-17",
+    "expected": 0.9983301628553124
+  },
+  {
+    "settlementDate": "1998-05-17",
+    "dividendYield": 0.01,
+    "dayCounter": {
+      "@type": "Actual365Fixed"
+    },
+    "compounding": "Continuous",
+    "frequency": "Annual",
+    "discountDate": "1998-07-17",
+    "expected": 0.9983301628553124
+  },
+  {
+    "settlementDate": "1998-05-17",
+    "dividendYield": 0.01,
+    "dayCounter": {
+      "@type": "Actual365Fixed"
+    },
+    "compounding": "SimpleThenCompounded",
+    "frequency": "Daily",
+    "discountDate": "1998-07-17",
+    "expected": 0.9983301857102654
+  },
+  {
+    "settlementDate": "1998-05-17",
+    "dividendYield": 0.01,
+    "dayCounter": {
+      "@type": "Actual365Fixed"
+    },
+    "compounding": "SimpleThenCompounded",
+    "frequency": "Annual",
+    "discountDate": "1998-07-17",
+    "expected": 0.9983315554826181
+  },
+  {
+    "settlementDate": "1998-05-17",
+    "dividendYield": 0.01,
+    "dayCounter": {
+      "@type": "Actual365Fixed"
+    },
+    "compounding": "Simple",
+    "frequency": "Daily",
+    "discountDate": "1998-08-17",
+    "expected": 0.9974857892435505
+  },
+  {
+    "settlementDate": "1998-05-17",
+    "dividendYield": 0.01,
+    "dayCounter": {
+      "@type": "Actual365Fixed"
+    },
+    "compounding": "Simple",
+    "frequency": "Annual",
+    "discountDate": "1998-08-17",
+    "expected": 0.9974857892435505
+  },
+  {
+    "settlementDate": "1998-05-17",
+    "dividendYield": 0.01,
+    "dayCounter": {
+      "@type": "Actual365Fixed"
+    },
+    "compounding": "Compounded",
+    "frequency": "Daily",
+    "discountDate": "1998-08-17",
+    "expected": 0.9974826604090414
+  },
+  {
+    "settlementDate": "1998-05-17",
+    "dividendYield": 0.01,
+    "dayCounter": {
+      "@type": "Actual365Fixed"
+    },
+    "compounding": "Compounded",
+    "frequency": "Annual",
+    "discountDate": "1998-08-17",
+    "expected": 0.9974951138774301
+  },
+  {
+    "settlementDate": "1998-05-17",
+    "dividendYield": 0.01,
+    "dayCounter": {
+      "@type": "Actual365Fixed"
+    },
+    "compounding": "Continuous",
+    "frequency": "Daily",
+    "discountDate": "1998-08-17",
+    "expected": 0.9974826259685392
+  },
+  {
+    "settlementDate": "1998-05-17",
+    "dividendYield": 0.01,
+    "dayCounter": {
+      "@type": "Actual365Fixed"
+    },
+    "compounding": "Continuous",
+    "frequency": "Annual",
+    "discountDate": "1998-08-17",
+    "expected": 0.9974826259685392
+  },
+  {
+    "settlementDate": "1998-05-17",
+    "dividendYield": 0.01,
+    "dayCounter": {
+      "@type": "Actual365Fixed"
+    },
+    "compounding": "SimpleThenCompounded",
+    "frequency": "Daily",
+    "discountDate": "1998-08-17",
+    "expected": 0.9974826604090414
+  },
+  {
+    "settlementDate": "1998-05-17",
+    "dividendYield": 0.01,
+    "dayCounter": {
+      "@type": "Actual365Fixed"
+    },
+    "compounding": "SimpleThenCompounded",
+    "frequency": "Annual",
+    "discountDate": "1998-08-17",
+    "expected": 0.9974857892435505
+  },
+  {
+    "settlementDate": "1998-05-17",
+    "dividendYield": 0.01,
+    "dayCounter": {
+      "@type": "Actual365Fixed"
+    },
+    "compounding": "Simple",
+    "frequency": "Daily",
+    "discountDate": "1998-09-17",
+    "expected": 0.9966414548234716
+  },
+  {
+    "settlementDate": "1998-05-17",
+    "dividendYield": 0.01,
+    "dayCounter": {
+      "@type": "Actual365Fixed"
+    },
+    "compounding": "Simple",
+    "frequency": "Annual",
+    "discountDate": "1998-09-17",
+    "expected": 0.9966414548234716
+  },
+  {
+    "settlementDate": "1998-05-17",
+    "dividendYield": 0.01,
+    "dayCounter": {
+      "@type": "Actual365Fixed"
+    },
+    "compounding": "Compounded",
+    "frequency": "Daily",
+    "discountDate": "1998-09-17",
+    "expected": 0.9966358546083861
+  },
+  {
+    "settlementDate": "1998-05-17",
+    "dividendYield": 0.01,
+    "dayCounter": {
+      "@type": "Actual365Fixed"
+    },
+    "compounding": "Compounded",
+    "frequency": "Annual",
+    "discountDate": "1998-09-17",
+    "expected": 0.996652490254475
+  },
+  {
+    "settlementDate": "1998-05-17",
+    "dividendYield": 0.01,
+    "dayCounter": {
+      "@type": "Actual365Fixed"
+    },
+    "compounding": "Continuous",
+    "frequency": "Daily",
+    "discountDate": "1998-09-17",
+    "expected": 0.9966358086020223
+  },
+  {
+    "settlementDate": "1998-05-17",
+    "dividendYield": 0.01,
+    "dayCounter": {
+      "@type": "Actual365Fixed"
+    },
+    "compounding": "Continuous",
+    "frequency": "Annual",
+    "discountDate": "1998-09-17",
+    "expected": 0.9966358086020223
+  },
+  {
+    "settlementDate": "1998-05-17",
+    "dividendYield": 0.01,
+    "dayCounter": {
+      "@type": "Actual365Fixed"
+    },
+    "compounding": "SimpleThenCompounded",
+    "frequency": "Daily",
+    "discountDate": "1998-09-17",
+    "expected": 0.9966358546083861
+  },
+  {
+    "settlementDate": "1998-05-17",
+    "dividendYield": 0.01,
+    "dayCounter": {
+      "@type": "Actual365Fixed"
+    },
+    "compounding": "SimpleThenCompounded",
+    "frequency": "Annual",
+    "discountDate": "1998-09-17",
+    "expected": 0.9966414548234716
+  },
+  {
+    "settlementDate": "1998-05-17",
+    "dividendYield": 0.01,
+    "dayCounter": {
+      "@type": "Actual365Fixed"
+    },
+    "compounding": "Simple",
+    "frequency": "Daily",
+    "discountDate": "1998-10-17",
+    "expected": 0.9958257168581016
+  },
+  {
+    "settlementDate": "1998-05-17",
+    "dividendYield": 0.01,
+    "dayCounter": {
+      "@type": "Actual365Fixed"
+    },
+    "compounding": "Simple",
+    "frequency": "Annual",
+    "discountDate": "1998-10-17",
+    "expected": 0.9958257168581016
+  },
+  {
+    "settlementDate": "1998-05-17",
+    "dividendYield": 0.01,
+    "dayCounter": {
+      "@type": "Actual365Fixed"
+    },
+    "compounding": "Compounded",
+    "frequency": "Daily",
+    "discountDate": "1998-10-17",
+    "expected": 0.9958170496089281
+  },
+  {
+    "settlementDate": "1998-05-17",
+    "dividendYield": 0.01,
+    "dayCounter": {
+      "@type": "Actual365Fixed"
+    },
+    "compounding": "Compounded",
+    "frequency": "Annual",
+    "discountDate": "1998-10-17",
+    "expected": 0.9958377257709369
+  },
+  {
+    "settlementDate": "1998-05-17",
+    "dividendYield": 0.01,
+    "dayCounter": {
+      "@type": "Actual365Fixed"
+    },
+    "compounding": "Continuous",
+    "frequency": "Daily",
+    "discountDate": "1998-10-17",
+    "expected": 0.9958169924285165
+  },
+  {
+    "settlementDate": "1998-05-17",
+    "dividendYield": 0.01,
+    "dayCounter": {
+      "@type": "Actual365Fixed"
+    },
+    "compounding": "Continuous",
+    "frequency": "Annual",
+    "discountDate": "1998-10-17",
+    "expected": 0.9958169924285165
+  },
+  {
+    "settlementDate": "1998-05-17",
+    "dividendYield": 0.01,
+    "dayCounter": {
+      "@type": "Actual365Fixed"
+    },
+    "compounding": "SimpleThenCompounded",
+    "frequency": "Daily",
+    "discountDate": "1998-10-17",
+    "expected": 0.9958170496089281
+  },
+  {
+    "settlementDate": "1998-05-17",
+    "dividendYield": 0.01,
+    "dayCounter": {
+      "@type": "Actual365Fixed"
+    },
+    "compounding": "SimpleThenCompounded",
+    "frequency": "Annual",
+    "discountDate": "1998-10-17",
+    "expected": 0.9958257168581016
+  },
+  {
+    "settlementDate": "1998-05-17",
+    "dividendYield": 0.01,
+    "dayCounter": {
+      "@type": "Actual365Fixed"
+    },
+    "compounding": "Simple",
+    "frequency": "Daily",
+    "discountDate": "1998-11-17",
+    "expected": 0.9949841892923345
+  },
+  {
+    "settlementDate": "1998-05-17",
+    "dividendYield": 0.01,
+    "dayCounter": {
+      "@type": "Actual365Fixed"
+    },
+    "compounding": "Simple",
+    "frequency": "Annual",
+    "discountDate": "1998-11-17",
+    "expected": 0.9949841892923345
+  },
+  {
+    "settlementDate": "1998-05-17",
+    "dividendYield": 0.01,
+    "dayCounter": {
+      "@type": "Actual365Fixed"
+    },
+    "compounding": "Compounded",
+    "frequency": "Daily",
+    "discountDate": "1998-11-17",
+    "expected": 0.9949716578166993
+  },
+  {
+    "settlementDate": "1998-05-17",
+    "dividendYield": 0.01,
+    "dayCounter": {
+      "@type": "Actual365Fixed"
+    },
+    "compounding": "Compounded",
+    "frequency": "Annual",
+    "discountDate": "1998-11-17",
+    "expected": 0.9949965022093471
+  },
+  {
+    "settlementDate": "1998-05-17",
+    "dividendYield": 0.01,
+    "dayCounter": {
+      "@type": "Actual365Fixed"
+    },
+    "compounding": "Continuous",
+    "frequency": "Daily",
+    "discountDate": "1998-11-17",
+    "expected": 0.9949715891090929
+  },
+  {
+    "settlementDate": "1998-05-17",
+    "dividendYield": 0.01,
+    "dayCounter": {
+      "@type": "Actual365Fixed"
+    },
+    "compounding": "Continuous",
+    "frequency": "Annual",
+    "discountDate": "1998-11-17",
+    "expected": 0.9949715891090929
+  },
+  {
+    "settlementDate": "1998-05-17",
+    "dividendYield": 0.01,
+    "dayCounter": {
+      "@type": "Actual365Fixed"
+    },
+    "compounding": "SimpleThenCompounded",
+    "frequency": "Daily",
+    "discountDate": "1998-11-17",
+    "expected": 0.9949716578166993
+  },
+  {
+    "settlementDate": "1998-05-17",
+    "dividendYield": 0.01,
+    "dayCounter": {
+      "@type": "Actual365Fixed"
+    },
+    "compounding": "SimpleThenCompounded",
+    "frequency": "Annual",
+    "discountDate": "1998-11-17",
+    "expected": 0.9949841892923345
+  },
+  {
+    "settlementDate": "1998-05-17",
+    "dividendYield": 0.01,
+    "dayCounter": {
+      "@type": "Actual365Fixed"
+    },
+    "compounding": "Simple",
+    "frequency": "Daily",
+    "discountDate": "1998-12-17",
+    "expected": 0.9941711608650651
+  },
+  {
+    "settlementDate": "1998-05-17",
+    "dividendYield": 0.01,
+    "dayCounter": {
+      "@type": "Actual365Fixed"
+    },
+    "compounding": "Simple",
+    "frequency": "Annual",
+    "discountDate": "1998-12-17",
+    "expected": 0.9941711608650651
+  },
+  {
+    "settlementDate": "1998-05-17",
+    "dividendYield": 0.01,
+    "dayCounter": {
+      "@type": "Actual365Fixed"
+    },
+    "compounding": "Compounded",
+    "frequency": "Daily",
+    "discountDate": "1998-12-17",
+    "expected": 0.9941542200695299
+  },
+  {
+    "settlementDate": "1998-05-17",
+    "dividendYield": 0.01,
+    "dayCounter": {
+      "@type": "Actual365Fixed"
+    },
+    "compounding": "Compounded",
+    "frequency": "Annual",
+    "discountDate": "1998-12-17",
+    "expected": 0.9941830914978182
+  },
+  {
+    "settlementDate": "1998-05-17",
+    "dividendYield": 0.01,
+    "dayCounter": {
+      "@type": "Actual365Fixed"
+    },
+    "compounding": "Continuous",
+    "frequency": "Daily",
+    "discountDate": "1998-12-17",
+    "expected": 0.9941541402252484
+  },
+  {
+    "settlementDate": "1998-05-17",
+    "dividendYield": 0.01,
+    "dayCounter": {
+      "@type": "Actual365Fixed"
+    },
+    "compounding": "Continuous",
+    "frequency": "Annual",
+    "discountDate": "1998-12-17",
+    "expected": 0.9941541402252484
+  },
+  {
+    "settlementDate": "1998-05-17",
+    "dividendYield": 0.01,
+    "dayCounter": {
+      "@type": "Actual365Fixed"
+    },
+    "compounding": "SimpleThenCompounded",
+    "frequency": "Daily",
+    "discountDate": "1998-12-17",
+    "expected": 0.9941542200695299
+  },
+  {
+    "settlementDate": "1998-05-17",
+    "dividendYield": 0.01,
+    "dayCounter": {
+      "@type": "Actual365Fixed"
+    },
+    "compounding": "SimpleThenCompounded",
+    "frequency": "Annual",
+    "discountDate": "1998-12-17",
+    "expected": 0.9941711608650651
+  },
+  {
+    "settlementDate": "1998-05-17",
+    "dividendYield": 0.01,
+    "dayCounter": {
+      "@type": "Actual365Fixed"
+    },
+    "compounding": "Simple",
+    "frequency": "Daily",
+    "discountDate": "1999-05-17",
+    "expected": 0.9900990099009901
+  },
+  {
+    "settlementDate": "1998-05-17",
+    "dividendYield": 0.01,
+    "dayCounter": {
+      "@type": "Actual365Fixed"
+    },
+    "compounding": "Simple",
+    "frequency": "Annual",
+    "discountDate": "1999-05-17",
+    "expected": 0.9900990099009901
+  },
+  {
+    "settlementDate": "1998-05-17",
+    "dividendYield": 0.01,
+    "dayCounter": {
+      "@type": "Actual365Fixed"
+    },
+    "compounding": "Compounded",
+    "frequency": "Daily",
+    "discountDate": "1999-05-17",
+    "expected": 0.9900499693699519
+  },
+  {
+    "settlementDate": "1998-05-17",
+    "dividendYield": 0.01,
+    "dayCounter": {
+      "@type": "Actual365Fixed"
+    },
+    "compounding": "Compounded",
+    "frequency": "Annual",
+    "discountDate": "1999-05-17",
+    "expected": 0.9900990099009901
+  },
+  {
+    "settlementDate": "1998-05-17",
+    "dividendYield": 0.01,
+    "dayCounter": {
+      "@type": "Actual365Fixed"
+    },
+    "compounding": "Continuous",
+    "frequency": "Daily",
+    "discountDate": "1999-05-17",
+    "expected": 0.9900498337491681
+  },
+  {
+    "settlementDate": "1998-05-17",
+    "dividendYield": 0.01,
+    "dayCounter": {
+      "@type": "Actual365Fixed"
+    },
+    "compounding": "Continuous",
+    "frequency": "Annual",
+    "discountDate": "1999-05-17",
+    "expected": 0.9900498337491681
+  },
+  {
+    "settlementDate": "1998-05-17",
+    "dividendYield": 0.01,
+    "dayCounter": {
+      "@type": "Actual365Fixed"
+    },
+    "compounding": "SimpleThenCompounded",
+    "frequency": "Daily",
+    "discountDate": "1999-05-17",
+    "expected": 0.9900499693699519
+  },
+  {
+    "settlementDate": "1998-05-17",
+    "dividendYield": 0.01,
+    "dayCounter": {
+      "@type": "Actual365Fixed"
+    },
+    "compounding": "SimpleThenCompounded",
+    "frequency": "Annual",
+    "discountDate": "1999-05-17",
+    "expected": 0.9900990099009901
+  },
+  {
+    "settlementDate": "1998-05-17",
+    "dividendYield": 0.02,
+    "dayCounter": {
+      "@type": "Actual365Fixed"
+    },
+    "compounding": "Simple",
+    "frequency": "Daily",
+    "discountDate": "1998-06-17",
+    "expected": 0.9983042503145342
+  },
+  {
+    "settlementDate": "1998-05-17",
+    "dividendYield": 0.02,
+    "dayCounter": {
+      "@type": "Actual365Fixed"
+    },
+    "compounding": "Simple",
+    "frequency": "Annual",
+    "discountDate": "1998-06-17",
+    "expected": 0.9983042503145342
+  },
+  {
+    "settlementDate": "1998-05-17",
+    "dividendYield": 0.02,
+    "dayCounter": {
+      "@type": "Actual365Fixed"
+    },
+    "compounding": "Compounded",
+    "frequency": "Daily",
+    "discountDate": "1998-06-17",
+    "expected": 0.9983028581758064
+  },
+  {
+    "settlementDate": "1998-05-17",
+    "dividendYield": 0.02,
+    "dayCounter": {
+      "@type": "Actual365Fixed"
+    },
+    "compounding": "Compounded",
+    "frequency": "Annual",
+    "discountDate": "1998-06-17",
+    "expected": 0.9983195465698461
+  },
+  {
+    "settlementDate": "1998-05-17",
+    "dividendYield": 0.02,
+    "dayCounter": {
+      "@type": "Actual365Fixed"
+    },
+    "compounding": "Continuous",
+    "frequency": "Daily",
+    "discountDate": "1998-06-17",
+    "expected": 0.9983028117186761
+  },
+  {
+    "settlementDate": "1998-05-17",
+    "dividendYield": 0.02,
+    "dayCounter": {
+      "@type": "Actual365Fixed"
+    },
+    "compounding": "Continuous",
+    "frequency": "Annual",
+    "discountDate": "1998-06-17",
+    "expected": 0.9983028117186761
+  },
+  {
+    "settlementDate": "1998-05-17",
+    "dividendYield": 0.02,
+    "dayCounter": {
+      "@type": "Actual365Fixed"
+    },
+    "compounding": "SimpleThenCompounded",
+    "frequency": "Daily",
+    "discountDate": "1998-06-17",
+    "expected": 0.9983028581758064
+  },
+  {
+    "settlementDate": "1998-05-17",
+    "dividendYield": 0.02,
+    "dayCounter": {
+      "@type": "Actual365Fixed"
+    },
+    "compounding": "SimpleThenCompounded",
+    "frequency": "Annual",
+    "discountDate": "1998-06-17",
+    "expected": 0.9983042503145342
+  },
+  {
+    "settlementDate": "1998-05-17",
+    "dividendYield": 0.02,
+    "dayCounter": {
+      "@type": "Actual365Fixed"
+    },
+    "compounding": "Simple",
+    "frequency": "Daily",
+    "discountDate": "1998-07-17",
+    "expected": 0.9966686691060018
+  },
+  {
+    "settlementDate": "1998-05-17",
+    "dividendYield": 0.02,
+    "dayCounter": {
+      "@type": "Actual365Fixed"
+    },
+    "compounding": "Simple",
+    "frequency": "Annual",
+    "discountDate": "1998-07-17",
+    "expected": 0.9966686691060018
+  },
+  {
+    "settlementDate": "1998-05-17",
+    "dividendYield": 0.02,
+    "dayCounter": {
+      "@type": "Actual365Fixed"
+    },
+    "compounding": "Compounded",
+    "frequency": "Daily",
+    "discountDate": "1998-07-17",
+    "expected": 0.9966632053322114
+  },
+  {
+    "settlementDate": "1998-05-17",
+    "dividendYield": 0.02,
+    "dayCounter": {
+      "@type": "Actual365Fixed"
+    },
+    "compounding": "Compounded",
+    "frequency": "Annual",
+    "discountDate": "1998-07-17",
+    "expected": 0.9966959901149866
+  },
+  {
+    "settlementDate": "1998-05-17",
+    "dividendYield": 0.02,
+    "dayCounter": {
+      "@type": "Actual365Fixed"
+    },
+    "compounding": "Continuous",
+    "frequency": "Daily",
+    "discountDate": "1998-07-17",
+    "expected": 0.9966631140667146
+  },
+  {
+    "settlementDate": "1998-05-17",
+    "dividendYield": 0.02,
+    "dayCounter": {
+      "@type": "Actual365Fixed"
+    },
+    "compounding": "Continuous",
+    "frequency": "Annual",
+    "discountDate": "1998-07-17",
+    "expected": 0.9966631140667146
+  },
+  {
+    "settlementDate": "1998-05-17",
+    "dividendYield": 0.02,
+    "dayCounter": {
+      "@type": "Actual365Fixed"
+    },
+    "compounding": "SimpleThenCompounded",
+    "frequency": "Daily",
+    "discountDate": "1998-07-17",
+    "expected": 0.9966632053322114
+  },
+  {
+    "settlementDate": "1998-05-17",
+    "dividendYield": 0.02,
+    "dayCounter": {
+      "@type": "Actual365Fixed"
+    },
+    "compounding": "SimpleThenCompounded",
+    "frequency": "Annual",
+    "discountDate": "1998-07-17",
+    "expected": 0.9966686691060018
+  },
+  {
+    "settlementDate": "1998-05-17",
+    "dividendYield": 0.02,
+    "dayCounter": {
+      "@type": "Actual365Fixed"
+    },
+    "compounding": "Simple",
+    "frequency": "Daily",
+    "discountDate": "1998-08-17",
+    "expected": 0.9949841892923345
+  },
+  {
+    "settlementDate": "1998-05-17",
+    "dividendYield": 0.02,
+    "dayCounter": {
+      "@type": "Actual365Fixed"
+    },
+    "compounding": "Simple",
+    "frequency": "Annual",
+    "discountDate": "1998-08-17",
+    "expected": 0.9949841892923345
+  },
+  {
+    "settlementDate": "1998-05-17",
+    "dividendYield": 0.02,
+    "dayCounter": {
+      "@type": "Actual365Fixed"
+    },
+    "compounding": "Compounded",
+    "frequency": "Daily",
+    "discountDate": "1998-08-17",
+    "expected": 0.9949717265218072
+  },
+  {
+    "settlementDate": "1998-05-17",
+    "dividendYield": 0.02,
+    "dayCounter": {
+      "@type": "Actual365Fixed"
+    },
+    "compounding": "Compounded",
+    "frequency": "Annual",
+    "discountDate": "1998-08-17",
+    "expected": 0.9950210889195771
+  },
+  {
+    "settlementDate": "1998-05-17",
+    "dividendYield": 0.02,
+    "dayCounter": {
+      "@type": "Actual365Fixed"
+    },
+    "compounding": "Continuous",
+    "frequency": "Daily",
+    "discountDate": "1998-08-17",
+    "expected": 0.9949715891090929
+  },
+  {
+    "settlementDate": "1998-05-17",
+    "dividendYield": 0.02,
+    "dayCounter": {
+      "@type": "Actual365Fixed"
+    },
+    "compounding": "Continuous",
+    "frequency": "Annual",
+    "discountDate": "1998-08-17",
+    "expected": 0.9949715891090929
+  },
+  {
+    "settlementDate": "1998-05-17",
+    "dividendYield": 0.02,
+    "dayCounter": {
+      "@type": "Actual365Fixed"
+    },
+    "compounding": "SimpleThenCompounded",
+    "frequency": "Daily",
+    "discountDate": "1998-08-17",
+    "expected": 0.9949717265218072
+  },
+  {
+    "settlementDate": "1998-05-17",
+    "dividendYield": 0.02,
+    "dayCounter": {
+      "@type": "Actual365Fixed"
+    },
+    "compounding": "SimpleThenCompounded",
+    "frequency": "Annual",
+    "discountDate": "1998-08-17",
+    "expected": 0.9949841892923345
+  },
+  {
+    "settlementDate": "1998-05-17",
+    "dividendYield": 0.02,
+    "dayCounter": {
+      "@type": "Actual365Fixed"
+    },
+    "compounding": "Simple",
+    "frequency": "Daily",
+    "discountDate": "1998-09-17",
+    "expected": 0.9933053937843573
+  },
+  {
+    "settlementDate": "1998-05-17",
+    "dividendYield": 0.02,
+    "dayCounter": {
+      "@type": "Actual365Fixed"
+    },
+    "compounding": "Simple",
+    "frequency": "Annual",
+    "discountDate": "1998-09-17",
+    "expected": 0.9933053937843573
+  },
+  {
+    "settlementDate": "1998-05-17",
+    "dividendYield": 0.02,
+    "dayCounter": {
+      "@type": "Actual365Fixed"
+    },
+    "compounding": "Compounded",
+    "frequency": "Daily",
+    "discountDate": "1998-09-17",
+    "expected": 0.9932831183908369
+  },
+  {
+    "settlementDate": "1998-05-17",
+    "dividendYield": 0.02,
+    "dayCounter": {
+      "@type": "Actual365Fixed"
+    },
+    "compounding": "Compounded",
+    "frequency": "Annual",
+    "discountDate": "1998-09-17",
+    "expected": 0.9933490023176266
+  },
+  {
+    "settlementDate": "1998-05-17",
+    "dividendYield": 0.02,
+    "dayCounter": {
+      "@type": "Actual365Fixed"
+    },
+    "compounding": "Continuous",
+    "frequency": "Daily",
+    "discountDate": "1998-09-17",
+    "expected": 0.9932829349878066
+  },
+  {
+    "settlementDate": "1998-05-17",
+    "dividendYield": 0.02,
+    "dayCounter": {
+      "@type": "Actual365Fixed"
+    },
+    "compounding": "Continuous",
+    "frequency": "Annual",
+    "discountDate": "1998-09-17",
+    "expected": 0.9932829349878066
+  },
+  {
+    "settlementDate": "1998-05-17",
+    "dividendYield": 0.02,
+    "dayCounter": {
+      "@type": "Actual365Fixed"
+    },
+    "compounding": "SimpleThenCompounded",
+    "frequency": "Daily",
+    "discountDate": "1998-09-17",
+    "expected": 0.9932831183908369
+  },
+  {
+    "settlementDate": "1998-05-17",
+    "dividendYield": 0.02,
+    "dayCounter": {
+      "@type": "Actual365Fixed"
+    },
+    "compounding": "SimpleThenCompounded",
+    "frequency": "Annual",
+    "discountDate": "1998-09-17",
+    "expected": 0.9933053937843573
+  },
+  {
+    "settlementDate": "1998-05-17",
+    "dividendYield": 0.02,
+    "dayCounter": {
+      "@type": "Actual365Fixed"
+    },
+    "compounding": "Simple",
+    "frequency": "Daily",
+    "discountDate": "1998-10-17",
+    "expected": 0.9916861381296527
+  },
+  {
+    "settlementDate": "1998-05-17",
+    "dividendYield": 0.02,
+    "dayCounter": {
+      "@type": "Actual365Fixed"
+    },
+    "compounding": "Simple",
+    "frequency": "Annual",
+    "discountDate": "1998-10-17",
+    "expected": 0.9916861381296527
+  },
+  {
+    "settlementDate": "1998-05-17",
+    "dividendYield": 0.02,
+    "dayCounter": {
+      "@type": "Actual365Fixed"
+    },
+    "compounding": "Compounded",
+    "frequency": "Daily",
+    "discountDate": "1998-10-17",
+    "expected": 0.9916517101701489
+  },
+  {
+    "settlementDate": "1998-05-17",
+    "dividendYield": 0.02,
+    "dayCounter": {
+      "@type": "Actual365Fixed"
+    },
+    "compounding": "Compounded",
+    "frequency": "Annual",
+    "discountDate": "1998-10-17",
+    "expected": 0.99173352940599
+  },
+  {
+    "settlementDate": "1998-05-17",
+    "dividendYield": 0.02,
+    "dayCounter": {
+      "@type": "Actual365Fixed"
+    },
+    "compounding": "Continuous",
+    "frequency": "Daily",
+    "discountDate": "1998-10-17",
+    "expected": 0.9916514824093761
+  },
+  {
+    "settlementDate": "1998-05-17",
+    "dividendYield": 0.02,
+    "dayCounter": {
+      "@type": "Actual365Fixed"
+    },
+    "compounding": "Continuous",
+    "frequency": "Annual",
+    "discountDate": "1998-10-17",
+    "expected": 0.9916514824093761
+  },
+  {
+    "settlementDate": "1998-05-17",
+    "dividendYield": 0.02,
+    "dayCounter": {
+      "@type": "Actual365Fixed"
+    },
+    "compounding": "SimpleThenCompounded",
+    "frequency": "Daily",
+    "discountDate": "1998-10-17",
+    "expected": 0.9916517101701489
+  },
+  {
+    "settlementDate": "1998-05-17",
+    "dividendYield": 0.02,
+    "dayCounter": {
+      "@type": "Actual365Fixed"
+    },
+    "compounding": "SimpleThenCompounded",
+    "frequency": "Annual",
+    "discountDate": "1998-10-17",
+    "expected": 0.9916861381296527
+  },
+  {
+    "settlementDate": "1998-05-17",
+    "dividendYield": 0.02,
+    "dayCounter": {
+      "@type": "Actual365Fixed"
+    },
+    "compounding": "Simple",
+    "frequency": "Daily",
+    "discountDate": "1998-11-17",
+    "expected": 0.9900184441792341
+  },
+  {
+    "settlementDate": "1998-05-17",
+    "dividendYield": 0.02,
+    "dayCounter": {
+      "@type": "Actual365Fixed"
+    },
+    "compounding": "Simple",
+    "frequency": "Annual",
+    "discountDate": "1998-11-17",
+    "expected": 0.9900184441792341
+  },
+  {
+    "settlementDate": "1998-05-17",
+    "dividendYield": 0.02,
+    "dayCounter": {
+      "@type": "Actual365Fixed"
+    },
+    "compounding": "Compounded",
+    "frequency": "Daily",
+    "discountDate": "1998-11-17",
+    "expected": 0.989968736577786
+  },
+  {
+    "settlementDate": "1998-05-17",
+    "dividendYield": 0.02,
+    "dayCounter": {
+      "@type": "Actual365Fixed"
+    },
+    "compounding": "Compounded",
+    "frequency": "Annual",
+    "discountDate": "1998-11-17",
+    "expected": 0.9900669673947008
+  },
+  {
+    "settlementDate": "1998-05-17",
+    "dividendYield": 0.02,
+    "dayCounter": {
+      "@type": "Actual365Fixed"
+    },
+    "compounding": "Continuous",
+    "frequency": "Daily",
+    "discountDate": "1998-11-17",
+    "expected": 0.9899684631342734
+  },
+  {
+    "settlementDate": "1998-05-17",
+    "dividendYield": 0.02,
+    "dayCounter": {
+      "@type": "Actual365Fixed"
+    },
+    "compounding": "Continuous",
+    "frequency": "Annual",
+    "discountDate": "1998-11-17",
+    "expected": 0.9899684631342734
+  },
+  {
+    "settlementDate": "1998-05-17",
+    "dividendYield": 0.02,
+    "dayCounter": {
+      "@type": "Actual365Fixed"
+    },
+    "compounding": "SimpleThenCompounded",
+    "frequency": "Daily",
+    "discountDate": "1998-11-17",
+    "expected": 0.989968736577786
+  },
+  {
+    "settlementDate": "1998-05-17",
+    "dividendYield": 0.02,
+    "dayCounter": {
+      "@type": "Actual365Fixed"
+    },
+    "compounding": "SimpleThenCompounded",
+    "frequency": "Annual",
+    "discountDate": "1998-11-17",
+    "expected": 0.9900184441792341
+  },
+  {
+    "settlementDate": "1998-05-17",
+    "dividendYield": 0.02,
+    "dayCounter": {
+      "@type": "Actual365Fixed"
+    },
+    "compounding": "Simple",
+    "frequency": "Daily",
+    "discountDate": "1998-12-17",
+    "expected": 0.9884098786828422
+  },
+  {
+    "settlementDate": "1998-05-17",
+    "dividendYield": 0.02,
+    "dayCounter": {
+      "@type": "Actual365Fixed"
+    },
+    "compounding": "Simple",
+    "frequency": "Annual",
+    "discountDate": "1998-12-17",
+    "expected": 0.9884098786828422
+  },
+  {
+    "settlementDate": "1998-05-17",
+    "dividendYield": 0.02,
+    "dayCounter": {
+      "@type": "Actual365Fixed"
+    },
+    "compounding": "Compounded",
+    "frequency": "Daily",
+    "discountDate": "1998-12-17",
+    "expected": 0.9883427720313495
+  },
+  {
+    "settlementDate": "1998-05-17",
+    "dividendYield": 0.02,
+    "dayCounter": {
+      "@type": "Actual365Fixed"
+    },
+    "compounding": "Compounded",
+    "frequency": "Annual",
+    "discountDate": "1998-12-17",
+    "expected": 0.9884568320215332
+  },
+  {
+    "settlementDate": "1998-05-17",
+    "dividendYield": 0.02,
+    "dayCounter": {
+      "@type": "Actual365Fixed"
+    },
+    "compounding": "Continuous",
+    "frequency": "Daily",
+    "discountDate": "1998-12-17",
+    "expected": 0.9883424545270026
+  },
+  {
+    "settlementDate": "1998-05-17",
+    "dividendYield": 0.02,
+    "dayCounter": {
+      "@type": "Actual365Fixed"
+    },
+    "compounding": "Continuous",
+    "frequency": "Annual",
+    "discountDate": "1998-12-17",
+    "expected": 0.9883424545270026
+  },
+  {
+    "settlementDate": "1998-05-17",
+    "dividendYield": 0.02,
+    "dayCounter": {
+      "@type": "Actual365Fixed"
+    },
+    "compounding": "SimpleThenCompounded",
+    "frequency": "Daily",
+    "discountDate": "1998-12-17",
+    "expected": 0.9883427720313495
+  },
+  {
+    "settlementDate": "1998-05-17",
+    "dividendYield": 0.02,
+    "dayCounter": {
+      "@type": "Actual365Fixed"
+    },
+    "compounding": "SimpleThenCompounded",
+    "frequency": "Annual",
+    "discountDate": "1998-12-17",
+    "expected": 0.9884098786828422
+  },
+  {
+    "settlementDate": "1998-05-17",
+    "dividendYield": 0.02,
+    "dayCounter": {
+      "@type": "Actual365Fixed"
+    },
+    "compounding": "Simple",
+    "frequency": "Daily",
+    "discountDate": "1999-05-17",
+    "expected": 0.9803921568627451
+  },
+  {
+    "settlementDate": "1998-05-17",
+    "dividendYield": 0.02,
+    "dayCounter": {
+      "@type": "Actual365Fixed"
+    },
+    "compounding": "Simple",
+    "frequency": "Annual",
+    "discountDate": "1999-05-17",
+    "expected": 0.9803921568627451
+  },
+  {
+    "settlementDate": "1998-05-17",
+    "dividendYield": 0.02,
+    "dayCounter": {
+      "@type": "Actual365Fixed"
+    },
+    "compounding": "Compounded",
+    "frequency": "Daily",
+    "discountDate": "1999-05-17",
+    "expected": 0.9801992103824207
+  },
+  {
+    "settlementDate": "1998-05-17",
+    "dividendYield": 0.02,
+    "dayCounter": {
+      "@type": "Actual365Fixed"
+    },
+    "compounding": "Compounded",
+    "frequency": "Annual",
+    "discountDate": "1999-05-17",
+    "expected": 0.9803921568627451
+  },
+  {
+    "settlementDate": "1998-05-17",
+    "dividendYield": 0.02,
+    "dayCounter": {
+      "@type": "Actual365Fixed"
+    },
+    "compounding": "Continuous",
+    "frequency": "Daily",
+    "discountDate": "1999-05-17",
+    "expected": 0.9801986733067554
+  },
+  {
+    "settlementDate": "1998-05-17",
+    "dividendYield": 0.02,
+    "dayCounter": {
+      "@type": "Actual365Fixed"
+    },
+    "compounding": "Continuous",
+    "frequency": "Annual",
+    "discountDate": "1999-05-17",
+    "expected": 0.9801986733067554
+  },
+  {
+    "settlementDate": "1998-05-17",
+    "dividendYield": 0.02,
+    "dayCounter": {
+      "@type": "Actual365Fixed"
+    },
+    "compounding": "SimpleThenCompounded",
+    "frequency": "Daily",
+    "discountDate": "1999-05-17",
+    "expected": 0.9801992103824207
+  },
+  {
+    "settlementDate": "1998-05-17",
+    "dividendYield": 0.02,
+    "dayCounter": {
+      "@type": "Actual365Fixed"
+    },
+    "compounding": "SimpleThenCompounded",
+    "frequency": "Annual",
+    "discountDate": "1999-05-17",
+    "expected": 0.9803921568627451
+  },
+  {
+    "settlementDate": "1998-05-17",
+    "dividendYield": 0.03,
+    "dayCounter": {
+      "@type": "Actual365Fixed"
+    },
+    "compounding": "Simple",
+    "frequency": "Daily",
+    "discountDate": "1998-06-17",
+    "expected": 0.9974585303200065
+  },
+  {
+    "settlementDate": "1998-05-17",
+    "dividendYield": 0.03,
+    "dayCounter": {
+      "@type": "Actual365Fixed"
+    },
+    "compounding": "Simple",
+    "frequency": "Annual",
+    "discountDate": "1998-06-17",
+    "expected": 0.9974585303200065
+  },
+  {
+    "settlementDate": "1998-05-17",
+    "dividendYield": 0.03,
+    "dayCounter": {
+      "@type": "Actual365Fixed"
+    },
+    "compounding": "Compounded",
+    "frequency": "Daily",
+    "discountDate": "1998-06-17",
+    "expected": 0.997455402489674
+  },
+  {
+    "settlementDate": "1998-05-17",
+    "dividendYield": 0.03,
+    "dayCounter": {
+      "@type": "Actual365Fixed"
+    },
+    "compounding": "Compounded",
+    "frequency": "Annual",
+    "discountDate": "1998-06-17",
+    "expected": 0.9974926749884707
+  },
+  {
+    "settlementDate": "1998-05-17",
+    "dividendYield": 0.03,
+    "dayCounter": {
+      "@type": "Actual365Fixed"
+    },
+    "compounding": "Continuous",
+    "frequency": "Daily",
+    "discountDate": "1998-06-17",
+    "expected": 0.9974552980517735
+  },
+  {
+    "settlementDate": "1998-05-17",
+    "dividendYield": 0.03,
+    "dayCounter": {
+      "@type": "Actual365Fixed"
+    },
+    "compounding": "Continuous",
+    "frequency": "Annual",
+    "discountDate": "1998-06-17",
+    "expected": 0.9974552980517735
+  },
+  {
+    "settlementDate": "1998-05-17",
+    "dividendYield": 0.03,
+    "dayCounter": {
+      "@type": "Actual365Fixed"
+    },
+    "compounding": "SimpleThenCompounded",
+    "frequency": "Daily",
+    "discountDate": "1998-06-17",
+    "expected": 0.997455402489674
+  },
+  {
+    "settlementDate": "1998-05-17",
+    "dividendYield": 0.03,
+    "dayCounter": {
+      "@type": "Actual365Fixed"
+    },
+    "compounding": "SimpleThenCompounded",
+    "frequency": "Annual",
+    "discountDate": "1998-06-17",
+    "expected": 0.9974585303200065
+  },
+  {
+    "settlementDate": "1998-05-17",
+    "dividendYield": 0.03,
+    "dayCounter": {
+      "@type": "Actual365Fixed"
+    },
+    "compounding": "Simple",
+    "frequency": "Daily",
+    "discountDate": "1998-07-17",
+    "expected": 0.9950113131423275
+  },
+  {
+    "settlementDate": "1998-05-17",
+    "dividendYield": 0.03,
+    "dayCounter": {
+      "@type": "Actual365Fixed"
+    },
+    "compounding": "Simple",
+    "frequency": "Annual",
+    "discountDate": "1998-07-17",
+    "expected": 0.9950113131423275
+  },
+  {
+    "settlementDate": "1998-05-17",
+    "dividendYield": 0.03,
+    "dayCounter": {
+      "@type": "Actual365Fixed"
+    },
+    "compounding": "Compounded",
+    "frequency": "Daily",
+    "discountDate": "1998-07-17",
+    "expected": 0.994999053978848
+  },
+  {
+    "settlementDate": "1998-05-17",
+    "dividendYield": 0.03,
+    "dayCounter": {
+      "@type": "Actual365Fixed"
+    },
+    "compounding": "Compounded",
+    "frequency": "Annual",
+    "discountDate": "1998-07-17",
+    "expected": 0.9950722173458967
+  },
+  {
+    "settlementDate": "1998-05-17",
+    "dividendYield": 0.03,
+    "dayCounter": {
+      "@type": "Actual365Fixed"
+    },
+    "compounding": "Continuous",
+    "frequency": "Daily",
+    "discountDate": "1998-07-17",
+    "expected": 0.994998848978106
+  },
+  {
+    "settlementDate": "1998-05-17",
+    "dividendYield": 0.03,
+    "dayCounter": {
+      "@type": "Actual365Fixed"
+    },
+    "compounding": "Continuous",
+    "frequency": "Annual",
+    "discountDate": "1998-07-17",
+    "expected": 0.994998848978106
+  },
+  {
+    "settlementDate": "1998-05-17",
+    "dividendYield": 0.03,
+    "dayCounter": {
+      "@type": "Actual365Fixed"
+    },
+    "compounding": "SimpleThenCompounded",
+    "frequency": "Daily",
+    "discountDate": "1998-07-17",
+    "expected": 0.994999053978848
+  },
+  {
+    "settlementDate": "1998-05-17",
+    "dividendYield": 0.03,
+    "dayCounter": {
+      "@type": "Actual365Fixed"
+    },
+    "compounding": "SimpleThenCompounded",
+    "frequency": "Annual",
+    "discountDate": "1998-07-17",
+    "expected": 0.9950113131423275
+  },
+  {
+    "settlementDate": "1998-05-17",
+    "dividendYield": 0.03,
+    "dayCounter": {
+      "@type": "Actual365Fixed"
+    },
+    "compounding": "Simple",
+    "frequency": "Daily",
+    "discountDate": "1998-08-17",
+    "expected": 0.9924951055035892
+  },
+  {
+    "settlementDate": "1998-05-17",
+    "dividendYield": 0.03,
+    "dayCounter": {
+      "@type": "Actual365Fixed"
+    },
+    "compounding": "Simple",
+    "frequency": "Annual",
+    "discountDate": "1998-08-17",
+    "expected": 0.9924951055035892
+  },
+  {
+    "settlementDate": "1998-05-17",
+    "dividendYield": 0.03,
+    "dayCounter": {
+      "@type": "Actual365Fixed"
+    },
+    "compounding": "Compounded",
+    "frequency": "Daily",
+    "discountDate": "1998-08-17",
+    "expected": 0.9924671818633166
+  },
+  {
+    "settlementDate": "1998-05-17",
+    "dividendYield": 0.03,
+    "dayCounter": {
+      "@type": "Actual365Fixed"
+    },
+    "compounding": "Compounded",
+    "frequency": "Annual",
+    "discountDate": "1998-08-17",
+    "expected": 0.9925772478870674
+  },
+  {
+    "settlementDate": "1998-05-17",
+    "dividendYield": 0.03,
+    "dayCounter": {
+      "@type": "Actual365Fixed"
+    },
+    "compounding": "Continuous",
+    "frequency": "Daily",
+    "discountDate": "1998-08-17",
+    "expected": 0.9924668734686284
+  },
+  {
+    "settlementDate": "1998-05-17",
+    "dividendYield": 0.03,
+    "dayCounter": {
+      "@type": "Actual365Fixed"
+    },
+    "compounding": "Continuous",
+    "frequency": "Annual",
+    "discountDate": "1998-08-17",
+    "expected": 0.9924668734686284
+  },
+  {
+    "settlementDate": "1998-05-17",
+    "dividendYield": 0.03,
+    "dayCounter": {
+      "@type": "Actual365Fixed"
+    },
+    "compounding": "SimpleThenCompounded",
+    "frequency": "Daily",
+    "discountDate": "1998-08-17",
+    "expected": 0.9924671818633166
+  },
+  {
+    "settlementDate": "1998-05-17",
+    "dividendYield": 0.03,
+    "dayCounter": {
+      "@type": "Actual365Fixed"
+    },
+    "compounding": "SimpleThenCompounded",
+    "frequency": "Annual",
+    "discountDate": "1998-08-17",
+    "expected": 0.9924951055035892
+  },
+  {
+    "settlementDate": "1998-05-17",
+    "dividendYield": 0.03,
+    "dayCounter": {
+      "@type": "Actual365Fixed"
+    },
+    "compounding": "Simple",
+    "frequency": "Daily",
+    "discountDate": "1998-09-17",
+    "expected": 0.9899915918522336
+  },
+  {
+    "settlementDate": "1998-05-17",
+    "dividendYield": 0.03,
+    "dayCounter": {
+      "@type": "Actual365Fixed"
+    },
+    "compounding": "Simple",
+    "frequency": "Annual",
+    "discountDate": "1998-09-17",
+    "expected": 0.9899915918522336
+  },
+  {
+    "settlementDate": "1998-05-17",
+    "dividendYield": 0.03,
+    "dayCounter": {
+      "@type": "Actual365Fixed"
+    },
+    "compounding": "Compounded",
+    "frequency": "Daily",
+    "discountDate": "1998-09-17",
+    "expected": 0.9899417523432671
+  },
+  {
+    "settlementDate": "1998-05-17",
+    "dividendYield": 0.03,
+    "dayCounter": {
+      "@type": "Actual365Fixed"
+    },
+    "compounding": "Compounded",
+    "frequency": "Annual",
+    "discountDate": "1998-09-17",
+    "expected": 0.9900885341275654
+  },
+  {
+    "settlementDate": "1998-05-17",
+    "dividendYield": 0.03,
+    "dayCounter": {
+      "@type": "Actual365Fixed"
+    },
+    "compounding": "Continuous",
+    "frequency": "Daily",
+    "discountDate": "1998-09-17",
+    "expected": 0.9899413410821626
+  },
+  {
+    "settlementDate": "1998-05-17",
+    "dividendYield": 0.03,
+    "dayCounter": {
+      "@type": "Actual365Fixed"
+    },
+    "compounding": "Continuous",
+    "frequency": "Annual",
+    "discountDate": "1998-09-17",
+    "expected": 0.9899413410821626
+  },
+  {
+    "settlementDate": "1998-05-17",
+    "dividendYield": 0.03,
+    "dayCounter": {
+      "@type": "Actual365Fixed"
+    },
+    "compounding": "SimpleThenCompounded",
+    "frequency": "Daily",
+    "discountDate": "1998-09-17",
+    "expected": 0.9899417523432671
+  },
+  {
+    "settlementDate": "1998-05-17",
+    "dividendYield": 0.03,
+    "dayCounter": {
+      "@type": "Actual365Fixed"
+    },
+    "compounding": "SimpleThenCompounded",
+    "frequency": "Annual",
+    "discountDate": "1998-09-17",
+    "expected": 0.9899915918522336
+  },
+  {
+    "settlementDate": "1998-05-17",
+    "dividendYield": 0.03,
+    "dayCounter": {
+      "@type": "Actual365Fixed"
+    },
+    "compounding": "Simple",
+    "frequency": "Daily",
+    "discountDate": "1998-10-17",
+    "expected": 0.9875808328147407
+  },
+  {
+    "settlementDate": "1998-05-17",
+    "dividendYield": 0.03,
+    "dayCounter": {
+      "@type": "Actual365Fixed"
+    },
+    "compounding": "Simple",
+    "frequency": "Annual",
+    "discountDate": "1998-10-17",
+    "expected": 0.9875808328147407
+  },
+  {
+    "settlementDate": "1998-05-17",
+    "dividendYield": 0.03,
+    "dayCounter": {
+      "@type": "Actual365Fixed"
+    },
+    "compounding": "Compounded",
+    "frequency": "Daily",
+    "discountDate": "1998-10-17",
+    "expected": 0.9875039070590533
+  },
+  {
+    "settlementDate": "1998-05-17",
+    "dividendYield": 0.03,
+    "dayCounter": {
+      "@type": "Actual365Fixed"
+    },
+    "compounding": "Compounded",
+    "frequency": "Annual",
+    "discountDate": "1998-10-17",
+    "expected": 0.9876860429420717
+  },
+  {
+    "settlementDate": "1998-05-17",
+    "dividendYield": 0.03,
+    "dayCounter": {
+      "@type": "Actual365Fixed"
+    },
+    "compounding": "Continuous",
+    "frequency": "Daily",
+    "discountDate": "1998-10-17",
+    "expected": 0.9875033967501848
+  },
+  {
+    "settlementDate": "1998-05-17",
+    "dividendYield": 0.03,
+    "dayCounter": {
+      "@type": "Actual365Fixed"
+    },
+    "compounding": "Continuous",
+    "frequency": "Annual",
+    "discountDate": "1998-10-17",
+    "expected": 0.9875033967501848
+  },
+  {
+    "settlementDate": "1998-05-17",
+    "dividendYield": 0.03,
+    "dayCounter": {
+      "@type": "Actual365Fixed"
+    },
+    "compounding": "SimpleThenCompounded",
+    "frequency": "Daily",
+    "discountDate": "1998-10-17",
+    "expected": 0.9875039070590533
+  },
+  {
+    "settlementDate": "1998-05-17",
+    "dividendYield": 0.03,
+    "dayCounter": {
+      "@type": "Actual365Fixed"
+    },
+    "compounding": "SimpleThenCompounded",
+    "frequency": "Annual",
+    "discountDate": "1998-10-17",
+    "expected": 0.9875808328147407
+  },
+  {
+    "settlementDate": "1998-05-17",
+    "dividendYield": 0.03,
+    "dayCounter": {
+      "@type": "Actual365Fixed"
+    },
+    "compounding": "Simple",
+    "frequency": "Daily",
+    "discountDate": "1998-11-17",
+    "expected": 0.9851020187844112
+  },
+  {
+    "settlementDate": "1998-05-17",
+    "dividendYield": 0.03,
+    "dayCounter": {
+      "@type": "Actual365Fixed"
+    },
+    "compounding": "Simple",
+    "frequency": "Annual",
+    "discountDate": "1998-11-17",
+    "expected": 0.9851020187844112
+  },
+  {
+    "settlementDate": "1998-05-17",
+    "dividendYield": 0.03,
+    "dayCounter": {
+      "@type": "Actual365Fixed"
+    },
+    "compounding": "Compounded",
+    "frequency": "Daily",
+    "discountDate": "1998-11-17",
+    "expected": 0.9849911070757137
+  },
+  {
+    "settlementDate": "1998-05-17",
+    "dividendYield": 0.03,
+    "dayCounter": {
+      "@type": "Actual365Fixed"
+    },
+    "compounding": "Compounded",
+    "frequency": "Annual",
+    "discountDate": "1998-11-17",
+    "expected": 0.9852095930230649
+  },
+  {
+    "settlementDate": "1998-05-17",
+    "dividendYield": 0.03,
+    "dayCounter": {
+      "@type": "Actual365Fixed"
+    },
+    "compounding": "Continuous",
+    "frequency": "Daily",
+    "discountDate": "1998-11-17",
+    "expected": 0.9849904949325944
+  },
+  {
+    "settlementDate": "1998-05-17",
+    "dividendYield": 0.03,
+    "dayCounter": {
+      "@type": "Actual365Fixed"
+    },
+    "compounding": "Continuous",
+    "frequency": "Annual",
+    "discountDate": "1998-11-17",
+    "expected": 0.9849904949325944
+  },
+  {
+    "settlementDate": "1998-05-17",
+    "dividendYield": 0.03,
+    "dayCounter": {
+      "@type": "Actual365Fixed"
+    },
+    "compounding": "SimpleThenCompounded",
+    "frequency": "Daily",
+    "discountDate": "1998-11-17",
+    "expected": 0.9849911070757137
+  },
+  {
+    "settlementDate": "1998-05-17",
+    "dividendYield": 0.03,
+    "dayCounter": {
+      "@type": "Actual365Fixed"
+    },
+    "compounding": "SimpleThenCompounded",
+    "frequency": "Annual",
+    "discountDate": "1998-11-17",
+    "expected": 0.9851020187844112
+  },
+  {
+    "settlementDate": "1998-05-17",
+    "dividendYield": 0.03,
+    "dayCounter": {
+      "@type": "Actual365Fixed"
+    },
+    "compounding": "Simple",
+    "frequency": "Daily",
+    "discountDate": "1998-12-17",
+    "expected": 0.98271498573044
+  },
+  {
+    "settlementDate": "1998-05-17",
+    "dividendYield": 0.03,
+    "dayCounter": {
+      "@type": "Actual365Fixed"
+    },
+    "compounding": "Simple",
+    "frequency": "Annual",
+    "discountDate": "1998-12-17",
+    "expected": 0.98271498573044
+  },
+  {
+    "settlementDate": "1998-05-17",
+    "dividendYield": 0.03,
+    "dayCounter": {
+      "@type": "Actual365Fixed"
+    },
+    "compounding": "Compounded",
+    "frequency": "Daily",
+    "discountDate": "1998-12-17",
+    "expected": 0.9825654533241741
+  },
+  {
+    "settlementDate": "1998-05-17",
+    "dividendYield": 0.03,
+    "dayCounter": {
+      "@type": "Actual365Fixed"
+    },
+    "compounding": "Compounded",
+    "frequency": "Annual",
+    "discountDate": "1998-12-17",
+    "expected": 0.9828189407919619
+  },
+  {
+    "settlementDate": "1998-05-17",
+    "dividendYield": 0.03,
+    "dayCounter": {
+      "@type": "Actual365Fixed"
+    },
+    "compounding": "Continuous",
+    "frequency": "Daily",
+    "discountDate": "1998-12-17",
+    "expected": 0.9825647431284038
+  },
+  {
+    "settlementDate": "1998-05-17",
+    "dividendYield": 0.03,
+    "dayCounter": {
+      "@type": "Actual365Fixed"
+    },
+    "compounding": "Continuous",
+    "frequency": "Annual",
+    "discountDate": "1998-12-17",
+    "expected": 0.9825647431284038
+  },
+  {
+    "settlementDate": "1998-05-17",
+    "dividendYield": 0.03,
+    "dayCounter": {
+      "@type": "Actual365Fixed"
+    },
+    "compounding": "SimpleThenCompounded",
+    "frequency": "Daily",
+    "discountDate": "1998-12-17",
+    "expected": 0.9825654533241741
+  },
+  {
+    "settlementDate": "1998-05-17",
+    "dividendYield": 0.03,
+    "dayCounter": {
+      "@type": "Actual365Fixed"
+    },
+    "compounding": "SimpleThenCompounded",
+    "frequency": "Annual",
+    "discountDate": "1998-12-17",
+    "expected": 0.98271498573044
+  },
+  {
+    "settlementDate": "1998-05-17",
+    "dividendYield": 0.03,
+    "dayCounter": {
+      "@type": "Actual365Fixed"
+    },
+    "compounding": "Simple",
+    "frequency": "Daily",
+    "discountDate": "1999-05-17",
+    "expected": 0.970873786407767
+  },
+  {
+    "settlementDate": "1998-05-17",
+    "dividendYield": 0.03,
+    "dayCounter": {
+      "@type": "Actual365Fixed"
+    },
+    "compounding": "Simple",
+    "frequency": "Annual",
+    "discountDate": "1999-05-17",
+    "expected": 0.970873786407767
+  },
+  {
+    "settlementDate": "1998-05-17",
+    "dividendYield": 0.03,
+    "dayCounter": {
+      "@type": "Actual365Fixed"
+    },
+    "compounding": "Compounded",
+    "frequency": "Daily",
+    "discountDate": "1999-05-17",
+    "expected": 0.9704467299233515
+  },
+  {
+    "settlementDate": "1998-05-17",
+    "dividendYield": 0.03,
+    "dayCounter": {
+      "@type": "Actual365Fixed"
+    },
+    "compounding": "Compounded",
+    "frequency": "Annual",
+    "discountDate": "1999-05-17",
+    "expected": 0.970873786407767
+  },
+  {
+    "settlementDate": "1998-05-17",
+    "dividendYield": 0.03,
+    "dayCounter": {
+      "@type": "Actual365Fixed"
+    },
+    "compounding": "Continuous",
+    "frequency": "Daily",
+    "discountDate": "1999-05-17",
+    "expected": 0.9704455335485082
+  },
+  {
+    "settlementDate": "1998-05-17",
+    "dividendYield": 0.03,
+    "dayCounter": {
+      "@type": "Actual365Fixed"
+    },
+    "compounding": "Continuous",
+    "frequency": "Annual",
+    "discountDate": "1999-05-17",
+    "expected": 0.9704455335485082
+  },
+  {
+    "settlementDate": "1998-05-17",
+    "dividendYield": 0.03,
+    "dayCounter": {
+      "@type": "Actual365Fixed"
+    },
+    "compounding": "SimpleThenCompounded",
+    "frequency": "Daily",
+    "discountDate": "1999-05-17",
+    "expected": 0.9704467299233515
+  },
+  {
+    "settlementDate": "1998-05-17",
+    "dividendYield": 0.03,
+    "dayCounter": {
+      "@type": "Actual365Fixed"
+    },
+    "compounding": "SimpleThenCompounded",
+    "frequency": "Annual",
+    "discountDate": "1999-05-17",
+    "expected": 0.970873786407767
+  },
+  {
+    "settlementDate": "1998-05-17",
+    "dividendYield": 0.04,
+    "dayCounter": {
+      "@type": "Actual365Fixed"
+    },
+    "compounding": "Simple",
+    "frequency": "Daily",
+    "discountDate": "1998-06-17",
+    "expected": 0.9966142420270859
+  },
+  {
+    "settlementDate": "1998-05-17",
+    "dividendYield": 0.04,
+    "dayCounter": {
+      "@type": "Actual365Fixed"
+    },
+    "compounding": "Simple",
+    "frequency": "Annual",
+    "discountDate": "1998-06-17",
+    "expected": 0.9966142420270859
+  },
+  {
+    "settlementDate": "1998-05-17",
+    "dividendYield": 0.04,
+    "dayCounter": {
+      "@type": "Actual365Fixed"
+    },
+    "compounding": "Compounded",
+    "frequency": "Daily",
+    "discountDate": "1998-06-17",
+    "expected": 0.9966086893917979
+  },
+  {
+    "settlementDate": "1998-05-17",
+    "dividendYield": 0.04,
+    "dayCounter": {
+      "@type": "Actual365Fixed"
+    },
+    "compounding": "Compounded",
+    "frequency": "Annual",
+    "discountDate": "1998-06-17",
+    "expected": 0.996674467604905
+  },
+  {
+    "settlementDate": "1998-05-17",
+    "dividendYield": 0.04,
+    "dayCounter": {
+      "@type": "Actual365Fixed"
+    },
+    "compounding": "Continuous",
+    "frequency": "Daily",
+    "discountDate": "1998-06-17",
+    "expected": 0.9966085038854144
+  },
+  {
+    "settlementDate": "1998-05-17",
+    "dividendYield": 0.04,
+    "dayCounter": {
+      "@type": "Actual365Fixed"
+    },
+    "compounding": "Continuous",
+    "frequency": "Annual",
+    "discountDate": "1998-06-17",
+    "expected": 0.9966085038854144
+  },
+  {
+    "settlementDate": "1998-05-17",
+    "dividendYield": 0.04,
+    "dayCounter": {
+      "@type": "Actual365Fixed"
+    },
+    "compounding": "SimpleThenCompounded",
+    "frequency": "Daily",
+    "discountDate": "1998-06-17",
+    "expected": 0.9966086893917979
+  },
+  {
+    "settlementDate": "1998-05-17",
+    "dividendYield": 0.04,
+    "dayCounter": {
+      "@type": "Actual365Fixed"
+    },
+    "compounding": "SimpleThenCompounded",
+    "frequency": "Annual",
+    "discountDate": "1998-06-17",
+    "expected": 0.9966142420270859
+  },
+  {
+    "settlementDate": "1998-05-17",
+    "dividendYield": 0.04,
+    "dayCounter": {
+      "@type": "Actual365Fixed"
+    },
+    "compounding": "Simple",
+    "frequency": "Daily",
+    "discountDate": "1998-07-17",
+    "expected": 0.993359460047899
+  },
+  {
+    "settlementDate": "1998-05-17",
+    "dividendYield": 0.04,
+    "dayCounter": {
+      "@type": "Actual365Fixed"
+    },
+    "compounding": "Simple",
+    "frequency": "Annual",
+    "discountDate": "1998-07-17",
+    "expected": 0.993359460047899
+  },
+  {
+    "settlementDate": "1998-05-17",
+    "dividendYield": 0.04,
+    "dayCounter": {
+      "@type": "Actual365Fixed"
+    },
+    "compounding": "Compounded",
+    "frequency": "Daily",
+    "discountDate": "1998-07-17",
+    "expected": 0.99333772677176
+  },
+  {
+    "settlementDate": "1998-05-17",
+    "dividendYield": 0.04,
+    "dayCounter": {
+      "@type": "Actual365Fixed"
+    },
+    "compounding": "Compounded",
+    "frequency": "Annual",
+    "discountDate": "1998-07-17",
+    "expected": 0.9934667406239917
+  },
+  {
+    "settlementDate": "1998-05-17",
+    "dividendYield": 0.04,
+    "dayCounter": {
+      "@type": "Actual365Fixed"
+    },
+    "compounding": "Continuous",
+    "frequency": "Daily",
+    "discountDate": "1998-07-17",
+    "expected": 0.993337362941161
+  },
+  {
+    "settlementDate": "1998-05-17",
+    "dividendYield": 0.04,
+    "dayCounter": {
+      "@type": "Actual365Fixed"
+    },
+    "compounding": "Continuous",
+    "frequency": "Annual",
+    "discountDate": "1998-07-17",
+    "expected": 0.993337362941161
+  },
+  {
+    "settlementDate": "1998-05-17",
+    "dividendYield": 0.04,
+    "dayCounter": {
+      "@type": "Actual365Fixed"
+    },
+    "compounding": "SimpleThenCompounded",
+    "frequency": "Daily",
+    "discountDate": "1998-07-17",
+    "expected": 0.99333772677176
+  },
+  {
+    "settlementDate": "1998-05-17",
+    "dividendYield": 0.04,
+    "dayCounter": {
+      "@type": "Actual365Fixed"
+    },
+    "compounding": "SimpleThenCompounded",
+    "frequency": "Annual",
+    "discountDate": "1998-07-17",
+    "expected": 0.993359460047899
+  },
+  {
+    "settlementDate": "1998-05-17",
+    "dividendYield": 0.04,
+    "dayCounter": {
+      "@type": "Actual365Fixed"
+    },
+    "compounding": "Simple",
+    "frequency": "Daily",
+    "discountDate": "1998-08-17",
+    "expected": 0.9900184441792341
+  },
+  {
+    "settlementDate": "1998-05-17",
+    "dividendYield": 0.04,
+    "dayCounter": {
+      "@type": "Actual365Fixed"
+    },
+    "compounding": "Simple",
+    "frequency": "Annual",
+    "discountDate": "1998-08-17",
+    "expected": 0.9900184441792341
+  },
+  {
+    "settlementDate": "1998-05-17",
+    "dividendYield": 0.04,
+    "dayCounter": {
+      "@type": "Actual365Fixed"
+    },
+    "compounding": "Compounded",
+    "frequency": "Daily",
+    "discountDate": "1998-08-17",
+    "expected": 0.9899690100014317
+  },
+  {
+    "settlementDate": "1998-05-17",
+    "dividendYield": 0.04,
+    "dayCounter": {
+      "@type": "Actual365Fixed"
+    },
+    "compounding": "Compounded",
+    "frequency": "Annual",
+    "discountDate": "1998-08-17",
+    "expected": 0.990162934794597
+  },
+  {
+    "settlementDate": "1998-05-17",
+    "dividendYield": 0.04,
+    "dayCounter": {
+      "@type": "Actual365Fixed"
+    },
+    "compounding": "Continuous",
+    "frequency": "Daily",
+    "discountDate": "1998-08-17",
+    "expected": 0.9899684631342734
+  },
+  {
+    "settlementDate": "1998-05-17",
+    "dividendYield": 0.04,
+    "dayCounter": {
+      "@type": "Actual365Fixed"
+    },
+    "compounding": "Continuous",
+    "frequency": "Annual",
+    "discountDate": "1998-08-17",
+    "expected": 0.9899684631342734
+  },
+  {
+    "settlementDate": "1998-05-17",
+    "dividendYield": 0.04,
+    "dayCounter": {
+      "@type": "Actual365Fixed"
+    },
+    "compounding": "SimpleThenCompounded",
+    "frequency": "Daily",
+    "discountDate": "1998-08-17",
+    "expected": 0.9899690100014317
+  },
+  {
+    "settlementDate": "1998-05-17",
+    "dividendYield": 0.04,
+    "dayCounter": {
+      "@type": "Actual365Fixed"
+    },
+    "compounding": "SimpleThenCompounded",
+    "frequency": "Annual",
+    "discountDate": "1998-08-17",
+    "expected": 0.9900184441792341
+  },
+  {
+    "settlementDate": "1998-05-17",
+    "dividendYield": 0.04,
+    "dayCounter": {
+      "@type": "Actual365Fixed"
+    },
+    "compounding": "Simple",
+    "frequency": "Daily",
+    "discountDate": "1998-09-17",
+    "expected": 0.9866998269896194
+  },
+  {
+    "settlementDate": "1998-05-17",
+    "dividendYield": 0.04,
+    "dayCounter": {
+      "@type": "Actual365Fixed"
+    },
+    "compounding": "Simple",
+    "frequency": "Annual",
+    "discountDate": "1998-09-17",
+    "expected": 0.9866998269896194
+  },
+  {
+    "settlementDate": "1998-05-17",
+    "dividendYield": 0.04,
+    "dayCounter": {
+      "@type": "Actual365Fixed"
+    },
+    "compounding": "Compounded",
+    "frequency": "Daily",
+    "discountDate": "1998-09-17",
+    "expected": 0.9866117175960225
+  },
+  {
+    "settlementDate": "1998-05-17",
+    "dividendYield": 0.04,
+    "dayCounter": {
+      "@type": "Actual365Fixed"
+    },
+    "compounding": "Compounded",
+    "frequency": "Annual",
+    "discountDate": "1998-09-17",
+    "expected": 0.9868701158785151
+  },
+  {
+    "settlementDate": "1998-05-17",
+    "dividendYield": 0.04,
+    "dayCounter": {
+      "@type": "Actual365Fixed"
+    },
+    "compounding": "Continuous",
+    "frequency": "Daily",
+    "discountDate": "1998-09-17",
+    "expected": 0.9866109889379914
+  },
+  {
+    "settlementDate": "1998-05-17",
+    "dividendYield": 0.04,
+    "dayCounter": {
+      "@type": "Actual365Fixed"
+    },
+    "compounding": "Continuous",
+    "frequency": "Annual",
+    "discountDate": "1998-09-17",
+    "expected": 0.9866109889379914
+  },
+  {
+    "settlementDate": "1998-05-17",
+    "dividendYield": 0.04,
+    "dayCounter": {
+      "@type": "Actual365Fixed"
+    },
+    "compounding": "SimpleThenCompounded",
+    "frequency": "Daily",
+    "discountDate": "1998-09-17",
+    "expected": 0.9866117175960225
+  },
+  {
+    "settlementDate": "1998-05-17",
+    "dividendYield": 0.04,
+    "dayCounter": {
+      "@type": "Actual365Fixed"
+    },
+    "compounding": "SimpleThenCompounded",
+    "frequency": "Annual",
+    "discountDate": "1998-09-17",
+    "expected": 0.9866998269896194
+  },
+  {
+    "settlementDate": "1998-05-17",
+    "dividendYield": 0.04,
+    "dayCounter": {
+      "@type": "Actual365Fixed"
+    },
+    "compounding": "Simple",
+    "frequency": "Daily",
+    "discountDate": "1998-10-17",
+    "expected": 0.9835093770209098
+  },
+  {
+    "settlementDate": "1998-05-17",
+    "dividendYield": 0.04,
+    "dayCounter": {
+      "@type": "Actual365Fixed"
+    },
+    "compounding": "Simple",
+    "frequency": "Annual",
+    "discountDate": "1998-10-17",
+    "expected": 0.9835093770209098
+  },
+  {
+    "settlementDate": "1998-05-17",
+    "dividendYield": 0.04,
+    "dayCounter": {
+      "@type": "Actual365Fixed"
+    },
+    "compounding": "Compounded",
+    "frequency": "Daily",
+    "discountDate": "1998-10-17",
+    "expected": 0.9833735659693117
+  },
+  {
+    "settlementDate": "1998-05-17",
+    "dividendYield": 0.04,
+    "dayCounter": {
+      "@type": "Actual365Fixed"
+    },
+    "compounding": "Compounded",
+    "frequency": "Annual",
+    "discountDate": "1998-10-17",
+    "expected": 0.9836939435170742
+  },
+  {
+    "settlementDate": "1998-05-17",
+    "dividendYield": 0.04,
+    "dayCounter": {
+      "@type": "Actual365Fixed"
+    },
+    "compounding": "Continuous",
+    "frequency": "Daily",
+    "discountDate": "1998-10-17",
+    "expected": 0.983372662564713
+  },
+  {
+    "settlementDate": "1998-05-17",
+    "dividendYield": 0.04,
+    "dayCounter": {
+      "@type": "Actual365Fixed"
+    },
+    "compounding": "Continuous",
+    "frequency": "Annual",
+    "discountDate": "1998-10-17",
+    "expected": 0.983372662564713
+  },
+  {
+    "settlementDate": "1998-05-17",
+    "dividendYield": 0.04,
+    "dayCounter": {
+      "@type": "Actual365Fixed"
+    },
+    "compounding": "SimpleThenCompounded",
+    "frequency": "Daily",
+    "discountDate": "1998-10-17",
+    "expected": 0.9833735659693117
+  },
+  {
+    "settlementDate": "1998-05-17",
+    "dividendYield": 0.04,
+    "dayCounter": {
+      "@type": "Actual365Fixed"
+    },
+    "compounding": "SimpleThenCompounded",
+    "frequency": "Annual",
+    "discountDate": "1998-10-17",
+    "expected": 0.9835093770209098
+  },
+  {
+    "settlementDate": "1998-05-17",
+    "dividendYield": 0.04,
+    "dayCounter": {
+      "@type": "Actual365Fixed"
+    },
+    "compounding": "Simple",
+    "frequency": "Daily",
+    "discountDate": "1998-11-17",
+    "expected": 0.9802341819744333
+  },
+  {
+    "settlementDate": "1998-05-17",
+    "dividendYield": 0.04,
+    "dayCounter": {
+      "@type": "Actual365Fixed"
+    },
+    "compounding": "Simple",
+    "frequency": "Annual",
+    "discountDate": "1998-11-17",
+    "expected": 0.9802341819744333
+  },
+  {
+    "settlementDate": "1998-05-17",
+    "dividendYield": 0.04,
+    "dayCounter": {
+      "@type": "Actual365Fixed"
+    },
+    "compounding": "Compounded",
+    "frequency": "Daily",
+    "discountDate": "1998-11-17",
+    "expected": 0.9800386407632146
+  },
+  {
+    "settlementDate": "1998-05-17",
+    "dividendYield": 0.04,
+    "dayCounter": {
+      "@type": "Actual365Fixed"
+    },
+    "compounding": "Compounded",
+    "frequency": "Annual",
+    "discountDate": "1998-11-17",
+    "expected": 0.9804226374410494
+  },
+  {
+    "settlementDate": "1998-05-17",
+    "dividendYield": 0.04,
+    "dayCounter": {
+      "@type": "Actual365Fixed"
+    },
+    "compounding": "Continuous",
+    "frequency": "Daily",
+    "discountDate": "1998-11-17",
+    "expected": 0.9800375580004353
+  },
+  {
+    "settlementDate": "1998-05-17",
+    "dividendYield": 0.04,
+    "dayCounter": {
+      "@type": "Actual365Fixed"
+    },
+    "compounding": "Continuous",
+    "frequency": "Annual",
+    "discountDate": "1998-11-17",
+    "expected": 0.9800375580004353
+  },
+  {
+    "settlementDate": "1998-05-17",
+    "dividendYield": 0.04,
+    "dayCounter": {
+      "@type": "Actual365Fixed"
+    },
+    "compounding": "SimpleThenCompounded",
+    "frequency": "Daily",
+    "discountDate": "1998-11-17",
+    "expected": 0.9800386407632146
+  },
+  {
+    "settlementDate": "1998-05-17",
+    "dividendYield": 0.04,
+    "dayCounter": {
+      "@type": "Actual365Fixed"
+    },
+    "compounding": "SimpleThenCompounded",
+    "frequency": "Annual",
+    "discountDate": "1998-11-17",
+    "expected": 0.9802341819744333
+  },
+  {
+    "settlementDate": "1998-05-17",
+    "dividendYield": 0.04,
+    "dayCounter": {
+      "@type": "Actual365Fixed"
+    },
+    "compounding": "Simple",
+    "frequency": "Daily",
+    "discountDate": "1998-12-17",
+    "expected": 0.9770853410429382
+  },
+  {
+    "settlementDate": "1998-05-17",
+    "dividendYield": 0.04,
+    "dayCounter": {
+      "@type": "Actual365Fixed"
+    },
+    "compounding": "Simple",
+    "frequency": "Annual",
+    "discountDate": "1998-12-17",
+    "expected": 0.9770853410429382
+  },
+  {
+    "settlementDate": "1998-05-17",
+    "dividendYield": 0.04,
+    "dayCounter": {
+      "@type": "Actual365Fixed"
+    },
+    "compounding": "Compounded",
+    "frequency": "Daily",
+    "discountDate": "1998-12-17",
+    "expected": 0.9768220625873955
+  },
+  {
+    "settlementDate": "1998-05-17",
+    "dividendYield": 0.04,
+    "dayCounter": {
+      "@type": "Actual365Fixed"
+    },
+    "compounding": "Compounded",
+    "frequency": "Annual",
+    "discountDate": "1998-12-17",
+    "expected": 0.9772672158374685
+  },
+  {
+    "settlementDate": "1998-05-17",
+    "dividendYield": 0.04,
+    "dayCounter": {
+      "@type": "Actual365Fixed"
+    },
+    "compounding": "Continuous",
+    "frequency": "Daily",
+    "discountDate": "1998-12-17",
+    "expected": 0.9768208074204602
+  },
+  {
+    "settlementDate": "1998-05-17",
+    "dividendYield": 0.04,
+    "dayCounter": {
+      "@type": "Actual365Fixed"
+    },
+    "compounding": "Continuous",
+    "frequency": "Annual",
+    "discountDate": "1998-12-17",
+    "expected": 0.9768208074204602
+  },
+  {
+    "settlementDate": "1998-05-17",
+    "dividendYield": 0.04,
+    "dayCounter": {
+      "@type": "Actual365Fixed"
+    },
+    "compounding": "SimpleThenCompounded",
+    "frequency": "Daily",
+    "discountDate": "1998-12-17",
+    "expected": 0.9768220625873955
+  },
+  {
+    "settlementDate": "1998-05-17",
+    "dividendYield": 0.04,
+    "dayCounter": {
+      "@type": "Actual365Fixed"
+    },
+    "compounding": "SimpleThenCompounded",
+    "frequency": "Annual",
+    "discountDate": "1998-12-17",
+    "expected": 0.9770853410429382
+  },
+  {
+    "settlementDate": "1998-05-17",
+    "dividendYield": 0.04,
+    "dayCounter": {
+      "@type": "Actual365Fixed"
+    },
+    "compounding": "Simple",
+    "frequency": "Daily",
+    "discountDate": "1999-05-17",
+    "expected": 0.9615384615384615
+  },
+  {
+    "settlementDate": "1998-05-17",
+    "dividendYield": 0.04,
+    "dayCounter": {
+      "@type": "Actual365Fixed"
+    },
+    "compounding": "Simple",
+    "frequency": "Annual",
+    "discountDate": "1999-05-17",
+    "expected": 0.9615384615384615
+  },
+  {
+    "settlementDate": "1998-05-17",
+    "dividendYield": 0.04,
+    "dayCounter": {
+      "@type": "Actual365Fixed"
+    },
+    "compounding": "Compounded",
+    "frequency": "Daily",
+    "discountDate": "1999-05-17",
+    "expected": 0.9607915448406852
+  },
+  {
+    "settlementDate": "1998-05-17",
+    "dividendYield": 0.04,
+    "dayCounter": {
+      "@type": "Actual365Fixed"
+    },
+    "compounding": "Compounded",
+    "frequency": "Annual",
+    "discountDate": "1999-05-17",
+    "expected": 0.9615384615384615
+  },
+  {
+    "settlementDate": "1998-05-17",
+    "dividendYield": 0.04,
+    "dayCounter": {
+      "@type": "Actual365Fixed"
+    },
+    "compounding": "Continuous",
+    "frequency": "Daily",
+    "discountDate": "1999-05-17",
+    "expected": 0.9607894391523232
+  },
+  {
+    "settlementDate": "1998-05-17",
+    "dividendYield": 0.04,
+    "dayCounter": {
+      "@type": "Actual365Fixed"
+    },
+    "compounding": "Continuous",
+    "frequency": "Annual",
+    "discountDate": "1999-05-17",
+    "expected": 0.9607894391523232
+  },
+  {
+    "settlementDate": "1998-05-17",
+    "dividendYield": 0.04,
+    "dayCounter": {
+      "@type": "Actual365Fixed"
+    },
+    "compounding": "SimpleThenCompounded",
+    "frequency": "Daily",
+    "discountDate": "1999-05-17",
+    "expected": 0.9607915448406852
+  },
+  {
+    "settlementDate": "1998-05-17",
+    "dividendYield": 0.04,
+    "dayCounter": {
+      "@type": "Actual365Fixed"
+    },
+    "compounding": "SimpleThenCompounded",
+    "frequency": "Annual",
+    "discountDate": "1999-05-17",
+    "expected": 0.9615384615384615
+  },
+  {
+    "settlementDate": "1998-05-17",
+    "dividendYield": 0.05,
+    "dayCounter": {
+      "@type": "Actual365Fixed"
+    },
+    "compounding": "Simple",
+    "frequency": "Daily",
+    "discountDate": "1998-06-17",
+    "expected": 0.9957713818033009
+  },
+  {
+    "settlementDate": "1998-05-17",
+    "dividendYield": 0.05,
+    "dayCounter": {
+      "@type": "Actual365Fixed"
+    },
+    "compounding": "Simple",
+    "frequency": "Annual",
+    "discountDate": "1998-06-17",
+    "expected": 0.9957713818033009
+  },
+  {
+    "settlementDate": "1998-05-17",
+    "dividendYield": 0.05,
+    "dayCounter": {
+      "@type": "Actual365Fixed"
+    },
+    "compounding": "Compounded",
+    "frequency": "Daily",
+    "discountDate": "1998-06-17",
+    "expected": 0.9957627182111508
+  },
+  {
+    "settlementDate": "1998-05-17",
+    "dividendYield": 0.05,
+    "dayCounter": {
+      "@type": "Actual365Fixed"
+    },
+    "compounding": "Compounded",
+    "frequency": "Annual",
+    "discountDate": "1998-06-17",
+    "expected": 0.995864751621887
+  },
+  {
+    "settlementDate": "1998-05-17",
+    "dividendYield": 0.05,
+    "dayCounter": {
+      "@type": "Actual365Fixed"
+    },
+    "compounding": "Continuous",
+    "frequency": "Daily",
+    "discountDate": "1998-06-17",
+    "expected": 0.9957624286087757
+  },
+  {
+    "settlementDate": "1998-05-17",
+    "dividendYield": 0.05,
+    "dayCounter": {
+      "@type": "Actual365Fixed"
+    },
+    "compounding": "Continuous",
+    "frequency": "Annual",
+    "discountDate": "1998-06-17",
+    "expected": 0.9957624286087757
+  },
+  {
+    "settlementDate": "1998-05-17",
+    "dividendYield": 0.05,
+    "dayCounter": {
+      "@type": "Actual365Fixed"
+    },
+    "compounding": "SimpleThenCompounded",
+    "frequency": "Daily",
+    "discountDate": "1998-06-17",
+    "expected": 0.9957627182111508
+  },
+  {
+    "settlementDate": "1998-05-17",
+    "dividendYield": 0.05,
+    "dayCounter": {
+      "@type": "Actual365Fixed"
+    },
+    "compounding": "SimpleThenCompounded",
+    "frequency": "Annual",
+    "discountDate": "1998-06-17",
+    "expected": 0.9957713818033009
+  },
+  {
+    "settlementDate": "1998-05-17",
+    "dividendYield": 0.05,
+    "dayCounter": {
+      "@type": "Actual365Fixed"
+    },
+    "compounding": "Simple",
+    "frequency": "Daily",
+    "discountDate": "1998-07-17",
+    "expected": 0.991713082461622
+  },
+  {
+    "settlementDate": "1998-05-17",
+    "dividendYield": 0.05,
+    "dayCounter": {
+      "@type": "Actual365Fixed"
+    },
+    "compounding": "Simple",
+    "frequency": "Annual",
+    "discountDate": "1998-07-17",
+    "expected": 0.991713082461622
+  },
+  {
+    "settlementDate": "1998-05-17",
+    "dividendYield": 0.05,
+    "dayCounter": {
+      "@type": "Actual365Fixed"
+    },
+    "compounding": "Compounded",
+    "frequency": "Daily",
+    "discountDate": "1998-07-17",
+    "expected": 0.9916792188410376
+  },
+  {
+    "settlementDate": "1998-05-17",
+    "dividendYield": 0.05,
+    "dayCounter": {
+      "@type": "Actual365Fixed"
+    },
+    "compounding": "Compounded",
+    "frequency": "Annual",
+    "discountDate": "1998-07-17",
+    "expected": 0.991879180820902
+  },
+  {
+    "settlementDate": "1998-05-17",
+    "dividendYield": 0.05,
+    "dayCounter": {
+      "@type": "Actual365Fixed"
+    },
+    "compounding": "Continuous",
+    "frequency": "Daily",
+    "discountDate": "1998-07-17",
+    "expected": 0.9916786513153159
+  },
+  {
+    "settlementDate": "1998-05-17",
+    "dividendYield": 0.05,
+    "dayCounter": {
+      "@type": "Actual365Fixed"
+    },
+    "compounding": "Continuous",
+    "frequency": "Annual",
+    "discountDate": "1998-07-17",
+    "expected": 0.9916786513153159
+  },
+  {
+    "settlementDate": "1998-05-17",
+    "dividendYield": 0.05,
+    "dayCounter": {
+      "@type": "Actual365Fixed"
+    },
+    "compounding": "SimpleThenCompounded",
+    "frequency": "Daily",
+    "discountDate": "1998-07-17",
+    "expected": 0.9916792188410376
+  },
+  {
+    "settlementDate": "1998-05-17",
+    "dividendYield": 0.05,
+    "dayCounter": {
+      "@type": "Actual365Fixed"
+    },
+    "compounding": "SimpleThenCompounded",
+    "frequency": "Annual",
+    "discountDate": "1998-07-17",
+    "expected": 0.991713082461622
+  },
+  {
+    "settlementDate": "1998-05-17",
+    "dividendYield": 0.05,
+    "dayCounter": {
+      "@type": "Actual365Fixed"
+    },
+    "compounding": "Simple",
+    "frequency": "Daily",
+    "discountDate": "1998-08-17",
+    "expected": 0.9875541125541126
+  },
+  {
+    "settlementDate": "1998-05-17",
+    "dividendYield": 0.05,
+    "dayCounter": {
+      "@type": "Actual365Fixed"
+    },
+    "compounding": "Simple",
+    "frequency": "Annual",
+    "discountDate": "1998-08-17",
+    "expected": 0.9875541125541126
+  },
+  {
+    "settlementDate": "1998-05-17",
+    "dividendYield": 0.05,
+    "dayCounter": {
+      "@type": "Actual365Fixed"
+    },
+    "compounding": "Compounded",
+    "frequency": "Daily",
+    "discountDate": "1998-08-17",
+    "expected": 0.9874771945466624
+  },
+  {
+    "settlementDate": "1998-05-17",
+    "dividendYield": 0.05,
+    "dayCounter": {
+      "@type": "Actual365Fixed"
+    },
+    "compounding": "Compounded",
+    "frequency": "Annual",
+    "discountDate": "1998-08-17",
+    "expected": 0.9877775140471284
+  },
+  {
+    "settlementDate": "1998-05-17",
+    "dividendYield": 0.05,
+    "dayCounter": {
+      "@type": "Actual365Fixed"
+    },
+    "compounding": "Continuous",
+    "frequency": "Daily",
+    "discountDate": "1998-08-17",
+    "expected": 0.9874763422332142
+  },
+  {
+    "settlementDate": "1998-05-17",
+    "dividendYield": 0.05,
+    "dayCounter": {
+      "@type": "Actual365Fixed"
+    },
+    "compounding": "Continuous",
+    "frequency": "Annual",
+    "discountDate": "1998-08-17",
+    "expected": 0.9874763422332142
+  },
+  {
+    "settlementDate": "1998-05-17",
+    "dividendYield": 0.05,
+    "dayCounter": {
+      "@type": "Actual365Fixed"
+    },
+    "compounding": "SimpleThenCompounded",
+    "frequency": "Daily",
+    "discountDate": "1998-08-17",
+    "expected": 0.9874771945466624
+  },
+  {
+    "settlementDate": "1998-05-17",
+    "dividendYield": 0.05,
+    "dayCounter": {
+      "@type": "Actual365Fixed"
+    },
+    "compounding": "SimpleThenCompounded",
+    "frequency": "Annual",
+    "discountDate": "1998-08-17",
+    "expected": 0.9875541125541126
+  },
+  {
+    "settlementDate": "1998-05-17",
+    "dividendYield": 0.05,
+    "dayCounter": {
+      "@type": "Actual365Fixed"
+    },
+    "compounding": "Simple",
+    "frequency": "Daily",
+    "discountDate": "1998-09-17",
+    "expected": 0.9834298801023844
+  },
+  {
+    "settlementDate": "1998-05-17",
+    "dividendYield": 0.05,
+    "dayCounter": {
+      "@type": "Actual365Fixed"
+    },
+    "compounding": "Simple",
+    "frequency": "Annual",
+    "discountDate": "1998-09-17",
+    "expected": 0.9834298801023844
+  },
+  {
+    "settlementDate": "1998-05-17",
+    "dividendYield": 0.05,
+    "dayCounter": {
+      "@type": "Actual365Fixed"
+    },
+    "compounding": "Compounded",
+    "frequency": "Daily",
+    "discountDate": "1998-09-17",
+    "expected": 0.9832929754133061
+  },
+  {
+    "settlementDate": "1998-05-17",
+    "dividendYield": 0.05,
+    "dayCounter": {
+      "@type": "Actual365Fixed"
+    },
+    "compounding": "Compounded",
+    "frequency": "Annual",
+    "discountDate": "1998-09-17",
+    "expected": 0.9836928086842286
+  },
+  {
+    "settlementDate": "1998-05-17",
+    "dividendYield": 0.05,
+    "dayCounter": {
+      "@type": "Actual365Fixed"
+    },
+    "compounding": "Continuous",
+    "frequency": "Daily",
+    "discountDate": "1998-09-17",
+    "expected": 0.983291840735856
+  },
+  {
+    "settlementDate": "1998-05-17",
+    "dividendYield": 0.05,
+    "dayCounter": {
+      "@type": "Actual365Fixed"
+    },
+    "compounding": "Continuous",
+    "frequency": "Annual",
+    "discountDate": "1998-09-17",
+    "expected": 0.983291840735856
+  },
+  {
+    "settlementDate": "1998-05-17",
+    "dividendYield": 0.05,
+    "dayCounter": {
+      "@type": "Actual365Fixed"
+    },
+    "compounding": "SimpleThenCompounded",
+    "frequency": "Daily",
+    "discountDate": "1998-09-17",
+    "expected": 0.9832929754133061
+  },
+  {
+    "settlementDate": "1998-05-17",
+    "dividendYield": 0.05,
+    "dayCounter": {
+      "@type": "Actual365Fixed"
+    },
+    "compounding": "SimpleThenCompounded",
+    "frequency": "Annual",
+    "discountDate": "1998-09-17",
+    "expected": 0.9834298801023844
+  },
+  {
+    "settlementDate": "1998-05-17",
+    "dividendYield": 0.05,
+    "dayCounter": {
+      "@type": "Actual365Fixed"
+    },
+    "compounding": "Simple",
+    "frequency": "Daily",
+    "discountDate": "1998-10-17",
+    "expected": 0.9794713538172548
+  },
+  {
+    "settlementDate": "1998-05-17",
+    "dividendYield": 0.05,
+    "dayCounter": {
+      "@type": "Actual365Fixed"
+    },
+    "compounding": "Simple",
+    "frequency": "Annual",
+    "discountDate": "1998-10-17",
+    "expected": 0.9794713538172548
+  },
+  {
+    "settlementDate": "1998-05-17",
+    "dividendYield": 0.05,
+    "dayCounter": {
+      "@type": "Actual365Fixed"
+    },
+    "compounding": "Compounded",
+    "frequency": "Daily",
+    "discountDate": "1998-10-17",
+    "expected": 0.9792606129113737
+  },
+  {
+    "settlementDate": "1998-05-17",
+    "dividendYield": 0.05,
+    "dayCounter": {
+      "@type": "Actual365Fixed"
+    },
+    "compounding": "Compounded",
+    "frequency": "Annual",
+    "discountDate": "1998-10-17",
+    "expected": 0.979755951466373
+  },
+  {
+    "settlementDate": "1998-05-17",
+    "dividendYield": 0.05,
+    "dayCounter": {
+      "@type": "Actual365Fixed"
+    },
+    "compounding": "Continuous",
+    "frequency": "Daily",
+    "discountDate": "1998-10-17",
+    "expected": 0.9792592072716151
+  },
+  {
+    "settlementDate": "1998-05-17",
+    "dividendYield": 0.05,
+    "dayCounter": {
+      "@type": "Actual365Fixed"
+    },
+    "compounding": "Continuous",
+    "frequency": "Annual",
+    "discountDate": "1998-10-17",
+    "expected": 0.9792592072716151
+  },
+  {
+    "settlementDate": "1998-05-17",
+    "dividendYield": 0.05,
+    "dayCounter": {
+      "@type": "Actual365Fixed"
+    },
+    "compounding": "SimpleThenCompounded",
+    "frequency": "Daily",
+    "discountDate": "1998-10-17",
+    "expected": 0.9792606129113737
+  },
+  {
+    "settlementDate": "1998-05-17",
+    "dividendYield": 0.05,
+    "dayCounter": {
+      "@type": "Actual365Fixed"
+    },
+    "compounding": "SimpleThenCompounded",
+    "frequency": "Annual",
+    "discountDate": "1998-10-17",
+    "expected": 0.9794713538172548
+  },
+  {
+    "settlementDate": "1998-05-17",
+    "dividendYield": 0.05,
+    "dayCounter": {
+      "@type": "Actual365Fixed"
+    },
+    "compounding": "Simple",
+    "frequency": "Daily",
+    "discountDate": "1998-11-17",
+    "expected": 0.9754142169962586
+  },
+  {
+    "settlementDate": "1998-05-17",
+    "dividendYield": 0.05,
+    "dayCounter": {
+      "@type": "Actual365Fixed"
+    },
+    "compounding": "Simple",
+    "frequency": "Annual",
+    "discountDate": "1998-11-17",
+    "expected": 0.9754142169962586
+  },
+  {
+    "settlementDate": "1998-05-17",
+    "dividendYield": 0.05,
+    "dayCounter": {
+      "@type": "Actual365Fixed"
+    },
+    "compounding": "Compounded",
+    "frequency": "Daily",
+    "discountDate": "1998-11-17",
+    "expected": 0.975111209749747
+  },
+  {
+    "settlementDate": "1998-05-17",
+    "dividendYield": 0.05,
+    "dayCounter": {
+      "@type": "Actual365Fixed"
+    },
+    "compounding": "Compounded",
+    "frequency": "Annual",
+    "discountDate": "1998-11-17",
+    "expected": 0.9757044172571251
+  },
+  {
+    "settlementDate": "1998-05-17",
+    "dividendYield": 0.05,
+    "dayCounter": {
+      "@type": "Actual365Fixed"
+    },
+    "compounding": "Continuous",
+    "frequency": "Daily",
+    "discountDate": "1998-11-17",
+    "expected": 0.9751095264702879
+  },
+  {
+    "settlementDate": "1998-05-17",
+    "dividendYield": 0.05,
+    "dayCounter": {
+      "@type": "Actual365Fixed"
+    },
+    "compounding": "Continuous",
+    "frequency": "Annual",
+    "discountDate": "1998-11-17",
+    "expected": 0.9751095264702879
+  },
+  {
+    "settlementDate": "1998-05-17",
+    "dividendYield": 0.05,
+    "dayCounter": {
+      "@type": "Actual365Fixed"
+    },
+    "compounding": "SimpleThenCompounded",
+    "frequency": "Daily",
+    "discountDate": "1998-11-17",
+    "expected": 0.975111209749747
+  },
+  {
+    "settlementDate": "1998-05-17",
+    "dividendYield": 0.05,
+    "dayCounter": {
+      "@type": "Actual365Fixed"
+    },
+    "compounding": "SimpleThenCompounded",
+    "frequency": "Annual",
+    "discountDate": "1998-11-17",
+    "expected": 0.9754142169962586
+  },
+  {
+    "settlementDate": "1998-05-17",
+    "dividendYield": 0.05,
+    "dayCounter": {
+      "@type": "Actual365Fixed"
+    },
+    "compounding": "Simple",
+    "frequency": "Daily",
+    "discountDate": "1998-12-17",
+    "expected": 0.9715198296513176
+  },
+  {
+    "settlementDate": "1998-05-17",
+    "dividendYield": 0.05,
+    "dayCounter": {
+      "@type": "Actual365Fixed"
+    },
+    "compounding": "Simple",
+    "frequency": "Annual",
+    "discountDate": "1998-12-17",
+    "expected": 0.9715198296513176
+  },
+  {
+    "settlementDate": "1998-05-17",
+    "dividendYield": 0.05,
+    "dayCounter": {
+      "@type": "Actual365Fixed"
+    },
+    "compounding": "Compounded",
+    "frequency": "Daily",
+    "discountDate": "1998-12-17",
+    "expected": 0.9711123996537467
+  },
+  {
+    "settlementDate": "1998-05-17",
+    "dividendYield": 0.05,
+    "dayCounter": {
+      "@type": "Actual365Fixed"
+    },
+    "compounding": "Compounded",
+    "frequency": "Annual",
+    "discountDate": "1998-12-17",
+    "expected": 0.9717995305448692
+  },
+  {
+    "settlementDate": "1998-05-17",
+    "dividendYield": 0.05,
+    "dayCounter": {
+      "@type": "Actual365Fixed"
+    },
+    "compounding": "Continuous",
+    "frequency": "Daily",
+    "discountDate": "1998-12-17",
+    "expected": 0.9711104499552204
+  },
+  {
+    "settlementDate": "1998-05-17",
+    "dividendYield": 0.05,
+    "dayCounter": {
+      "@type": "Actual365Fixed"
+    },
+    "compounding": "Continuous",
+    "frequency": "Annual",
+    "discountDate": "1998-12-17",
+    "expected": 0.9711104499552204
+  },
+  {
+    "settlementDate": "1998-05-17",
+    "dividendYield": 0.05,
+    "dayCounter": {
+      "@type": "Actual365Fixed"
+    },
+    "compounding": "SimpleThenCompounded",
+    "frequency": "Daily",
+    "discountDate": "1998-12-17",
+    "expected": 0.9711123996537467
+  },
+  {
+    "settlementDate": "1998-05-17",
+    "dividendYield": 0.05,
+    "dayCounter": {
+      "@type": "Actual365Fixed"
+    },
+    "compounding": "SimpleThenCompounded",
+    "frequency": "Annual",
+    "discountDate": "1998-12-17",
+    "expected": 0.9715198296513176
+  },
+  {
+    "settlementDate": "1998-05-17",
+    "dividendYield": 0.05,
+    "dayCounter": {
+      "@type": "Actual365Fixed"
+    },
+    "compounding": "Simple",
+    "frequency": "Daily",
+    "discountDate": "1999-05-17",
+    "expected": 0.9523809523809523
+  },
+  {
+    "settlementDate": "1998-05-17",
+    "dividendYield": 0.05,
+    "dayCounter": {
+      "@type": "Actual365Fixed"
+    },
+    "compounding": "Simple",
+    "frequency": "Annual",
+    "discountDate": "1999-05-17",
+    "expected": 0.9523809523809523
+  },
+  {
+    "settlementDate": "1998-05-17",
+    "dividendYield": 0.05,
+    "dayCounter": {
+      "@type": "Actual365Fixed"
+    },
+    "compounding": "Compounded",
+    "frequency": "Daily",
+    "discountDate": "1999-05-17",
+    "expected": 0.95123268184385
+  },
+  {
+    "settlementDate": "1998-05-17",
+    "dividendYield": 0.05,
+    "dayCounter": {
+      "@type": "Actual365Fixed"
+    },
+    "compounding": "Compounded",
+    "frequency": "Annual",
+    "discountDate": "1999-05-17",
+    "expected": 0.9523809523809523
+  },
+  {
+    "settlementDate": "1998-05-17",
+    "dividendYield": 0.05,
+    "dayCounter": {
+      "@type": "Actual365Fixed"
+    },
+    "compounding": "Continuous",
+    "frequency": "Daily",
+    "discountDate": "1999-05-17",
+    "expected": 0.9512294245007139
+  },
+  {
+    "settlementDate": "1998-05-17",
+    "dividendYield": 0.05,
+    "dayCounter": {
+      "@type": "Actual365Fixed"
+    },
+    "compounding": "Continuous",
+    "frequency": "Annual",
+    "discountDate": "1999-05-17",
+    "expected": 0.9512294245007139
+  },
+  {
+    "settlementDate": "1998-05-17",
+    "dividendYield": 0.05,
+    "dayCounter": {
+      "@type": "Actual365Fixed"
+    },
+    "compounding": "SimpleThenCompounded",
+    "frequency": "Daily",
+    "discountDate": "1999-05-17",
+    "expected": 0.95123268184385
+  },
+  {
+    "settlementDate": "1998-05-17",
+    "dividendYield": 0.05,
+    "dayCounter": {
+      "@type": "Actual365Fixed"
+    },
+    "compounding": "SimpleThenCompounded",
+    "frequency": "Annual",
+    "discountDate": "1999-05-17",
+    "expected": 0.9523809523809523
+  },
+  {
+    "settlementDate": "1998-05-17",
+    "dividendYield": 0.06,
+    "dayCounter": {
+      "@type": "Actual365Fixed"
+    },
+    "compounding": "Simple",
+    "frequency": "Daily",
+    "discountDate": "1998-06-17",
+    "expected": 0.9949299460284579
+  },
+  {
+    "settlementDate": "1998-05-17",
+    "dividendYield": 0.06,
+    "dayCounter": {
+      "@type": "Actual365Fixed"
+    },
+    "compounding": "Simple",
+    "frequency": "Annual",
+    "discountDate": "1998-06-17",
+    "expected": 0.9949299460284579
+  },
+  {
+    "settlementDate": "1998-05-17",
+    "dividendYield": 0.06,
+    "dayCounter": {
+      "@type": "Actual365Fixed"
+    },
+    "compounding": "Compounded",
+    "frequency": "Daily",
+    "discountDate": "1998-06-17",
+    "expected": 0.9949174882773508
+  },
+  {
+    "settlementDate": "1998-05-17",
+    "dividendYield": 0.06,
+    "dayCounter": {
+      "@type": "Actual365Fixed"
+    },
+    "compounding": "Compounded",
+    "frequency": "Annual",
+    "discountDate": "1998-06-17",
+    "expected": 0.995063359293041
+  },
+  {
+    "settlementDate": "1998-05-17",
+    "dividendYield": 0.06,
+    "dayCounter": {
+      "@type": "Actual365Fixed"
+    },
+    "compounding": "Continuous",
+    "frequency": "Daily",
+    "discountDate": "1998-06-17",
+    "expected": 0.9949170716115526
+  },
+  {
+    "settlementDate": "1998-05-17",
+    "dividendYield": 0.06,
+    "dayCounter": {
+      "@type": "Actual365Fixed"
+    },
+    "compounding": "Continuous",
+    "frequency": "Annual",
+    "discountDate": "1998-06-17",
+    "expected": 0.9949170716115526
+  },
+  {
+    "settlementDate": "1998-05-17",
+    "dividendYield": 0.06,
+    "dayCounter": {
+      "@type": "Actual365Fixed"
+    },
+    "compounding": "SimpleThenCompounded",
+    "frequency": "Daily",
+    "discountDate": "1998-06-17",
+    "expected": 0.9949174882773508
+  },
+  {
+    "settlementDate": "1998-05-17",
+    "dividendYield": 0.06,
+    "dayCounter": {
+      "@type": "Actual365Fixed"
+    },
+    "compounding": "SimpleThenCompounded",
+    "frequency": "Annual",
+    "discountDate": "1998-06-17",
+    "expected": 0.9949299460284579
+  },
+  {
+    "settlementDate": "1998-05-17",
+    "dividendYield": 0.06,
+    "dayCounter": {
+      "@type": "Actual365Fixed"
+    },
+    "compounding": "Simple",
+    "frequency": "Daily",
+    "discountDate": "1998-07-17",
+    "expected": 0.9900721532034937
+  },
+  {
+    "settlementDate": "1998-05-17",
+    "dividendYield": 0.06,
+    "dayCounter": {
+      "@type": "Actual365Fixed"
+    },
+    "compounding": "Simple",
+    "frequency": "Annual",
+    "discountDate": "1998-07-17",
+    "expected": 0.9900721532034937
+  },
+  {
+    "settlementDate": "1998-05-17",
+    "dividendYield": 0.06,
+    "dayCounter": {
+      "@type": "Actual365Fixed"
+    },
+    "compounding": "Compounded",
+    "frequency": "Daily",
+    "discountDate": "1998-07-17",
+    "expected": 0.9900235253253422
+  },
+  {
+    "settlementDate": "1998-05-17",
+    "dividendYield": 0.06,
+    "dayCounter": {
+      "@type": "Actual365Fixed"
+    },
+    "compounding": "Compounded",
+    "frequency": "Annual",
+    "discountDate": "1998-07-17",
+    "expected": 0.990309170181032
+  },
+  {
+    "settlementDate": "1998-05-17",
+    "dividendYield": 0.06,
+    "dayCounter": {
+      "@type": "Actual365Fixed"
+    },
+    "compounding": "Continuous",
+    "frequency": "Daily",
+    "discountDate": "1998-07-17",
+    "expected": 0.9900227094677558
+  },
+  {
+    "settlementDate": "1998-05-17",
+    "dividendYield": 0.06,
+    "dayCounter": {
+      "@type": "Actual365Fixed"
+    },
+    "compounding": "Continuous",
+    "frequency": "Annual",
+    "discountDate": "1998-07-17",
+    "expected": 0.9900227094677558
+  },
+  {
+    "settlementDate": "1998-05-17",
+    "dividendYield": 0.06,
+    "dayCounter": {
+      "@type": "Actual365Fixed"
+    },
+    "compounding": "SimpleThenCompounded",
+    "frequency": "Daily",
+    "discountDate": "1998-07-17",
+    "expected": 0.9900235253253422
+  },
+  {
+    "settlementDate": "1998-05-17",
+    "dividendYield": 0.06,
+    "dayCounter": {
+      "@type": "Actual365Fixed"
+    },
+    "compounding": "SimpleThenCompounded",
+    "frequency": "Annual",
+    "discountDate": "1998-07-17",
+    "expected": 0.9900721532034937
+  },
+  {
+    "settlementDate": "1998-05-17",
+    "dividendYield": 0.06,
+    "dayCounter": {
+      "@type": "Actual365Fixed"
+    },
+    "compounding": "Simple",
+    "frequency": "Daily",
+    "discountDate": "1998-08-17",
+    "expected": 0.9851020187844112
+  },
+  {
+    "settlementDate": "1998-05-17",
+    "dividendYield": 0.06,
+    "dayCounter": {
+      "@type": "Actual365Fixed"
+    },
+    "compounding": "Simple",
+    "frequency": "Annual",
+    "discountDate": "1998-08-17",
+    "expected": 0.9851020187844112
+  },
+  {
+    "settlementDate": "1998-05-17",
+    "dividendYield": 0.06,
+    "dayCounter": {
+      "@type": "Actual365Fixed"
+    },
+    "compounding": "Compounded",
+    "frequency": "Daily",
+    "discountDate": "1998-08-17",
+    "expected": 0.9849917191521779
+  },
+  {
+    "settlementDate": "1998-05-17",
+    "dividendYield": 0.06,
+    "dayCounter": {
+      "@type": "Actual365Fixed"
+    },
+    "compounding": "Compounded",
+    "frequency": "Annual",
+    "discountDate": "1998-08-17",
+    "expected": 0.9854203696190414
+  },
+  {
+    "settlementDate": "1998-05-17",
+    "dividendYield": 0.06,
+    "dayCounter": {
+      "@type": "Actual365Fixed"
+    },
+    "compounding": "Continuous",
+    "frequency": "Daily",
+    "discountDate": "1998-08-17",
+    "expected": 0.9849904949325944
+  },
+  {
+    "settlementDate": "1998-05-17",
+    "dividendYield": 0.06,
+    "dayCounter": {
+      "@type": "Actual365Fixed"
+    },
+    "compounding": "Continuous",
+    "frequency": "Annual",
+    "discountDate": "1998-08-17",
+    "expected": 0.9849904949325944
+  },
+  {
+    "settlementDate": "1998-05-17",
+    "dividendYield": 0.06,
+    "dayCounter": {
+      "@type": "Actual365Fixed"
+    },
+    "compounding": "SimpleThenCompounded",
+    "frequency": "Daily",
+    "discountDate": "1998-08-17",
+    "expected": 0.9849917191521779
+  },
+  {
+    "settlementDate": "1998-05-17",
+    "dividendYield": 0.06,
+    "dayCounter": {
+      "@type": "Actual365Fixed"
+    },
+    "compounding": "SimpleThenCompounded",
+    "frequency": "Annual",
+    "discountDate": "1998-08-17",
+    "expected": 0.9851020187844112
+  },
+  {
+    "settlementDate": "1998-05-17",
+    "dividendYield": 0.06,
+    "dayCounter": {
+      "@type": "Actual365Fixed"
+    },
+    "compounding": "Simple",
+    "frequency": "Daily",
+    "discountDate": "1998-09-17",
+    "expected": 0.980181534991138
+  },
+  {
+    "settlementDate": "1998-05-17",
+    "dividendYield": 0.06,
+    "dayCounter": {
+      "@type": "Actual365Fixed"
+    },
+    "compounding": "Simple",
+    "frequency": "Annual",
+    "discountDate": "1998-09-17",
+    "expected": 0.980181534991138
+  },
+  {
+    "settlementDate": "1998-05-17",
+    "dividendYield": 0.06,
+    "dayCounter": {
+      "@type": "Actual365Fixed"
+    },
+    "compounding": "Compounded",
+    "frequency": "Daily",
+    "discountDate": "1998-09-17",
+    "expected": 0.9799854871928745
+  },
+  {
+    "settlementDate": "1998-05-17",
+    "dividendYield": 0.06,
+    "dayCounter": {
+      "@type": "Actual365Fixed"
+    },
+    "compounding": "Compounded",
+    "frequency": "Annual",
+    "discountDate": "1998-09-17",
+    "expected": 0.9805557033089136
+  },
+  {
+    "settlementDate": "1998-05-17",
+    "dividendYield": 0.06,
+    "dayCounter": {
+      "@type": "Actual365Fixed"
+    },
+    "compounding": "Continuous",
+    "frequency": "Daily",
+    "discountDate": "1998-09-17",
+    "expected": 0.9799838587835507
+  },
+  {
+    "settlementDate": "1998-05-17",
+    "dividendYield": 0.06,
+    "dayCounter": {
+      "@type": "Actual365Fixed"
+    },
+    "compounding": "Continuous",
+    "frequency": "Annual",
+    "discountDate": "1998-09-17",
+    "expected": 0.9799838587835507
+  },
+  {
+    "settlementDate": "1998-05-17",
+    "dividendYield": 0.06,
+    "dayCounter": {
+      "@type": "Actual365Fixed"
+    },
+    "compounding": "SimpleThenCompounded",
+    "frequency": "Daily",
+    "discountDate": "1998-09-17",
+    "expected": 0.9799854871928745
+  },
+  {
+    "settlementDate": "1998-05-17",
+    "dividendYield": 0.06,
+    "dayCounter": {
+      "@type": "Actual365Fixed"
+    },
+    "compounding": "SimpleThenCompounded",
+    "frequency": "Annual",
+    "discountDate": "1998-09-17",
+    "expected": 0.980181534991138
+  },
+  {
+    "settlementDate": "1998-05-17",
+    "dividendYield": 0.06,
+    "dayCounter": {
+      "@type": "Actual365Fixed"
+    },
+    "compounding": "Simple",
+    "frequency": "Daily",
+    "discountDate": "1998-10-17",
+    "expected": 0.9754663530920947
+  },
+  {
+    "settlementDate": "1998-05-17",
+    "dividendYield": 0.06,
+    "dayCounter": {
+      "@type": "Actual365Fixed"
+    },
+    "compounding": "Simple",
+    "frequency": "Annual",
+    "discountDate": "1998-10-17",
+    "expected": 0.9754663530920947
+  },
+  {
+    "settlementDate": "1998-05-17",
+    "dividendYield": 0.06,
+    "dayCounter": {
+      "@type": "Actual365Fixed"
+    },
+    "compounding": "Compounded",
+    "frequency": "Daily",
+    "discountDate": "1998-10-17",
+    "expected": 0.9751649742113085
+  },
+  {
+    "settlementDate": "1998-05-17",
+    "dividendYield": 0.06,
+    "dayCounter": {
+      "@type": "Actual365Fixed"
+    },
+    "compounding": "Compounded",
+    "frequency": "Annual",
+    "discountDate": "1998-10-17",
+    "expected": 0.975870828516919
+  },
+  {
+    "settlementDate": "1998-05-17",
+    "dividendYield": 0.06,
+    "dayCounter": {
+      "@type": "Actual365Fixed"
+    },
+    "compounding": "Continuous",
+    "frequency": "Daily",
+    "discountDate": "1998-10-17",
+    "expected": 0.9751629585931528
+  },
+  {
+    "settlementDate": "1998-05-17",
+    "dividendYield": 0.06,
+    "dayCounter": {
+      "@type": "Actual365Fixed"
+    },
+    "compounding": "Continuous",
+    "frequency": "Annual",
+    "discountDate": "1998-10-17",
+    "expected": 0.9751629585931528
+  },
+  {
+    "settlementDate": "1998-05-17",
+    "dividendYield": 0.06,
+    "dayCounter": {
+      "@type": "Actual365Fixed"
+    },
+    "compounding": "SimpleThenCompounded",
+    "frequency": "Daily",
+    "discountDate": "1998-10-17",
+    "expected": 0.9751649742113085
+  },
+  {
+    "settlementDate": "1998-05-17",
+    "dividendYield": 0.06,
+    "dayCounter": {
+      "@type": "Actual365Fixed"
+    },
+    "compounding": "SimpleThenCompounded",
+    "frequency": "Annual",
+    "discountDate": "1998-10-17",
+    "expected": 0.9754663530920947
+  },
+  {
+    "settlementDate": "1998-05-17",
+    "dividendYield": 0.06,
+    "dayCounter": {
+      "@type": "Actual365Fixed"
+    },
+    "compounding": "Simple",
+    "frequency": "Daily",
+    "discountDate": "1998-11-17",
+    "expected": 0.9706414211254123
+  },
+  {
+    "settlementDate": "1998-05-17",
+    "dividendYield": 0.06,
+    "dayCounter": {
+      "@type": "Actual365Fixed"
+    },
+    "compounding": "Simple",
+    "frequency": "Annual",
+    "discountDate": "1998-11-17",
+    "expected": 0.9706414211254123
+  },
+  {
+    "settlementDate": "1998-05-17",
+    "dividendYield": 0.06,
+    "dayCounter": {
+      "@type": "Actual365Fixed"
+    },
+    "compounding": "Compounded",
+    "frequency": "Daily",
+    "discountDate": "1998-11-17",
+    "expected": 0.9702086867983628
+  },
+  {
+    "settlementDate": "1998-05-17",
+    "dividendYield": 0.06,
+    "dayCounter": {
+      "@type": "Actual365Fixed"
+    },
+    "compounding": "Compounded",
+    "frequency": "Annual",
+    "discountDate": "1998-11-17",
+    "expected": 0.9710533048601285
+  },
+  {
+    "settlementDate": "1998-05-17",
+    "dividendYield": 0.06,
+    "dayCounter": {
+      "@type": "Actual365Fixed"
+    },
+    "compounding": "Continuous",
+    "frequency": "Daily",
+    "discountDate": "1998-11-17",
+    "expected": 0.9702062751075574
+  },
+  {
+    "settlementDate": "1998-05-17",
+    "dividendYield": 0.06,
+    "dayCounter": {
+      "@type": "Actual365Fixed"
+    },
+    "compounding": "Continuous",
+    "frequency": "Annual",
+    "discountDate": "1998-11-17",
+    "expected": 0.9702062751075574
+  },
+  {
+    "settlementDate": "1998-05-17",
+    "dividendYield": 0.06,
+    "dayCounter": {
+      "@type": "Actual365Fixed"
+    },
+    "compounding": "SimpleThenCompounded",
+    "frequency": "Daily",
+    "discountDate": "1998-11-17",
+    "expected": 0.9702086867983628
+  },
+  {
+    "settlementDate": "1998-05-17",
+    "dividendYield": 0.06,
+    "dayCounter": {
+      "@type": "Actual365Fixed"
+    },
+    "compounding": "SimpleThenCompounded",
+    "frequency": "Annual",
+    "discountDate": "1998-11-17",
+    "expected": 0.9706414211254123
+  },
+  {
+    "settlementDate": "1998-05-17",
+    "dividendYield": 0.06,
+    "dayCounter": {
+      "@type": "Actual365Fixed"
+    },
+    "compounding": "Simple",
+    "frequency": "Daily",
+    "discountDate": "1998-12-17",
+    "expected": 0.9660173618462841
+  },
+  {
+    "settlementDate": "1998-05-17",
+    "dividendYield": 0.06,
+    "dayCounter": {
+      "@type": "Actual365Fixed"
+    },
+    "compounding": "Simple",
+    "frequency": "Annual",
+    "discountDate": "1998-12-17",
+    "expected": 0.9660173618462841
+  },
+  {
+    "settlementDate": "1998-05-17",
+    "dividendYield": 0.06,
+    "dayCounter": {
+      "@type": "Actual365Fixed"
+    },
+    "compounding": "Compounded",
+    "frequency": "Daily",
+    "discountDate": "1998-12-17",
+    "expected": 0.9654362655424762
+  },
+  {
+    "settlementDate": "1998-05-17",
+    "dividendYield": 0.06,
+    "dayCounter": {
+      "@type": "Actual365Fixed"
+    },
+    "compounding": "Compounded",
+    "frequency": "Annual",
+    "discountDate": "1998-12-17",
+    "expected": 0.9664138303924662
+  },
+  {
+    "settlementDate": "1998-05-17",
+    "dividendYield": 0.06,
+    "dayCounter": {
+      "@type": "Actual365Fixed"
+    },
+    "compounding": "Continuous",
+    "frequency": "Daily",
+    "discountDate": "1998-12-17",
+    "expected": 0.9654334744389863
+  },
+  {
+    "settlementDate": "1998-05-17",
+    "dividendYield": 0.06,
+    "dayCounter": {
+      "@type": "Actual365Fixed"
+    },
+    "compounding": "Continuous",
+    "frequency": "Annual",
+    "discountDate": "1998-12-17",
+    "expected": 0.9654334744389863
+  },
+  {
+    "settlementDate": "1998-05-17",
+    "dividendYield": 0.06,
+    "dayCounter": {
+      "@type": "Actual365Fixed"
+    },
+    "compounding": "SimpleThenCompounded",
+    "frequency": "Daily",
+    "discountDate": "1998-12-17",
+    "expected": 0.9654362655424762
+  },
+  {
+    "settlementDate": "1998-05-17",
+    "dividendYield": 0.06,
+    "dayCounter": {
+      "@type": "Actual365Fixed"
+    },
+    "compounding": "SimpleThenCompounded",
+    "frequency": "Annual",
+    "discountDate": "1998-12-17",
+    "expected": 0.9660173618462841
+  },
+  {
+    "settlementDate": "1998-05-17",
+    "dividendYield": 0.06,
+    "dayCounter": {
+      "@type": "Actual365Fixed"
+    },
+    "compounding": "Simple",
+    "frequency": "Daily",
+    "discountDate": "1999-05-17",
+    "expected": 0.9433962264150942
+  },
+  {
+    "settlementDate": "1998-05-17",
+    "dividendYield": 0.06,
+    "dayCounter": {
+      "@type": "Actual365Fixed"
+    },
+    "compounding": "Simple",
+    "frequency": "Annual",
+    "discountDate": "1999-05-17",
+    "expected": 0.9433962264150942
+  },
+  {
+    "settlementDate": "1998-05-17",
+    "dividendYield": 0.06,
+    "dayCounter": {
+      "@type": "Actual365Fixed"
+    },
+    "compounding": "Compounded",
+    "frequency": "Daily",
+    "discountDate": "1999-05-17",
+    "expected": 0.9417691774050432
+  },
+  {
+    "settlementDate": "1998-05-17",
+    "dividendYield": 0.06,
+    "dayCounter": {
+      "@type": "Actual365Fixed"
+    },
+    "compounding": "Compounded",
+    "frequency": "Annual",
+    "discountDate": "1999-05-17",
+    "expected": 0.9433962264150942
+  },
+  {
+    "settlementDate": "1998-05-17",
+    "dividendYield": 0.06,
+    "dayCounter": {
+      "@type": "Actual365Fixed"
+    },
+    "compounding": "Continuous",
+    "frequency": "Daily",
+    "discountDate": "1999-05-17",
+    "expected": 0.9417645335842487
+  },
+  {
+    "settlementDate": "1998-05-17",
+    "dividendYield": 0.06,
+    "dayCounter": {
+      "@type": "Actual365Fixed"
+    },
+    "compounding": "Continuous",
+    "frequency": "Annual",
+    "discountDate": "1999-05-17",
+    "expected": 0.9417645335842487
+  },
+  {
+    "settlementDate": "1998-05-17",
+    "dividendYield": 0.06,
+    "dayCounter": {
+      "@type": "Actual365Fixed"
+    },
+    "compounding": "SimpleThenCompounded",
+    "frequency": "Daily",
+    "discountDate": "1999-05-17",
+    "expected": 0.9417691774050432
+  },
+  {
+    "settlementDate": "1998-05-17",
+    "dividendYield": 0.06,
+    "dayCounter": {
+      "@type": "Actual365Fixed"
+    },
+    "compounding": "SimpleThenCompounded",
+    "frequency": "Annual",
+    "discountDate": "1999-05-17",
+    "expected": 0.9433962264150942
+  },
+  {
+    "settlementDate": "1998-05-17",
+    "dividendYield": 0.07,
+    "dayCounter": {
+      "@type": "Actual365Fixed"
+    },
+    "compounding": "Simple",
+    "frequency": "Daily",
+    "discountDate": "1998-06-17",
+    "expected": 0.9940899310945884
+  },
+  {
+    "settlementDate": "1998-05-17",
+    "dividendYield": 0.07,
+    "dayCounter": {
+      "@type": "Actual365Fixed"
+    },
+    "compounding": "Simple",
+    "frequency": "Annual",
+    "discountDate": "1998-06-17",
+    "expected": 0.9940899310945884
+  },
+  {
+    "settlementDate": "1998-05-17",
+    "dividendYield": 0.07,
+    "dayCounter": {
+      "@type": "Actual365Fixed"
+    },
+    "compounding": "Compounded",
+    "frequency": "Daily",
+    "discountDate": "1998-06-17",
+    "expected": 0.9940729989206336
+  },
+  {
+    "settlementDate": "1998-05-17",
+    "dividendYield": 0.07,
+    "dayCounter": {
+      "@type": "Actual365Fixed"
+    },
+    "compounding": "Compounded",
+    "frequency": "Annual",
+    "discountDate": "1998-06-17",
+    "expected": 0.9942701277292129
+  },
+  {
+    "settlementDate": "1998-05-17",
+    "dividendYield": 0.07,
+    "dayCounter": {
+      "@type": "Actual365Fixed"
+    },
+    "compounding": "Continuous",
+    "frequency": "Daily",
+    "discountDate": "1998-06-17",
+    "expected": 0.9940724322839584
+  },
+  {
+    "settlementDate": "1998-05-17",
+    "dividendYield": 0.07,
+    "dayCounter": {
+      "@type": "Actual365Fixed"
+    },
+    "compounding": "Continuous",
+    "frequency": "Annual",
+    "discountDate": "1998-06-17",
+    "expected": 0.9940724322839584
+  },
+  {
+    "settlementDate": "1998-05-17",
+    "dividendYield": 0.07,
+    "dayCounter": {
+      "@type": "Actual365Fixed"
+    },
+    "compounding": "SimpleThenCompounded",
+    "frequency": "Daily",
+    "discountDate": "1998-06-17",
+    "expected": 0.9940729989206336
+  },
+  {
+    "settlementDate": "1998-05-17",
+    "dividendYield": 0.07,
+    "dayCounter": {
+      "@type": "Actual365Fixed"
+    },
+    "compounding": "SimpleThenCompounded",
+    "frequency": "Annual",
+    "discountDate": "1998-06-17",
+    "expected": 0.9940899310945884
+  },
+  {
+    "settlementDate": "1998-05-17",
+    "dividendYield": 0.07,
+    "dayCounter": {
+      "@type": "Actual365Fixed"
+    },
+    "compounding": "Simple",
+    "frequency": "Daily",
+    "discountDate": "1998-07-17",
+    "expected": 0.9884366452731064
+  },
+  {
+    "settlementDate": "1998-05-17",
+    "dividendYield": 0.07,
+    "dayCounter": {
+      "@type": "Actual365Fixed"
+    },
+    "compounding": "Simple",
+    "frequency": "Annual",
+    "discountDate": "1998-07-17",
+    "expected": 0.9884366452731064
+  },
+  {
+    "settlementDate": "1998-05-17",
+    "dividendYield": 0.07,
+    "dayCounter": {
+      "@type": "Actual365Fixed"
+    },
+    "compounding": "Compounded",
+    "frequency": "Daily",
+    "discountDate": "1998-07-17",
+    "expected": 0.9883706413718367
+  },
+  {
+    "settlementDate": "1998-05-17",
+    "dividendYield": 0.07,
+    "dayCounter": {
+      "@type": "Actual365Fixed"
+    },
+    "compounding": "Compounded",
+    "frequency": "Annual",
+    "discountDate": "1998-07-17",
+    "expected": 0.9887563518769006
+  },
+  {
+    "settlementDate": "1998-05-17",
+    "dividendYield": 0.07,
+    "dayCounter": {
+      "@type": "Actual365Fixed"
+    },
+    "compounding": "Continuous",
+    "frequency": "Daily",
+    "discountDate": "1998-07-17",
+    "expected": 0.9883695327734024
+  },
+  {
+    "settlementDate": "1998-05-17",
+    "dividendYield": 0.07,
+    "dayCounter": {
+      "@type": "Actual365Fixed"
+    },
+    "compounding": "Continuous",
+    "frequency": "Annual",
+    "discountDate": "1998-07-17",
+    "expected": 0.9883695327734024
+  },
+  {
+    "settlementDate": "1998-05-17",
+    "dividendYield": 0.07,
+    "dayCounter": {
+      "@type": "Actual365Fixed"
+    },
+    "compounding": "SimpleThenCompounded",
+    "frequency": "Daily",
+    "discountDate": "1998-07-17",
+    "expected": 0.9883706413718367
+  },
+  {
+    "settlementDate": "1998-05-17",
+    "dividendYield": 0.07,
+    "dayCounter": {
+      "@type": "Actual365Fixed"
+    },
+    "compounding": "SimpleThenCompounded",
+    "frequency": "Annual",
+    "discountDate": "1998-07-17",
+    "expected": 0.9884366452731064
+  },
+  {
+    "settlementDate": "1998-05-17",
+    "dividendYield": 0.07,
+    "dayCounter": {
+      "@type": "Actual365Fixed"
+    },
+    "compounding": "Simple",
+    "frequency": "Daily",
+    "discountDate": "1998-08-17",
+    "expected": 0.9826620719362481
+  },
+  {
+    "settlementDate": "1998-05-17",
+    "dividendYield": 0.07,
+    "dayCounter": {
+      "@type": "Actual365Fixed"
+    },
+    "compounding": "Simple",
+    "frequency": "Annual",
+    "discountDate": "1998-08-17",
+    "expected": 0.9826620719362481
+  },
+  {
+    "settlementDate": "1998-05-17",
+    "dividendYield": 0.07,
+    "dayCounter": {
+      "@type": "Actual365Fixed"
+    },
+    "compounding": "Compounded",
+    "frequency": "Daily",
+    "discountDate": "1998-08-17",
+    "expected": 0.9825125675136116
+  },
+  {
+    "settlementDate": "1998-05-17",
+    "dividendYield": 0.07,
+    "dayCounter": {
+      "@type": "Actual365Fixed"
+    },
+    "compounding": "Compounded",
+    "frequency": "Annual",
+    "discountDate": "1998-08-17",
+    "expected": 0.9830909042737166
+  },
+  {
+    "settlementDate": "1998-05-17",
+    "dividendYield": 0.07,
+    "dayCounter": {
+      "@type": "Actual365Fixed"
+    },
+    "compounding": "Continuous",
+    "frequency": "Daily",
+    "discountDate": "1998-08-17",
+    "expected": 0.9825109054394153
+  },
+  {
+    "settlementDate": "1998-05-17",
+    "dividendYield": 0.07,
+    "dayCounter": {
+      "@type": "Actual365Fixed"
+    },
+    "compounding": "Continuous",
+    "frequency": "Annual",
+    "discountDate": "1998-08-17",
+    "expected": 0.9825109054394153
+  },
+  {
+    "settlementDate": "1998-05-17",
+    "dividendYield": 0.07,
+    "dayCounter": {
+      "@type": "Actual365Fixed"
+    },
+    "compounding": "SimpleThenCompounded",
+    "frequency": "Daily",
+    "discountDate": "1998-08-17",
+    "expected": 0.9825125675136116
+  },
+  {
+    "settlementDate": "1998-05-17",
+    "dividendYield": 0.07,
+    "dayCounter": {
+      "@type": "Actual365Fixed"
+    },
+    "compounding": "SimpleThenCompounded",
+    "frequency": "Annual",
+    "discountDate": "1998-08-17",
+    "expected": 0.9826620719362481
+  },
+  {
+    "settlementDate": "1998-05-17",
+    "dividendYield": 0.07,
+    "dayCounter": {
+      "@type": "Actual365Fixed"
+    },
+    "compounding": "Simple",
+    "frequency": "Daily",
+    "discountDate": "1998-09-17",
+    "expected": 0.9769545783035787
+  },
+  {
+    "settlementDate": "1998-05-17",
+    "dividendYield": 0.07,
+    "dayCounter": {
+      "@type": "Actual365Fixed"
+    },
+    "compounding": "Simple",
+    "frequency": "Annual",
+    "discountDate": "1998-09-17",
+    "expected": 0.9769545783035787
+  },
+  {
+    "settlementDate": "1998-05-17",
+    "dividendYield": 0.07,
+    "dayCounter": {
+      "@type": "Actual365Fixed"
+    },
+    "compounding": "Compounded",
+    "frequency": "Daily",
+    "discountDate": "1998-09-17",
+    "expected": 0.9766892144654673
+  },
+  {
+    "settlementDate": "1998-05-17",
+    "dividendYield": 0.07,
+    "dayCounter": {
+      "@type": "Actual365Fixed"
+    },
+    "compounding": "Compounded",
+    "frequency": "Annual",
+    "discountDate": "1998-09-17",
+    "expected": 0.9774579189616556
+  },
+  {
+    "settlementDate": "1998-05-17",
+    "dividendYield": 0.07,
+    "dayCounter": {
+      "@type": "Actual365Fixed"
+    },
+    "compounding": "Continuous",
+    "frequency": "Daily",
+    "discountDate": "1998-09-17",
+    "expected": 0.9766870055156738
+  },
+  {
+    "settlementDate": "1998-05-17",
+    "dividendYield": 0.07,
+    "dayCounter": {
+      "@type": "Actual365Fixed"
+    },
+    "compounding": "Continuous",
+    "frequency": "Annual",
+    "discountDate": "1998-09-17",
+    "expected": 0.9766870055156738
+  },
+  {
+    "settlementDate": "1998-05-17",
+    "dividendYield": 0.07,
+    "dayCounter": {
+      "@type": "Actual365Fixed"
+    },
+    "compounding": "SimpleThenCompounded",
+    "frequency": "Daily",
+    "discountDate": "1998-09-17",
+    "expected": 0.9766892144654673
+  },
+  {
+    "settlementDate": "1998-05-17",
+    "dividendYield": 0.07,
+    "dayCounter": {
+      "@type": "Actual365Fixed"
+    },
+    "compounding": "SimpleThenCompounded",
+    "frequency": "Annual",
+    "discountDate": "1998-09-17",
+    "expected": 0.9769545783035787
+  },
+  {
+    "settlementDate": "1998-05-17",
+    "dividendYield": 0.07,
+    "dayCounter": {
+      "@type": "Actual365Fixed"
+    },
+    "compounding": "Simple",
+    "frequency": "Daily",
+    "discountDate": "1998-10-17",
+    "expected": 0.9714939714141225
+  },
+  {
+    "settlementDate": "1998-05-17",
+    "dividendYield": 0.07,
+    "dayCounter": {
+      "@type": "Actual365Fixed"
+    },
+    "compounding": "Simple",
+    "frequency": "Annual",
+    "discountDate": "1998-10-17",
+    "expected": 0.9714939714141225
+  },
+  {
+    "settlementDate": "1998-05-17",
+    "dividendYield": 0.07,
+    "dayCounter": {
+      "@type": "Actual365Fixed"
+    },
+    "compounding": "Compounded",
+    "frequency": "Daily",
+    "discountDate": "1998-10-17",
+    "expected": 0.9710865765093184
+  },
+  {
+    "settlementDate": "1998-05-17",
+    "dividendYield": 0.07,
+    "dayCounter": {
+      "@type": "Actual365Fixed"
+    },
+    "compounding": "Compounded",
+    "frequency": "Annual",
+    "discountDate": "1998-10-17",
+    "expected": 0.9720373760730432
+  },
+  {
+    "settlementDate": "1998-05-17",
+    "dividendYield": 0.07,
+    "dayCounter": {
+      "@type": "Actual365Fixed"
+    },
+    "compounding": "Continuous",
+    "frequency": "Daily",
+    "discountDate": "1998-10-17",
+    "expected": 0.9710838445539276
+  },
+  {
+    "settlementDate": "1998-05-17",
+    "dividendYield": 0.07,
+    "dayCounter": {
+      "@type": "Actual365Fixed"
+    },
+    "compounding": "Continuous",
+    "frequency": "Annual",
+    "discountDate": "1998-10-17",
+    "expected": 0.9710838445539276
+  },
+  {
+    "settlementDate": "1998-05-17",
+    "dividendYield": 0.07,
+    "dayCounter": {
+      "@type": "Actual365Fixed"
+    },
+    "compounding": "SimpleThenCompounded",
+    "frequency": "Daily",
+    "discountDate": "1998-10-17",
+    "expected": 0.9710865765093184
+  },
+  {
+    "settlementDate": "1998-05-17",
+    "dividendYield": 0.07,
+    "dayCounter": {
+      "@type": "Actual365Fixed"
+    },
+    "compounding": "SimpleThenCompounded",
+    "frequency": "Annual",
+    "discountDate": "1998-10-17",
+    "expected": 0.9714939714141225
+  },
+  {
+    "settlementDate": "1998-05-17",
+    "dividendYield": 0.07,
+    "dayCounter": {
+      "@type": "Actual365Fixed"
+    },
+    "compounding": "Simple",
+    "frequency": "Daily",
+    "discountDate": "1998-11-17",
+    "expected": 0.9659151053244417
+  },
+  {
+    "settlementDate": "1998-05-17",
+    "dividendYield": 0.07,
+    "dayCounter": {
+      "@type": "Actual365Fixed"
+    },
+    "compounding": "Simple",
+    "frequency": "Annual",
+    "discountDate": "1998-11-17",
+    "expected": 0.9659151053244417
+  },
+  {
+    "settlementDate": "1998-05-17",
+    "dividendYield": 0.07,
+    "dayCounter": {
+      "@type": "Actual365Fixed"
+    },
+    "compounding": "Compounded",
+    "frequency": "Daily",
+    "discountDate": "1998-11-17",
+    "expected": 0.9653309453221893
+  },
+  {
+    "settlementDate": "1998-05-17",
+    "dividendYield": 0.07,
+    "dayCounter": {
+      "@type": "Actual365Fixed"
+    },
+    "compounding": "Compounded",
+    "frequency": "Annual",
+    "discountDate": "1998-11-17",
+    "expected": 0.9664677260657137
+  },
+  {
+    "settlementDate": "1998-05-17",
+    "dividendYield": 0.07,
+    "dayCounter": {
+      "@type": "Actual365Fixed"
+    },
+    "compounding": "Continuous",
+    "frequency": "Daily",
+    "discountDate": "1998-11-17",
+    "expected": 0.96532767930738
+  },
+  {
+    "settlementDate": "1998-05-17",
+    "dividendYield": 0.07,
+    "dayCounter": {
+      "@type": "Actual365Fixed"
+    },
+    "compounding": "Continuous",
+    "frequency": "Annual",
+    "discountDate": "1998-11-17",
+    "expected": 0.96532767930738
+  },
+  {
+    "settlementDate": "1998-05-17",
+    "dividendYield": 0.07,
+    "dayCounter": {
+      "@type": "Actual365Fixed"
+    },
+    "compounding": "SimpleThenCompounded",
+    "frequency": "Daily",
+    "discountDate": "1998-11-17",
+    "expected": 0.9653309453221893
+  },
+  {
+    "settlementDate": "1998-05-17",
+    "dividendYield": 0.07,
+    "dayCounter": {
+      "@type": "Actual365Fixed"
+    },
+    "compounding": "SimpleThenCompounded",
+    "frequency": "Annual",
+    "discountDate": "1998-11-17",
+    "expected": 0.9659151053244417
+  },
+  {
+    "settlementDate": "1998-05-17",
+    "dividendYield": 0.07,
+    "dayCounter": {
+      "@type": "Actual365Fixed"
+    },
+    "compounding": "Simple",
+    "frequency": "Daily",
+    "discountDate": "1998-12-17",
+    "expected": 0.9605768724669719
+  },
+  {
+    "settlementDate": "1998-05-17",
+    "dividendYield": 0.07,
+    "dayCounter": {
+      "@type": "Actual365Fixed"
+    },
+    "compounding": "Simple",
+    "frequency": "Annual",
+    "discountDate": "1998-12-17",
+    "expected": 0.9605768724669719
+  },
+  {
+    "settlementDate": "1998-05-17",
+    "dividendYield": 0.07,
+    "dayCounter": {
+      "@type": "Actual365Fixed"
+    },
+    "compounding": "Compounded",
+    "frequency": "Daily",
+    "discountDate": "1998-12-17",
+    "expected": 0.9597934624520961
+  },
+  {
+    "settlementDate": "1998-05-17",
+    "dividendYield": 0.07,
+    "dayCounter": {
+      "@type": "Actual365Fixed"
+    },
+    "compounding": "Compounded",
+    "frequency": "Annual",
+    "discountDate": "1998-12-17",
+    "expected": 0.9611081298539771
+  },
+  {
+    "settlementDate": "1998-05-17",
+    "dividendYield": 0.07,
+    "dayCounter": {
+      "@type": "Actual365Fixed"
+    },
+    "compounding": "Continuous",
+    "frequency": "Daily",
+    "discountDate": "1998-12-17",
+    "expected": 0.9597896857255647
+  },
+  {
+    "settlementDate": "1998-05-17",
+    "dividendYield": 0.07,
+    "dayCounter": {
+      "@type": "Actual365Fixed"
+    },
+    "compounding": "Continuous",
+    "frequency": "Annual",
+    "discountDate": "1998-12-17",
+    "expected": 0.9597896857255647
+  },
+  {
+    "settlementDate": "1998-05-17",
+    "dividendYield": 0.07,
+    "dayCounter": {
+      "@type": "Actual365Fixed"
+    },
+    "compounding": "SimpleThenCompounded",
+    "frequency": "Daily",
+    "discountDate": "1998-12-17",
+    "expected": 0.9597934624520961
+  },
+  {
+    "settlementDate": "1998-05-17",
+    "dividendYield": 0.07,
+    "dayCounter": {
+      "@type": "Actual365Fixed"
+    },
+    "compounding": "SimpleThenCompounded",
+    "frequency": "Annual",
+    "discountDate": "1998-12-17",
+    "expected": 0.9605768724669719
+  },
+  {
+    "settlementDate": "1998-05-17",
+    "dividendYield": 0.07,
+    "dayCounter": {
+      "@type": "Actual365Fixed"
+    },
+    "compounding": "Simple",
+    "frequency": "Daily",
+    "discountDate": "1999-05-17",
+    "expected": 0.9345794392523364
+  },
+  {
+    "settlementDate": "1998-05-17",
+    "dividendYield": 0.07,
+    "dayCounter": {
+      "@type": "Actual365Fixed"
+    },
+    "compounding": "Simple",
+    "frequency": "Annual",
+    "discountDate": "1999-05-17",
+    "expected": 0.9345794392523364
+  },
+  {
+    "settlementDate": "1998-05-17",
+    "dividendYield": 0.07,
+    "dayCounter": {
+      "@type": "Actual365Fixed"
+    },
+    "compounding": "Compounded",
+    "frequency": "Daily",
+    "discountDate": "1999-05-17",
+    "expected": 0.932400077660733
+  },
+  {
+    "settlementDate": "1998-05-17",
+    "dividendYield": 0.07,
+    "dayCounter": {
+      "@type": "Actual365Fixed"
+    },
+    "compounding": "Compounded",
+    "frequency": "Annual",
+    "discountDate": "1999-05-17",
+    "expected": 0.9345794392523364
+  },
+  {
+    "settlementDate": "1998-05-17",
+    "dividendYield": 0.07,
+    "dayCounter": {
+      "@type": "Actual365Fixed"
+    },
+    "compounding": "Continuous",
+    "frequency": "Daily",
+    "discountDate": "1999-05-17",
+    "expected": 0.9323938199059482
+  },
+  {
+    "settlementDate": "1998-05-17",
+    "dividendYield": 0.07,
+    "dayCounter": {
+      "@type": "Actual365Fixed"
+    },
+    "compounding": "Continuous",
+    "frequency": "Annual",
+    "discountDate": "1999-05-17",
+    "expected": 0.9323938199059482
+  },
+  {
+    "settlementDate": "1998-05-17",
+    "dividendYield": 0.07,
+    "dayCounter": {
+      "@type": "Actual365Fixed"
+    },
+    "compounding": "SimpleThenCompounded",
+    "frequency": "Daily",
+    "discountDate": "1999-05-17",
+    "expected": 0.932400077660733
+  },
+  {
+    "settlementDate": "1998-05-17",
+    "dividendYield": 0.07,
+    "dayCounter": {
+      "@type": "Actual365Fixed"
+    },
+    "compounding": "SimpleThenCompounded",
+    "frequency": "Annual",
+    "discountDate": "1999-05-17",
+    "expected": 0.9345794392523364
+  },
+  {
+    "settlementDate": "1998-05-17",
+    "dividendYield": 0.08,
+    "dayCounter": {
+      "@type": "Actual365Fixed"
+    },
+    "compounding": "Simple",
+    "frequency": "Daily",
+    "discountDate": "1998-06-17",
+    "expected": 0.9932513334058997
+  },
+  {
+    "settlementDate": "1998-05-17",
+    "dividendYield": 0.08,
+    "dayCounter": {
+      "@type": "Actual365Fixed"
+    },
+    "compounding": "Simple",
+    "frequency": "Annual",
+    "discountDate": "1998-06-17",
+    "expected": 0.9932513334058997
+  },
+  {
+    "settlementDate": "1998-05-17",
+    "dividendYield": 0.08,
+    "dayCounter": {
+      "@type": "Actual365Fixed"
+    },
+    "compounding": "Compounded",
+    "frequency": "Daily",
+    "discountDate": "1998-06-17",
+    "expected": 0.9932292494718575
+  },
+  {
+    "settlementDate": "1998-05-17",
+    "dividendYield": 0.08,
+    "dayCounter": {
+      "@type": "Actual365Fixed"
+    },
+    "compounding": "Compounded",
+    "frequency": "Annual",
+    "discountDate": "1998-06-17",
+    "expected": 0.9934848987139674
+  },
+  {
+    "settlementDate": "1998-05-17",
+    "dividendYield": 0.08,
+    "dayCounter": {
+      "@type": "Actual365Fixed"
+    },
+    "compounding": "Continuous",
+    "frequency": "Daily",
+    "discountDate": "1998-06-17",
+    "expected": 0.9932285100167243
+  },
+  {
+    "settlementDate": "1998-05-17",
+    "dividendYield": 0.08,
+    "dayCounter": {
+      "@type": "Actual365Fixed"
+    },
+    "compounding": "Continuous",
+    "frequency": "Annual",
+    "discountDate": "1998-06-17",
+    "expected": 0.9932285100167243
+  },
+  {
+    "settlementDate": "1998-05-17",
+    "dividendYield": 0.08,
+    "dayCounter": {
+      "@type": "Actual365Fixed"
+    },
+    "compounding": "SimpleThenCompounded",
+    "frequency": "Daily",
+    "discountDate": "1998-06-17",
+    "expected": 0.9932292494718575
+  },
+  {
+    "settlementDate": "1998-05-17",
+    "dividendYield": 0.08,
+    "dayCounter": {
+      "@type": "Actual365Fixed"
+    },
+    "compounding": "SimpleThenCompounded",
+    "frequency": "Annual",
+    "discountDate": "1998-06-17",
+    "expected": 0.9932513334058997
+  },
+  {
+    "settlementDate": "1998-05-17",
+    "dividendYield": 0.08,
+    "dayCounter": {
+      "@type": "Actual365Fixed"
+    },
+    "compounding": "Simple",
+    "frequency": "Daily",
+    "discountDate": "1998-07-17",
+    "expected": 0.9868065318481669
+  },
+  {
+    "settlementDate": "1998-05-17",
+    "dividendYield": 0.08,
+    "dayCounter": {
+      "@type": "Actual365Fixed"
+    },
+    "compounding": "Simple",
+    "frequency": "Annual",
+    "discountDate": "1998-07-17",
+    "expected": 0.9868065318481669
+  },
+  {
+    "settlementDate": "1998-05-17",
+    "dividendYield": 0.08,
+    "dayCounter": {
+      "@type": "Actual365Fixed"
+    },
+    "compounding": "Compounded",
+    "frequency": "Daily",
+    "discountDate": "1998-07-17",
+    "expected": 0.9867205621361842
+  },
+  {
+    "settlementDate": "1998-05-17",
+    "dividendYield": 0.08,
+    "dayCounter": {
+      "@type": "Actual365Fixed"
+    },
+    "compounding": "Compounded",
+    "frequency": "Annual",
+    "discountDate": "1998-07-17",
+    "expected": 0.9872203795858403
+  },
+  {
+    "settlementDate": "1998-05-17",
+    "dividendYield": 0.08,
+    "dayCounter": {
+      "@type": "Actual365Fixed"
+    },
+    "compounding": "Continuous",
+    "frequency": "Daily",
+    "discountDate": "1998-07-17",
+    "expected": 0.9867191166148997
+  },
+  {
+    "settlementDate": "1998-05-17",
+    "dividendYield": 0.08,
+    "dayCounter": {
+      "@type": "Actual365Fixed"
+    },
+    "compounding": "Continuous",
+    "frequency": "Annual",
+    "discountDate": "1998-07-17",
+    "expected": 0.9867191166148997
+  },
+  {
+    "settlementDate": "1998-05-17",
+    "dividendYield": 0.08,
+    "dayCounter": {
+      "@type": "Actual365Fixed"
+    },
+    "compounding": "SimpleThenCompounded",
+    "frequency": "Daily",
+    "discountDate": "1998-07-17",
+    "expected": 0.9867205621361842
+  },
+  {
+    "settlementDate": "1998-05-17",
+    "dividendYield": 0.08,
+    "dayCounter": {
+      "@type": "Actual365Fixed"
+    },
+    "compounding": "SimpleThenCompounded",
+    "frequency": "Annual",
+    "discountDate": "1998-07-17",
+    "expected": 0.9868065318481669
+  },
+  {
+    "settlementDate": "1998-05-17",
+    "dividendYield": 0.08,
+    "dayCounter": {
+      "@type": "Actual365Fixed"
+    },
+    "compounding": "Simple",
+    "frequency": "Daily",
+    "discountDate": "1998-08-17",
+    "expected": 0.9802341819744333
+  },
+  {
+    "settlementDate": "1998-05-17",
+    "dividendYield": 0.08,
+    "dayCounter": {
+      "@type": "Actual365Fixed"
+    },
+    "compounding": "Simple",
+    "frequency": "Annual",
+    "discountDate": "1998-08-17",
+    "expected": 0.9802341819744333
+  },
+  {
+    "settlementDate": "1998-05-17",
+    "dividendYield": 0.08,
+    "dayCounter": {
+      "@type": "Actual365Fixed"
+    },
+    "compounding": "Compounded",
+    "frequency": "Daily",
+    "discountDate": "1998-08-17",
+    "expected": 0.9800397233689715
+  },
+  {
+    "settlementDate": "1998-05-17",
+    "dividendYield": 0.08,
+    "dayCounter": {
+      "@type": "Actual365Fixed"
+    },
+    "compounding": "Compounded",
+    "frequency": "Annual",
+    "discountDate": "1998-08-17",
+    "expected": 0.9807885388212031
+  },
+  {
+    "settlementDate": "1998-05-17",
+    "dividendYield": 0.08,
+    "dayCounter": {
+      "@type": "Actual365Fixed"
+    },
+    "compounding": "Continuous",
+    "frequency": "Daily",
+    "discountDate": "1998-08-17",
+    "expected": 0.9800375580004353
+  },
+  {
+    "settlementDate": "1998-05-17",
+    "dividendYield": 0.08,
+    "dayCounter": {
+      "@type": "Actual365Fixed"
+    },
+    "compounding": "Continuous",
+    "frequency": "Annual",
+    "discountDate": "1998-08-17",
+    "expected": 0.9800375580004353
+  },
+  {
+    "settlementDate": "1998-05-17",
+    "dividendYield": 0.08,
+    "dayCounter": {
+      "@type": "Actual365Fixed"
+    },
+    "compounding": "SimpleThenCompounded",
+    "frequency": "Daily",
+    "discountDate": "1998-08-17",
+    "expected": 0.9800397233689715
+  },
+  {
+    "settlementDate": "1998-05-17",
+    "dividendYield": 0.08,
+    "dayCounter": {
+      "@type": "Actual365Fixed"
+    },
+    "compounding": "SimpleThenCompounded",
+    "frequency": "Annual",
+    "discountDate": "1998-08-17",
+    "expected": 0.9802341819744333
+  },
+  {
+    "settlementDate": "1998-05-17",
+    "dividendYield": 0.08,
+    "dayCounter": {
+      "@type": "Actual365Fixed"
+    },
+    "compounding": "Simple",
+    "frequency": "Daily",
+    "discountDate": "1998-09-17",
+    "expected": 0.9737487994877815
+  },
+  {
+    "settlementDate": "1998-05-17",
+    "dividendYield": 0.08,
+    "dayCounter": {
+      "@type": "Actual365Fixed"
+    },
+    "compounding": "Simple",
+    "frequency": "Annual",
+    "discountDate": "1998-09-17",
+    "expected": 0.9737487994877815
+  },
+  {
+    "settlementDate": "1998-05-17",
+    "dividendYield": 0.08,
+    "dayCounter": {
+      "@type": "Actual365Fixed"
+    },
+    "compounding": "Compounded",
+    "frequency": "Daily",
+    "discountDate": "1998-09-17",
+    "expected": 0.9734041188943704
+  },
+  {
+    "settlementDate": "1998-05-17",
+    "dividendYield": 0.08,
+    "dayCounter": {
+      "@type": "Actual365Fixed"
+    },
+    "compounding": "Compounded",
+    "frequency": "Annual",
+    "discountDate": "1998-09-17",
+    "expected": 0.9743986021506031
+  },
+  {
+    "settlementDate": "1998-05-17",
+    "dividendYield": 0.08,
+    "dayCounter": {
+      "@type": "Actual365Fixed"
+    },
+    "compounding": "Continuous",
+    "frequency": "Daily",
+    "discountDate": "1998-09-17",
+    "expected": 0.9734012434932013
+  },
+  {
+    "settlementDate": "1998-05-17",
+    "dividendYield": 0.08,
+    "dayCounter": {
+      "@type": "Actual365Fixed"
+    },
+    "compounding": "Continuous",
+    "frequency": "Annual",
+    "discountDate": "1998-09-17",
+    "expected": 0.9734012434932013
+  },
+  {
+    "settlementDate": "1998-05-17",
+    "dividendYield": 0.08,
+    "dayCounter": {
+      "@type": "Actual365Fixed"
+    },
+    "compounding": "SimpleThenCompounded",
+    "frequency": "Daily",
+    "discountDate": "1998-09-17",
+    "expected": 0.9734041188943704
+  },
+  {
+    "settlementDate": "1998-05-17",
+    "dividendYield": 0.08,
+    "dayCounter": {
+      "@type": "Actual365Fixed"
+    },
+    "compounding": "SimpleThenCompounded",
+    "frequency": "Annual",
+    "discountDate": "1998-09-17",
+    "expected": 0.9737487994877815
+  },
+  {
+    "settlementDate": "1998-05-17",
+    "dividendYield": 0.08,
+    "dayCounter": {
+      "@type": "Actual365Fixed"
+    },
+    "compounding": "Simple",
+    "frequency": "Daily",
+    "discountDate": "1998-10-17",
+    "expected": 0.9675538118969356
+  },
+  {
+    "settlementDate": "1998-05-17",
+    "dividendYield": 0.08,
+    "dayCounter": {
+      "@type": "Actual365Fixed"
+    },
+    "compounding": "Simple",
+    "frequency": "Annual",
+    "discountDate": "1998-10-17",
+    "expected": 0.9675538118969356
+  },
+  {
+    "settlementDate": "1998-05-17",
+    "dividendYield": 0.08,
+    "dayCounter": {
+      "@type": "Actual365Fixed"
+    },
+    "compounding": "Compounded",
+    "frequency": "Daily",
+    "discountDate": "1998-10-17",
+    "expected": 0.9670253467584221
+  },
+  {
+    "settlementDate": "1998-05-17",
+    "dividendYield": 0.08,
+    "dayCounter": {
+      "@type": "Actual365Fixed"
+    },
+    "compounding": "Compounded",
+    "frequency": "Annual",
+    "discountDate": "1998-10-17",
+    "expected": 0.96825443358851
+  },
+  {
+    "settlementDate": "1998-05-17",
+    "dividendYield": 0.08,
+    "dayCounter": {
+      "@type": "Actual365Fixed"
+    },
+    "compounding": "Continuous",
+    "frequency": "Daily",
+    "discountDate": "1998-10-17",
+    "expected": 0.9670217934796131
+  },
+  {
+    "settlementDate": "1998-05-17",
+    "dividendYield": 0.08,
+    "dayCounter": {
+      "@type": "Actual365Fixed"
+    },
+    "compounding": "Continuous",
+    "frequency": "Annual",
+    "discountDate": "1998-10-17",
+    "expected": 0.9670217934796131
+  },
+  {
+    "settlementDate": "1998-05-17",
+    "dividendYield": 0.08,
+    "dayCounter": {
+      "@type": "Actual365Fixed"
+    },
+    "compounding": "SimpleThenCompounded",
+    "frequency": "Daily",
+    "discountDate": "1998-10-17",
+    "expected": 0.9670253467584221
+  },
+  {
+    "settlementDate": "1998-05-17",
+    "dividendYield": 0.08,
+    "dayCounter": {
+      "@type": "Actual365Fixed"
+    },
+    "compounding": "SimpleThenCompounded",
+    "frequency": "Annual",
+    "discountDate": "1998-10-17",
+    "expected": 0.9675538118969356
+  },
+  {
+    "settlementDate": "1998-05-17",
+    "dividendYield": 0.08,
+    "dayCounter": {
+      "@type": "Actual365Fixed"
+    },
+    "compounding": "Simple",
+    "frequency": "Daily",
+    "discountDate": "1998-11-17",
+    "expected": 0.9612345939113031
+  },
+  {
+    "settlementDate": "1998-05-17",
+    "dividendYield": 0.08,
+    "dayCounter": {
+      "@type": "Actual365Fixed"
+    },
+    "compounding": "Simple",
+    "frequency": "Annual",
+    "discountDate": "1998-11-17",
+    "expected": 0.9612345939113031
+  },
+  {
+    "settlementDate": "1998-05-17",
+    "dividendYield": 0.08,
+    "dayCounter": {
+      "@type": "Actual365Fixed"
+    },
+    "compounding": "Compounded",
+    "frequency": "Daily",
+    "discountDate": "1998-11-17",
+    "expected": 0.9604778593811303
+  },
+  {
+    "settlementDate": "1998-05-17",
+    "dividendYield": 0.08,
+    "dayCounter": {
+      "@type": "Actual365Fixed"
+    },
+    "compounding": "Compounded",
+    "frequency": "Annual",
+    "discountDate": "1998-11-17",
+    "expected": 0.9619461578830306
+  },
+  {
+    "settlementDate": "1998-05-17",
+    "dividendYield": 0.08,
+    "dayCounter": {
+      "@type": "Actual365Fixed"
+    },
+    "compounding": "Continuous",
+    "frequency": "Daily",
+    "discountDate": "1998-11-17",
+    "expected": 0.9604736150914566
+  },
+  {
+    "settlementDate": "1998-05-17",
+    "dividendYield": 0.08,
+    "dayCounter": {
+      "@type": "Actual365Fixed"
+    },
+    "compounding": "Continuous",
+    "frequency": "Annual",
+    "discountDate": "1998-11-17",
+    "expected": 0.9604736150914566
+  },
+  {
+    "settlementDate": "1998-05-17",
+    "dividendYield": 0.08,
+    "dayCounter": {
+      "@type": "Actual365Fixed"
+    },
+    "compounding": "SimpleThenCompounded",
+    "frequency": "Daily",
+    "discountDate": "1998-11-17",
+    "expected": 0.9604778593811303
+  },
+  {
+    "settlementDate": "1998-05-17",
+    "dividendYield": 0.08,
+    "dayCounter": {
+      "@type": "Actual365Fixed"
+    },
+    "compounding": "SimpleThenCompounded",
+    "frequency": "Annual",
+    "discountDate": "1998-11-17",
+    "expected": 0.9612345939113031
+  },
+  {
+    "settlementDate": "1998-05-17",
+    "dividendYield": 0.08,
+    "dayCounter": {
+      "@type": "Actual365Fixed"
+    },
+    "compounding": "Simple",
+    "frequency": "Daily",
+    "discountDate": "1998-12-17",
+    "expected": 0.9551973202135455
+  },
+  {
+    "settlementDate": "1998-05-17",
+    "dividendYield": 0.08,
+    "dayCounter": {
+      "@type": "Actual365Fixed"
+    },
+    "compounding": "Simple",
+    "frequency": "Annual",
+    "discountDate": "1998-12-17",
+    "expected": 0.9551973202135455
+  },
+  {
+    "settlementDate": "1998-05-17",
+    "dividendYield": 0.08,
+    "dayCounter": {
+      "@type": "Actual365Fixed"
+    },
+    "compounding": "Compounded",
+    "frequency": "Daily",
+    "discountDate": "1998-12-17",
+    "expected": 0.9541837937534087
+  },
+  {
+    "settlementDate": "1998-05-17",
+    "dividendYield": 0.08,
+    "dayCounter": {
+      "@type": "Actual365Fixed"
+    },
+    "compounding": "Compounded",
+    "frequency": "Annual",
+    "discountDate": "1998-12-17",
+    "expected": 0.9558805094629217
+  },
+  {
+    "settlementDate": "1998-05-17",
+    "dividendYield": 0.08,
+    "dayCounter": {
+      "@type": "Actual365Fixed"
+    },
+    "compounding": "Continuous",
+    "frequency": "Daily",
+    "discountDate": "1998-12-17",
+    "expected": 0.9541788898095599
+  },
+  {
+    "settlementDate": "1998-05-17",
+    "dividendYield": 0.08,
+    "dayCounter": {
+      "@type": "Actual365Fixed"
+    },
+    "compounding": "Continuous",
+    "frequency": "Annual",
+    "discountDate": "1998-12-17",
+    "expected": 0.9541788898095599
+  },
+  {
+    "settlementDate": "1998-05-17",
+    "dividendYield": 0.08,
+    "dayCounter": {
+      "@type": "Actual365Fixed"
+    },
+    "compounding": "SimpleThenCompounded",
+    "frequency": "Daily",
+    "discountDate": "1998-12-17",
+    "expected": 0.9541837937534087
+  },
+  {
+    "settlementDate": "1998-05-17",
+    "dividendYield": 0.08,
+    "dayCounter": {
+      "@type": "Actual365Fixed"
+    },
+    "compounding": "SimpleThenCompounded",
+    "frequency": "Annual",
+    "discountDate": "1998-12-17",
+    "expected": 0.9551973202135455
+  },
+  {
+    "settlementDate": "1998-05-17",
+    "dividendYield": 0.08,
+    "dayCounter": {
+      "@type": "Actual365Fixed"
+    },
+    "compounding": "Simple",
+    "frequency": "Daily",
+    "discountDate": "1999-05-17",
+    "expected": 0.9259259259259258
+  },
+  {
+    "settlementDate": "1998-05-17",
+    "dividendYield": 0.08,
+    "dayCounter": {
+      "@type": "Actual365Fixed"
+    },
+    "compounding": "Simple",
+    "frequency": "Annual",
+    "discountDate": "1999-05-17",
+    "expected": 0.9259259259259258
+  },
+  {
+    "settlementDate": "1998-05-17",
+    "dividendYield": 0.08,
+    "dayCounter": {
+      "@type": "Actual365Fixed"
+    },
+    "compounding": "Compounded",
+    "frequency": "Daily",
+    "discountDate": "1999-05-17",
+    "expected": 0.9231244383145406
+  },
+  {
+    "settlementDate": "1998-05-17",
+    "dividendYield": 0.08,
+    "dayCounter": {
+      "@type": "Actual365Fixed"
+    },
+    "compounding": "Compounded",
+    "frequency": "Annual",
+    "discountDate": "1999-05-17",
+    "expected": 0.9259259259259258
+  },
+  {
+    "settlementDate": "1998-05-17",
+    "dividendYield": 0.08,
+    "dayCounter": {
+      "@type": "Actual365Fixed"
+    },
+    "compounding": "Continuous",
+    "frequency": "Daily",
+    "discountDate": "1999-05-17",
+    "expected": 0.9231163463866358
+  },
+  {
+    "settlementDate": "1998-05-17",
+    "dividendYield": 0.08,
+    "dayCounter": {
+      "@type": "Actual365Fixed"
+    },
+    "compounding": "Continuous",
+    "frequency": "Annual",
+    "discountDate": "1999-05-17",
+    "expected": 0.9231163463866358
+  },
+  {
+    "settlementDate": "1998-05-17",
+    "dividendYield": 0.08,
+    "dayCounter": {
+      "@type": "Actual365Fixed"
+    },
+    "compounding": "SimpleThenCompounded",
+    "frequency": "Daily",
+    "discountDate": "1999-05-17",
+    "expected": 0.9231244383145406
+  },
+  {
+    "settlementDate": "1998-05-17",
+    "dividendYield": 0.08,
+    "dayCounter": {
+      "@type": "Actual365Fixed"
+    },
+    "compounding": "SimpleThenCompounded",
+    "frequency": "Annual",
+    "discountDate": "1999-05-17",
+    "expected": 0.9259259259259258
+  },
+  {
+    "settlementDate": "1998-05-17",
+    "dividendYield": 0.09,
+    "dayCounter": {
+      "@type": "Actual365Fixed"
+    },
+    "compounding": "Simple",
+    "frequency": "Daily",
+    "discountDate": "1998-06-17",
+    "expected": 0.9924141493787215
+  },
+  {
+    "settlementDate": "1998-05-17",
+    "dividendYield": 0.09,
+    "dayCounter": {
+      "@type": "Actual365Fixed"
+    },
+    "compounding": "Simple",
+    "frequency": "Annual",
+    "discountDate": "1998-06-17",
+    "expected": 0.9924141493787215
+  },
+  {
+    "settlementDate": "1998-05-17",
+    "dividendYield": 0.09,
+    "dayCounter": {
+      "@type": "Actual365Fixed"
+    },
+    "compounding": "Compounded",
+    "frequency": "Daily",
+    "discountDate": "1998-06-17",
+    "expected": 0.9923862392625046
+  },
+  {
+    "settlementDate": "1998-05-17",
+    "dividendYield": 0.09,
+    "dayCounter": {
+      "@type": "Actual365Fixed"
+    },
+    "compounding": "Compounded",
+    "frequency": "Annual",
+    "discountDate": "1998-06-17",
+    "expected": 0.992707518527726
+  },
+  {
+    "settlementDate": "1998-05-17",
+    "dividendYield": 0.09,
+    "dayCounter": {
+      "@type": "Actual365Fixed"
+    },
+    "compounding": "Continuous",
+    "frequency": "Daily",
+    "discountDate": "1998-06-17",
+    "expected": 0.9923853042010987
+  },
+  {
+    "settlementDate": "1998-05-17",
+    "dividendYield": 0.09,
+    "dayCounter": {
+      "@type": "Actual365Fixed"
+    },
+    "compounding": "Continuous",
+    "frequency": "Annual",
+    "discountDate": "1998-06-17",
+    "expected": 0.9923853042010987
+  },
+  {
+    "settlementDate": "1998-05-17",
+    "dividendYield": 0.09,
+    "dayCounter": {
+      "@type": "Actual365Fixed"
+    },
+    "compounding": "SimpleThenCompounded",
+    "frequency": "Daily",
+    "discountDate": "1998-06-17",
+    "expected": 0.9923862392625046
+  },
+  {
+    "settlementDate": "1998-05-17",
+    "dividendYield": 0.09,
+    "dayCounter": {
+      "@type": "Actual365Fixed"
+    },
+    "compounding": "SimpleThenCompounded",
+    "frequency": "Annual",
+    "discountDate": "1998-06-17",
+    "expected": 0.9924141493787215
+  },
+  {
+    "settlementDate": "1998-05-17",
+    "dividendYield": 0.09,
+    "dayCounter": {
+      "@type": "Actual365Fixed"
+    },
+    "compounding": "Simple",
+    "frequency": "Daily",
+    "discountDate": "1998-07-17",
+    "expected": 0.9851817862830305
+  },
+  {
+    "settlementDate": "1998-05-17",
+    "dividendYield": 0.09,
+    "dayCounter": {
+      "@type": "Actual365Fixed"
+    },
+    "compounding": "Simple",
+    "frequency": "Annual",
+    "discountDate": "1998-07-17",
+    "expected": 0.9851817862830305
+  },
+  {
+    "settlementDate": "1998-05-17",
+    "dividendYield": 0.09,
+    "dayCounter": {
+      "@type": "Actual365Fixed"
+    },
+    "compounding": "Compounded",
+    "frequency": "Daily",
+    "discountDate": "1998-07-17",
+    "expected": 0.9850732827825331
+  },
+  {
+    "settlementDate": "1998-05-17",
+    "dividendYield": 0.09,
+    "dayCounter": {
+      "@type": "Actual365Fixed"
+    },
+    "compounding": "Compounded",
+    "frequency": "Annual",
+    "discountDate": "1998-07-17",
+    "expected": 0.9857009170868415
+  },
+  {
+    "settlementDate": "1998-05-17",
+    "dividendYield": 0.09,
+    "dayCounter": {
+      "@type": "Actual365Fixed"
+    },
+    "compounding": "Continuous",
+    "frequency": "Daily",
+    "discountDate": "1998-07-17",
+    "expected": 0.9850714563826029
+  },
+  {
+    "settlementDate": "1998-05-17",
+    "dividendYield": 0.09,
+    "dayCounter": {
+      "@type": "Actual365Fixed"
+    },
+    "compounding": "Continuous",
+    "frequency": "Annual",
+    "discountDate": "1998-07-17",
+    "expected": 0.9850714563826029
+  },
+  {
+    "settlementDate": "1998-05-17",
+    "dividendYield": 0.09,
+    "dayCounter": {
+      "@type": "Actual365Fixed"
+    },
+    "compounding": "SimpleThenCompounded",
+    "frequency": "Daily",
+    "discountDate": "1998-07-17",
+    "expected": 0.9850732827825331
+  },
+  {
+    "settlementDate": "1998-05-17",
+    "dividendYield": 0.09,
+    "dayCounter": {
+      "@type": "Actual365Fixed"
+    },
+    "compounding": "SimpleThenCompounded",
+    "frequency": "Annual",
+    "discountDate": "1998-07-17",
+    "expected": 0.9851817862830305
+  },
+  {
+    "settlementDate": "1998-05-17",
+    "dividendYield": 0.09,
+    "dayCounter": {
+      "@type": "Actual365Fixed"
+    },
+    "compounding": "Simple",
+    "frequency": "Daily",
+    "discountDate": "1998-08-17",
+    "expected": 0.977818259751393
+  },
+  {
+    "settlementDate": "1998-05-17",
+    "dividendYield": 0.09,
+    "dayCounter": {
+      "@type": "Actual365Fixed"
+    },
+    "compounding": "Simple",
+    "frequency": "Annual",
+    "discountDate": "1998-08-17",
+    "expected": 0.977818259751393
+  },
+  {
+    "settlementDate": "1998-05-17",
+    "dividendYield": 0.09,
+    "dayCounter": {
+      "@type": "Actual365Fixed"
+    },
+    "compounding": "Compounded",
+    "frequency": "Daily",
+    "discountDate": "1998-08-17",
+    "expected": 0.9775731704985279
+  },
+  {
+    "settlementDate": "1998-05-17",
+    "dividendYield": 0.09,
+    "dayCounter": {
+      "@type": "Actual365Fixed"
+    },
+    "compounding": "Compounded",
+    "frequency": "Annual",
+    "discountDate": "1998-08-17",
+    "expected": 0.978512711411782
+  },
+  {
+    "settlementDate": "1998-05-17",
+    "dividendYield": 0.09,
+    "dayCounter": {
+      "@type": "Actual365Fixed"
+    },
+    "compounding": "Continuous",
+    "frequency": "Daily",
+    "discountDate": "1998-08-17",
+    "expected": 0.9775704369020688
+  },
+  {
+    "settlementDate": "1998-05-17",
+    "dividendYield": 0.09,
+    "dayCounter": {
+      "@type": "Actual365Fixed"
+    },
+    "compounding": "Continuous",
+    "frequency": "Annual",
+    "discountDate": "1998-08-17",
+    "expected": 0.9775704369020688
+  },
+  {
+    "settlementDate": "1998-05-17",
+    "dividendYield": 0.09,
+    "dayCounter": {
+      "@type": "Actual365Fixed"
+    },
+    "compounding": "SimpleThenCompounded",
+    "frequency": "Daily",
+    "discountDate": "1998-08-17",
+    "expected": 0.9775731704985279
+  },
+  {
+    "settlementDate": "1998-05-17",
+    "dividendYield": 0.09,
+    "dayCounter": {
+      "@type": "Actual365Fixed"
+    },
+    "compounding": "SimpleThenCompounded",
+    "frequency": "Annual",
+    "discountDate": "1998-08-17",
+    "expected": 0.977818259751393
+  },
+  {
+    "settlementDate": "1998-05-17",
+    "dividendYield": 0.09,
+    "dayCounter": {
+      "@type": "Actual365Fixed"
+    },
+    "compounding": "Simple",
+    "frequency": "Daily",
+    "discountDate": "1998-09-17",
+    "expected": 0.9705639907464035
+  },
+  {
+    "settlementDate": "1998-05-17",
+    "dividendYield": 0.09,
+    "dayCounter": {
+      "@type": "Actual365Fixed"
+    },
+    "compounding": "Simple",
+    "frequency": "Annual",
+    "discountDate": "1998-09-17",
+    "expected": 0.9705639907464035
+  },
+  {
+    "settlementDate": "1998-05-17",
+    "dividendYield": 0.09,
+    "dayCounter": {
+      "@type": "Actual365Fixed"
+    },
+    "compounding": "Compounded",
+    "frequency": "Daily",
+    "discountDate": "1998-09-17",
+    "expected": 0.9701301622749572
+  },
+  {
+    "settlementDate": "1998-05-17",
+    "dividendYield": 0.09,
+    "dayCounter": {
+      "@type": "Actual365Fixed"
+    },
+    "compounding": "Compounded",
+    "frequency": "Annual",
+    "discountDate": "1998-09-17",
+    "expected": 0.971376925593427
+  },
+  {
+    "settlementDate": "1998-05-17",
+    "dividendYield": 0.09,
+    "dayCounter": {
+      "@type": "Actual365Fixed"
+    },
+    "compounding": "Continuous",
+    "frequency": "Daily",
+    "discountDate": "1998-09-17",
+    "expected": 0.9701265354030607
+  },
+  {
+    "settlementDate": "1998-05-17",
+    "dividendYield": 0.09,
+    "dayCounter": {
+      "@type": "Actual365Fixed"
+    },
+    "compounding": "Continuous",
+    "frequency": "Annual",
+    "discountDate": "1998-09-17",
+    "expected": 0.9701265354030607
+  },
+  {
+    "settlementDate": "1998-05-17",
+    "dividendYield": 0.09,
+    "dayCounter": {
+      "@type": "Actual365Fixed"
+    },
+    "compounding": "SimpleThenCompounded",
+    "frequency": "Daily",
+    "discountDate": "1998-09-17",
+    "expected": 0.9701301622749572
+  },
+  {
+    "settlementDate": "1998-05-17",
+    "dividendYield": 0.09,
+    "dayCounter": {
+      "@type": "Actual365Fixed"
+    },
+    "compounding": "SimpleThenCompounded",
+    "frequency": "Annual",
+    "discountDate": "1998-09-17",
+    "expected": 0.9705639907464035
+  },
+  {
+    "settlementDate": "1998-05-17",
+    "dividendYield": 0.09,
+    "dayCounter": {
+      "@type": "Actual365Fixed"
+    },
+    "compounding": "Simple",
+    "frequency": "Daily",
+    "discountDate": "1998-10-17",
+    "expected": 0.963645484066848
+  },
+  {
+    "settlementDate": "1998-05-17",
+    "dividendYield": 0.09,
+    "dayCounter": {
+      "@type": "Actual365Fixed"
+    },
+    "compounding": "Simple",
+    "frequency": "Annual",
+    "discountDate": "1998-10-17",
+    "expected": 0.963645484066848
+  },
+  {
+    "settlementDate": "1998-05-17",
+    "dividendYield": 0.09,
+    "dayCounter": {
+      "@type": "Actual365Fixed"
+    },
+    "compounding": "Compounded",
+    "frequency": "Daily",
+    "discountDate": "1998-10-17",
+    "expected": 0.9629812122231137
+  },
+  {
+    "settlementDate": "1998-05-17",
+    "dividendYield": 0.09,
+    "dayCounter": {
+      "@type": "Actual365Fixed"
+    },
+    "compounding": "Compounded",
+    "frequency": "Annual",
+    "discountDate": "1998-10-17",
+    "expected": 0.9645208770197254
+  },
+  {
+    "settlementDate": "1998-05-17",
+    "dividendYield": 0.09,
+    "dayCounter": {
+      "@type": "Actual365Fixed"
+    },
+    "compounding": "Continuous",
+    "frequency": "Daily",
+    "discountDate": "1998-10-17",
+    "expected": 0.9629767339956984
+  },
+  {
+    "settlementDate": "1998-05-17",
+    "dividendYield": 0.09,
+    "dayCounter": {
+      "@type": "Actual365Fixed"
+    },
+    "compounding": "Continuous",
+    "frequency": "Annual",
+    "discountDate": "1998-10-17",
+    "expected": 0.9629767339956984
+  },
+  {
+    "settlementDate": "1998-05-17",
+    "dividendYield": 0.09,
+    "dayCounter": {
+      "@type": "Actual365Fixed"
+    },
+    "compounding": "SimpleThenCompounded",
+    "frequency": "Daily",
+    "discountDate": "1998-10-17",
+    "expected": 0.9629812122231137
+  },
+  {
+    "settlementDate": "1998-05-17",
+    "dividendYield": 0.09,
+    "dayCounter": {
+      "@type": "Actual365Fixed"
+    },
+    "compounding": "SimpleThenCompounded",
+    "frequency": "Annual",
+    "discountDate": "1998-10-17",
+    "expected": 0.963645484066848
+  },
+  {
+    "settlementDate": "1998-05-17",
+    "dividendYield": 0.09,
+    "dayCounter": {
+      "@type": "Actual365Fixed"
+    },
+    "compounding": "Simple",
+    "frequency": "Daily",
+    "discountDate": "1998-11-17",
+    "expected": 0.9565992242373413
+  },
+  {
+    "settlementDate": "1998-05-17",
+    "dividendYield": 0.09,
+    "dayCounter": {
+      "@type": "Actual365Fixed"
+    },
+    "compounding": "Simple",
+    "frequency": "Annual",
+    "discountDate": "1998-11-17",
+    "expected": 0.9565992242373413
+  },
+  {
+    "settlementDate": "1998-05-17",
+    "dividendYield": 0.09,
+    "dayCounter": {
+      "@type": "Actual365Fixed"
+    },
+    "compounding": "Compounded",
+    "frequency": "Daily",
+    "discountDate": "1998-11-17",
+    "expected": 0.9556493036785438
+  },
+  {
+    "settlementDate": "1998-05-17",
+    "dividendYield": 0.09,
+    "dayCounter": {
+      "@type": "Actual365Fixed"
+    },
+    "compounding": "Compounded",
+    "frequency": "Annual",
+    "discountDate": "1998-11-17",
+    "expected": 0.9574871263944374
+  },
+  {
+    "settlementDate": "1998-05-17",
+    "dividendYield": 0.09,
+    "dayCounter": {
+      "@type": "Actual365Fixed"
+    },
+    "compounding": "Continuous",
+    "frequency": "Daily",
+    "discountDate": "1998-11-17",
+    "expected": 0.9556439591049017
+  },
+  {
+    "settlementDate": "1998-05-17",
+    "dividendYield": 0.09,
+    "dayCounter": {
+      "@type": "Actual365Fixed"
+    },
+    "compounding": "Continuous",
+    "frequency": "Annual",
+    "discountDate": "1998-11-17",
+    "expected": 0.9556439591049017
+  },
+  {
+    "settlementDate": "1998-05-17",
+    "dividendYield": 0.09,
+    "dayCounter": {
+      "@type": "Actual365Fixed"
+    },
+    "compounding": "SimpleThenCompounded",
+    "frequency": "Daily",
+    "discountDate": "1998-11-17",
+    "expected": 0.9556493036785438
+  },
+  {
+    "settlementDate": "1998-05-17",
+    "dividendYield": 0.09,
+    "dayCounter": {
+      "@type": "Actual365Fixed"
+    },
+    "compounding": "SimpleThenCompounded",
+    "frequency": "Annual",
+    "discountDate": "1998-11-17",
+    "expected": 0.9565992242373413
+  },
+  {
+    "settlementDate": "1998-05-17",
+    "dividendYield": 0.09,
+    "dayCounter": {
+      "@type": "Actual365Fixed"
+    },
+    "compounding": "Simple",
+    "frequency": "Daily",
+    "discountDate": "1998-12-17",
+    "expected": 0.9498776869827721
+  },
+  {
+    "settlementDate": "1998-05-17",
+    "dividendYield": 0.09,
+    "dayCounter": {
+      "@type": "Actual365Fixed"
+    },
+    "compounding": "Simple",
+    "frequency": "Annual",
+    "discountDate": "1998-12-17",
+    "expected": 0.9498776869827721
+  },
+  {
+    "settlementDate": "1998-05-17",
+    "dividendYield": 0.09,
+    "dayCounter": {
+      "@type": "Actual365Fixed"
+    },
+    "compounding": "Compounded",
+    "frequency": "Daily",
+    "discountDate": "1998-12-17",
+    "expected": 0.948607063982526
+  },
+  {
+    "settlementDate": "1998-05-17",
+    "dividendYield": 0.09,
+    "dayCounter": {
+      "@type": "Actual365Fixed"
+    },
+    "compounding": "Compounded",
+    "frequency": "Annual",
+    "discountDate": "1998-12-17",
+    "expected": 0.9507291130277481
+  },
+  {
+    "settlementDate": "1998-05-17",
+    "dividendYield": 0.09,
+    "dayCounter": {
+      "@type": "Actual365Fixed"
+    },
+    "compounding": "Continuous",
+    "frequency": "Daily",
+    "discountDate": "1998-12-17",
+    "expected": 0.9486008938197049
+  },
+  {
+    "settlementDate": "1998-05-17",
+    "dividendYield": 0.09,
+    "dayCounter": {
+      "@type": "Actual365Fixed"
+    },
+    "compounding": "Continuous",
+    "frequency": "Annual",
+    "discountDate": "1998-12-17",
+    "expected": 0.9486008938197049
+  },
+  {
+    "settlementDate": "1998-05-17",
+    "dividendYield": 0.09,
+    "dayCounter": {
+      "@type": "Actual365Fixed"
+    },
+    "compounding": "SimpleThenCompounded",
+    "frequency": "Daily",
+    "discountDate": "1998-12-17",
+    "expected": 0.948607063982526
+  },
+  {
+    "settlementDate": "1998-05-17",
+    "dividendYield": 0.09,
+    "dayCounter": {
+      "@type": "Actual365Fixed"
+    },
+    "compounding": "SimpleThenCompounded",
+    "frequency": "Annual",
+    "discountDate": "1998-12-17",
+    "expected": 0.9498776869827721
+  },
+  {
+    "settlementDate": "1998-05-17",
+    "dividendYield": 0.09,
+    "dayCounter": {
+      "@type": "Actual365Fixed"
+    },
+    "compounding": "Simple",
+    "frequency": "Daily",
+    "discountDate": "1999-05-17",
+    "expected": 0.9174311926605504
+  },
+  {
+    "settlementDate": "1998-05-17",
+    "dividendYield": 0.09,
+    "dayCounter": {
+      "@type": "Actual365Fixed"
+    },
+    "compounding": "Simple",
+    "frequency": "Annual",
+    "discountDate": "1999-05-17",
+    "expected": 0.9174311926605504
+  },
+  {
+    "settlementDate": "1998-05-17",
+    "dividendYield": 0.09,
+    "dayCounter": {
+      "@type": "Actual365Fixed"
+    },
+    "compounding": "Compounded",
+    "frequency": "Daily",
+    "discountDate": "1999-05-17",
+    "expected": 0.9139413245410244
+  },
+  {
+    "settlementDate": "1998-05-17",
+    "dividendYield": 0.09,
+    "dayCounter": {
+      "@type": "Actual365Fixed"
+    },
+    "compounding": "Compounded",
+    "frequency": "Annual",
+    "discountDate": "1999-05-17",
+    "expected": 0.9174311926605504
+  },
+  {
+    "settlementDate": "1998-05-17",
+    "dividendYield": 0.09,
+    "dayCounter": {
+      "@type": "Actual365Fixed"
+    },
+    "compounding": "Continuous",
+    "frequency": "Daily",
+    "discountDate": "1999-05-17",
+    "expected": 0.9139311852712282
+  },
+  {
+    "settlementDate": "1998-05-17",
+    "dividendYield": 0.09,
+    "dayCounter": {
+      "@type": "Actual365Fixed"
+    },
+    "compounding": "Continuous",
+    "frequency": "Annual",
+    "discountDate": "1999-05-17",
+    "expected": 0.9139311852712282
+  },
+  {
+    "settlementDate": "1998-05-17",
+    "dividendYield": 0.09,
+    "dayCounter": {
+      "@type": "Actual365Fixed"
+    },
+    "compounding": "SimpleThenCompounded",
+    "frequency": "Daily",
+    "discountDate": "1999-05-17",
+    "expected": 0.9139413245410244
+  },
+  {
+    "settlementDate": "1998-05-17",
+    "dividendYield": 0.09,
+    "dayCounter": {
+      "@type": "Actual365Fixed"
+    },
+    "compounding": "SimpleThenCompounded",
+    "frequency": "Annual",
+    "discountDate": "1999-05-17",
+    "expected": 0.9174311926605504
+  },
+  {
+    "settlementDate": "1998-05-17",
+    "dividendYield": 0.1,
+    "dayCounter": {
+      "@type": "Actual365Fixed"
+    },
+    "compounding": "Simple",
+    "frequency": "Daily",
+    "discountDate": "1998-06-17",
+    "expected": 0.9915783754414561
+  },
+  {
+    "settlementDate": "1998-05-17",
+    "dividendYield": 0.1,
+    "dayCounter": {
+      "@type": "Actual365Fixed"
+    },
+    "compounding": "Simple",
+    "frequency": "Annual",
+    "discountDate": "1998-06-17",
+    "expected": 0.9915783754414561
+  },
+  {
+    "settlementDate": "1998-05-17",
+    "dividendYield": 0.1,
+    "dayCounter": {
+      "@type": "Actual365Fixed"
+    },
+    "compounding": "Compounded",
+    "frequency": "Daily",
+    "discountDate": "1998-06-17",
+    "expected": 0.9915439676246858
+  },
+  {
+    "settlementDate": "1998-05-17",
+    "dividendYield": 0.1,
+    "dayCounter": {
+      "@type": "Actual365Fixed"
+    },
+    "compounding": "Compounded",
+    "frequency": "Annual",
+    "discountDate": "1998-06-17",
+    "expected": 0.9919378377800699
+  },
+  {
+    "settlementDate": "1998-05-17",
+    "dividendYield": 0.1,
+    "dayCounter": {
+      "@type": "Actual365Fixed"
+    },
+    "compounding": "Continuous",
+    "frequency": "Daily",
+    "discountDate": "1998-06-17",
+    "expected": 0.9915428142288472
+  },
+  {
+    "settlementDate": "1998-05-17",
+    "dividendYield": 0.1,
+    "dayCounter": {
+      "@type": "Actual365Fixed"
+    },
+    "compounding": "Continuous",
+    "frequency": "Annual",
+    "discountDate": "1998-06-17",
+    "expected": 0.9915428142288472
+  },
+  {
+    "settlementDate": "1998-05-17",
+    "dividendYield": 0.1,
+    "dayCounter": {
+      "@type": "Actual365Fixed"
+    },
+    "compounding": "SimpleThenCompounded",
+    "frequency": "Daily",
+    "discountDate": "1998-06-17",
+    "expected": 0.9915439676246858
+  },
+  {
+    "settlementDate": "1998-05-17",
+    "dividendYield": 0.1,
+    "dayCounter": {
+      "@type": "Actual365Fixed"
+    },
+    "compounding": "SimpleThenCompounded",
+    "frequency": "Annual",
+    "discountDate": "1998-06-17",
+    "expected": 0.9915783754414561
+  },
+  {
+    "settlementDate": "1998-05-17",
+    "dividendYield": 0.1,
+    "dayCounter": {
+      "@type": "Actual365Fixed"
+    },
+    "compounding": "Simple",
+    "frequency": "Daily",
+    "discountDate": "1998-07-17",
+    "expected": 0.9835623821072487
+  },
+  {
+    "settlementDate": "1998-05-17",
+    "dividendYield": 0.1,
+    "dayCounter": {
+      "@type": "Actual365Fixed"
+    },
+    "compounding": "Simple",
+    "frequency": "Annual",
+    "discountDate": "1998-07-17",
+    "expected": 0.9835623821072487
+  },
+  {
+    "settlementDate": "1998-05-17",
+    "dividendYield": 0.1,
+    "dayCounter": {
+      "@type": "Actual365Fixed"
+    },
+    "compounding": "Compounded",
+    "frequency": "Daily",
+    "discountDate": "1998-07-17",
+    "expected": 0.9834287984835154
+  },
+  {
+    "settlementDate": "1998-05-17",
+    "dividendYield": 0.1,
+    "dayCounter": {
+      "@type": "Actual365Fixed"
+    },
+    "compounding": "Compounded",
+    "frequency": "Annual",
+    "discountDate": "1998-07-17",
+    "expected": 0.984197637876404
+  },
+  {
+    "settlementDate": "1998-05-17",
+    "dividendYield": 0.1,
+    "dayCounter": {
+      "@type": "Actual365Fixed"
+    },
+    "compounding": "Continuous",
+    "frequency": "Daily",
+    "discountDate": "1998-07-17",
+    "expected": 0.9834265474745637
+  },
+  {
+    "settlementDate": "1998-05-17",
+    "dividendYield": 0.1,
+    "dayCounter": {
+      "@type": "Actual365Fixed"
+    },
+    "compounding": "Continuous",
+    "frequency": "Annual",
+    "discountDate": "1998-07-17",
+    "expected": 0.9834265474745637
+  },
+  {
+    "settlementDate": "1998-05-17",
+    "dividendYield": 0.1,
+    "dayCounter": {
+      "@type": "Actual365Fixed"
+    },
+    "compounding": "SimpleThenCompounded",
+    "frequency": "Daily",
+    "discountDate": "1998-07-17",
+    "expected": 0.9834287984835154
+  },
+  {
+    "settlementDate": "1998-05-17",
+    "dividendYield": 0.1,
+    "dayCounter": {
+      "@type": "Actual365Fixed"
+    },
+    "compounding": "SimpleThenCompounded",
+    "frequency": "Annual",
+    "discountDate": "1998-07-17",
+    "expected": 0.9835623821072487
+  },
+  {
+    "settlementDate": "1998-05-17",
+    "dividendYield": 0.1,
+    "dayCounter": {
+      "@type": "Actual365Fixed"
+    },
+    "compounding": "Simple",
+    "frequency": "Daily",
+    "discountDate": "1998-08-17",
+    "expected": 0.9754142169962586
+  },
+  {
+    "settlementDate": "1998-05-17",
+    "dividendYield": 0.1,
+    "dayCounter": {
+      "@type": "Actual365Fixed"
+    },
+    "compounding": "Simple",
+    "frequency": "Annual",
+    "discountDate": "1998-08-17",
+    "expected": 0.9754142169962586
+  },
+  {
+    "settlementDate": "1998-05-17",
+    "dividendYield": 0.1,
+    "dayCounter": {
+      "@type": "Actual365Fixed"
+    },
+    "compounding": "Compounded",
+    "frequency": "Daily",
+    "discountDate": "1998-08-17",
+    "expected": 0.9751128927247223
+  },
+  {
+    "settlementDate": "1998-05-17",
+    "dividendYield": 0.1,
+    "dayCounter": {
+      "@type": "Actual365Fixed"
+    },
+    "compounding": "Compounded",
+    "frequency": "Annual",
+    "discountDate": "1998-08-17",
+    "expected": 0.9762628768633725
+  },
+  {
+    "settlementDate": "1998-05-17",
+    "dividendYield": 0.1,
+    "dayCounter": {
+      "@type": "Actual365Fixed"
+    },
+    "compounding": "Continuous",
+    "frequency": "Daily",
+    "discountDate": "1998-08-17",
+    "expected": 0.9751095264702879
+  },
+  {
+    "settlementDate": "1998-05-17",
+    "dividendYield": 0.1,
+    "dayCounter": {
+      "@type": "Actual365Fixed"
+    },
+    "compounding": "Continuous",
+    "frequency": "Annual",
+    "discountDate": "1998-08-17",
+    "expected": 0.9751095264702879
+  },
+  {
+    "settlementDate": "1998-05-17",
+    "dividendYield": 0.1,
+    "dayCounter": {
+      "@type": "Actual365Fixed"
+    },
+    "compounding": "SimpleThenCompounded",
+    "frequency": "Daily",
+    "discountDate": "1998-08-17",
+    "expected": 0.9751128927247223
+  },
+  {
+    "settlementDate": "1998-05-17",
+    "dividendYield": 0.1,
+    "dayCounter": {
+      "@type": "Actual365Fixed"
+    },
+    "compounding": "SimpleThenCompounded",
+    "frequency": "Annual",
+    "discountDate": "1998-08-17",
+    "expected": 0.9754142169962586
+  },
+  {
+    "settlementDate": "1998-05-17",
+    "dividendYield": 0.1,
+    "dayCounter": {
+      "@type": "Actual365Fixed"
+    },
+    "compounding": "Simple",
+    "frequency": "Daily",
+    "discountDate": "1998-09-17",
+    "expected": 0.9673999469917837
+  },
+  {
+    "settlementDate": "1998-05-17",
+    "dividendYield": 0.1,
+    "dayCounter": {
+      "@type": "Actual365Fixed"
+    },
+    "compounding": "Simple",
+    "frequency": "Annual",
+    "discountDate": "1998-09-17",
+    "expected": 0.9673999469917837
+  },
+  {
+    "settlementDate": "1998-05-17",
+    "dividendYield": 0.1,
+    "dayCounter": {
+      "@type": "Actual365Fixed"
+    },
+    "compounding": "Compounded",
+    "frequency": "Daily",
+    "discountDate": "1998-09-17",
+    "expected": 0.9668673065342558
+  },
+  {
+    "settlementDate": "1998-05-17",
+    "dividendYield": 0.1,
+    "dayCounter": {
+      "@type": "Actual365Fixed"
+    },
+    "compounding": "Compounded",
+    "frequency": "Annual",
+    "discountDate": "1998-09-17",
+    "expected": 0.9683920871808044
+  },
+  {
+    "settlementDate": "1998-05-17",
+    "dividendYield": 0.1,
+    "dayCounter": {
+      "@type": "Actual365Fixed"
+    },
+    "compounding": "Continuous",
+    "frequency": "Daily",
+    "discountDate": "1998-09-17",
+    "expected": 0.9668628440577077
+  },
+  {
+    "settlementDate": "1998-05-17",
+    "dividendYield": 0.1,
+    "dayCounter": {
+      "@type": "Actual365Fixed"
+    },
+    "compounding": "Continuous",
+    "frequency": "Annual",
+    "discountDate": "1998-09-17",
+    "expected": 0.9668628440577077
+  },
+  {
+    "settlementDate": "1998-05-17",
+    "dividendYield": 0.1,
+    "dayCounter": {
+      "@type": "Actual365Fixed"
+    },
+    "compounding": "SimpleThenCompounded",
+    "frequency": "Daily",
+    "discountDate": "1998-09-17",
+    "expected": 0.9668673065342558
+  },
+  {
+    "settlementDate": "1998-05-17",
+    "dividendYield": 0.1,
+    "dayCounter": {
+      "@type": "Actual365Fixed"
+    },
+    "compounding": "SimpleThenCompounded",
+    "frequency": "Annual",
+    "discountDate": "1998-09-17",
+    "expected": 0.9673999469917837
+  },
+  {
+    "settlementDate": "1998-05-17",
+    "dividendYield": 0.1,
+    "dayCounter": {
+      "@type": "Actual365Fixed"
+    },
+    "compounding": "Simple",
+    "frequency": "Daily",
+    "discountDate": "1998-10-17",
+    "expected": 0.9597686037338944
+  },
+  {
+    "settlementDate": "1998-05-17",
+    "dividendYield": 0.1,
+    "dayCounter": {
+      "@type": "Actual365Fixed"
+    },
+    "compounding": "Simple",
+    "frequency": "Annual",
+    "discountDate": "1998-10-17",
+    "expected": 0.9597686037338944
+  },
+  {
+    "settlementDate": "1998-05-17",
+    "dividendYield": 0.1,
+    "dayCounter": {
+      "@type": "Actual365Fixed"
+    },
+    "compounding": "Compounded",
+    "frequency": "Daily",
+    "discountDate": "1998-10-17",
+    "expected": 0.9589541004780586
+  },
+  {
+    "settlementDate": "1998-05-17",
+    "dividendYield": 0.1,
+    "dayCounter": {
+      "@type": "Actual365Fixed"
+    },
+    "compounding": "Compounded",
+    "frequency": "Annual",
+    "discountDate": "1998-10-17",
+    "expected": 0.9608356173553539
+  },
+  {
+    "settlementDate": "1998-05-17",
+    "dividendYield": 0.1,
+    "dayCounter": {
+      "@type": "Actual365Fixed"
+    },
+    "compounding": "Continuous",
+    "frequency": "Daily",
+    "discountDate": "1998-10-17",
+    "expected": 0.9589485950262319
+  },
+  {
+    "settlementDate": "1998-05-17",
+    "dividendYield": 0.1,
+    "dayCounter": {
+      "@type": "Actual365Fixed"
+    },
+    "compounding": "Continuous",
+    "frequency": "Annual",
+    "discountDate": "1998-10-17",
+    "expected": 0.9589485950262319
+  },
+  {
+    "settlementDate": "1998-05-17",
+    "dividendYield": 0.1,
+    "dayCounter": {
+      "@type": "Actual365Fixed"
+    },
+    "compounding": "SimpleThenCompounded",
+    "frequency": "Daily",
+    "discountDate": "1998-10-17",
+    "expected": 0.9589541004780586
+  },
+  {
+    "settlementDate": "1998-05-17",
+    "dividendYield": 0.1,
+    "dayCounter": {
+      "@type": "Actual365Fixed"
+    },
+    "compounding": "SimpleThenCompounded",
+    "frequency": "Annual",
+    "discountDate": "1998-10-17",
+    "expected": 0.9597686037338944
+  },
+  {
+    "settlementDate": "1998-05-17",
+    "dividendYield": 0.1,
+    "dayCounter": {
+      "@type": "Actual365Fixed"
+    },
+    "compounding": "Simple",
+    "frequency": "Daily",
+    "discountDate": "1998-11-17",
+    "expected": 0.9520083463745437
+  },
+  {
+    "settlementDate": "1998-05-17",
+    "dividendYield": 0.1,
+    "dayCounter": {
+      "@type": "Actual365Fixed"
+    },
+    "compounding": "Simple",
+    "frequency": "Annual",
+    "discountDate": "1998-11-17",
+    "expected": 0.9520083463745437
+  },
+  {
+    "settlementDate": "1998-05-17",
+    "dividendYield": 0.1,
+    "dayCounter": {
+      "@type": "Actual365Fixed"
+    },
+    "compounding": "Compounded",
+    "frequency": "Daily",
+    "discountDate": "1998-11-17",
+    "expected": 0.9508451535579759
+  },
+  {
+    "settlementDate": "1998-05-17",
+    "dividendYield": 0.1,
+    "dayCounter": {
+      "@type": "Actual365Fixed"
+    },
+    "compounding": "Compounded",
+    "frequency": "Annual",
+    "discountDate": "1998-11-17",
+    "expected": 0.9530892047415485
+  },
+  {
+    "settlementDate": "1998-05-17",
+    "dividendYield": 0.1,
+    "dayCounter": {
+      "@type": "Actual365Fixed"
+    },
+    "compounding": "Continuous",
+    "frequency": "Daily",
+    "discountDate": "1998-11-17",
+    "expected": 0.950838588613109
+  },
+  {
+    "settlementDate": "1998-05-17",
+    "dividendYield": 0.1,
+    "dayCounter": {
+      "@type": "Actual365Fixed"
+    },
+    "compounding": "Continuous",
+    "frequency": "Annual",
+    "discountDate": "1998-11-17",
+    "expected": 0.950838588613109
+  },
+  {
+    "settlementDate": "1998-05-17",
+    "dividendYield": 0.1,
+    "dayCounter": {
+      "@type": "Actual365Fixed"
+    },
+    "compounding": "SimpleThenCompounded",
+    "frequency": "Daily",
+    "discountDate": "1998-11-17",
+    "expected": 0.9508451535579759
+  },
+  {
+    "settlementDate": "1998-05-17",
+    "dividendYield": 0.1,
+    "dayCounter": {
+      "@type": "Actual365Fixed"
+    },
+    "compounding": "SimpleThenCompounded",
+    "frequency": "Annual",
+    "discountDate": "1998-11-17",
+    "expected": 0.9520083463745437
+  },
+  {
+    "settlementDate": "1998-05-17",
+    "dividendYield": 0.1,
+    "dayCounter": {
+      "@type": "Actual365Fixed"
+    },
+    "compounding": "Simple",
+    "frequency": "Daily",
+    "discountDate": "1998-12-17",
+    "expected": 0.9446169772256728
+  },
+  {
+    "settlementDate": "1998-05-17",
+    "dividendYield": 0.1,
+    "dayCounter": {
+      "@type": "Actual365Fixed"
+    },
+    "compounding": "Simple",
+    "frequency": "Annual",
+    "discountDate": "1998-12-17",
+    "expected": 0.9446169772256728
+  },
+  {
+    "settlementDate": "1998-05-17",
+    "dividendYield": 0.1,
+    "dayCounter": {
+      "@type": "Actual365Fixed"
+    },
+    "compounding": "Compounded",
+    "frequency": "Daily",
+    "discountDate": "1998-12-17",
+    "expected": 0.9430630788339776
+  },
+  {
+    "settlementDate": "1998-05-17",
+    "dividendYield": 0.1,
+    "dayCounter": {
+      "@type": "Actual365Fixed"
+    },
+    "compounding": "Compounded",
+    "frequency": "Annual",
+    "discountDate": "1998-12-17",
+    "expected": 0.9456521449886558
+  },
+  {
+    "settlementDate": "1998-05-17",
+    "dividendYield": 0.1,
+    "dayCounter": {
+      "@type": "Actual365Fixed"
+    },
+    "compounding": "Continuous",
+    "frequency": "Daily",
+    "discountDate": "1998-12-17",
+    "expected": 0.9430555060122308
+  },
+  {
+    "settlementDate": "1998-05-17",
+    "dividendYield": 0.1,
+    "dayCounter": {
+      "@type": "Actual365Fixed"
+    },
+    "compounding": "Continuous",
+    "frequency": "Annual",
+    "discountDate": "1998-12-17",
+    "expected": 0.9430555060122308
+  },
+  {
+    "settlementDate": "1998-05-17",
+    "dividendYield": 0.1,
+    "dayCounter": {
+      "@type": "Actual365Fixed"
+    },
+    "compounding": "SimpleThenCompounded",
+    "frequency": "Daily",
+    "discountDate": "1998-12-17",
+    "expected": 0.9430630788339776
+  },
+  {
+    "settlementDate": "1998-05-17",
+    "dividendYield": 0.1,
+    "dayCounter": {
+      "@type": "Actual365Fixed"
+    },
+    "compounding": "SimpleThenCompounded",
+    "frequency": "Annual",
+    "discountDate": "1998-12-17",
+    "expected": 0.9446169772256728
+  },
+  {
+    "settlementDate": "1998-05-17",
+    "dividendYield": 0.1,
+    "dayCounter": {
+      "@type": "Actual365Fixed"
+    },
+    "compounding": "Simple",
+    "frequency": "Daily",
+    "discountDate": "1999-05-17",
+    "expected": 0.9090909090909091
+  },
+  {
+    "settlementDate": "1998-05-17",
+    "dividendYield": 0.1,
+    "dayCounter": {
+      "@type": "Actual365Fixed"
+    },
+    "compounding": "Simple",
+    "frequency": "Annual",
+    "discountDate": "1999-05-17",
+    "expected": 0.9090909090909091
+  },
+  {
+    "settlementDate": "1998-05-17",
+    "dividendYield": 0.1,
+    "dayCounter": {
+      "@type": "Actual365Fixed"
+    },
+    "compounding": "Compounded",
+    "frequency": "Daily",
+    "discountDate": "1999-05-17",
+    "expected": 0.9048498108905084
+  },
+  {
+    "settlementDate": "1998-05-17",
+    "dividendYield": 0.1,
+    "dayCounter": {
+      "@type": "Actual365Fixed"
+    },
+    "compounding": "Compounded",
+    "frequency": "Annual",
+    "discountDate": "1999-05-17",
+    "expected": 0.9090909090909091
+  },
+  {
+    "settlementDate": "1998-05-17",
+    "dividendYield": 0.1,
+    "dayCounter": {
+      "@type": "Actual365Fixed"
+    },
+    "compounding": "Continuous",
+    "frequency": "Daily",
+    "discountDate": "1999-05-17",
+    "expected": 0.9048374180359595
+  },
+  {
+    "settlementDate": "1998-05-17",
+    "dividendYield": 0.1,
+    "dayCounter": {
+      "@type": "Actual365Fixed"
+    },
+    "compounding": "Continuous",
+    "frequency": "Annual",
+    "discountDate": "1999-05-17",
+    "expected": 0.9048374180359595
+  },
+  {
+    "settlementDate": "1998-05-17",
+    "dividendYield": 0.1,
+    "dayCounter": {
+      "@type": "Actual365Fixed"
+    },
+    "compounding": "SimpleThenCompounded",
+    "frequency": "Daily",
+    "discountDate": "1999-05-17",
+    "expected": 0.9048498108905084
+  },
+  {
+    "settlementDate": "1998-05-17",
+    "dividendYield": 0.1,
+    "dayCounter": {
+      "@type": "Actual365Fixed"
+    },
+    "compounding": "SimpleThenCompounded",
+    "frequency": "Annual",
+    "discountDate": "1999-05-17",
+    "expected": 0.9090909090909091
+  },
+  {
+    "settlementDate": "1998-05-17",
+    "dividendYield": 0.11,
+    "dayCounter": {
+      "@type": "Actual365Fixed"
+    },
+    "compounding": "Simple",
+    "frequency": "Daily",
+    "discountDate": "1998-06-17",
+    "expected": 0.9907440080345268
+  },
+  {
+    "settlementDate": "1998-05-17",
+    "dividendYield": 0.11,
+    "dayCounter": {
+      "@type": "Actual365Fixed"
+    },
+    "compounding": "Simple",
+    "frequency": "Annual",
+    "discountDate": "1998-06-17",
+    "expected": 0.9907440080345268
+  },
+  {
+    "settlementDate": "1998-05-17",
+    "dividendYield": 0.11,
+    "dayCounter": {
+      "@type": "Actual365Fixed"
+    },
+    "compounding": "Compounded",
+    "frequency": "Daily",
+    "discountDate": "1998-06-17",
+    "expected": 0.9907024338911128
+  },
+  {
+    "settlementDate": "1998-05-17",
+    "dividendYield": 0.11,
+    "dayCounter": {
+      "@type": "Actual365Fixed"
+    },
+    "compounding": "Compounded",
+    "frequency": "Annual",
+    "discountDate": "1998-06-17",
+    "expected": 0.9911757112497581
+  },
+  {
+    "settlementDate": "1998-05-17",
+    "dividendYield": 0.11,
+    "dayCounter": {
+      "@type": "Actual365Fixed"
+    },
+    "compounding": "Continuous",
+    "frequency": "Daily",
+    "discountDate": "1998-06-17",
+    "expected": 0.9907010394922507
+  },
+  {
+    "settlementDate": "1998-05-17",
+    "dividendYield": 0.11,
+    "dayCounter": {
+      "@type": "Actual365Fixed"
+    },
+    "compounding": "Continuous",
+    "frequency": "Annual",
+    "discountDate": "1998-06-17",
+    "expected": 0.9907010394922507
+  },
+  {
+    "settlementDate": "1998-05-17",
+    "dividendYield": 0.11,
+    "dayCounter": {
+      "@type": "Actual365Fixed"
+    },
+    "compounding": "SimpleThenCompounded",
+    "frequency": "Daily",
+    "discountDate": "1998-06-17",
+    "expected": 0.9907024338911128
+  },
+  {
+    "settlementDate": "1998-05-17",
+    "dividendYield": 0.11,
+    "dayCounter": {
+      "@type": "Actual365Fixed"
+    },
+    "compounding": "SimpleThenCompounded",
+    "frequency": "Annual",
+    "discountDate": "1998-06-17",
+    "expected": 0.9907440080345268
+  },
+  {
+    "settlementDate": "1998-05-17",
+    "dividendYield": 0.11,
+    "dayCounter": {
+      "@type": "Actual365Fixed"
+    },
+    "compounding": "Simple",
+    "frequency": "Daily",
+    "discountDate": "1998-07-17",
+    "expected": 0.9819482930241317
+  },
+  {
+    "settlementDate": "1998-05-17",
+    "dividendYield": 0.11,
+    "dayCounter": {
+      "@type": "Actual365Fixed"
+    },
+    "compounding": "Simple",
+    "frequency": "Annual",
+    "discountDate": "1998-07-17",
+    "expected": 0.9819482930241317
+  },
+  {
+    "settlementDate": "1998-05-17",
+    "dividendYield": 0.11,
+    "dayCounter": {
+      "@type": "Actual365Fixed"
+    },
+    "compounding": "Compounded",
+    "frequency": "Daily",
+    "discountDate": "1998-07-17",
+    "expected": 0.9817871044201776
+  },
+  {
+    "settlementDate": "1998-05-17",
+    "dividendYield": 0.11,
+    "dayCounter": {
+      "@type": "Actual365Fixed"
+    },
+    "compounding": "Compounded",
+    "frequency": "Annual",
+    "discountDate": "1998-07-17",
+    "expected": 0.9827102248023429
+  },
+  {
+    "settlementDate": "1998-05-17",
+    "dividendYield": 0.11,
+    "dayCounter": {
+      "@type": "Actual365Fixed"
+    },
+    "compounding": "Continuous",
+    "frequency": "Daily",
+    "discountDate": "1998-07-17",
+    "expected": 0.9817843852965189
+  },
+  {
+    "settlementDate": "1998-05-17",
+    "dividendYield": 0.11,
+    "dayCounter": {
+      "@type": "Actual365Fixed"
+    },
+    "compounding": "Continuous",
+    "frequency": "Annual",
+    "discountDate": "1998-07-17",
+    "expected": 0.9817843852965189
+  },
+  {
+    "settlementDate": "1998-05-17",
+    "dividendYield": 0.11,
+    "dayCounter": {
+      "@type": "Actual365Fixed"
+    },
+    "compounding": "SimpleThenCompounded",
+    "frequency": "Daily",
+    "discountDate": "1998-07-17",
+    "expected": 0.9817871044201776
+  },
+  {
+    "settlementDate": "1998-05-17",
+    "dividendYield": 0.11,
+    "dayCounter": {
+      "@type": "Actual365Fixed"
+    },
+    "compounding": "SimpleThenCompounded",
+    "frequency": "Annual",
+    "discountDate": "1998-07-17",
+    "expected": 0.9819482930241317
+  },
+  {
+    "settlementDate": "1998-05-17",
+    "dividendYield": 0.11,
+    "dayCounter": {
+      "@type": "Actual365Fixed"
+    },
+    "compounding": "Simple",
+    "frequency": "Daily",
+    "discountDate": "1998-08-17",
+    "expected": 0.973021966304116
+  },
+  {
+    "settlementDate": "1998-05-17",
+    "dividendYield": 0.11,
+    "dayCounter": {
+      "@type": "Actual365Fixed"
+    },
+    "compounding": "Simple",
+    "frequency": "Annual",
+    "discountDate": "1998-08-17",
+    "expected": 0.973021966304116
+  },
+  {
+    "settlementDate": "1998-05-17",
+    "dividendYield": 0.11,
+    "dayCounter": {
+      "@type": "Actual365Fixed"
+    },
+    "compounding": "Compounded",
+    "frequency": "Daily",
+    "discountDate": "1998-08-17",
+    "expected": 0.972658873911978
+  },
+  {
+    "settlementDate": "1998-05-17",
+    "dividendYield": 0.11,
+    "dayCounter": {
+      "@type": "Actual365Fixed"
+    },
+    "compounding": "Compounded",
+    "frequency": "Annual",
+    "discountDate": "1998-08-17",
+    "expected": 0.9740385060208723
+  },
+  {
+    "settlementDate": "1998-05-17",
+    "dividendYield": 0.11,
+    "dayCounter": {
+      "@type": "Actual365Fixed"
+    },
+    "compounding": "Continuous",
+    "frequency": "Daily",
+    "discountDate": "1998-08-17",
+    "expected": 0.9726548110705217
+  },
+  {
+    "settlementDate": "1998-05-17",
+    "dividendYield": 0.11,
+    "dayCounter": {
+      "@type": "Actual365Fixed"
+    },
+    "compounding": "Continuous",
+    "frequency": "Annual",
+    "discountDate": "1998-08-17",
+    "expected": 0.9726548110705217
+  },
+  {
+    "settlementDate": "1998-05-17",
+    "dividendYield": 0.11,
+    "dayCounter": {
+      "@type": "Actual365Fixed"
+    },
+    "compounding": "SimpleThenCompounded",
+    "frequency": "Daily",
+    "discountDate": "1998-08-17",
+    "expected": 0.972658873911978
+  },
+  {
+    "settlementDate": "1998-05-17",
+    "dividendYield": 0.11,
+    "dayCounter": {
+      "@type": "Actual365Fixed"
+    },
+    "compounding": "SimpleThenCompounded",
+    "frequency": "Annual",
+    "discountDate": "1998-08-17",
+    "expected": 0.973021966304116
+  },
+  {
+    "settlementDate": "1998-05-17",
+    "dividendYield": 0.11,
+    "dayCounter": {
+      "@type": "Actual365Fixed"
+    },
+    "compounding": "Simple",
+    "frequency": "Daily",
+    "discountDate": "1998-09-17",
+    "expected": 0.964256465801918
+  },
+  {
+    "settlementDate": "1998-05-17",
+    "dividendYield": 0.11,
+    "dayCounter": {
+      "@type": "Actual365Fixed"
+    },
+    "compounding": "Simple",
+    "frequency": "Annual",
+    "discountDate": "1998-09-17",
+    "expected": 0.964256465801918
+  },
+  {
+    "settlementDate": "1998-05-17",
+    "dividendYield": 0.11,
+    "dayCounter": {
+      "@type": "Actual365Fixed"
+    },
+    "compounding": "Compounded",
+    "frequency": "Daily",
+    "discountDate": "1998-09-17",
+    "expected": 0.9636155137303859
+  },
+  {
+    "settlementDate": "1998-05-17",
+    "dividendYield": 0.11,
+    "dayCounter": {
+      "@type": "Actual365Fixed"
+    },
+    "compounding": "Compounded",
+    "frequency": "Annual",
+    "discountDate": "1998-09-17",
+    "expected": 0.96544330898989
+  },
+  {
+    "settlementDate": "1998-05-17",
+    "dividendYield": 0.11,
+    "dayCounter": {
+      "@type": "Actual365Fixed"
+    },
+    "compounding": "Continuous",
+    "frequency": "Daily",
+    "discountDate": "1998-09-17",
+    "expected": 0.9636101323947046
+  },
+  {
+    "settlementDate": "1998-05-17",
+    "dividendYield": 0.11,
+    "dayCounter": {
+      "@type": "Actual365Fixed"
+    },
+    "compounding": "Continuous",
+    "frequency": "Annual",
+    "discountDate": "1998-09-17",
+    "expected": 0.9636101323947046
+  },
+  {
+    "settlementDate": "1998-05-17",
+    "dividendYield": 0.11,
+    "dayCounter": {
+      "@type": "Actual365Fixed"
+    },
+    "compounding": "SimpleThenCompounded",
+    "frequency": "Daily",
+    "discountDate": "1998-09-17",
+    "expected": 0.9636155137303859
+  },
+  {
+    "settlementDate": "1998-05-17",
+    "dividendYield": 0.11,
+    "dayCounter": {
+      "@type": "Actual365Fixed"
+    },
+    "compounding": "SimpleThenCompounded",
+    "frequency": "Annual",
+    "discountDate": "1998-09-17",
+    "expected": 0.964256465801918
+  },
+  {
+    "settlementDate": "1998-05-17",
+    "dividendYield": 0.11,
+    "dayCounter": {
+      "@type": "Actual365Fixed"
+    },
+    "compounding": "Simple",
+    "frequency": "Daily",
+    "discountDate": "1998-10-17",
+    "expected": 0.9559227928659352
+  },
+  {
+    "settlementDate": "1998-05-17",
+    "dividendYield": 0.11,
+    "dayCounter": {
+      "@type": "Actual365Fixed"
+    },
+    "compounding": "Simple",
+    "frequency": "Annual",
+    "discountDate": "1998-10-17",
+    "expected": 0.9559227928659352
+  },
+  {
+    "settlementDate": "1998-05-17",
+    "dividendYield": 0.11,
+    "dayCounter": {
+      "@type": "Actual365Fixed"
+    },
+    "compounding": "Compounded",
+    "frequency": "Daily",
+    "discountDate": "1998-10-17",
+    "expected": 0.9549439394066316
+  },
+  {
+    "settlementDate": "1998-05-17",
+    "dividendYield": 0.11,
+    "dayCounter": {
+      "@type": "Actual365Fixed"
+    },
+    "compounding": "Compounded",
+    "frequency": "Annual",
+    "discountDate": "1998-10-17",
+    "expected": 0.9571975992179097
+  },
+  {
+    "settlementDate": "1998-05-17",
+    "dividendYield": 0.11,
+    "dayCounter": {
+      "@type": "Actual365Fixed"
+    },
+    "compounding": "Continuous",
+    "frequency": "Daily",
+    "discountDate": "1998-10-17",
+    "expected": 0.9549373057925736
+  },
+  {
+    "settlementDate": "1998-05-17",
+    "dividendYield": 0.11,
+    "dayCounter": {
+      "@type": "Actual365Fixed"
+    },
+    "compounding": "Continuous",
+    "frequency": "Annual",
+    "discountDate": "1998-10-17",
+    "expected": 0.9549373057925736
+  },
+  {
+    "settlementDate": "1998-05-17",
+    "dividendYield": 0.11,
+    "dayCounter": {
+      "@type": "Actual365Fixed"
+    },
+    "compounding": "SimpleThenCompounded",
+    "frequency": "Daily",
+    "discountDate": "1998-10-17",
+    "expected": 0.9549439394066316
+  },
+  {
+    "settlementDate": "1998-05-17",
+    "dividendYield": 0.11,
+    "dayCounter": {
+      "@type": "Actual365Fixed"
+    },
+    "compounding": "SimpleThenCompounded",
+    "frequency": "Annual",
+    "discountDate": "1998-10-17",
+    "expected": 0.9559227928659352
+  },
+  {
+    "settlementDate": "1998-05-17",
+    "dividendYield": 0.11,
+    "dayCounter": {
+      "@type": "Actual365Fixed"
+    },
+    "compounding": "Simple",
+    "frequency": "Daily",
+    "discountDate": "1998-11-17",
+    "expected": 0.9474613228117538
+  },
+  {
+    "settlementDate": "1998-05-17",
+    "dividendYield": 0.11,
+    "dayCounter": {
+      "@type": "Actual365Fixed"
+    },
+    "compounding": "Simple",
+    "frequency": "Annual",
+    "discountDate": "1998-11-17",
+    "expected": 0.9474613228117538
+  },
+  {
+    "settlementDate": "1998-05-17",
+    "dividendYield": 0.11,
+    "dayCounter": {
+      "@type": "Actual365Fixed"
+    },
+    "compounding": "Compounded",
+    "frequency": "Daily",
+    "discountDate": "1998-11-17",
+    "expected": 0.9460652849997172
+  },
+  {
+    "settlementDate": "1998-05-17",
+    "dividendYield": 0.11,
+    "dayCounter": {
+      "@type": "Actual365Fixed"
+    },
+    "compounding": "Compounded",
+    "frequency": "Annual",
+    "discountDate": "1998-11-17",
+    "expected": 0.9487510112113726
+  },
+  {
+    "settlementDate": "1998-05-17",
+    "dividendYield": 0.11,
+    "dayCounter": {
+      "@type": "Actual365Fixed"
+    },
+    "compounding": "Continuous",
+    "frequency": "Daily",
+    "discountDate": "1998-11-17",
+    "expected": 0.946057381498632
+  },
+  {
+    "settlementDate": "1998-05-17",
+    "dividendYield": 0.11,
+    "dayCounter": {
+      "@type": "Actual365Fixed"
+    },
+    "compounding": "Continuous",
+    "frequency": "Annual",
+    "discountDate": "1998-11-17",
+    "expected": 0.946057381498632
+  },
+  {
+    "settlementDate": "1998-05-17",
+    "dividendYield": 0.11,
+    "dayCounter": {
+      "@type": "Actual365Fixed"
+    },
+    "compounding": "SimpleThenCompounded",
+    "frequency": "Daily",
+    "discountDate": "1998-11-17",
+    "expected": 0.9460652849997172
+  },
+  {
+    "settlementDate": "1998-05-17",
+    "dividendYield": 0.11,
+    "dayCounter": {
+      "@type": "Actual365Fixed"
+    },
+    "compounding": "SimpleThenCompounded",
+    "frequency": "Annual",
+    "discountDate": "1998-11-17",
+    "expected": 0.9474613228117538
+  },
+  {
+    "settlementDate": "1998-05-17",
+    "dividendYield": 0.11,
+    "dayCounter": {
+      "@type": "Actual365Fixed"
+    },
+    "compounding": "Simple",
+    "frequency": "Daily",
+    "discountDate": "1998-12-17",
+    "expected": 0.9394142173264014
+  },
+  {
+    "settlementDate": "1998-05-17",
+    "dividendYield": 0.11,
+    "dayCounter": {
+      "@type": "Actual365Fixed"
+    },
+    "compounding": "Simple",
+    "frequency": "Annual",
+    "discountDate": "1998-12-17",
+    "expected": 0.9394142173264014
+  },
+  {
+    "settlementDate": "1998-05-17",
+    "dividendYield": 0.11,
+    "dayCounter": {
+      "@type": "Actual365Fixed"
+    },
+    "compounding": "Compounded",
+    "frequency": "Daily",
+    "discountDate": "1998-12-17",
+    "expected": 0.9375516451536343
+  },
+  {
+    "settlementDate": "1998-05-17",
+    "dividendYield": 0.11,
+    "dayCounter": {
+      "@type": "Actual365Fixed"
+    },
+    "compounding": "Compounded",
+    "frequency": "Annual",
+    "discountDate": "1998-12-17",
+    "expected": 0.9406478679076948
+  },
+  {
+    "settlementDate": "1998-05-17",
+    "dividendYield": 0.11,
+    "dayCounter": {
+      "@type": "Actual365Fixed"
+    },
+    "compounding": "Continuous",
+    "frequency": "Daily",
+    "discountDate": "1998-12-17",
+    "expected": 0.9375425357642758
+  },
+  {
+    "settlementDate": "1998-05-17",
+    "dividendYield": 0.11,
+    "dayCounter": {
+      "@type": "Actual365Fixed"
+    },
+    "compounding": "Continuous",
+    "frequency": "Annual",
+    "discountDate": "1998-12-17",
+    "expected": 0.9375425357642758
+  },
+  {
+    "settlementDate": "1998-05-17",
+    "dividendYield": 0.11,
+    "dayCounter": {
+      "@type": "Actual365Fixed"
+    },
+    "compounding": "SimpleThenCompounded",
+    "frequency": "Daily",
+    "discountDate": "1998-12-17",
+    "expected": 0.9375516451536343
+  },
+  {
+    "settlementDate": "1998-05-17",
+    "dividendYield": 0.11,
+    "dayCounter": {
+      "@type": "Actual365Fixed"
+    },
+    "compounding": "SimpleThenCompounded",
+    "frequency": "Annual",
+    "discountDate": "1998-12-17",
+    "expected": 0.9394142173264014
+  },
+  {
+    "settlementDate": "1998-05-17",
+    "dividendYield": 0.11,
+    "dayCounter": {
+      "@type": "Actual365Fixed"
+    },
+    "compounding": "Simple",
+    "frequency": "Daily",
+    "discountDate": "1999-05-17",
+    "expected": 0.9009009009009008
+  },
+  {
+    "settlementDate": "1998-05-17",
+    "dividendYield": 0.11,
+    "dayCounter": {
+      "@type": "Actual365Fixed"
+    },
+    "compounding": "Simple",
+    "frequency": "Annual",
+    "discountDate": "1999-05-17",
+    "expected": 0.9009009009009008
+  },
+  {
+    "settlementDate": "1998-05-17",
+    "dividendYield": 0.11,
+    "dayCounter": {
+      "@type": "Actual365Fixed"
+    },
+    "compounding": "Compounded",
+    "frequency": "Daily",
+    "discountDate": "1999-05-17",
+    "expected": 0.8958489811945022
+  },
+  {
+    "settlementDate": "1998-05-17",
+    "dividendYield": 0.11,
+    "dayCounter": {
+      "@type": "Actual365Fixed"
+    },
+    "compounding": "Compounded",
+    "frequency": "Annual",
+    "discountDate": "1999-05-17",
+    "expected": 0.9009009009009008
+  },
+  {
+    "settlementDate": "1998-05-17",
+    "dividendYield": 0.11,
+    "dayCounter": {
+      "@type": "Actual365Fixed"
+    },
+    "compounding": "Continuous",
+    "frequency": "Daily",
+    "discountDate": "1999-05-17",
+    "expected": 0.8958341352965282
+  },
+  {
+    "settlementDate": "1998-05-17",
+    "dividendYield": 0.11,
+    "dayCounter": {
+      "@type": "Actual365Fixed"
+    },
+    "compounding": "Continuous",
+    "frequency": "Annual",
+    "discountDate": "1999-05-17",
+    "expected": 0.8958341352965282
+  },
+  {
+    "settlementDate": "1998-05-17",
+    "dividendYield": 0.11,
+    "dayCounter": {
+      "@type": "Actual365Fixed"
+    },
+    "compounding": "SimpleThenCompounded",
+    "frequency": "Daily",
+    "discountDate": "1999-05-17",
+    "expected": 0.8958489811945022
+  },
+  {
+    "settlementDate": "1998-05-17",
+    "dividendYield": 0.11,
+    "dayCounter": {
+      "@type": "Actual365Fixed"
+    },
+    "compounding": "SimpleThenCompounded",
+    "frequency": "Annual",
+    "discountDate": "1999-05-17",
+    "expected": 0.9009009009009008
+  }
+]
