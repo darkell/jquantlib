@@ -1,9 +1,6 @@
 package org.jquantlib.dayCounter
 
-import org.jquantlib.daycounters.Actual360
-import org.jquantlib.daycounters.Actual365Fixed
-import org.jquantlib.daycounters.SimpleDayCounter
-import org.jquantlib.daycounters.Thirty360
+import org.jquantlib.daycounters.*
 import org.junit.Assert.assertEquals
 import org.junit.Test
 import java.time.LocalDate
@@ -12,6 +9,8 @@ import org.jquantlib.utils.Convertors.toQl
 class DayCounterInternalTest {
 
   private val dayCounterPairs = listOf(
+      ActualActual(ActualActual.Convention.AFB) to DayCounterInternalActualActualAFB(),
+      ActualActual(ActualActual.Convention.ISDA) to DayCounterInternalActualActualISDA(),
       SimpleDayCounter() to DayCounterInternalThirty360Simple(),
       Thirty360() to DayCounterInternalThirty360USA(),
       Thirty360(Thirty360.Convention.European) to DayCounterInternalThirty360European(),
@@ -53,7 +52,7 @@ class DayCounterInternalTest {
           val end = start.plusDays(j)
 
           assertEquals(
-              "${oldDayCounter.javaClass.simpleName} ${newDayCounter.javaClass.simpleName} $start $end",
+              "${oldDayCounter.name()} ${newDayCounter.javaClass.simpleName} $start $end",
               oldDayCounter.yearFraction(start.toQl(), end.toQl()),
               newDayCounter.yearFraction(start, end),
               1e-10
