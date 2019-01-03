@@ -79,6 +79,7 @@ object Convertors {
       Compounded -> org.jquantlib.termstructures.Compounding.Compounded
       Continuous -> org.jquantlib.termstructures.Compounding.Continuous
       SimpleThenCompounded -> org.jquantlib.termstructures.Compounding.SimpleThenCompounded
+      CompoundedThenSimple -> TODO("Old QL code doesn't have CompoundedThenSimple")
     }
   }
 

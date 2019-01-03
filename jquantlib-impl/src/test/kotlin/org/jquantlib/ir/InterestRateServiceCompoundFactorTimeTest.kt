@@ -19,6 +19,8 @@ package org.jquantlib.ir
 import com.fasterxml.jackson.core.type.TypeReference
 import org.jquantlib.api.data.*
 import org.jquantlib.api.jackson.QuantlibObjectMapperFactory
+import org.jquantlib.calendar.CalendarServiceImpl
+import org.jquantlib.dayCounter.DayCounterServiceImpl
 import org.junit.Assert.assertEquals
 import org.junit.Test
 import org.junit.runner.RunWith
@@ -32,7 +34,11 @@ class InterestRateServiceCompoundFactorTimeTest(
 ) {
 
   companion object {
-    private val service = InterestRateServiceImpl()
+    private val service = InterestRateServiceImpl(
+        dayCounterService = DayCounterServiceImpl(
+            calendarService = CalendarServiceImpl()
+        )
+    )
 
     @JvmStatic
     @Parameters(name = "{index}: discount({0})")

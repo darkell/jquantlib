@@ -40,7 +40,11 @@ class FlatForwardDiscountTest(
         dayCounterService = DayCounterServiceImpl(
             calendarService = CalendarServiceImpl()
         ),
-        interestRateService = InterestRateServiceImpl()
+        interestRateService = InterestRateServiceImpl(
+            dayCounterService = DayCounterServiceImpl(
+                calendarService = CalendarServiceImpl()
+            )
+        )
     )
 
     @JvmStatic

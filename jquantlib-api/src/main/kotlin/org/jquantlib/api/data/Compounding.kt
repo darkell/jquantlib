@@ -35,5 +35,10 @@ enum class Compounding {
   /**
    * Simple up to the first period then Compounded
    */
-  SimpleThenCompounded
+  SimpleThenCompounded,
+
+  /**
+   * Compounded up to the first period then Simple
+   */
+  CompoundedThenSimple
 }

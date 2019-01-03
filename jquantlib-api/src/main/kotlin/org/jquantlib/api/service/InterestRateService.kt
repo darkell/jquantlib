@@ -16,12 +16,53 @@
 
 package org.jquantlib.api.service
 
+import org.jquantlib.api.data.Compounding
+import org.jquantlib.api.data.DayCounter
+import org.jquantlib.api.data.Frequency
 import org.jquantlib.api.data.InterestRate
+import java.time.LocalDate
 
 interface InterestRateService {
 
   fun discountFactor(interestRate: InterestRate, time: Double): Double
 
   fun compoundFactor(interestRate: InterestRate, time: Double): Double
+
+  fun impliedRate(
+      compound: Double,
+      dayCounter: DayCounter,
+      compounding: Compounding,
+      frequency: Frequency,
+      time: Double
+  ): InterestRate
+
+  fun impliedRate(
+      compound: Double,
+      dayCounter: DayCounter,
+      compounding: Compounding,
+      frequency: Frequency,
+      start: LocalDate,
+      end: LocalDate,
+      refStart: LocalDate?,
+      refEnd: LocalDate?
+  ): InterestRate
+
+  fun equivalentRate(
+      interestRate: InterestRate,
+      compounding: Compounding,
+      frequency: Frequency,
+      time: Double
+  ): InterestRate
+
+  fun equivalentRate(
+      interestRate: InterestRate,
+      dayCounter: DayCounter,
+      compounding: Compounding,
+      frequency: Frequency,
+      start: LocalDate,
+      end: LocalDate,
+      refStart: LocalDate?,
+      refEnd: LocalDate?
+  ): InterestRate
 
 }
