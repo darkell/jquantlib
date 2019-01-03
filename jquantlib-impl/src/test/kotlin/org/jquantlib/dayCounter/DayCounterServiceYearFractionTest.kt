@@ -17,58 +17,53 @@
 package org.jquantlib.dayCounter
 
 import com.fasterxml.jackson.core.type.TypeReference
-import org.jquantlib.api.data.*
+import org.jquantlib.api.data.DayCounter
 import org.jquantlib.api.jackson.QuantlibObjectMapperFactory
 import org.jquantlib.calendar.CalendarServiceImpl
 import org.junit.Assert.assertEquals
 import org.junit.Test
-import org.junit.runner.RunWith
-import org.junit.runners.Parameterized
-import org.junit.runners.Parameterized.Parameters
 import java.io.File
 import java.time.LocalDate
 
-@RunWith(Parameterized::class)
-class DayCounterServiceYearFractionTest(
-    private val params: DayCounterServiceYearFractionParams
-) {
+class DayCounterServiceYearFractionTest {
 
-  companion object {
-    private val dayCounterService = DayCounterServiceImpl(
-        calendarService = CalendarServiceImpl()
-    )
-
-    @JvmStatic
-    @Parameters(name = "{index}: yearFraction({0})")
-    fun data() : List<DayCounterServiceYearFractionParams> {
-      return QuantlibObjectMapperFactory
-          .build()
-          .readerFor(ListDayCounterServiceYearFractionParamsTypeReference)
-          .readValue<List<DayCounterServiceYearFractionParams>>(
-              File(javaClass.getResource("/DayCounter_yearFraction.json").file).readText()
-          )
-    }
-  }
+  private val dayCounterService = DayCounterServiceImpl(
+      calendarService = CalendarServiceImpl()
+  )
 
   @Test
   fun yearFraction() {
-    assertEquals(
-        params.expected,
-        dayCounterService.yearFraction(
-            dayCounter = params.dayCounter,
-            start = params.d1,
-            end = params.d2
-        ),
-        1e-10
-    )
+    for (params in data()) {
+      assertEquals(
+          "$params",
+          params.expected,
+          dayCounterService.yearFraction(
+              dayCounter = params.dayCounter,
+              start = params.start,
+              end = params.end
+          ),
+          1e-10
+      )
+    }
   }
+
+  private fun data() : List<Params> {
+    return QuantlibObjectMapperFactory
+        .build()
+        .readerFor(ListParamsTypeReference)
+        .readValue<List<Params>>(
+            File(javaClass.getResource("/DayCounter_yearFraction.json").file).readText()
+        )
+  }
+
+  object ListParamsTypeReference : TypeReference<List<Params>>()
+
+  data class Params(
+      val dayCounter: DayCounter,
+      val start: LocalDate,
+      val end: LocalDate,
+      val expected: Double
+  )
+
 }
 
-object ListDayCounterServiceYearFractionParamsTypeReference : TypeReference<List<DayCounterServiceYearFractionParams>>()
-
-data class DayCounterServiceYearFractionParams(
-    val dayCounter: DayCounter,
-    val d1: LocalDate,
-    val d2: LocalDate,
-    val expected: Double
-)

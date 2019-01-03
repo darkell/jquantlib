@@ -22,7 +22,7 @@ abstract class DayCounterInternalThirty360: DayCounterInternal {
   }
 }
 
-open class DayCounterInternalThirty360USA: DayCounterInternalThirty360() {
+open class DayCounterInternalThirty360BondBasis: DayCounterInternalThirty360() {
   override fun calcDayOfMonthDiff(start: LocalDate, end: LocalDate): Int {
     return when {
       end.dayOfMonth == 31 && start.dayOfMonth == 30 -> 0
@@ -32,7 +32,7 @@ open class DayCounterInternalThirty360USA: DayCounterInternalThirty360() {
   }
 }
 
-class DayCounterInternalThirty360Simple: DayCounterInternalThirty360USA() {
+class DayCounterInternalThirty360Simple: DayCounterInternalThirty360BondBasis() {
   override fun yearFraction(
       start: LocalDate,
       end: LocalDate,

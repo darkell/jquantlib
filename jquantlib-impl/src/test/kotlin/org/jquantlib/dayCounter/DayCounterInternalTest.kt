@@ -12,7 +12,7 @@ class DayCounterInternalTest {
       ActualActual(ActualActual.Convention.AFB) to DayCounterInternalActualActualAFB(),
       ActualActual(ActualActual.Convention.ISDA) to DayCounterInternalActualActualISDA(),
       SimpleDayCounter() to DayCounterInternalThirty360Simple(),
-      Thirty360() to DayCounterInternalThirty360USA(),
+      Thirty360() to DayCounterInternalThirty360BondBasis(),
       Thirty360(Thirty360.Convention.European) to DayCounterInternalThirty360European(),
       Thirty360(Thirty360.Convention.Italian) to DayCounterInternalThirty360Italian(),
       Actual360() to DayCounterInternalActualFixed360(),

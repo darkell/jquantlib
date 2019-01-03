@@ -17,57 +17,51 @@
 package org.jquantlib.dayCounter
 
 import com.fasterxml.jackson.core.type.TypeReference
-import org.jquantlib.api.data.*
+import org.jquantlib.api.data.DayCounter
 import org.jquantlib.api.jackson.QuantlibObjectMapperFactory
 import org.jquantlib.calendar.CalendarServiceImpl
 import org.junit.Assert.assertEquals
 import org.junit.Test
-import org.junit.runner.RunWith
-import org.junit.runners.Parameterized
-import org.junit.runners.Parameterized.Parameters
 import java.io.File
 import java.time.LocalDate
 
-@RunWith(Parameterized::class)
-class DayCounterServiceDayCountTest(
-    private val params: DayCounterServiceDayCountParams
-) {
+class DayCounterServiceDayCountTest {
 
-  companion object {
-    private val dayCounterService = DayCounterServiceImpl(
-        calendarService = CalendarServiceImpl()
-    )
-
-    @JvmStatic
-    @Parameters(name = "{index}: dayCount({0})")
-    fun data() : List<DayCounterServiceDayCountParams> {
-      return QuantlibObjectMapperFactory
-          .build()
-          .readerFor(ListDayCounterServiceDayCountParamsTypeReference)
-          .readValue<List<DayCounterServiceDayCountParams>>(
-              File(javaClass.getResource("/DayCounter_dayCount.json").file).readText()
-          )
-    }
-  }
+  private val dayCounterService = DayCounterServiceImpl(
+      calendarService = CalendarServiceImpl()
+  )
 
   @Test
   fun dayCount() {
-    assertEquals(
-        params.expected,
-        dayCounterService.dayCount(
-            dayCounter = params.dayCounter,
-            start = params.d1,
-            end = params.d2
-        )
-    )
+    for (params in data()) {
+      assertEquals(
+          "$params",
+          params.expected,
+          dayCounterService.dayCount(
+              dayCounter = params.dayCounter,
+              start = params.start,
+              end = params.end
+          )
+      )
+    }
   }
+
+  private fun data() : List<Params> {
+    return QuantlibObjectMapperFactory
+        .build()
+        .readerFor(ListTypeReference)
+        .readValue<List<Params>>(
+            File(javaClass.getResource("/DayCounter_dayCount.json").file).readText()
+        )
+  }
+
+  object ListTypeReference : TypeReference<List<Params>>()
+
+  data class Params(
+      val dayCounter: DayCounter,
+      val start: LocalDate,
+      val end: LocalDate,
+      val expected: Long
+  )
+
 }
-
-object ListDayCounterServiceDayCountParamsTypeReference : TypeReference<List<DayCounterServiceDayCountParams>>()
-
-data class DayCounterServiceDayCountParams(
-    val dayCounter: DayCounter,
-    val d1: LocalDate,
-    val d2: LocalDate,
-    val expected: Long
-)

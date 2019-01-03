@@ -28,7 +28,7 @@ import java.io.File
 
 @RunWith(Parameterized::class)
 class InterestRateServiceCompoundFactorTimeTest(
-    private val params: InterestRateCompoundFactorTimeParams
+    private val params: Params
 ) {
 
   companion object {
@@ -36,11 +36,11 @@ class InterestRateServiceCompoundFactorTimeTest(
 
     @JvmStatic
     @Parameters(name = "{index}: discount({0})")
-    fun data() : List<InterestRateCompoundFactorTimeParams> {
+    fun data() : List<Params> {
       return QuantlibObjectMapperFactory
           .build()
-          .readerFor(ListInterestRateCompoundFactorTimeParamsTypeReference)
-          .readValue<List<InterestRateCompoundFactorTimeParams>>(
+          .readerFor(ListParamsTypeReference)
+          .readValue<List<Params>>(
               File(javaClass.getResource("/InterestRate_compoundFactor_time.json").file).readText()
           )
     }
@@ -61,15 +61,16 @@ class InterestRateServiceCompoundFactorTimeTest(
         1e-8
     )
   }
+
+  object ListParamsTypeReference : TypeReference<List<Params>>()
+
+  data class Params(
+      val rate: Double,
+      val dayCounter: DayCounter,
+      val compounding: Compounding,
+      val frequency: Frequency,
+      val time: Double,
+      val expected: Double
+  )
+
 }
-
-object ListInterestRateCompoundFactorTimeParamsTypeReference : TypeReference<List<InterestRateCompoundFactorTimeParams>>()
-
-data class InterestRateCompoundFactorTimeParams(
-    val rate: Double,
-    val dayCounter: DayCounter,
-    val compounding: Compounding,
-    val frequency: Frequency,
-    val time: Double,
-    val expected: Double
-)

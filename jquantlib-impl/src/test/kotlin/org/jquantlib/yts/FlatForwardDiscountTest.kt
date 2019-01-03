@@ -32,7 +32,7 @@ import java.time.LocalDate
 
 @RunWith(Parameterized::class)
 class FlatForwardDiscountTest(
-    private val params: FlatForwardDiscountParams
+    private val params: Params
 ) {
 
   companion object {
@@ -45,13 +45,11 @@ class FlatForwardDiscountTest(
 
     @JvmStatic
     @Parameters(name = "{index}: discount({0})")
-    fun data() : List<FlatForwardDiscountParams> {
-      println()
-
+    fun data() : List<Params> {
       return QuantlibObjectMapperFactory
           .build()
-          .readerFor(ListFlatForwardDiscountParamsTypeReference)
-          .readValue<List<FlatForwardDiscountParams>>(
+          .readerFor(ListParamsTypeReference)
+          .readValue<List<Params>>(
               File(javaClass.getResource("/FlatForward_discount.json").file).readText()
           )
     }
@@ -69,16 +67,17 @@ class FlatForwardDiscountTest(
 
     assertEquals(params.expected, yieldTermStructureService.discount(flatForward, params.discountDate), 1e-4)
   }
+
+  object ListParamsTypeReference : TypeReference<List<Params>>()
+
+  data class Params(
+      val settlementDate: LocalDate,
+      val dayCounter: DayCounter,
+      val dividendYield: Double,
+      val discountDate: LocalDate,
+      val compounding: Compounding,
+      val frequency: Frequency,
+      val expected: Double
+  )
+
 }
-
-object ListFlatForwardDiscountParamsTypeReference : TypeReference<List<FlatForwardDiscountParams>>()
-
-data class FlatForwardDiscountParams(
-    val settlementDate: LocalDate,
-    val dayCounter: DayCounter,
-    val dividendYield: Double,
-    val discountDate: LocalDate,
-    val compounding: Compounding,
-    val frequency: Frequency,
-    val expected: Double
-)
