@@ -20,66 +20,46 @@ import org.jquantlib.api.data.*
 import org.jquantlib.api.data.Target
 import org.jquantlib.api.service.CalendarService
 import java.time.LocalDate
-import java.time.Period
-import org.jquantlib.utils.Convertors.fromQl
-import org.jquantlib.utils.Convertors.toQl
+import java.time.temporal.ChronoUnit
 
 class CalendarServiceImpl : CalendarService {
 
-  private fun calendars(calendar: Calendar) = when (calendar) {
-    is Australia -> org.jquantlib.time.calendars.Australia()
-    UnitedStatesSettlement -> org.jquantlib.time.calendars.UnitedStates(org.jquantlib.time.calendars.UnitedStates.Market.SETTLEMENT)
-    UnitedStatesNyse -> org.jquantlib.time.calendars.UnitedStates(org.jquantlib.time.calendars.UnitedStates.Market.NYSE)
-    UnitedStatesGovernmentBond -> org.jquantlib.time.calendars.UnitedStates(org.jquantlib.time.calendars.UnitedStates.Market.GOVERNMENTBOND)
-    UnitedStatesNerc -> org.jquantlib.time.calendars.UnitedStates(org.jquantlib.time.calendars.UnitedStates.Market.NERC)
-    Target -> org.jquantlib.time.calendars.Target()
+  private fun Calendar.toInternal() = when (this) {
+      Australia -> CalendarInternalAustralia
+      UnitedStatesSettlement -> CalendarInternalUnitedStatesSettlement
+      UnitedStatesNyse -> TODO()
+      UnitedStatesGovernmentBond -> TODO()
+      UnitedStatesNerc -> TODO()
+      Target -> CalendarInternalTarget
+    }
+
+  override fun isBusinessDay(calendar: Calendar, date: LocalDate) =
+      calendar.toInternal().isBusinessDay(date)
+
+  override fun isHoliday(calendar: Calendar, date: LocalDate): Boolean {
+    return calendar.toInternal().isHoliday(date)
   }
 
-  override fun isBusinessDay(
-      calendar: Calendar,
-      date: LocalDate
-  ): Boolean {
-    return calendars(calendar).isBusinessDay(date.toQl())
-  }
+  override fun isWeekend(calendar: Calendar, date: LocalDate) =
+      calendar.toInternal().isWeekend(date)
 
-  override fun isHoliday(
-      calendar: Calendar,
-      date: LocalDate
-  ): Boolean {
-    return calendars(calendar).isHoliday(date.toQl())
-  }
+  override fun isEndOfMonth(calendar: Calendar, date: LocalDate) =
+      calendar.toInternal().isEndOfMonth(date)
 
-  override fun isEndOfMonth(
-      calendar: Calendar,
-      date: LocalDate
-  ): Boolean {
-    return calendars(calendar).isEndOfMonth(date.toQl())
-  }
+  override fun endOfMonth(calendar: Calendar, date: LocalDate) =
+      calendar.toInternal().endOfMonth(date)
 
-  override fun endOfMonth(
-      calendar: Calendar,
-      date: LocalDate
-  ): LocalDate {
-    return calendars(calendar).endOfMonth(date.toQl()).fromQl()
-  }
-
-  override fun adjust(
-      calendar: Calendar,
-      date: LocalDate,
-      c: BusinessDayConvention
-  ): LocalDate {
-    return calendars(calendar).adjust(date.toQl(), c.toQl()).fromQl()
-  }
+  override fun adjust(calendar: Calendar, date: LocalDate, c: BusinessDayConvention) =
+      calendar.toInternal().adjust(date, c)
 
   override fun advance(
       calendar: Calendar,
       date: LocalDate,
-      period: Period,
+      n: Long,
+      unit: ChronoUnit,
       c: BusinessDayConvention,
       endOfMonth: Boolean
-  ): LocalDate {
-    return calendars(calendar).advance(date.toQl(), period.toQl(), c.toQl(), endOfMonth).fromQl()
-  }
+  ) = calendar.toInternal().advance(date, n, unit, c, endOfMonth)
 
   override fun businessDaysBetween(
       calendar: Calendar,
@@ -87,8 +67,6 @@ class CalendarServiceImpl : CalendarService {
       to: LocalDate,
       includeFirst: Boolean,
       includeLast: Boolean
-  ): Long {
-    return calendars(calendar).businessDaysBetween(from.toQl(), to.toQl(), includeFirst, includeLast).toLong()
-  }
+  ) = calendar.toInternal().businessDaysBetween(from, to, includeFirst, includeLast)
 
 }

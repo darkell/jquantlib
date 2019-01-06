@@ -16,8 +16,10 @@
 
 package org.jquantlib.yts
 
-import org.jquantlib.QL
-import org.jquantlib.api.data.*
+import org.jquantlib.api.data.FlatForward
+import org.jquantlib.api.data.Frequency
+import org.jquantlib.api.data.InterestRate
+import org.jquantlib.api.data.YieldTermStructure
 import org.jquantlib.api.service.DayCounterService
 import org.jquantlib.api.service.InterestRateService
 import org.jquantlib.api.service.YieldTermStructureService
@@ -49,7 +51,7 @@ class YieldTermStructureServiceImpl(
   }
 
   private fun FlatForward.createInterestRate(): InterestRate {
-    QL.require(frequency !in invalidFrequencies, "frequency not allowed for this interest rate")
+    require(frequency !in invalidFrequencies) { "frequency not allowed for this interest rate" }
 
     return InterestRate(
         rate = forward.value,

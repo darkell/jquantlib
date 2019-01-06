@@ -23,6 +23,7 @@ import org.jquantlib.api.service.CalendarService
 import org.jquantlib.api.service.DayCounterService
 import java.time.LocalDate
 import java.time.Period
+import java.time.temporal.ChronoUnit
 
 class AnalyticEuropeanEngineServiceImpl(
     private val calendarService: CalendarService,
@@ -109,7 +110,7 @@ class AnalyticEuropeanEngineServiceImpl(
   }
 
   private fun referenceDate(evaluationDate: LocalDate, calendar: Calendar, settlementDays: Int): LocalDate {
-    return calendarService.advance(calendar, evaluationDate, Period.ofDays(settlementDays))
+    return calendarService.advance(calendar, evaluationDate, settlementDays.toLong(), ChronoUnit.DAYS)
   }
 
 }

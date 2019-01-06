@@ -41,6 +41,8 @@ object Convertors {
       BusinessDayConvention.Preceding -> org.jquantlib.time.BusinessDayConvention.Preceding
       BusinessDayConvention.ModifiedPreceding -> org.jquantlib.time.BusinessDayConvention.ModifiedPreceding
       BusinessDayConvention.Unadjusted -> org.jquantlib.time.BusinessDayConvention.Unadjusted
+      BusinessDayConvention.HalfMonthModifiedFollowing -> TODO()
+      BusinessDayConvention.Nearest -> TODO()
     }
   }
 

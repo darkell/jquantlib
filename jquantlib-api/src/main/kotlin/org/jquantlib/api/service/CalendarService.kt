@@ -21,20 +21,38 @@ import org.jquantlib.api.data.BusinessDayConvention.Following
 import org.jquantlib.api.data.Calendar
 import java.time.LocalDate
 import java.time.Period
+import java.time.temporal.ChronoUnit
 
 interface CalendarService {
 
+  /**
+   * Returns <tt>true</tt> if the date is a business day for the given market.
+   */
   fun isBusinessDay(
       calendar: Calendar,
-      date: LocalDate): Boolean
+      date: LocalDate
+  ): Boolean
 
+  /**
+   * Returns <tt>true</tt> if the date is a holiday for the given market.
+   */
   fun isHoliday(
       calendar: Calendar,
       date: LocalDate
   ): Boolean
 
-  //fun isWeekend(Weekday w): Boolean
+  /**
+   * Returns <tt>true</tt> if the date is a weekend for the given market.
+   */
+  fun isWeekend(
+      calendar: Calendar,
+      date: LocalDate
+  ): Boolean
 
+  /**
+   * Returns <tt>true</tt> if the date is last business day for the month in
+   * given market.
+   */
   fun isEndOfMonth(
       calendar: Calendar,
       date: LocalDate
@@ -72,7 +90,8 @@ interface CalendarService {
   fun advance(
       calendar: Calendar,
       date: LocalDate,
-      period: Period,
+      n: Long,
+      unit: ChronoUnit,
       c: BusinessDayConvention = Following,
       endOfMonth: Boolean = false
   ): LocalDate

@@ -84,5 +84,25 @@ enum class BusinessDayConvention {
   /**
    * Do not adjust.
    */
-  Unadjusted
+  Unadjusted,
+
+  /**
+   * Choose the first business day after
+   * the given holiday unless that day
+   * crosses the mid-month (15th) or the
+   * end of month, in which case choose
+   * the first business day before the
+   * holiday.
+   */
+  HalfMonthModifiedFollowing,
+
+  /**
+   * Choose the nearest business day
+   * to the given holiday. If both the
+   * preceding and following business
+   * days are equally far away, default
+   * to following business day.
+   */
+  Nearest
+
 }
