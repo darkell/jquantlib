@@ -18,6 +18,7 @@ package org.jquantlib.ir
 
 import org.jquantlib.api.data.*
 import org.jquantlib.api.data.Compounding.*
+import org.jquantlib.api.data.Frequency.*
 import org.jquantlib.api.service.DayCounterService
 import org.jquantlib.api.service.InterestRateService
 import java.time.LocalDate
@@ -39,7 +40,7 @@ class InterestRateServiceImpl(
 
     val freq = interestRate.frequency.toDouble()
 
-    return when (interestRate.compound) {
+    return when (interestRate.compounding) {
       Simple -> simple(interestRate.rate, time)
       Compounded -> compounded(interestRate.rate, freq, time)
       Continuous -> continuous(interestRate.rate, time)
@@ -112,7 +113,7 @@ class InterestRateServiceImpl(
   ): InterestRate {
     return impliedRate(
         compoundFactor(interestRate, time),
-        interestRate.dc,
+        interestRate.dayCounter,
         compounding,
         frequency,
         time
@@ -129,7 +130,7 @@ class InterestRateServiceImpl(
       refStart: LocalDate?,
       refEnd: LocalDate?
   ): InterestRate {
-    val time1 = dayCounterService.yearFraction(interestRate.dc, start, end, refStart, refEnd)
+    val time1 = dayCounterService.yearFraction(interestRate.dayCounter, start, end, refStart, refEnd)
     val time2 = dayCounterService.yearFraction(dayCounter, start, end, refStart, refEnd)
 
     return impliedRate(

@@ -55,8 +55,8 @@ class YieldTermStructureServiceImpl(
 
     return InterestRate(
         rate = forward.value,
-        dc = dayCounter,
-        compound = compounding,
+        dayCounter = dayCounter,
+        compounding = compounding,
         frequency = frequency
     )
   }

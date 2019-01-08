@@ -18,7 +18,7 @@ package org.jquantlib.api.data
 
 data class InterestRate(
     val rate: Double,
-    val dc: DayCounter,
-    val compound: Compounding,
+    val dayCounter: DayCounter,
+    val compounding: Compounding,
     val frequency: Frequency
 )

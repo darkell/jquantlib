@@ -28,16 +28,15 @@ interface InterestRateService {
 
   fun compoundFactor(interestRate: InterestRate, time: Double): Double
 
-  fun impliedRate(
-      compound: Double,
-      dayCounter: DayCounter,
+  fun equivalentRate(
+      interestRate: InterestRate,
       compounding: Compounding,
       frequency: Frequency,
       time: Double
   ): InterestRate
 
-  fun impliedRate(
-      compound: Double,
+  fun equivalentRate(
+      interestRate: InterestRate,
       dayCounter: DayCounter,
       compounding: Compounding,
       frequency: Frequency,
@@ -47,15 +46,16 @@ interface InterestRateService {
       refEnd: LocalDate?
   ): InterestRate
 
-  fun equivalentRate(
-      interestRate: InterestRate,
+  fun impliedRate(
+      compound: Double,
+      dayCounter: DayCounter,
       compounding: Compounding,
       frequency: Frequency,
       time: Double
   ): InterestRate
 
-  fun equivalentRate(
-      interestRate: InterestRate,
+  fun impliedRate(
+      compound: Double,
       dayCounter: DayCounter,
       compounding: Compounding,
       frequency: Frequency,
