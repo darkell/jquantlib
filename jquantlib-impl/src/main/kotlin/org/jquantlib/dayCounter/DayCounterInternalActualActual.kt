@@ -9,10 +9,9 @@ abstract class DayCounterInternalActualActual: DayCounterInternal {
   override fun dayCount(start: LocalDate, end: LocalDate): Long {
     return ChronoUnit.DAYS.between(start, end)
   }
-
 }
 
-class DayCounterInternalActualActualISDA: DayCounterInternalActualActual() {
+object DayCounterInternalActualActualISDA: DayCounterInternalActualActual() {
   override fun yearFraction(
       start: LocalDate,
       end: LocalDate,
@@ -38,7 +37,7 @@ class DayCounterInternalActualActualISDA: DayCounterInternalActualActual() {
       if (date.isLeapYear) 366.0 else 365.0
 }
 
-class DayCounterInternalActualActualAFB: DayCounterInternalActualActual() {
+object DayCounterInternalActualActualAFB: DayCounterInternalActualActual() {
   override fun yearFraction(
       start: LocalDate,
       end: LocalDate,
@@ -93,5 +92,15 @@ class DayCounterInternalActualActualAFB: DayCounterInternalActualActual() {
 
   private fun isEndOfMonth(date: LocalDate): Boolean {
     return date == date.with(TemporalAdjusters.lastDayOfMonth())
+  }
+}
+
+object DayCounterInternalActualActualISMA: DayCounterInternalActualActual() {
+  override fun yearFraction(start: LocalDate, end: LocalDate, refPeriodStart: LocalDate?, refPeriodEnd: LocalDate?): Double {
+    TODO("not implemented")
+  }
+
+  override fun dayCount(start: LocalDate, end: LocalDate): Long {
+    return ChronoUnit.DAYS.between(start, end)
   }
 }

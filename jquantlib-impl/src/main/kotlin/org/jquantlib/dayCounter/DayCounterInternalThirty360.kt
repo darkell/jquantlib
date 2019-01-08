@@ -22,7 +22,7 @@ abstract class DayCounterInternalThirty360: DayCounterInternal {
   }
 }
 
-open class DayCounterInternalThirty360BondBasis: DayCounterInternalThirty360() {
+abstract class DayCounterInternalThirty360BondBasisAbstract: DayCounterInternalThirty360() {
   override fun calcDayOfMonthDiff(start: LocalDate, end: LocalDate): Int {
     return when {
       end.dayOfMonth == 31 && start.dayOfMonth == 30 -> 0
@@ -32,7 +32,9 @@ open class DayCounterInternalThirty360BondBasis: DayCounterInternalThirty360() {
   }
 }
 
-class DayCounterInternalThirty360Simple: DayCounterInternalThirty360BondBasis() {
+object DayCounterInternalThirty360BondBasis: DayCounterInternalThirty360BondBasisAbstract()
+
+object DayCounterInternalThirty360Simple: DayCounterInternalThirty360BondBasisAbstract() {
   override fun yearFraction(
       start: LocalDate,
       end: LocalDate,
@@ -57,7 +59,7 @@ class DayCounterInternalThirty360Simple: DayCounterInternalThirty360BondBasis() 
 
 }
 
-class DayCounterInternalThirty360European: DayCounterInternalThirty360() {
+object DayCounterInternalThirty360European: DayCounterInternalThirty360() {
   override fun calcDayOfMonthDiff(start: LocalDate, end: LocalDate): Int {
     return calcDayOfMonth(end) - calcDayOfMonth(start)
   }
@@ -71,7 +73,7 @@ class DayCounterInternalThirty360European: DayCounterInternalThirty360() {
 
 }
 
-class DayCounterInternalThirty360Italian: DayCounterInternalThirty360() {
+object DayCounterInternalThirty360Italian: DayCounterInternalThirty360() {
   override fun calcDayOfMonthDiff(start: LocalDate, end: LocalDate): Int {
     return dayOfMonth(end) - dayOfMonth(start)
   }

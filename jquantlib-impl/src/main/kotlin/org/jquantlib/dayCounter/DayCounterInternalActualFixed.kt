@@ -18,5 +18,5 @@ sealed class DayCounterInternalActualFixed(private val divisor: Double): DayCoun
   }
 }
 
-class DayCounterInternalActualFixed360: DayCounterInternalActualFixed(360.0)
-class DayCounterInternalActualFixed365: DayCounterInternalActualFixed(365.0)
+object DayCounterInternalActualFixed360: DayCounterInternalActualFixed(360.0)
+object DayCounterInternalActualFixed365: DayCounterInternalActualFixed(365.0)

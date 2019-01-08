@@ -13,7 +13,7 @@ class DayCounterInternalTest2 {
   @Ignore
   fun yearFraction() {
     val oldDayCounter = ActualActual(ActualActual.Convention.AFB)
-    val newDayCounter = DayCounterInternalActualActualAFB()
+    val newDayCounter = DayCounterInternalActualActualAFB
 
     val start = LocalDate.of(2004, 1, 1)
     val end = LocalDate.of(2005, 1, 2)
