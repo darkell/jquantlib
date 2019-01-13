@@ -47,5 +47,8 @@ class QuantlibModule : SimpleModule("Quantlib") {
     setMixInAnnotation(UnitedStatesGovernmentBond::class.java, UnitedStatesGovernmentBondMixIn::class.java)
     setMixInAnnotation(UnitedStatesNerc::class.java, UnitedStatesNercMixIn::class.java)
     setMixInAnnotation(Target::class.java, TargetMixIn::class.java)
+
+    setMixInAnnotation(Quote::class.java, QuoteMixIn::class.java)
+    setMixInAnnotation(SimpleQuote::class.java, SimpleQuoteMixIn::class.java)
   }
 }

@@ -16,11 +16,16 @@
 
 package org.jquantlib.api.jackson
 
-import com.fasterxml.jackson.core.type.TypeReference
-import org.jquantlib.api.data.Calendar
-import org.jquantlib.api.data.DayCounter
-import org.jquantlib.api.data.Quote
+import com.fasterxml.jackson.annotation.JsonSubTypes
+import com.fasterxml.jackson.annotation.JsonTypeInfo
+import com.fasterxml.jackson.annotation.JsonTypeName
+import org.jquantlib.api.data.SimpleQuote
 
-object ListDayCounterTypeReference : TypeReference<List<DayCounter>>()
-object ListCalendarTypeReference : TypeReference<List<Calendar>>()
-object ListQuoteTypeReference : TypeReference<List<Quote>>()
+@JsonTypeInfo(use = JsonTypeInfo.Id.NAME, include = JsonTypeInfo.As.PROPERTY)
+@JsonSubTypes(value = [
+  (JsonSubTypes.Type(value = SimpleQuote::class, name = "SimpleQuote"))
+])
+interface QuoteMixIn
+
+@JsonTypeName("SimpleQuote")
+interface SimpleQuoteMixIn

@@ -82,4 +82,27 @@ class QuantlibObjectMapperTest {
     )
   }
 
+  @Test
+  fun quoteMixIns() {
+    val quotes: List<Quote> = listOf(
+        SimpleQuote(
+            value = 1.0
+        ),
+        SimpleQuote(
+            value = 2.0
+        )
+    )
+
+    val writer = mapper.writerWithDefaultPrettyPrinter().forType(ListQuoteTypeReference)
+    val reader = mapper.reader().forType(ListQuoteTypeReference)
+
+    val str = writer.writeValueAsString(quotes)
+    val deserialized = reader.readValue<List<Calendar>>(str)
+
+    assertEquals(
+        quotes,
+        deserialized
+    )
+  }
+
 }

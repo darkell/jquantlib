@@ -16,14 +16,38 @@
 
 package org.jquantlib.api.service
 
-import org.jquantlib.api.data.YieldTermStructure
+import org.jquantlib.api.data.*
+import org.jquantlib.api.data.Compounding.*
+import org.jquantlib.api.data.Frequency.*
 import java.time.LocalDate
 
 interface YieldTermStructureService {
 
+  fun referenceDate(
+      calendar: Calendar,
+      evaluationDate: LocalDate,
+      settlementDays: Long
+  ): LocalDate
+
+  fun createFlatForward(
+      calendar: Calendar,
+      evaluationDate: LocalDate,
+      settlementDays: Long,
+      dayCounter: DayCounter,
+      forward: Quote,
+      compounding: Compounding = Continuous,
+      frequency: Frequency = Annual
+  ): FlatForward
+
   fun discount(
       yts: YieldTermStructure,
       d: LocalDate,
+      extrapolate: Boolean = false
+  ): Double
+
+  fun discount(
+      yts: YieldTermStructure,
+      time: Double,
       extrapolate: Boolean = false
   ): Double
 

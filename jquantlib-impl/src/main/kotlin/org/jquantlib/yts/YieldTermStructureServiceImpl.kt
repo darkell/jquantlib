@@ -16,39 +16,66 @@
 
 package org.jquantlib.yts
 
-import org.jquantlib.api.data.FlatForward
-import org.jquantlib.api.data.Frequency
-import org.jquantlib.api.data.InterestRate
-import org.jquantlib.api.data.YieldTermStructure
+import org.jquantlib.api.data.*
+import org.jquantlib.api.data.Frequency.NoFrequency
+import org.jquantlib.api.data.Frequency.Once
+import org.jquantlib.api.service.CalendarService
 import org.jquantlib.api.service.DayCounterService
 import org.jquantlib.api.service.InterestRateService
 import org.jquantlib.api.service.YieldTermStructureService
 import java.time.LocalDate
+import java.time.temporal.ChronoUnit.DAYS
 
 class YieldTermStructureServiceImpl(
+    private val calendarService: CalendarService,
     private val dayCounterService: DayCounterService,
     private val interestRateService: InterestRateService
 ) : YieldTermStructureService {
+  override fun referenceDate(
+      calendar: Calendar,
+      evaluationDate: LocalDate,
+      settlementDays: Long
+  ) = calendarService.advance(calendar, evaluationDate, settlementDays, DAYS)
+
+  override fun createFlatForward(
+      calendar: Calendar,
+      evaluationDate: LocalDate,
+      settlementDays: Long,
+      dayCounter: DayCounter,
+      forward: Quote,
+      compounding: Compounding,
+      frequency: Frequency
+  ) = FlatForward(
+      referenceDate = referenceDate(calendar, evaluationDate, settlementDays),
+      dayCounter = dayCounter,
+      forward = forward,
+      compounding = compounding,
+      frequency = frequency
+  )
+
   override fun discount(
       yts: YieldTermStructure,
       d: LocalDate,
       extrapolate: Boolean
-  ): Double {
-    return when (yts) {
-      is FlatForward -> yts.discount(yts.timeFromReference(d), extrapolate)
-    }
+  ) = when (yts) {
+    is FlatForward -> yts.discount(yts.timeFromReference(d), extrapolate)
+  }
+
+  override fun discount(
+      yts: YieldTermStructure,
+      time: Double,
+      extrapolate: Boolean
+  ) = when (yts) {
+    is FlatForward -> yts.discount(time, extrapolate)
   }
 
   private fun FlatForward.discount(
       t: Double,
       extrapolate: Boolean
-  ): Double {
-    return interestRateService.discountFactor(createInterestRate(), t)
-  }
+  ) = interestRateService.discountFactor(createInterestRate(), t)
 
-  private fun FlatForward.timeFromReference(date: LocalDate): Double {
-    return dayCounterService.yearFraction(dayCounter, referenceDate, date)
-  }
+  private fun FlatForward.timeFromReference(date: LocalDate) =
+      dayCounterService.yearFraction(dayCounter, referenceDate, date)
 
   private fun FlatForward.createInterestRate(): InterestRate {
     require(frequency !in invalidFrequencies) { "frequency not allowed for this interest rate" }
@@ -61,9 +88,8 @@ class YieldTermStructureServiceImpl(
     )
   }
 
-  private val invalidFrequencies = setOf(
-      Frequency.Once,
-      Frequency.NoFrequency
-  )
+  companion object {
+    private val invalidFrequencies = setOf(Once, NoFrequency)
+  }
 
 }
