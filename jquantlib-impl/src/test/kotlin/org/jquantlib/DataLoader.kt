@@ -6,7 +6,7 @@ import java.io.File
 
 object DataLoader {
 
-  val dataPath = "/Users/darkell/Documents/PycharmProjects/Quantlib/output"
+  val dataPath = "../../../PycharmProjects/Quantlib/target"
 
   val mapper = QuantlibObjectMapperFactory.build()
 
