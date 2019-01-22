@@ -21,13 +21,15 @@ import org.jquantlib.api.results.AnalyticEuropeanEngineResult
 import org.jquantlib.api.service.AnalyticEuropeanEngineService
 import org.jquantlib.api.service.CalendarService
 import org.jquantlib.api.service.DayCounterService
+import org.jquantlib.api.service.YieldTermStructureService
 import java.time.LocalDate
 import java.time.Period
 import java.time.temporal.ChronoUnit
 
 class AnalyticEuropeanEngineServiceImpl(
     private val calendarService: CalendarService,
-    private val dayCounterService: DayCounterService
+    private val dayCounterService: DayCounterService,
+    private val yieldTermStructureService: YieldTermStructureService
 ) : AnalyticEuropeanEngineService {
   override fun calculate(
       evaluationDate: LocalDate,
@@ -55,7 +57,7 @@ class AnalyticEuropeanEngineServiceImpl(
   private fun blackVariance(
       bsmProcess: BlackScholesMertonProcess,
       evaluationDate: LocalDate,
-      maturity: LocalDate,
+      maturity: LocalDate, // also known as the lastDate
       strike: Double,
       extrapolate: Boolean = false
   ): AnalyticEuropeanEngineResult {
@@ -69,7 +71,14 @@ class AnalyticEuropeanEngineServiceImpl(
     )
 
     val variance: Double = blackVariance(bsmProcess, t, strike)
-    //val dividendDiscount: Double = process.dividendYield().currentLink().discount(a.exercise.lastDate())
+    val dividendDiscount = yieldTermStructureService.discount(bsmProcess.dividendTS, maturity)
+    val riskFreeDiscount = yieldTermStructureService.discount(bsmProcess.riskFreeTS, maturity)
+    val spot = bsmProcess.x0.value
+    require(spot > 0.0) { "negative or null underlying given" }
+
+    val forwardPrice = spot * dividendDiscount / riskFreeDiscount
+
+
 
 
     return AnalyticEuropeanEngineResult(

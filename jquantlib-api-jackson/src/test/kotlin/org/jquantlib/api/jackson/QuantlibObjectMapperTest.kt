@@ -16,6 +16,7 @@
 
 package org.jquantlib.api.jackson
 
+import com.fasterxml.jackson.core.type.TypeReference
 import org.jquantlib.api.data.*
 import org.junit.Assert.assertEquals
 import org.junit.Test
@@ -47,16 +48,7 @@ class QuantlibObjectMapperTest {
         )
     )
 
-    val writer = mapper.writerWithDefaultPrettyPrinter().forType(ListDayCounterTypeReference)
-    val reader = mapper.reader().forType(ListDayCounterTypeReference)
-
-    val str = writer.writeValueAsString(dayCounters)
-    val deserialized = reader.readValue<List<DayCounter>>(str)
-
-    assertEquals(
-        dayCounters,
-        deserialized
-    )
+    testSerialization(ListDayCounterTypeReference, dayCounters)
   }
 
   @Test
@@ -70,16 +62,7 @@ class QuantlibObjectMapperTest {
         Target
     )
 
-    val writer = mapper.writerWithDefaultPrettyPrinter().forType(ListCalendarTypeReference)
-    val reader = mapper.reader().forType(ListCalendarTypeReference)
-
-    val str = writer.writeValueAsString(calendars)
-    val deserialized = reader.readValue<List<Calendar>>(str)
-
-    assertEquals(
-        calendars,
-        deserialized
-    )
+    testSerialization(ListCalendarTypeReference, calendars)
   }
 
   @Test
@@ -93,16 +76,100 @@ class QuantlibObjectMapperTest {
         )
     )
 
-    val writer = mapper.writerWithDefaultPrettyPrinter().forType(ListQuoteTypeReference)
-    val reader = mapper.reader().forType(ListQuoteTypeReference)
+    testSerialization(ListQuoteTypeReference, quotes)
+  }
 
-    val str = writer.writeValueAsString(quotes)
-    val deserialized = reader.readValue<List<Calendar>>(str)
+  @Test
+  fun payoffMixIns() {
+    val payoffs: List<Payoff> = listOf(
+        PlainVanillaPayoff(
+            type = OptionType.Put,
+            strike = 1.0
+        ),
+        CashOrNothingPayoff(
+            type = OptionType.Put,
+            strike = 1.0,
+            cashPayoff = 2.0
+        ),
+        AssetOrNothingPayoff(
+            type = OptionType.Put,
+            strike = 1.0
+        ),
+        GapPayoff(
+            type = OptionType.Put,
+            strike = 1.0,
+            secondStrike = 3.0
+        )
+    )
+
+    testSerialization(ListPayoffTypeReference, payoffs)
+  }
+
+  @Test
+  fun typePayoffMixIns() {
+    val typePayoffs: List<TypePayoff> = listOf(
+        PlainVanillaPayoff(
+            type = OptionType.Put,
+            strike = 1.0
+        ),
+        CashOrNothingPayoff(
+            type = OptionType.Put,
+            strike = 1.0,
+            cashPayoff = 2.0
+        ),
+        AssetOrNothingPayoff(
+            type = OptionType.Put,
+            strike = 1.0
+        ),
+        GapPayoff(
+            type = OptionType.Put,
+            strike = 1.0,
+            secondStrike = 3.0
+        )
+    )
+
+    testSerialization(ListTypePayoffTypeReference, typePayoffs)
+  }
+
+  @Test
+  fun strikedTypePayoffMixIns() {
+    val strikedTypePayoff: List<StrikedTypePayoff> = listOf(
+        PlainVanillaPayoff(
+            type = OptionType.Put,
+            strike = 1.0
+        ),
+        CashOrNothingPayoff(
+            type = OptionType.Put,
+            strike = 1.0,
+            cashPayoff = 2.0
+        ),
+        AssetOrNothingPayoff(
+            type = OptionType.Put,
+            strike = 1.0
+        ),
+        GapPayoff(
+            type = OptionType.Put,
+            strike = 1.0,
+            secondStrike = 3.0
+        )
+    )
+
+    testSerialization(ListStrikedTypePayoffTypeReference, strikedTypePayoff)
+  }
+
+  private fun <T> testSerialization(tr: TypeReference<T>, o: T) {
+    val str = wft(tr, o)
 
     assertEquals(
-        quotes,
-        deserialized
+        o,
+        rft(tr, str)
     )
   }
+
+  private fun <T> wft(tr: TypeReference<T>, o: T) =
+      mapper.writerWithDefaultPrettyPrinter().forType(tr).writeValueAsString(o)
+
+  private fun <T> rft(tr: TypeReference<T>, str: String) =
+      mapper.reader().forType(tr).readValue<T>(str)
 
 }

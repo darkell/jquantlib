@@ -34,13 +34,6 @@ class CalendarServiceTest {
   private val calendarService = CalendarServiceImpl()
 
   @Test
-  fun blah() {
-    val s = generateSequence(LocalDate.of(2001, 1, 1)) { it.plusDays(1) }
-
-    s.takeWhile { it.isBefore(LocalDate.of(2001, 1, 31)) }.forEach { println(it) }
-  }
-
-  @Test
   fun isHoliday() {
     data("/Calendar_isHoliday.json", ListBooleanParamsTypeReference).forEach {
       assertEquals(

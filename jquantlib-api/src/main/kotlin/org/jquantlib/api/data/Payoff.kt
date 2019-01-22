@@ -18,9 +18,9 @@ package org.jquantlib.api.data
 
 sealed class Payoff
 
-abstract class TypePayoff : Payoff()
+sealed class TypePayoff : Payoff()
 
-abstract class StrikedTypePayoff : TypePayoff() {
+sealed class StrikedTypePayoff : TypePayoff() {
   abstract val type: OptionType
   abstract val strike: Double
 }
@@ -30,3 +30,19 @@ data class PlainVanillaPayoff(
     override val strike: Double
 ): StrikedTypePayoff()
 
+data class CashOrNothingPayoff(
+    override val type: OptionType,
+    override val strike: Double,
+    val cashPayoff: Double
+): StrikedTypePayoff()
+
+data class AssetOrNothingPayoff(
+    override val type: OptionType,
+    override val strike: Double
+): StrikedTypePayoff()
+
+data class GapPayoff(
+    override val type: OptionType,
+    override val strike: Double,
+    val secondStrike: Double
+): StrikedTypePayoff()

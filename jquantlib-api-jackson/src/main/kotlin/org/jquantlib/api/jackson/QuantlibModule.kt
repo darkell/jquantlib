@@ -50,5 +50,13 @@ class QuantlibModule : SimpleModule("Quantlib") {
 
     setMixInAnnotation(Quote::class.java, QuoteMixIn::class.java)
     setMixInAnnotation(SimpleQuote::class.java, SimpleQuoteMixIn::class.java)
+
+    setMixInAnnotation(Payoff::class.java, PayoffMixIn::class.java)
+    setMixInAnnotation(TypePayoff::class.java, TypePayoffMixIn::class.java)
+    setMixInAnnotation(StrikedTypePayoff::class.java, StrikedTypePayoffMixin::class.java)
+    setMixInAnnotation(PlainVanillaPayoff::class.java, PlainVanillaPayoffMixIn::class.java)
+    setMixInAnnotation(CashOrNothingPayoff::class.java, CashOrNothingPayoffMixIn::class.java)
+    setMixInAnnotation(AssetOrNothingPayoff::class.java, AssetOrNothingPayoffMixIn::class.java)
+    setMixInAnnotation(GapPayoff::class.java, GapPayoffMixIn::class.java)
   }
 }

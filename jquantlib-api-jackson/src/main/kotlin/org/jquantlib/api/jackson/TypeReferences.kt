@@ -17,10 +17,11 @@
 package org.jquantlib.api.jackson
 
 import com.fasterxml.jackson.core.type.TypeReference
-import org.jquantlib.api.data.Calendar
-import org.jquantlib.api.data.DayCounter
-import org.jquantlib.api.data.Quote
+import org.jquantlib.api.data.*
 
 object ListDayCounterTypeReference : TypeReference<List<DayCounter>>()
 object ListCalendarTypeReference : TypeReference<List<Calendar>>()
 object ListQuoteTypeReference : TypeReference<List<Quote>>()
+object ListPayoffTypeReference : TypeReference<List<Payoff>>()
+object ListTypePayoffTypeReference : TypeReference<List<TypePayoff>>()
+object ListStrikedTypePayoffTypeReference : TypeReference<List<StrikedTypePayoff>>()

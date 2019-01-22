@@ -4,6 +4,8 @@ import org.jquantlib.api.data.*
 import org.jquantlib.calendar.CalendarServiceImpl
 import org.jquantlib.dayCounter.DayCounterServiceImpl
 import org.jquantlib.engine.AnalyticEuropeanEngineServiceImpl
+import org.jquantlib.ir.InterestRateServiceImpl
+import org.jquantlib.yts.YieldTermStructureServiceImpl
 import org.junit.Ignore
 import org.junit.Test
 import java.time.LocalDate
@@ -15,9 +17,18 @@ class EquityOptionsTest {
   private val dayCounterService = DayCounterServiceImpl(
       calendarService = calendarService
   )
+  private val interestRateService = InterestRateServiceImpl(
+      dayCounterService = dayCounterService
+  )
+  private val yieldTermStructureService = YieldTermStructureServiceImpl(
+      calendarService = calendarService,
+      dayCounterService = dayCounterService,
+      interestRateService = interestRateService
+  )
   private val analyticEuropeanEngineService = AnalyticEuropeanEngineServiceImpl(
       calendarService = calendarService,
-      dayCounterService = dayCounterService
+      dayCounterService = dayCounterService,
+      yieldTermStructureService = yieldTermStructureService
   )
 
   @Test
