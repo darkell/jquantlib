@@ -1,11 +1,13 @@
 package org.jquantlib
 
 import org.jquantlib.api.data.*
+import org.jquantlib.calculator.BlackCalculatorServiceImpl
 import org.jquantlib.calendar.CalendarServiceImpl
 import org.jquantlib.dayCounter.DayCounterServiceImpl
 import org.jquantlib.engine.AnalyticEuropeanEngineServiceImpl
 import org.jquantlib.ir.InterestRateServiceImpl
 import org.jquantlib.yts.YieldTermStructureServiceImpl
+import org.junit.Assert.assertEquals
 import org.junit.Ignore
 import org.junit.Test
 import java.time.LocalDate
@@ -25,16 +27,15 @@ class EquityOptionsTest {
       dayCounterService = dayCounterService,
       interestRateService = interestRateService
   )
+  private val blackCalculatorService = BlackCalculatorServiceImpl()
   private val analyticEuropeanEngineService = AnalyticEuropeanEngineServiceImpl(
-      calendarService = calendarService,
       dayCounterService = dayCounterService,
-      yieldTermStructureService = yieldTermStructureService
+      yieldTermStructureService = yieldTermStructureService,
+      blackCalculatorService = blackCalculatorService
   )
 
   @Test
-  @Ignore
-  fun blah() {
-
+  fun test() {
     val calendar = Target
     val todaysDate = LocalDate.of(1998, 5, 15)
     val settlementDate = LocalDate.of(1998, 5, 17)
@@ -54,19 +55,6 @@ class EquityOptionsTest {
 
     // Define exercise for European Options
     val europeanExercise = EuropeanExercise(maturity)
-
-    // Define exercise for Bermudan Options
-    val bermudanForwards = 4;
-    val exerciseDates = listOf(
-        settlementDate.plus(Period.ofMonths(3)),
-        settlementDate.plus(Period.ofMonths(6)),
-        settlementDate.plus(Period.ofMonths(9)),
-        settlementDate.plus(Period.ofMonths(12))
-    )
-
-    val bermudanExercise: Exercise = BermudanExercise(exerciseDates)
-
-    val americanExercise: Exercise = AmericanExercise(settlementDate, maturity)
 
     val underlyingH: Quote = SimpleQuote(underlying)
     val flatDividendTS: YieldTermStructure = FlatForward(
@@ -105,20 +93,91 @@ class EquityOptionsTest {
         exercise = europeanExercise
     )
 
-    analyticEuropeanEngineService.calculate(evaluationDate, europeanOption, bsmProcess)
+    val result = analyticEuropeanEngineService.calculate(evaluationDate, europeanOption, bsmProcess)
 
-    // Bermudan options (can be thought as a collection of European Options)
-    val bermudanOption: AbstractVanillaOption = VanillaOption(
-        payoff = payoff,
-        exercise = bermudanExercise
+    assertEquals(
+        "npv",
+        3.8443077915968398,
+        result.value,
+        1e-10
     )
 
-    // American Options
-    val americanOption: VanillaOption = VanillaOption(
-        payoff = payoff,
-        exercise = americanExercise
+    assertEquals(
+        "delta",
+        -0.5504516724833853,
+        result.greeks.delta,
+        1e-10
     )
 
+    assertEquals(
+        "gamma",
+        0.0549649809708038,
+        result.greeks.gamma,
+        1e-10
+    )
+
+    assertEquals(
+        "theta",
+        -0.00505822670331213,
+        result.greeks.theta,
+        1e-10
+    )
+
+    assertEquals(
+        "vega",
+        14.246923067632345,
+        result.greeks.vega,
+        1e-10
+    )
+
+    assertEquals(
+        "rho",
+        -23.660568000998694,
+        result.greeks.rho,
+        1e-10
+    )
+
+    assertEquals(
+        "dividendRho",
+        19.816260209401854,
+        result.greeks.dividendRho,
+        1e-10
+    )
+
+    assertEquals(
+        "itmCashProbability",
+        0.37190860461294756,
+        result.moreGreeks.itmCashProbability,
+        1e-10
+    )
+
+    assertEquals(
+        "deltaForward",
+        -0.5183958625969849,
+        result.moreGreeks.deltaForward,
+        1e-10
+    )
+
+    assertEquals(
+        "elasticity",
+        -5.154701778228491,
+        result.moreGreeks.elasticity,
+        1e-10
+    )
+
+    assertEquals(
+        "thetaPerDay",
+        -1.3858155351540082E-5,
+        result.moreGreeks.thetaPerDay,
+        1e-10
+    )
+
+    assertEquals(
+        "strikeSensitivity",
+        0.5915142000249676,
+        result.moreGreeks.strikeSensitivity,
+        1e-10
+    )
   }
 
 }

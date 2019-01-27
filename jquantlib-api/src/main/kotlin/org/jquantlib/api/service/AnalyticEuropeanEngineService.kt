@@ -19,6 +19,7 @@ package org.jquantlib.api.service
 import org.jquantlib.api.data.BlackScholesMertonProcess
 import org.jquantlib.api.data.EuropeanOption
 import org.jquantlib.api.results.AnalyticEuropeanEngineResult
+import org.jquantlib.api.results.OneAssetOptionResults
 import java.time.LocalDate
 
 interface AnalyticEuropeanEngineService {
@@ -27,6 +28,6 @@ interface AnalyticEuropeanEngineService {
       evaluationDate: LocalDate,
       europeanOption: EuropeanOption,
       bsmProcess: BlackScholesMertonProcess
-  ): AnalyticEuropeanEngineResult
+  ): OneAssetOptionResults
 
 }

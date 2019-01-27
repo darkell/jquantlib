@@ -17,85 +17,170 @@
 package org.jquantlib.engine
 
 import org.jquantlib.api.data.*
-import org.jquantlib.api.results.AnalyticEuropeanEngineResult
-import org.jquantlib.api.service.AnalyticEuropeanEngineService
-import org.jquantlib.api.service.CalendarService
-import org.jquantlib.api.service.DayCounterService
-import org.jquantlib.api.service.YieldTermStructureService
+import org.jquantlib.api.results.GreeksResults
+import org.jquantlib.api.results.MoreGreeksResults
+import org.jquantlib.api.results.OneAssetOptionResults
+import org.jquantlib.api.service.*
 import java.time.LocalDate
-import java.time.Period
-import java.time.temporal.ChronoUnit
+import kotlin.Double.Companion.NaN
 
 class AnalyticEuropeanEngineServiceImpl(
-    private val calendarService: CalendarService,
     private val dayCounterService: DayCounterService,
-    private val yieldTermStructureService: YieldTermStructureService
+    private val yieldTermStructureService: YieldTermStructureService,
+    private val blackCalculatorService: BlackCalculatorService
 ) : AnalyticEuropeanEngineService {
   override fun calculate(
       evaluationDate: LocalDate,
       europeanOption: EuropeanOption,
       bsmProcess: BlackScholesMertonProcess
-  ): AnalyticEuropeanEngineResult {
+  ): OneAssetOptionResults {
     return if (isExpired(evaluationDate, europeanOption)) {
-      AnalyticEuropeanEngineResult(
-          npv = 0.0,
-          errorEstimate = 0.0
+      OneAssetOptionResults(
+          value = 0.0,
+          errorEstimate = 0.0,
+          greeks = GreeksResults(
+              delta = 0.0,
+              gamma = 0.0,
+              theta = 0.0,
+              vega = 0.0,
+              rho = 0.0,
+              dividendRho = 0.0
+          ),
+          moreGreeks = MoreGreeksResults(
+              itmCashProbability = 0.0,
+              deltaForward = 0.0,
+              elasticity = 0.0,
+              thetaPerDay = 0.0,
+              strikeSensitivity = 0.0
+          )
       )
     } else {
-      val lastDate = europeanOption.exercise.lastDate()
-      val strike = europeanOption.payoff.strike
-
-      blackVariance(
-          bsmProcess = bsmProcess,
-          evaluationDate = evaluationDate,
-          maturity = lastDate,
-          strike = strike
-      )
+      blackVariance(bsmProcess, europeanOption)
     }
   }
 
   private fun blackVariance(
       bsmProcess: BlackScholesMertonProcess,
-      evaluationDate: LocalDate,
-      maturity: LocalDate, // also known as the lastDate
-      strike: Double,
-      extrapolate: Boolean = false
-  ): AnalyticEuropeanEngineResult {
-//    dateEnd = {Date@993} "May 17, 1999"
-//    dateStart = {Date@919} "May 17, 1998"
-
-    val t = dayCounterService.yearFraction(
-        dayCounter = bsmProcess.blackVolTS.dayCounter,
-        start = evaluationDate, // fix
-        end = maturity
-    )
-
-    val variance: Double = blackVariance(bsmProcess, t, strike)
-    val dividendDiscount = yieldTermStructureService.discount(bsmProcess.dividendTS, maturity)
-    val riskFreeDiscount = yieldTermStructureService.discount(bsmProcess.riskFreeTS, maturity)
+      europeanOption: EuropeanOption
+  ): OneAssetOptionResults {
     val spot = bsmProcess.x0.value
-    require(spot > 0.0) { "negative or null underlying given" }
+    require(spot > 0.0) { "Negative underlying given" }
+
+    val lastDate = europeanOption.exercise.lastDate()
+    val bc = blackCalculator(bsmProcess, lastDate, europeanOption, spot)
+    val time = bsmProcess.blackVolTS.yearFraction(lastDate)
+
+    return OneAssetOptionResults(
+        value = blackCalculatorService.value(bc),
+        errorEstimate = NaN,
+        greeks = calcGreeksResults(bc, spot, time, bsmProcess, lastDate),
+        moreGreeks = calcMoreGreeksResults(bc, spot, time)
+    )
+  }
+
+  private fun blackCalculator(
+      bsmProcess: BlackScholesMertonProcess,
+      lastDate: LocalDate,
+      europeanOption: EuropeanOption,
+      spot: Double
+  ): BlackCalculator {
+    val variance = blackVariance(bsmProcess, lastDate)
+    val dividendDiscount = yieldTermStructureService.discount(bsmProcess.dividendTS, lastDate)
+    val riskFreeDiscount = yieldTermStructureService.discount(bsmProcess.riskFreeTS, lastDate)
 
     val forwardPrice = spot * dividendDiscount / riskFreeDiscount
 
+    return blackCalculatorService.create(
+        payoff = europeanOption.payoff,
+        forward = forwardPrice,
+        stdDev = Math.sqrt(variance),
+        discount = riskFreeDiscount
+    )
+  }
 
+  private fun calcGreeksResults(
+      bc: BlackCalculator,
+      spot: Double,
+      time: Double,
+      bsmProcess: BlackScholesMertonProcess,
+      lastDate: LocalDate
+  ): GreeksResults {
+    val theta = try {
+      blackCalculatorService.theta(bc, spot, time)
+    } catch (e: Exception) {
+      NaN
+    }
 
+    return GreeksResults(
+        delta = blackCalculatorService.delta(bc, spot),
+        gamma = blackCalculatorService.gamma(bc, spot),
+        theta = theta,
+        vega = blackCalculatorService.vega(bc, time),
+        rho = calcGreeksRho(bc, bsmProcess, lastDate),
+        dividendRho = calcGreeksDividendRho(bc, bsmProcess, lastDate)
+    )
+  }
 
-    return AnalyticEuropeanEngineResult(
-        npv = 0.0,
-        errorEstimate = 0.0
+  private fun calcMoreGreeksResults(bc: BlackCalculator, spot: Double, time: Double): MoreGreeksResults {
+    val thetaPerDay = try {
+      blackCalculatorService.thetaPerDay(bc, spot, time)
+    } catch (e: Exception) {
+      NaN
+    }
+
+    return MoreGreeksResults(
+        itmCashProbability = blackCalculatorService.itmCashProbability(bc),
+        deltaForward = blackCalculatorService.deltaForward(bc),
+        elasticity = blackCalculatorService.elasticity(bc, spot),
+        thetaPerDay = thetaPerDay,
+        strikeSensitivity = blackCalculatorService.strikeSensitivity(bc)
+    )
+  }
+
+  private fun calcGreeksRho(bc: BlackCalculator, bsmProcess: BlackScholesMertonProcess, lastDate: LocalDate): Double {
+    return blackCalculatorService.rho(
+        bc = bc,
+        maturity = bsmProcess.riskFreeTS.yearFraction(lastDate)
+    )
+  }
+
+  private fun calcGreeksDividendRho(
+      bc: BlackCalculator,
+      bsmProcess: BlackScholesMertonProcess,
+      lastDate: LocalDate
+  ): Double {
+    return blackCalculatorService.dividendRho(
+        bc = bc,
+        maturity = bsmProcess.dividendTS.yearFraction(lastDate)
     )
   }
 
   private fun blackVariance(
       bsmProcess: BlackScholesMertonProcess,
-      maturity: Double,
-      strike: Double
+      maturity: LocalDate
+  ): Double {
+    val time = bsmProcess.blackVolTS.yearFraction(maturity)
+
+    return blackVariance(
+        bsmProcess = bsmProcess,
+        maturity = time
+    )
+  }
+
+  private fun TermStructure.yearFraction(end: LocalDate) =
+      dayCounterService.yearFraction(
+          dayCounter = dayCounter,
+          start = referenceDate,
+          end = end
+      )
+
+  private fun blackVariance(
+      bsmProcess: BlackScholesMertonProcess,
+      maturity: Double
   ): Double {
     val volatility = bsmProcess.blackVolTS.volatility.value
-    val variance = volatility * volatility * maturity
 
-    return variance
+    return volatility * volatility * maturity
   }
 
   private fun isExpired(
@@ -103,23 +188,6 @@ class AnalyticEuropeanEngineServiceImpl(
       europeanOption: EuropeanOption
   ): Boolean {
     return europeanOption.exercise.lastDate().isBefore(evaluationDate)
-  }
-
-  private fun blackVariance(evaluationDate: LocalDate, maturity: LocalDate, strike: Double, extrapolate: Boolean = false): Double {
-//    checkRange(maturity, extrapolate)
-//    checkStrike(strike, extrapolate);
-//    val t = timeFromReference(maturity)
-//    return blackVarianceImpl(t, strike)
-    return 0.0
-  }
-
-  private fun checkRange(evaluationDate: LocalDate, d: LocalDate, extrapolate: Boolean) {
-//    QL.require(d.isAfter(evaluationDate), "date before reference date"); // TODO: message
-//    QL.require(extrapolate || allowsExtrapolation() || d.le(maxDate()) , "date is past max curve"); // TODO: message
-  }
-
-  private fun referenceDate(evaluationDate: LocalDate, calendar: Calendar, settlementDays: Int): LocalDate {
-    return calendarService.advance(calendar, evaluationDate, settlementDays.toLong(), ChronoUnit.DAYS)
   }
 
 }

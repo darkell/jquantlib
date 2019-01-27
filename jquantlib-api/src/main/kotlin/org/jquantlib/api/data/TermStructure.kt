@@ -20,11 +20,10 @@ import java.time.LocalDate
 
 sealed class TermStructure {
   abstract val dayCounter: DayCounter
-}
-
-sealed class YieldTermStructure: TermStructure() {
   abstract val referenceDate: LocalDate
 }
+
+sealed class YieldTermStructure: TermStructure()
 
 data class FlatForward(
     override val referenceDate: LocalDate,
@@ -37,7 +36,6 @@ data class FlatForward(
 sealed class VolatilityTermStructure : TermStructure()
 
 sealed class BlackVolTermStructure : VolatilityTermStructure() {
-  abstract val referenceDate: LocalDate
   abstract val volatility: Quote
   abstract val bdc: BusinessDayConvention
 }
