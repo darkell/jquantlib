@@ -19,6 +19,7 @@ package org.jquantlib.yts
 import com.fasterxml.jackson.core.type.TypeReference
 import org.jquantlib.DataLoader
 import org.jquantlib.DataLoader.data
+import org.jquantlib.DataLoader.dataForEach
 import org.jquantlib.api.data.*
 import org.jquantlib.api.jackson.QuantlibObjectMapperFactory
 import org.jquantlib.calendar.CalendarServiceImpl
@@ -53,9 +54,9 @@ class FlatForwardDiscountTest {
 
   @Test
   fun discount_date() {
-    data("/FlatForward_discount_date.json", ListParams1TypeReference).forEach {
+    dataForEach("/FlatForward_discount_date.json", ListParams1TypeReference) {
       assertEquals(
-          "$it",
+          it.toString(),
           it.expected,
           yieldTermStructureService.discount(it.flatForward, it.date),
           1e-10
@@ -65,9 +66,9 @@ class FlatForwardDiscountTest {
 
   @Test
   fun discount_time() {
-    data("/FlatForward_discount_time.json", ListParams2TypeReference).forEach {
+    dataForEach("/FlatForward_discount_time.json", ListParams2TypeReference) {
       assertEquals(
-          "$it",
+          it.toString(),
           it.expected,
           yieldTermStructureService.discount(it.flatForward, it.time),
           1e-10

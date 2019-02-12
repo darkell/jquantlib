@@ -16,16 +16,10 @@
 
 package org.jquantlib.dayCounter
 
-import com.fasterxml.jackson.core.type.TypeReference
-import org.jquantlib.DataLoader
-import org.jquantlib.DataLoader.data
-import org.jquantlib.api.data.DayCounter
-import org.jquantlib.api.jackson.QuantlibObjectMapperFactory
+import org.jquantlib.DataLoader.assertEqualsAny
+import org.jquantlib.DataLoader.assertEqualsDouble
 import org.jquantlib.calendar.CalendarServiceImpl
-import org.junit.Assert.assertEquals
 import org.junit.Test
-import java.io.File
-import java.time.LocalDate
 
 class DayCounterServiceTest {
 
@@ -35,51 +29,16 @@ class DayCounterServiceTest {
 
   @Test
   fun dayCount() {
-    for (params in data("/DayCounter_dayCount.json", ListDayCountTypeReference)) {
-      assertEquals(
-          "$params",
-          params.expected,
-          dayCounterService.dayCount(
-              dayCounter = params.dayCounter,
-              start = params.start,
-              end = params.end
-          )
-      )
+    assertEqualsAny("DayCounter_dayCount.jso", ListDayCountTypeReference) {
+      dayCounterService.dayCount(it.dayCounter, it.start, it.end)
     }
   }
-
-  object ListDayCountTypeReference : TypeReference<List<DayCountParams>>()
-
-  data class DayCountParams(
-      val dayCounter: DayCounter,
-      val start: LocalDate,
-      val end: LocalDate,
-      val expected: Long
-  )
 
   @Test
   fun yearFraction() {
-    for (params in data("/DayCounter_yearFraction.json", ListYearFractionParamsTypeReference)) {
-      assertEquals(
-          "$params",
-          params.expected,
-          dayCounterService.yearFraction(
-              dayCounter = params.dayCounter,
-              start = params.start,
-              end = params.end
-          ),
-          1e-10
-      )
+    assertEqualsDouble("DayCounter_yearFraction.jso", ListYearFractionParamsTypeReference) {
+      dayCounterService.yearFraction(it.dayCounter, it.start, it.end)
     }
   }
-
-  object ListYearFractionParamsTypeReference : TypeReference<List<YearFractionParams>>()
-
-  data class YearFractionParams(
-      val dayCounter: DayCounter,
-      val start: LocalDate,
-      val end: LocalDate,
-      val expected: Double
-  )
 
 }

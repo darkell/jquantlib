@@ -18,6 +18,7 @@ package org.jquantlib.ir
 
 import com.fasterxml.jackson.core.type.TypeReference
 import org.jquantlib.DataLoader.data
+import org.jquantlib.DataLoader.dataForEach
 import org.jquantlib.api.data.Compounding
 import org.jquantlib.api.data.DayCounter
 import org.jquantlib.api.data.Frequency
@@ -38,9 +39,9 @@ class InterestRateServiceTest {
 
   @Test
   fun compoundFactor() {
-    data("/InterestRate_compoundFactor_time.json", ListParamsTypeReference).forEach {
+    dataForEach("InterestRate_compoundFactor_time.json", ListParamsTypeReference) {
       assertEquals(
-          "$it",
+          it.toString(),
           it.expected,
           service.compoundFactor(it.interestRate, it.time),
           1e-8
@@ -50,9 +51,9 @@ class InterestRateServiceTest {
 
   @Test
   fun discountFactor() {
-    data("/InterestRate_discountFactor_time.json", ListParamsTypeReference).forEach {
+    dataForEach("InterestRate_discountFactor_time.json", ListParamsTypeReference) {
       assertEquals(
-          "$it",
+          it.toString(),
           it.expected,
           service.discountFactor(it.interestRate, it.time),
           1e-8
@@ -62,11 +63,11 @@ class InterestRateServiceTest {
 
   @Test
   fun impliedRate() {
-    data("/InterestRate_impliedRate_time.json", ListParams2TypeReference)
+    data("InterestRate_impliedRate_time.json", ListParams2TypeReference)
         .filter { it.frequency == it.expected.frequency }
         .forEach {
           assertInterestRateEquals(
-              "$it",
+              it.toString(),
               it.expected,
               service.impliedRate(
                   compound = it.compound,
@@ -81,12 +82,12 @@ class InterestRateServiceTest {
 
   @Test
   fun equivalentRate() {
-    data("/InterestRate_equivalentRate_time.json", ListParams3TypeReference)
+    data("InterestRate_equivalentRate_time.json", ListParams3TypeReference)
         .filter { it.interestRate.frequency != NoFrequency }
         .filter { it.expected.frequency != NoFrequency }
         .forEach {
           assertInterestRateEquals(
-              "$it",
+              it.toString(),
               it.expected,
               service.equivalentRate(
                   interestRate = it.interestRate,
@@ -103,7 +104,7 @@ class InterestRateServiceTest {
       expected: InterestRate,
       actual: InterestRate
   ) {
-    assertEquals(message, expected.rate, actual.rate, 1e-8)
+    assertEquals(message, expected.rate, actual.rate, 1e-10)
     assertEquals(message, expected.dayCounter, actual.dayCounter)
     assertEquals(message, expected.compounding, actual.compounding)
     assertEquals(message, expected.frequency, actual.frequency)
